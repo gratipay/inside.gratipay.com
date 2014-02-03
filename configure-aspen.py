@@ -39,9 +39,9 @@ website.www_gittip_com = realpath(join(website.project_root, os.environ['WWW_GIT
 # We try to take documentation from source code where possible.
 
 repos = [
-    'git@github.com:gittip/www.gittip.com.git',
-    'git@github.com:gittip/gttp.co.git',
-    'git@github.com:gittip/Gittip-Everywhere.git',
+    'https://github.com/gittip/www.gittip.com.git',
+    'https://github.com/gittip/gttp.co.git',
+    'https://github.com/gittip/Gittip-Everywhere.git',
 ]
 
 website.repo_root = realpath(join(website.project_root, 'repos'))
