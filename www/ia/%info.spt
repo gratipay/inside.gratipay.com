@@ -1,12 +1,12 @@
 import os
-from os.path import dirname
+from os.path import dirname, join, isdir
 
 import gfm
 from aspen import resources
 from aspen.resources.static_resource import StaticResource
 from nav import NavItem
 
-ROOT = os.path.realpath(os.path.join(website.www_gittip_com, 'www'))
+ROOT = join(website.repo_root, 'www.gittip.com', 'www')
 
 def nav_children(nav):
     children = []
@@ -21,8 +21,8 @@ def nav_children(nav):
 
 docstring = "Undocumented"
 path_info = path['info']
-fs = os.path.join(ROOT, path_info.lstrip('/').replace('/', os.sep))
-if os.path.isdir(fs):
+fs = join(ROOT, path_info.lstrip('/').replace('/', os.sep))
+if isdir(fs):
     request.redirect('/www/'+path_info+'/index.html.spt')
 request.fs = fs
 resource = resources.get(request)
