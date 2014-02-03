@@ -3,10 +3,10 @@ from os.path import dirname, join, isdir
 
 import gfm
 from aspen import resources
-from aspen.resources.static_resource import StaticResource
+from aspen.resources.pagination import split_and_escape
 from nav import NavItem
 
-ROOT = join(website.repo_root, 'www.gittip.com', 'www')
+WWW_ROOT = join(website.repo_root, 'www.gittip.com', 'www')
 
 def nav_children(nav):
     children = []
@@ -21,16 +21,17 @@ def nav_children(nav):
 
 docstring = "Undocumented"
 path_info = path['info']
-fs = join(ROOT, path_info.lstrip('/').replace('/', os.sep))
+fs = join(WWW_ROOT, path_info.lstrip('/').replace('/', os.sep))
 if isdir(fs):
     request.redirect('/www/'+path_info+'/index.html.spt')
-request.fs = fs
-resource = resources.get(request)
-if not isinstance(resource, StaticResource):
-    pages = resource.parse_into_pages(resource.raw)
-    compiled = compile(pages[0].content, request.fs, 'exec')
-    if compiled.co_names and compiled.co_names[0] == '__doc__':
-        docstring = gfm.gfm(compiled.co_consts[0])
+
+if fs.endswith('.spt'):
+    raw = open(fs).read()
+    pages = list(split_and_escape(raw))
+    if len(pages) > 1:
+        compiled = compile(pages[0].content, request.fs, 'exec')
+        if compiled.co_names and compiled.co_names[0] == '__doc__':
+            docstring = gfm.gfm(compiled.co_consts[0])
 
 title = path_info + " - Information Architecture"
 
