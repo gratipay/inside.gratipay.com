@@ -1,5 +1,5 @@
 nav_title = "Building Gittip"
-nav_children = ['big-picture', 'branding', 'ia', 'data', 'src', 'policies']
+nav_children = ['big-picture', 'branding', 'ia', 'data', 'hackers', 'policies']
 [---]
 [---] text/html
 {% extends "templates/base.html" %}
