@@ -1,5 +1,5 @@
 import os
-from os.path import basename, dirname, join, realpath
+from os.path import basename, dirname, join, realpath, isdir
 
 from nav import NavItem
 
@@ -32,3 +32,21 @@ website.algorithm.insert_after('dispatch_request_to_filesystem', add_nav_current
 
 
 website.www_gittip_com = realpath(join(website.project_root, os.environ['WWW_GITTIP_COM']))
+
+
+# Download repos.
+# ===============
+# We try to take documentation from source code where possible.
+
+repos = [
+    'git@github.com:gittip/www.gittip.com.git',
+    'git@github.com:gittip/gttp.co.git',
+    'git@github.com:gittip/Gittip-Everywhere.git',
+]
+
+website.repo_root = realpath(join(website.project_root, 'repos'))
+
+if not isdir(website.repo_root):
+    os.system('mkdir {}'.format(website.repo_root))
+    for repo in repos:
+        os.system('cd {} && git clone {}'.format(website.repo_root, repo))
