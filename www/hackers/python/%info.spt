@@ -1,17 +1,18 @@
 import os
+from os.path import join, isdir
 
 import gfm
 from aspen import resources
 from aspen.resources.static_resource import StaticResource
 
-ROOT = os.path.realpath(os.path.join(website.www_gittip_com, 'gittip'))
+LIB_ROOT = join(website.repo_root, 'www.gittip.com', 'gittip')
 
 [---]
 
 docstring = "Undocumented"
 path_info = path['info']
-fs = os.path.join(ROOT, path_info.lstrip('/').replace('/', os.sep))
-if os.path.isdir(fs):
+fs = join(LIB_ROOT, path_info.lstrip('/').replace('/', os.sep))
+if isdir(fs):
     request.redirect('/gittip/'+path_info+'/__init__.py')
 compiled = compile(open(fs).read(), fs, 'exec')
 if compiled.co_names and compiled.co_names[0] == '__doc__':
