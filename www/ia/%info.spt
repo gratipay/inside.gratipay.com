@@ -6,7 +6,6 @@ from aspen import resources
 from aspen.resources.static_resource import StaticResource
 from nav import NavItem
 
-import pdb; pdb.set_trace()
 ROOT = os.path.realpath(os.path.join(website.www_gittip_com, 'www'))
 
 def nav_children(nav):
