@@ -31,9 +31,6 @@ website.algorithm.insert_after('dispatch_request_to_filesystem', add_nav_to_webs
 website.algorithm.insert_after('dispatch_request_to_filesystem', add_nav_current_to_context)
 
 
-website.www_gittip_com = realpath(join(website.project_root, os.environ['WWW_GITTIP_COM']))
-
-
 # Download repos.
 # ===============
 # We try to take documentation from source code where possible.
