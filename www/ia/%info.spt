@@ -23,7 +23,7 @@ docstring = "Undocumented"
 path_info = path['info']
 fs = join(WWW_ROOT, path_info.lstrip('/').replace('/', os.sep))
 if isdir(fs):
-    request.redirect('/www/'+path_info+'/index.html.spt')
+    request.redirect('/ia/'+path_info+'/index.html.spt')
 
 if fs.endswith('.spt'):
     raw = open(fs).read()
