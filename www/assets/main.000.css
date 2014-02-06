@@ -13,7 +13,12 @@
 html { font-size: 62.5%; }
 
 body {
-    font-size: 2.7rem;
+    font-size: 2.7em;
+    /* Use em here to work around https://code.google.com/p/chromium/issues/detail?id=319623 */
+    /* Since this is a direct child of <html> and we use rem everywhere else we
+     * should still be okay from a compounding font size perspective.
+     */
+
     line-height: 150%;
     font-family: Arial, sans-serif;
     background: #FFF;
