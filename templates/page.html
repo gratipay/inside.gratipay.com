@@ -12,9 +12,7 @@
 <div class="bottom-nav">
     <ul>
         <li><a href="/"><img src="/assets/schematic-heart-coin.svg" alt="Home"></a></li>
-        {% for child in website.nav.children %}
-        <li><a href="{{ child.url }}">{{ child.title }}</a></li>
-        {% endfor %}
+        {% for child in website.nav.children %}<li><a href="{{ child.url }}">{{ child.title }}</a></li>{% endfor %}
     </ul>
 </div>
 {% endblock %}

@@ -10,10 +10,12 @@
   padding: 0;
 }
 
-html, body { height: 100%; }
+html { font-size: 62.5%; }
 
 body {
-    font: 20pt/28pt Arial, sans-serif;
+    font-size: 2.7rem;
+    line-height: 150%;
+    font-family: Arial, sans-serif;
     background: #FFF;
     color: #000;
 }
@@ -23,19 +25,14 @@ h1, h2, h3, h4, h5, h6 {
     color: #339966;
 }
 
-h1 {
-    font-size: 48pt;
-    line-height: 48pt;
-    margin: 0 0 18pt;
-}
 h1 img {
     width: 100%;
 }
 
 h2 {
-    font-size: 36pt;
-    line-height: 36pt;
-    margin: 0 0 16pt;
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    margin: 0 0 2.1333rem;
 }
 h2 a {
     color: #339966 ! important;
@@ -43,30 +40,30 @@ h2 a {
 }
 
 h3 {
-    font-size: 30pt;
-    line-height: 30pt;
-    margin: 30pt 0 14pt;
+    font-size: 4.0rem;
+    line-height: 3.6rem;
+    margin: 4.0rem 0 1.4rem;
 }
 
 h4 {
-    font-size: 18pt;
-    line-height: 18pt;
-    margin: 0 0 10pt;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    margin: 0 0 1.3rem;
 }
 
 p {
     text-indent: 0;
     margin: 0;
-    padding: 0 0 1em;
-    line-height: 32pt;
+    padding: 0 0 1.5rem;
+    line-height: 4.0rem;
 }
 
 blockquote {
     line-height: 150%;
     font-style: italic;
-    margin: 24pt 0;
-    padding: 0 0 0 12pt;
-    border-left: 6pt solid black;
+    margin: 2.4rem 0;
+    padding: 0 0 0 1.2rem;
+    border-left: 0.6rem solid black;
 }
 blockquote span {
     font-style: normal;
@@ -77,7 +74,7 @@ blockquote > p:nth-child(1) {
 
 ul, ol {
     margin: 0;
-    padding: 0em 0 0em 1.5em;
+    padding: 0rem 0 0rem 1.5rem;
 }
 
 dl {
@@ -86,7 +83,7 @@ dt {
     font-weight: bold;
 }
 dd {
-    padding: 0.25em 0 1em 1em;
+    padding: 0.5rem 0 1.5rem 1.5rem;
 }
 
 strong, b {
@@ -107,16 +104,16 @@ strong, b {
 /*****************************************************************************/
 
 .content {
-    max-width: 48pc;
-    margin: 0 auto 7pc;
+    max-width: 76.8rem;
+    margin: 0 auto 11.2rem;
     padding: 0 5%;
 }
 
 .breadcrumbs {
-    margin: 4pc 0;
+    margin: 6.4rem 0;
 }
 .breadcrumbs img {
-    height: 36pt;
+    height: 4.8rem;
 }
 .breadcrumbs ul {
     list-style: none;
@@ -131,12 +128,12 @@ strong, b {
 
 .bottom-nav {
     width: 100%;
-    height: 62pt;
+    height: 8.2656rem;
     position: fixed;
     bottom: 0;
     left: 0;
     background: url("/assets/hero-bg.png");
-    border-top: 1px solid #dddddd;
+    border-top: 0.1rem solid #dddddd;
 }
 .bottom-nav ul {
     list-style: none;
@@ -145,18 +142,18 @@ strong, b {
     text-align: right;
 }
 .bottom-nav li {
-    font: bold 12pt/12pt Arial, sans-serif;
+    font: bold 1.6rem/1.6rem Arial, sans-serif;
     overflow: hidden;
     display: inline-block;
     width: 12%;
     text-align: left;
-    border: 2pt solid #663300;
+    border: 0.2rem solid #663300;
     font-weight: bold;
-    border-radius: 4pt;
-    margin: 8pt 0 0 0.1%;
+    border-radius: 0.4rem;
+    margin: 1.0667rem 0 0 0.75%;
     padding: 0;
 }
-.bottom-nav li:nth-child(-1) {
+.bottom-nav li:nth-child(2) {
     margin-left: 0;
 }
 .bottom-nav li:nth-child(1) {
@@ -164,8 +161,8 @@ strong, b {
     background: none;
     border: none;
     text-align: center;
-    height: 80pt;
-    width: 100pt;
+    height: 10.656rem;
+    width: 13.6rem;
 }
 .bottom-nav li:nth-child(1) a {
     padding: 0;
@@ -174,14 +171,14 @@ strong, b {
     background: transparent;
 }
 .bottom-nav li:nth-child(1) img {
-    height: 80pt;
+    height: 10.656rem;
 }
 .bottom-nav li a {
     display: block;
     text-decoration: none;
     color: #663300;
-    padding: 3pt;
-    height: 36pt;
+    padding: 0.4rem;
+    height: 4.8rem;
 }
 .bottom-nav li a:hover {
     color: #339966;
@@ -195,7 +192,7 @@ strong, b {
 /*****************************************************************************/
 
 .homepage {
-    margin: 24pt auto;
+    margin: 2.4rem auto;
 }
 .homepage .top-nav {
     width: 100%;
@@ -211,14 +208,14 @@ strong, b {
     text-align: center;
 }
 .homepage .top-nav li {
-    font: bold 24pt/24pt Arial, sans-serif;
+    font: bold 3rem/3rem Arial, sans-serif;
     overflow: hidden;
     display: inline-block;
     width: 20%;
     text-align: left;
-    border: 2pt solid #663300;
+    border: 0.25rem solid #663300;
     font-weight: bold;
-    border-radius: 4pt;
+    border-radius: 0.5rem;
     margin: 5% 0 5% 2%;
     padding: 0;
     background: white;
@@ -230,16 +227,16 @@ strong, b {
     display: block;
     text-decoration: none;
     color: #663300;
-    padding: 6pt;
-    height: 72pt;
+    padding: 1rem;
+    height: 9rem;
 }
 .homepage .top-nav li a:hover {
     color: #339966;
 }
 .homepage .lower {
     padding: 5%;
-    margin: 2pt;
-    font: normal 12pt/16pt Arial, sans-serif;
+    margin: 0.2667rem;
+    font: normal 1.6rem/2.1rem Arial, sans-serif;
 }
 .homepage .lower.channels {
     width: 28%;
@@ -250,7 +247,7 @@ strong, b {
     padding-right: 5%;
 }
 .homepage .lower p {
-    line-height: 16pt;
+    line-height: 2.1rem;
 }
 
 /*****************************************************************************/
