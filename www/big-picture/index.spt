@@ -1,0 +1,16 @@
+nav_title = 'The&nbsp;Big Picture'
+[---]
+[---] text/html
+{% extends "templates/page.html" %}
+{% block content %}
+
+<h3>Mission and Vision</h3>
+
+<p>Gittip&rsquo;s mission is to redeem the economy.</p>
+
+<p>We envision a future in which the economy is characterized by trust,
+collaboration, cooperation, sharing, openness, transparency, care for one
+another, inclusion, inspiration, purpose, generosity, patience, empathy,
+optimism, and love.</p>
+
+{% endblock %}
