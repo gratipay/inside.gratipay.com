@@ -102,8 +102,13 @@ nav_children = ['big-picture', 'branding', 'ia', 'data', 'hackers', 'policies']
 
         <p>Welcome! Thanks for your interest in building Gittip!</p>
 
-        <p>Start with this <a href="/policies/first-time">first time
-        checklist</a>.</p>
+        <p>Announce yourself on IRC and say you want to help, or if
+        you&rsquo;re not sure about IRC or no-one is around when you show up
+        there, then tweet &ldquo;I want to help!&rdquo; to <a
+        href="https://twitter.com/Gittip">@Gittip</a>. Someone will respond and
+        help you get started with your first project.</p>
+
+        <p>Woo-hoo! Thanks! :-)</p>
 
     </div>
     <div class="lower right hackers">
