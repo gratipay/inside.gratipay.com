@@ -1,9 +1,7 @@
 import commands
 import os
-from collections import namedtuple
 from os.path import basename, dirname, join, realpath, isdir
 
-import aspen.execution
 from nav import NavItem
 
 
@@ -52,20 +50,10 @@ if not isdir(website.repo_root):
         os.system('cd {} && git clone {}'.format(website.repo_root, repo))
 
 
-# Set website.versions.
-# =====================
+# Set website.version.
+# ====================
 
-def get_www_gittip_com_version():
-    version_file = join(website.repo_root, 'www.gittip.com', 'www', 'version.txt')
-    aspen.execution.extras.add(version_file)
-    version = open(version_file).read().strip()
-    if version.endswith('-dev'):
-        version = version[:-len('-dev')]
-    return version
-
-website.versions = namedtuple('Versions', 'www_gittip_com gttp_co Gittip_Everywhere ours'.split())
-website.versions.ours = commands.getoutput('git rev-parse HEAD')
-website.versions.www_gittip_com = get_www_gittip_com_version()
+website.version = commands.getoutput('git rev-parse HEAD')
 
 
 # Set random thing that we're not really using.
