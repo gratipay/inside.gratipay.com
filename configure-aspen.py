@@ -65,4 +65,5 @@ website.version = ''.join([random.choice(string.letters) for i in range(32)])
 # Set random thing that we're not really using.
 # =============================================
 
-website.compress_assets = True
+website.compress_assets = False # If set to True, the responsiveness on the lower
+                                # homepage breaks. :-/
