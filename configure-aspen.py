@@ -1,10 +1,14 @@
-import commands
 import os
 import string
 import random
 from os.path import basename, dirname, join, realpath, isdir
 
+import gfm
 from nav import NavItem
+
+
+# Manually register markdown renderer to work around Heroku deployment woes.
+website.renderer_factories['markdown'] = gfm.Factory(website)
 
 
 website.renderer_default = "jinja2"
