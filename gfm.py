@@ -1,4 +1,8 @@
+from __future__ import absolute_import, division, print_function, unicode_literals
+
 import misaka
+from aspen_jinja2_renderer import Renderer as Jinja2Renderer, Factory as Jinja2Factory
+
 
 def gfm(md):
     html = misaka.html( md
@@ -6,3 +10,20 @@ def gfm(md):
                       , misaka.HTML_SMARTYPANTS | misaka.HTML_TOC
                        )
     return html
+
+
+wrapper = """
+{{% extends "templates/page.html" %}}
+{{% block content %}}
+{}
+{{% endblock %}}
+"""
+
+class Renderer(Jinja2Renderer):
+    def compile(self, filepath, raw):
+        raw = wrapper.format(gfm(raw))
+        return Jinja2Renderer.compile(self, filepath, raw)
+
+
+class Factory(Jinja2Factory):
+    Renderer = Renderer

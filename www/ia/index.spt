@@ -1,4 +1,22 @@
 nav_title = "Information Architecture"
 [---]
-request.redirect('./index.html.spt')
-[---] text/plain
+[---] text/html via markdown
+
+This is Gittip's information architecture, where we define what pages we have
+on the site, and the purpose of each page.
+
+Gittip basically has five kinds of pages:
+
+  1. [Homepage](/ia/homepage)
+  1. [Profile](/ia/profile)
+  1. [Community](/ia/community)
+  1. [Account Elsewhere](/ia/accounts-elsewhere)
+  1. [About](/ia/about)
+
+The first page most users (65%) see is a [profile page](/ia/profile), with a
+significant minority (24%) starting out on the [homepage](/ia/homepage).
+[Community](/ia/community) pages and [accounts
+        elsewhere](/ia/account-elsewhere) get a lot less traffic.
+
+<p><iframe width='500' height='300' frameborder='0'
+    src='https://docs.google.com/spreadsheet/pub?key=0AiDJ5uiG6Hp3dDUyNTFiZUlSUGNFY3d3UXZzRmtBT2c&single=true&gid=0&range=a1%3Ae11&output=html&widget=true'></iframe></p>
