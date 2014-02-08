@@ -1,0 +1,67 @@
+/*****************************************************************************/
+/*
+/* Homepage
+/*
+/*****************************************************************************/
+
+.homepage h1 img {
+    width: 100%;
+}
+.homepage {
+    margin: 2.4rem auto;
+}
+.homepage .top-nav {
+    width: 100%;
+    background: url("/assets/hero-bg.png");
+    border: 1px solid #dddddd;
+    border-style: solid none;
+    line-height: 0;
+}
+.homepage .top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.homepage .top-nav li {
+    font: bold 3rem/3rem Arial, sans-serif;
+    overflow: hidden;
+    display: inline-block;
+    width: 20%;
+    text-align: left;
+    border: 0.25rem solid #663300;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin: 5% 0 5% 2%;
+    padding: 0;
+    background: white;
+}
+.homepage .top-nav li:nth-child(1) {
+    margin-left: 0;
+}
+.homepage .top-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #663300;
+    padding: 1rem;
+    height: 9rem;
+}
+.homepage .top-nav li a:hover {
+    color: #339966;
+}
+.homepage .lower {
+    padding: 5%;
+    margin: 0.2667rem;
+    font: normal 1.6rem/2.1rem Arial, sans-serif;
+}
+.homepage .lower.channels {
+    width: 28%;
+    float: left;
+}
+.homepage .lower.right {
+    padding-left: 38%;
+    padding-right: 5%;
+}
+.homepage .lower p {
+    line-height: 2.1rem;
+}
