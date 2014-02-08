@@ -62,7 +62,6 @@
     .lower {
         overflow: auto; /* http://www.quirksmode.org/css/clearing.html */
         padding: 5%;
-        .right { padding-left: 5%; }
         p { line-height: 21px; }
     }
 }
@@ -137,6 +136,9 @@ This is the "Layout Shifter" pattern:
 
 */
 
+@media screen and (max-width: 640px) {
+    #page .right h2:nth-child(1) { margin-top: 35px ! important; }
+}
 @media screen and (min-width: 640px) {
     #page .homepage .lower {
         .channels {
@@ -146,6 +148,7 @@ This is the "Layout Shifter" pattern:
         .right {
             width: 70%;
             float: left;
+            padding-left: 5%;
         }
     }
 }
