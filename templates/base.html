@@ -13,11 +13,14 @@
         <meta property="og:description" content="Documentation for people building Gittip." />
         <meta property="og:title" content="Building Gittip" />
 
-        <link rel="stylesheet" href="/assets/main.000.css">
+        <link rel="stylesheet" type="text/css"
+              href="https://assets-gittipllc.netdna-ssl.com/reset.css">
+        <link rel="stylesheet" type="text/css"
+              href="/assets/{{ website.version }}/building.gittip.css">
 
     </head>
     <body>
-        <div class="page">{% block page %}
+        <div id="page">{% block page %}
         {% endblock %}</div>
     </body>
 </html>

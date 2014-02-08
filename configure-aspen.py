@@ -1,3 +1,4 @@
+import commands
 import os
 from os.path import basename, dirname, join, realpath, isdir
 
@@ -47,3 +48,15 @@ if not isdir(website.repo_root):
     os.system('mkdir {}'.format(website.repo_root))
     for repo in repos:
         os.system('cd {} && git clone {}'.format(website.repo_root, repo))
+
+
+# Set website.version.
+# ====================
+
+website.version = commands.getoutput('git rev-parse HEAD')
+
+
+# Set random thing that we're not really using.
+# =============================================
+
+website.compress_assets = True
