@@ -6,17 +6,17 @@
 
 .breadcrumbs {
     margin: 64px 0;
-}
-.breadcrumbs img {
-    height: 48px;
-}
-.breadcrumbs ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.breadcrumbs li {
-    display: inline;
-    margin: 0;
-    padding: 0;
+    img { height: 48px; }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline;
+            margin: 0;
+            padding: 0;
+        }
+    }
 }
