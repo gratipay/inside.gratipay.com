@@ -1,5 +1,7 @@
 import commands
 import os
+import string
+import random
 from os.path import basename, dirname, join, realpath, isdir
 
 from nav import NavItem
@@ -52,8 +54,12 @@ if not isdir(website.repo_root):
 
 # Set website.version.
 # ====================
+# Yeesh, what a hack. At Heroku we don't have a git repo once deployed, so
+# instead of using a git SHA we're going to just use a random string. Doing
+# this "right" would mean storing the real version SHA somewhere during
+# deployment.
 
-website.version = commands.getoutput('git rev-parse HEAD')
+website.version = ''.join([random.choice(string.letters) for i in range(32)])
 
 
 # Set random thing that we're not really using.
