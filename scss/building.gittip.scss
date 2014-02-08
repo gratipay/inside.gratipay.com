@@ -2,31 +2,8 @@
  * externally, we have access to all of our Sass mixins. */
 
 @import "../repos/www.gittip.com/scss/gittip.scss";
+@import "overrides";
 
 @import "homepage";
 @import "breadcrumbs";
 @import "bottom-nav";
-
-
-/*****************************************************************************/
-/*
-/* Responsiveness
-/*
-/*****************************************************************************/
-
-@media (max-width: 950px) {
-    .header h1 {
-        float: none;
-        text-align: center;
-    }
-    .nav {
-        text-align: center;
-    }
-}
-
-@media (max-width: 580px) {
-    .nav li {
-        float: none;
-        width: 100%;
-    }
-}

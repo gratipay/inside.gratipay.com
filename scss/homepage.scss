@@ -4,67 +4,148 @@
 /*
 /*****************************************************************************/
 
-.homepage h1 {
-    line-height: 0;
+#page .homepage {
+
+    margin: 0 auto;
+
+    h1 {
+        line-height: 0;
+        margin: 0;
+        img { width: 100%; }
+    }
+
+    .top-nav {
+
+        width: 100%;
+        background: url("/assets/hero-bg.png");
+        border: 1px solid #dddddd;
+        border-style: solid none;
+        line-height: 0;
+        
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        
+            li {
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 30px;
+                overflow: hidden;
+                display: inline-block;
+                width: 20%;
+                text-align: left;
+                border: 2px solid #663300;
+                border-radius: 5px;
+                margin: 5% 0 5% calc(10% / 3);
+                padding: 0;
+                background: white;
+            
+                &:nth-child(1) { margin-left: 0; }
+
+                a {
+                    box-sizing: content-box;
+                    -moz-box-sizing: content-box;
+                    display: block;
+                    text-decoration: none;
+                    color: #663300;
+                    padding: 10px;
+                    height: 120px;
+                    
+                    &:hover { color: #339966; }
+                }
+    }}}
+
+    .lower {
+        overflow: auto; /* http://www.quirksmode.org/css/clearing.html */
+        padding: 5%;
+        .right { padding-left: 5%; }
+        p { line-height: 21px; }
+    }
 }
-.homepage h1 img {
-    width: 100%;
+
+
+/* 
+
+Responsiveness for Top Nav
+==========================
+
+XXX I tried to DRY this up but ran afoul of a bug in libsass-python. There's a
+fix for it in master but there hasn't been a release yet. See:
+
+    https://github.com/dahlia/libsass-python/issues/12
+
+*/
+
+@media screen and (max-width: 1200px) {
+    #page .homepage .top-nav ul li {
+        font-size: 24px;
+        line-height: 24px;
+        a { height: 96px; }
+    }
 }
-.homepage {
-    margin: 2.4rem auto;
+
+@media screen and (max-width: 950px) {
+    #page .homepage .top-nav ul li {
+        font-size: 20px;
+        line-height: 20px;
+        a { height: 80px; }
+    }
 }
-.homepage .top-nav {
-    width: 100%;
-    background: url("/assets/hero-bg.png");
-    border: 1px solid #dddddd;
-    border-style: solid none;
-    line-height: 0;
+
+@media screen and (max-width: 700px) {
+    #page .homepage .top-nav ul li {
+        font-size: 16px;
+        line-height: 16px;
+        a { height: 64px; }
+    }
 }
-.homepage .top-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+
+@media screen and (max-width: 600px) {
+    #page .homepage .top-nav ul li {
+        font-size: 12px;
+        line-height: 12px;
+        a { height: 48px; }
+    }
 }
-.homepage .top-nav li {
-    font: bold 3rem/3rem Arial, sans-serif;
-    overflow: hidden;
-    display: inline-block;
-    width: 20%;
-    text-align: left;
-    border: 0.25rem solid #663300;
-    font-weight: bold;
-    border-radius: 0.5rem;
-    margin: 5% 0 5% 2%;
-    padding: 0;
-    background: white;
+
+@media screen and (max-width: 450px) {
+    #page .homepage .top-nav ul li {
+        box-sizing: border-box;
+        display: block;
+        width: 90%;
+        margin: 5% ! important;
+
+        font-size: 16px;
+        line-height: 16px;
+        a { height: 32px; }
+    }
 }
-.homepage .top-nav li:nth-child(1) {
-    margin-left: 0;
-}
-.homepage .top-nav li a {
-    display: block;
-    text-decoration: none;
-    color: #663300;
-    padding: 1rem;
-    height: 9rem;
-}
-.homepage .top-nav li a:hover {
-    color: #339966;
-}
-.homepage .lower {
-    padding: 5%;
-    margin: 0.2667rem;
-    font: normal 1.6rem/2.1rem Arial, sans-serif;
-}
-.homepage .lower.channels {
-    width: 28%;
-    float: left;
-}
-.homepage .lower.right {
-    padding-left: 38%;
-    padding-right: 5%;
-}
-.homepage .lower p {
-    line-height: 2.1rem;
+
+
+/* 
+
+Responsiveness for Lower Content
+================================
+
+This is the "Layout Shifter" pattern:
+
+    http://codepen.io/bradfrost/full/LtryA
+
+*/
+
+@media screen and (min-width: 640px) {
+    #page .homepage .lower {
+        .channels {
+            width: 30%;
+            float: left;
+        }
+        .right {
+            width: 70%;
+            float: left;
+        }
+    }
 }
