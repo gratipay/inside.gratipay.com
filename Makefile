@@ -26,4 +26,5 @@ local.env:
 	cp default.local.env local.env
 
 run: env local.env
-	./$(env_bin)/honcho -e default.local.env,local.env start web
+	./$(env_bin)/honcho -e default.local.env,local.env run ./env/bin/aspen \
+		--network_address :8536 --www_root=./www/ --project_root=./
