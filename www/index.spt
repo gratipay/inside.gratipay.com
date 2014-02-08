@@ -96,17 +96,16 @@ nav_children = ['big-picture', 'branding', 'ia', 'data', 'hackers', 'policies']
 
 
         </div>
-        <div class="right first-time">
+        <div class="right">
+
             <h2>First Time?</h2>
 
             <p>Welcome! Thanks for your interest in building Gittip! <a
             href="/big-picture">Start here</a>. :-)</p>
 
-        </div>
-        <div class="right policies">
             <h2>Policies&nbsp;&amp; Procedures</h2>
-        </div>
-        <div class="right hackers">
+
+
             <h2>Source Code Reference</h2>
         </div>
     </div>
