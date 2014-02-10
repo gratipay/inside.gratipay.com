@@ -1,7 +1,4 @@
 nav_title = 'System Architecture'
 [---]
-[---] text/html
-{% extends "templates/page.html" %}
-{% block content %}
+[---] text/html via markdown
 System architecture!
-{% endblock %}
