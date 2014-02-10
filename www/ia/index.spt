@@ -3,7 +3,9 @@ nav_title = "Information Architecture"
 [---] text/html via markdown
 
 This is Gittip's information architecture, where we define what pages we have
-on the site, and the purpose of each page.
+on the site, and the purpose of each page. This document looks at Gittip from
+the outside, from a user's point of view. The [System Architecture](/sa/), by
+contrast, is about Gittip internals.
 
 Gittip basically has five kinds of pages:
 

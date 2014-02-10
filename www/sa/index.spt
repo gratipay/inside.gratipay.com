@@ -1,4 +1,71 @@
 nav_title = 'System Architecture'
 [---]
 [---] text/html via markdown
-System architecture!
+
+This is Gittip's system architecture, a high-level view of the software system
+by which we deliver the product experience defined in our [information
+architecture](/ia/).
+
+Gittip is composed of two main system components:
+
+  1. a web application
+  1. a relational database
+
+
+## Web Application
+
+The Gittip web application serves both HTML and JSON endpoints. The JSON
+endpoints have emerged ad-hoc in response to user demand, and do not relate
+rationally to human-browseable pages.
+
+
+## Database
+
+Gittip uses a relational database to store and query data. Here is a summary of
+the tables in the database:
+
+
+### `participants`
+
+A `participant` is a user entity in the Gittip system. A `participant` can
+represent an individual person or a group (team, company, non-profit, etc.). We
+maintain a `participant` record for every account elsewhere (see next), and if
+that's all a particular participant record is being used for then we say it's a
+"stub" participant.
+
+
+### `elsewhere`
+
+Gittip relates participants to accounts on other social networks and platforms.
+The `elsewhere` table has a record for every account elsewhere that we are
+keeping track of, with a reference to a `participant` in our own system.
+
+
+### `tips`
+
+The `tips` table has one record for each time one participant sets up a tip to
+another. During payday we use the information in this table to decide what to
+charge people and where to send the money.
+
+
+### `transfers` and `exchanges`
+
+These are accounting tables. `transfers` keeps track of money that moves from
+one participant to another inside of Gittip. `exchanges` keeps track of money
+that moves between Gittip and the outside world (via credit card charges, bank
+deposits, etc.).
+
+
+### More tables to document
+
+`absorptions`
+`api_keys`
+`bitcoin_addresses`
+`communities`
+`goals`
+`homepage_top_givers`
+`homepage_top_receivers`
+`log_participant_number`
+`memberships`
+`paydays`
+`toots`
