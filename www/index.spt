@@ -1,5 +1,5 @@
 nav_title = "Building Gittip"
-nav_children = ['big-picture', 'branding', 'ia', 'data', 'hackers', 'policies']
+nav_children = ['big-picture', 'brand', 'ia', 'sa', 'hackers', 'policies']
 [---]
 [---] text/html
 {% extends "templates/base.html" %}
@@ -106,7 +106,7 @@ nav_children = ['big-picture', 'branding', 'ia', 'data', 'hackers', 'policies']
             <h2>Policies&nbsp;&amp; Procedures</h2>
 
 
-            <h2>Source Code Reference</h2>
+            <h2>Hacker&rsquo;s Reference</h2>
         </div>
     </div>
 </div>

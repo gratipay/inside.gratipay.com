@@ -1,7 +1,7 @@
-nav_title = 'Branding Guidelines'
+nav_title = 'System Architecture'
 [---]
 [---] text/html
 {% extends "templates/page.html" %}
 {% block content %}
-Branding Guidelines!
+System architecture!
 {% endblock %}
