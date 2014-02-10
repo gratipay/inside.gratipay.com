@@ -2,3 +2,14 @@ nav_title = "Account Elsewhere"
 [---]
 [---] text/html via markdown
 
+An "account elsewhere" page is a representation of an account on another social
+network or platform besides Gittip. The purpose of these pages is two-fold:
+
+  1. To allow existing Gittip users to pledge tips to people who haven't joined
+     Gittip yet.
+
+  1. To make it easy for users on other platforms to see how and why to join
+     Gittip.
+
+Some platforms have "group" or "team" concepts and we try to model those as
+well.
