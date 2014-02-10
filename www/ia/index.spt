@@ -4,21 +4,33 @@ nav_title = "Information Architecture"
 
 This is Gittip's information architecture, where we define what pages we have
 on the site, and the purpose of each page. This document looks at Gittip from
-the outside, from a user's point of view. The [System Architecture](/sa/), by
-contrast, is about Gittip internals.
+the outside, from the point of view of the user's experience. The [System
+Architecture](/sa/), on the other hand, discusses the architecture of the
+system by which we deliver this experience.
 
-Gittip basically has five kinds of pages:
+Gittip basically has six kinds of pages:
 
   1. [Homepage](/ia/homepage)
-  1. [Profile](/ia/profile)
-  1. [Community](/ia/community)
-  1. [Account Elsewhere](/ia/accounts-elsewhere)
-  1. [About](/ia/about)
+  1. [Profile](/ia/profile)&mdash;A representation of an individual Gittip
+    participant.
+  1. [Community](/ia/community)&mdash;A page aggregating many participants
+    together.
+  1. [Account Elsewhere](/ia/accounts-elsewhere)&mdash;A representation of an
+    account on a different social network or platform.
+  1. [About](/ia/about)&mdash;Documentation about Gittip.
+  1. [External](/ia/external)&mdash;Widgets, embeds, buttons, browser
+    extensions, etc. Off-site experiences that none-the-less are part of our
+    information architecture.
 
-The first page most users (65%) see is a [profile page](/ia/profile), with a
-significant minority (24%) starting out on the [homepage](/ia/homepage).
-[Community](/ia/community) pages and [accounts
-        elsewhere](/ia/account-elsewhere) get a lot less traffic.
+The first experience most users have of Gittip is a widget or button or other
+kind of mention or link on someone else's website. We don't have analytics
+right now on button reach due to technical issues, but rule of thumb we have
+10x the off-site impressions that we have on-site.
+
+The first on-site experience most users (65%) have is a [profile
+page](/ia/profile), with a significant minority (24%) starting out on
+the [homepage](/ia/homepage).  [Community](/ia/community) pages and [accounts
+elsewhere](/ia/account-elsewhere) get a lot less traffic.
 
 <p><iframe width='500' height='300' frameborder='0'
     src='https://docs.google.com/spreadsheet/pub?key=0AiDJ5uiG6Hp3dDUyNTFiZUlSUGNFY3d3UXZzRmtBT2c&single=true&gid=0&range=a1%3Ae11&output=html&widget=true'></iframe></p>
