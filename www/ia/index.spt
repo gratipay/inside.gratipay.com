@@ -24,8 +24,10 @@ Gittip basically has six kinds of pages:
 
 The first experience most users have of Gittip is a widget or button or other
 kind of mention or link on someone else's website. We don't have analytics
-right now on button reach due to technical issues, but rule of thumb we have
-10x the off-site impressions that we have on-site.
+right now on widget/embed/button reach (due to [technical
+    issues](https://github.com/gittip/www.gittip.com/issues/851#issuecomment-16395634)),
+but rule of thumb we have 10x-100x the off-site impressions that we have
+on-site.
 
 The first on-site experience most users (65%) have is a [profile
 page](/ia/profile), with a significant minority (24%) starting out on
