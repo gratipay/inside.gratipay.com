@@ -4,7 +4,7 @@ nav_title = 'The&nbsp;Big Picture'
 {% extends "templates/page.html" %}
 {% block content %}
 
-<p>Thanks for wanting to help! This is the place to start. :-)</p>
+<p>Thanks for your interest in building Gittip!</p>
 
 <p><a href="https://www.gittip.com/about/">Gittip</a> is a new kind of
 organization called an &ldquo;<a
@@ -15,6 +15,10 @@ volunteers</a> gets to <a
 href="https://medium.com/building-gittip/eba0a27825b8">take some of the
 money</a> that has been given on Gittip to Gittip itself&mdash;Gittip is funded
 on Gittip.</p>
+
+<p>Browse the content and links on this site, then, if you want to help, sign up
+for our weekly newsletter, <a href="http://tinyletter.com/gittip">The Monday
+Morning Missive</a>, and get to work! :-)
 
 
 <h2>Mission and Vision</h2>
@@ -29,6 +33,21 @@ optimism, and love.</p>
 
 <h2>Projects</h2>
 
-<p></p>
+<p>A project is a high-level, months-long effort that encompasses a number of
+lower-level milestones and issues. Not all of our work fits into a project,
+and, in fact, we only have one project right now:</p>
+
+<p><a
+href="https://docs.google.com/document/d/1TQATN7-IxphyguJzEqxgo-99hJYavdOObNYNlVoX0us/edit?usp=sharing">Breathing
+With Both Lungs: The 2014 Gittip Redesign Project</a> </p>
+
+
+<h2>Milestones and Issues</h2>
+
+<p>At a lower level we use <a
+href="https://github.com/gittip/www.gittip.com/issues/milestones">milestones</a>
+and <a href="https://github.com/gittip/www.gittip.com/issues">issues</a> to
+track our work.</p>
+
 
 {% endblock %}
