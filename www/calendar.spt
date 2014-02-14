@@ -1,0 +1,22 @@
+nav_title = 'Calendar'
+[---]
+[---] text/html
+<html>
+    <head>
+        <title>Gittip Calendar</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <iframe
+        src="https://www.google.com/calendar/embed?src=hc82esnerfl380tbhj3i18hlkk%40group.calendar.google.com">
+    </body>
+</html>
