@@ -15,7 +15,6 @@ env:
 				--distribute \
 				./env/
 	./$(env_bin)/pip install -r requirements.txt
-	./$(env_bin)/pip install -e ./
 
 clean:
 	rm -rf env *.egg *.egg-info
