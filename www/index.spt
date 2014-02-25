@@ -105,6 +105,10 @@ nav_children = ['big-picture', 'brand', 'ia', 'sa', 'hackers', 'policies']
 
             <h2>Policies&nbsp;&amp; Procedures</h2>
 
+            <ul>
+                <li><a href="/policies/choosing-vendors">Choosing Vendors</a></li>
+            </ul>
+
 
             <h2>Hacker&rsquo;s Reference</h2>
         </div>
