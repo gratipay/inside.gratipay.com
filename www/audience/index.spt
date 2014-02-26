@@ -1,0 +1,74 @@
+nav_title = 'Audience'
+[---]
+[---] text/html via markdown
+
+*by Chad Whitacre*
+
+Though we don't presort people (the way Patreon and Subbable do), there are two
+basic categories:
+
+ - Givers (tippers, donors, patrons)
+ - Receivers (tippees)
+
+We have some basic stats on our [Stats
+page](https://www.gittip.com/about/stats.html). Here's a snapshot:
+
+ - Gittip has 2486 active users (either gave or received last week, or both).
+ - 1582 participants gave money in the past week.
+ - 1318 received money.
+ - 414 did both.
+
+Amongst givers, there's a further distinction:
+
+ - **General Givers**&mdash;Givers who come to Gittip with a desire to give,
+   but nobody specific in mind. They need "discovery" features.
+
+ - **Specific Givers**&mdash;Givers who come to Gittip with a desire to give to
+   a specific person. They need a nice profile page with an easy checkout flow.
+
+Based on the content summary [on IA](/ia/), I infer that we have roughly 25%
+general givers, and 65% specific givers (though this data isn't scoped to these
+categories by any means).
+
+Some relevant threads:
+
+ - Re: reaching out to content creators: https://github.com/gittip/www.gittip.com/issues/737.
+
+ - Re: requiring a certain voice of our users:
+   https://github.com/gittip/www.gittip.com/issues/1659. "The question is, am I
+   going to be using my project's voice when I write my profile, or the voice
+   you've chosen?"
+
+ - Browsing [our communities](https://www.gittip.com/for/) indicates what we
+   all know: Gittip's users are mostly drawn from the open-source world.
+   [PG](http://paulgraham.com/ambitious.html): "The way to win here is to build
+   the __________ all the hackers use. A __________ whose users consisted of the
+   top 10,000 hackers and no one else would be in a very powerful position despite
+   its small size." We very much aim to be a mass market platform, and we're
+   starting in the open-source world.
+
+
+Another way to slice the pie is:
+
+ - Individuals
+ - Groups
+
+We started with a strong focus on individuals, and then gradually realized we
+needed some higher level of aggregation. Groups are supported in a two ways:
+
+ - Any given Gittip account can represent a group of people. We have a number
+   of accounts like this, both givers and receivers.
+
+
+ - We have special support for groups that want to split the money they receive
+   in an open and transparent manner. We call these
+   "[Teams](https://www.gittip.com/about/teams/)."
+
+
+The Communities feature is kind of related (and we sometimes confuse people
+with the difference between Teams and Communities and plain old accounts that
+represent a company/non-profit/etc.).
+
+The individual/group distinction is orthogonal to the
+giver(specific/general)/receiver distinction. I don't have numbers to
+demonstrate this, however.
