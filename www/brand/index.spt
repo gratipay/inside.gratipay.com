@@ -62,6 +62,27 @@ If someone identifying with the media critiques Gittip, we welcome it and take
 it on board just like any other critique.
 
 
+## Logo Files
+
+<a href="/assets/heart-coin.svg">
+    <img src="/assets/heart-coin.svg" alt="Gittip Heart Coin"
+         height="128px">
+</a>
+<a href="/assets/gittip.svg">
+    <img src="/assets/gittip.svg" alt="Gittip Logo"
+         height="128px">
+</a>
+
+<a href="/assets/heart-coin.bw.svg">
+    <img src="/assets/heart-coin.bw.svg" alt="Gittip Heart Coin (Black and White)"
+         height="128px">
+</a>
+<a href="/assets/gittip.bw.svg">
+    <img src="/assets/gittip.bw.svg" alt="Gittip Logo (Black and White)"
+         height="128px">
+</a>
+
+
 ## Pronunciation
 
 When I started Gittip, I pronounced it like two words, "get tip" or "git tip."
