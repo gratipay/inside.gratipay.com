@@ -11,3 +11,17 @@ ol { margin-bottom: 2em; }
 strong, b { font-weight: bold; }
 em, i { font-style: italic; }
 ul li { list-style: circle; margin-left: 3em; }
+
+// for brand page
+.chip {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    margin-right: 16px;
+    color: white;
+    text-align: center;
+    line-height: 64px;
+
+    &.green { background: $green; }
+    &.brown { background: $brown; }
+}
