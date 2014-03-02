@@ -4,8 +4,14 @@ nav_title = 'Audience'
 
 *by Chad Whitacre*
 
-Though we don't presort people (the way Patreon and Subbable do), there are two
-basic categories:
+Gittip's audience is everyone; it's intended to be a mass-market consumer
+product. This document looks at different ways to segment our audience.
+
+
+## According to Intent
+
+Though we don't presort people (the way Patreon and Subbable do),
+we have two basic kinds of user:
 
  - Givers (tippers, donors, patrons)
  - Receivers (tippees)
@@ -24,20 +30,21 @@ Amongst givers, there's a further distinction:
    but nobody specific in mind. They need "discovery" features.
 
  - **Specific Givers**&mdash;Givers who come to Gittip with a desire to give to
-   a specific person. They need a nice profile page with an easy checkout flow.
+   a specific person. They need a nice profile page for the person/team they
+   want to give to, with an easy checkout flow.
 
 Based on the content summary [on IA](/ia/), I infer that we have roughly 25%
 general givers, and 65% specific givers (though this data isn't scoped to these
 categories by any means).
 
-Some relevant threads:
+See also:
 
- - Re: reaching out to content creators: https://github.com/gittip/www.gittip.com/issues/737.
+ - [Reaching out to content creators](https://github.com/gittip/www.gittip.com/issues/737).
 
- - Re: requiring a certain voice of our users:
-   https://github.com/gittip/www.gittip.com/issues/1659. "The question is, am I
-   going to be using my project's voice when I write my profile, or the voice
-   you've chosen?"
+ - [Requiring a certain voice of our
+         users](https://github.com/gittip/www.gittip.com/issues/1659). "The
+   question is, am I going to be using my project's voice when I write my
+   profile, or the voice you've chosen?"
 
  - Browsing [our communities](https://www.gittip.com/for/) indicates what we
    all know: Gittip's users are mostly drawn from the open-source world.
@@ -47,6 +54,8 @@ Some relevant threads:
    its small size." We very much aim to be a mass market platform, and we're
    starting in the open-source world.
 
+
+## According to [Grammatical] Number
 
 Another way to slice the pie is:
 
