@@ -11,6 +11,11 @@ ol { margin-bottom: 2em; }
 strong, b { font-weight: bold; }
 em, i { font-style: italic; }
 ul li { list-style: circle; margin-left: 3em; }
+blockquote {
+    border-left: 2px solid $light-gray;
+    padding-left: 1em;
+}
+
 
 // for brand page
 .chip {
