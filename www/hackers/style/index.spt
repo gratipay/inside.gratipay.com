@@ -1,7 +1,4 @@
 nav_title = 'Coding Style Guide'
 [---]
 [---] text/html
-{% extends "templates/page.html" %}
-{% block content %}
 Coding style!
-{% endblock %}

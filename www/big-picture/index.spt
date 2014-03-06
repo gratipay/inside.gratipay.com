@@ -1,9 +1,6 @@
 nav_title = 'The&nbsp;Big Picture'
 [---]
 [---] text/html
-{% extends "templates/page.html" %}
-{% block content %}
-
 <p>Thanks for your interest in building Gittip!</p>
 
 <p><a href="https://www.gittip.com/about/">Gittip</a> is a new kind of
@@ -52,5 +49,3 @@ href="https://twitter.com/Gittip">Twitter</a> or <a
 href="irc://irc.freenode.net/#gittip">IRC</a> if you get stuck.</p>
 
 <p>Thanks! :-)</p>
-
-{% endblock %}

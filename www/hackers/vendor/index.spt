@@ -1,7 +1,4 @@
 nav_title = 'Third-Party Documentation'
 [---]
 [---] text/html
-{% extends "templates/page.html" %}
-{% block content %}
 Third-party docs!
-{% endblock %}

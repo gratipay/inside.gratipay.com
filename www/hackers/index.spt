@@ -2,14 +2,9 @@ nav_title = 'Hacker&rsquo;s Reference'
 nav_children = ['css', 'javascript', 'python', 'style', 'vendor']
 [---]
 [---] text/html
-{% extends "templates/page.html" %}
-{% block content %}
-
-
 <ul>
     <li><a href="./sa">System Architecture</a></li>
     <li><a href="./css">CSS</a></li>
     <li><a href="./javascript">JavaScript</a></li>
     <li><a href="./python">Python</a></li>
 </ul>
-{% endblock %}

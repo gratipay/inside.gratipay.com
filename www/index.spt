@@ -1,7 +1,7 @@
 nav_title = "Building Gittip"
 nav_children = ['big-picture', 'audience', 'brand', 'ia', 'hackers', 'policies']
 [---]
-[---] text/html
+[---] text/html via jinja2
 {% extends "templates/base.html" %}
 {% block page %}
 <div class="homepage">

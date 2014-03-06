@@ -9,9 +9,6 @@ from nav import NavItem
 
 # Manually register markdown renderer to work around Heroku deployment woes.
 website.renderer_factories['markdown'] = gfm.Factory(website)
-
-
-website.renderer_default = "jinja2"
 website.renderer_factories['jinja2'].Renderer.global_context = {
     'range': range,
     'unicode': unicode,
@@ -21,6 +18,8 @@ website.renderer_factories['jinja2'].Renderer.global_context = {
     'type': type,
     'str': str,
 }
+
+website.renderer_default = "markdown"
 
 
 def add_nav_to_website(website):
