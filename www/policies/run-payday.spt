@@ -1,0 +1,43 @@
+nav_title="Run Payday"
+[---]
+[---] text/html
+*by Chad Whitacre*
+
+Here's how I run payday. After each step, I record the result on the ticket I
+create in step two.
+
+  1. Open the [charts page](https://www.gittip.com/about/charts.html). Determine the week number,
+     NNN.
+  1. [Start a ticket](https://github.com/gittip/www.gittip.com/issues/new) named "run Gittip NNN."
+  1. [Review accounts](https://www.gittip.com/about/fraud/review.html). On the ticket, record
+     any accounts marked suspicious.
+  1. Take a backup using `bin/snapper.py`. Load the backup locally and make sure the homepage
+     matches the production homepage.
+  1. Login to Digital Ocean, and spin up a new droplet using the `payday` image. Smallest droplet
+     is fine; I've found NYC to be faster than SF.
+  1. Update `payday` in my `/etc/hosts` with the IP address of the new droplet, and remove the
+     `payday` entry from `~/.ssh/known_hosts`.
+  1. `ssh payday` (the image has a key of mine on it).
+  1. `cd www.gittip.com && git fetch && git rebase && make`
+  1. Triple-check the [charts page](https://www.gittip.com/about/charts.html) to get the week
+     number right.
+  1. On `payday`: `./payday.sh NNN for_real_please`. Answer yes at the prompts.
+  1. `Ctrl-Z` to put the `payday.sh` process in the backround.
+  1. `pstree -p` to determine the PID of the parent shell process of `payday.sh`.
+  1. `kill -6 PID` to orphan the `payday.sh` process. This logs me out of `payday`.
+  1. Log back in to `payday`.
+  1. `cd paydays` and `tail -f gittip-NNN.log`. Wait a minute for log output to appear, indicating
+     that the `payday.sh` process is healthy. Exit the tail.
+  1. `watch -n1 'grep gittip-NNN.log "COMPLETED" | tail -n1'`. I think that's it. I have
+     a bullet in my bash history on `payday` to show the log message that appears
+     every 100 users during the three payday loops. I keep this in a little screen
+     window to monitor progress.
+  1. Wait three hours.
+  1. If `payday.sh` fails, fix it, documenting everything on the ticket from step 2.
+  1. Once `payday.sh` finishes successfully, tweet from the Gittip account using the form, "Gittip
+     NNN&mdash;10,000 users exchanged $100,000: https://www.gittip.com/about/charts.html." Fill in
+     the numbers from the charts page. Add any fitting color commentary.
+  1. [Run MassPay](run-masspay).
+  1. [Shuffle escrow](shuffle-escrow).
+  1. Review and edit these documents.
+  1. Close the ticket from step 2.

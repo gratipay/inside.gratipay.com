@@ -1,4 +1,8 @@
+import os
+
 nav_title = 'Policies&nbsp;& Procedures'
+nav_children = [ name.rsplit('.', 1)[0] for name in os.listdir('policies')
+                 if name not in ('.', '..', 'index.spt')]
 [---]
 [---] text/html
-Policies and procedures!
+{{ toc(nav_current) }}
