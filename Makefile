@@ -20,11 +20,6 @@ clean:
 	rm -rf env *.egg *.egg-info
 	find . -name \*.pyc -delete
 
-local.env:
-	echo "Creating a local.env file ..."
-	echo
-	cp default.local.env local.env
-
 run: env local.env
-	./$(env_bin)/honcho -e default.local.env,local.env run ./env/bin/aspen \
+	./$(env_bin)/honcho -e defaults.env,local.env run ./env/bin/aspen \
 		--network_address :8536 --www_root=./www/ --project_root=./
