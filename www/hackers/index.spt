@@ -1,10 +1,6 @@
 nav_title = 'Hacker&rsquo;s Reference'
-nav_children = ['css', 'javascript', 'python', 'style', 'vendor']
+nav_children = ['sa', 'style']
 [---]
 [---] text/html
-<ul>
-    <li><a href="./sa">System Architecture</a></li>
-    <li><a href="./css">CSS</a></li>
-    <li><a href="./javascript">JavaScript</a></li>
-    <li><a href="./python">Python</a></li>
-</ul>
+
+{{ toc(nav_current) }}

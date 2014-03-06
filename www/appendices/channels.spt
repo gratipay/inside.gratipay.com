@@ -1,0 +1,44 @@
+nav_title = 'Communication Channels'
+[---]
+[---] text/html via markdown
+
+## [The Monday Morning Missive](http://tinyletter.com/gittip/letters)
+
+Our weekly email newsletter, summarizing projects going on around Gittip.
+Everyone building Gittip should read this.
+
+## [IRC (Internet Relay Chat)](irc://irc.freenode.net/#gittip)
+
+We hang out in the #gittip channel on the Freenode network, and this is the
+best place to become a part of the community of people building Gittip. If you
+don&rsquo;t know what IRC is but feel brave, try [this web
+    interface](http://chat.gittip.com/).
+
+
+## [GitHub](https://github.com/gittip)
+
+We use GitHub to manage our source code and discuss issues.
+
+
+## [LayerVault](https://layervault.com/gittip)
+
+GitHub for design deliverables.
+
+
+## [Dribbble](http://dribbble.com/Gittip)
+
+Show and tell for the design community.
+
+
+## [Google Hangouts On Air](http://www.youtube.com/playlist?list=PLivwfG4q6DTAYCmRDmGpljRrpR3yNNSFP)
+
+We do video conferences with Google Hangouts On Air, which means they get
+live-streamed and posted to YouTube.
+
+
+## [Medium](https://medium.com/building-gittip/latest)
+
+Blogging platform. We use it to collect long-form analysis and strategy ideas.
+Unlike our <a href="http://blog.gittip.com/">blog</a>, which is for the general
+public, the primary audience for our Medium collection is people building
+Gittip.

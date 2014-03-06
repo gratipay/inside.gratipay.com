@@ -1,18 +1,51 @@
-{% extends "templates/base.html" %}
-{% block page %}
-<div class="content col0">
-    <div class="breadcrumbs">
-        <ul>
-            <li><a href="/"><img src="/assets/building-gittip-tight.svg"></a></li>
-        </ul>
-    </div>
-    {% if nav_title %}<h1>{{ nav_title }}</h1>{% endif %}
-    {% block content %}{% endblock %}
-</div>
-<div class="bottom-nav">
-    <ul>
-        <li><a href="/"><img src="/assets/schematic-heart-coin.svg" alt="Home"></a></li>
-        {% for child in website.nav.children %}<li><a href="{{ child.url }}">{{ child.title }}</a></li>{% endfor %}
-    </ul>
-</div>
-{% endblock %}
+<!doctype html>
+<html>
+    <head>
+
+        <title>{{ nav_title }}</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+
+        <meta property="og:image" content="http://building.gittip.com/assets/logo.svg" />
+        <meta property="og:url" content="http://building.gittip.com/" />
+        <meta property="og:description" content="Documentation for people building Gittip." />
+        <meta property="og:title" content="Building Gittip" />
+
+        <link rel="stylesheet" type="text/css"
+              href="https://assets-gittipllc.netdna-ssl.com/reset.css">
+        <link rel="stylesheet" type="text/css"
+              href="/assets/{{ website.version }}/building.gittip.css">
+
+    </head>
+    <body>
+        <div id="page">
+            {% macro toc(nav) %}
+                <ul>
+                    {% for child in nav.children %}
+                    <li><a href="{{ child.url }}">{{ child.title }}</a>{% if child.children %}
+                    {{ toc(child) }}
+                    {% endif %}</li>
+                    {% endfor %}
+                </ul>
+            {%- endmacro %}
+            <div class="content col0">
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="/"><img src="/assets/building-gittip-tight.svg"></a></li>
+                    </ul>
+                </div>
+                {% if nav_title %}<h1>{{ nav_title }}</h1>{% endif %}
+                {% block content %}{% endblock %}
+            </div>
+            <div class="bottom-nav">
+                <ul>
+                    <li><a href="/"><img src="/assets/schematic-heart-coin.svg" alt="Home"></a></li>
+                    {% for child in website.nav.children %}<li><a href="{{ child.url }}">{{ child.title }}</a></li>{% endfor %}
+                </ul>
+            </div>
+
+        </div>
+    </body>
+</html>
