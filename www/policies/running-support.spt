@@ -1,0 +1,34 @@
+nav_title="Running Support"
+[---]
+[---] text/html via markdown
+
+## Support software
+
+Gittip uses [FreshDesk](http://gittip.freshdesk.com/) for managing support queries.
+
+## Support Workflow
+
+### Existing tickets
+
+* View tickets that are *assigned to you*, and see if any can be responded to, closed, or otherwise have action taken on them. 
+* View all [unassigned tickets](http://gittip.freshdesk.com/helpdesk/tickets/filter/new), which will usually be new arrivals.
+* Close or merge any tickets which are spam, duplicates, or otherwise can be immediately resolved.
+* If you spot a ticket you can help with, then assign the ticket to yourself. This lets others know you're working on it.
+* If your response then requires the user to do something, set the status to "Waiting on Customer".
+* If your response resolves the issue, set the status to "resolved".
+
+## Tips for providing great support
+
+* Respond quickly! Even if that response says you need to spend more time, this really makes people feel appreciated.
+* Don't hesitate to ask for help. IRC can be great for this.
+* Don't take a ticket until you're about to work on it. Taking a ticket and then going AFK might stop someone else from responding.
+* Support staff with access to the database or financial systems have a *lot* on their plate. Help them out by getting basic details first (identity verifications, amounts, etc), and then pass them on.
+* Tickets that you're dealing with are unlikely to be touched by someone else, so it's important to check them regularly.
+* Use the 'waiting on customer' status liberally. A lot of processes involve asking our clients for more details.
+* Update this page on github! You can make Gittip support even better!
+
+## Common requests
+
+Our most common requests involve pay-ins or pay-outs. For both of these, you should verify the user's
+identity by asking them for their Gittip username or URL, and the first eight digits of their
+API key.
