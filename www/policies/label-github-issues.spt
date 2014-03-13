@@ -7,7 +7,7 @@ This document explains our use of GitHub issue labels.
 
 Every ticket should have exactly one of the following:
 
-  - User experience-related, high, medium, and low priority:<br>
+  - The stars are for user experience-related issues, high, medium, and low priority:<br>
     - <a href="https://github.com/gittip/www.gittip.com/issues?labels=%E2%98%85%E2%98%85%E2%98%85">&#9733;&#9733;&#9733;</a>
     - <a href="https://github.com/gittip/www.gittip.com/issues?labels=%E2%98%85%E2%98%85%E2%98%86">&#9733;&#9733;&#9734;</a>
     - <a href="https://github.com/gittip/www.gittip.com/issues?labels=%E2%98%85%E2%98%86%E2%98%86">&#9733;&#9734;&#9734;</a>
