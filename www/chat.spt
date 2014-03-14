@@ -1,5 +1,5 @@
 nav_title = 'Calendar'
 src = "http://webchat.freenode.net/?channels=gittip"
 [---]
-[---] text/html
+[---] text/html via jinja2
 {% include "templates/iframed.html" %}

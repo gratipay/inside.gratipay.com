@@ -1,5 +1,5 @@
 nav_title = 'Calendar'
 src = "https://docs.google.com/spreadsheet/pub?key=0AiDJ5uiG6Hp3dDJnVDNLMVk4NldhSy1JbFJ0aWRUYkE&output=html&widget=true"
 [---]
-[---] text/html
+[---] text/html via jinja2
 {% include "templates/iframed.html" %}
