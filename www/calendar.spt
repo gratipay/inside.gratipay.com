@@ -1,5 +1,5 @@
 nav_title = 'Calendar'
 src = "https://www.google.com/calendar/embed?src=hc82esnerfl380tbhj3i18hlkk%40group.calendar.google.com"
 [---]
-[---] text/html
+[---] text/html via jinja2
 {% include "templates/iframed.html" %}

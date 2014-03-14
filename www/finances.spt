@@ -1,4 +1,4 @@
-nav_title = 'Calendar'
+nav_title = 'Finances'
 src = "https://docs.google.com/spreadsheet/pub?key=0AiDJ5uiG6Hp3dDJnVDNLMVk4NldhSy1JbFJ0aWRUYkE&output=html&widget=true"
 [---]
 [---] text/html via jinja2
