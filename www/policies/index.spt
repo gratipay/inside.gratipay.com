@@ -3,6 +3,7 @@ import os
 nav_title = 'Policies, Procedures, Processes'
 nav_children = [ name.rsplit('.', 1)[0] for name in os.listdir('policies')
                  if name not in ('.', '..', 'index.spt')]
+nav_children.sort()
 [---]
 [---] text/html
 {{ toc(nav_current) }}
