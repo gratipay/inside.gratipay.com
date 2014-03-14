@@ -19,3 +19,5 @@ Here's an example of an account elsewhere for an individual:
 
 Here's an example of an account elsewhere for a group:
     https://www.gittip.com/on/github/github/
+
+We also need to think about notifying users about unclaimed tips.

@@ -1,0 +1,85 @@
+nav_title = "Breathing with Both Lungs"
+[---]
+[---] text/html
+
+*by Chad Whitacre*
+
+## The 2014 Gittip Redesign Project
+
+This document lays out a plan for a major redesign of www.gittip.com in 2014.
+We built a [strong developer
+        team](http://blog.gittip.com/post/74460469599/with-first-retreat-gittip-team-becomes-a-reality)
+in 2013, and in 2014 we're going to learn how to design, so we can build a
+truly world-class product. We're going to breath with both lungs.
+
+This document starts with a history of Gittip's design, and then we define the
+goals and deliverables of our redesign project.
+
+
+## History
+
+Gittip launched in June, 2012, and has been growing exponentially for the past
+12 months, doubling every five months or so. When the site launched it looked
+like this (courtesy of [Ryan
+    Deussing](http://ryandeussing.com/blog/2012/09/24/chad-whitacre-gittip/)):
+
+<a href="2012.png"><img src="2012.png" width="100%" alt="2012 design"></a>
+
+Pretty bare bones. After six months we launched our [first
+        redesign](https://github.com/gittip/www.gittip.com/issues/66), in
+January of 2013. The design was contributed by Damon Chin of our close partner
+company Balanced Payments, with Nick Sergeant and myself implementing the
+design in markup. Here's what the site looks like now:
+
+<a href="2013.png"><img src="2013.png" width="100%" alt="2013 design"></a>
+
+Along with the January, 2013 redesign we also started building the Gittip team
+in earnest, with a blog post about
+[hiring](http://blog.gittip.com/post/39687487576/gittip-is-hiring) in general,
+and another one [reaching out to the design
+        community](http://blog.gittip.com/post/41348666944/design-gittip) in
+particular. We succeeded in building a developer team over the course of the
+year, with 20 people attending the [Gittip company
+        retreat](http://blog.gittip.com/post/74460469599/with-first-retreat-gittip-team-becomes-a-reality)
+in early January, 2014. Now we're going to spend 2014 building our design
+capability, so that we can "breath with both lungs," and deliver a world-class
+product.
+
+
+## Goals
+
+*by Karolina Szczur*
+
+Here is what I'd like to acheive with the redesign:
+
+ * brand and design consistency across the product
+ * ease of use
+ * clarity of product's purpose and call to actions
+ * voice and tone incorporated into visuals and copy
+ * full-on responsiveness
+
+These are, so to say, top-level goals. More specifically:
+
+ * optimization for HiDPI displays (using SVGs, improving font rendering)
+ * better typography and thus, hierarchy
+ * more white space
+ * less patterns, more distinction of call to actions (more *leading the user* kind of thing)
+
+
+## Deliverables
+
+This Building Gittip website is the first deliverable of the redesign project.
+Our prime directive is:
+
+> Design from the outside in, build from the inside out.
+
+So we're writing content on this site that starts with our
+[mission](/big-picture) and zooms in progressively through brand guidelines,
+audience, product overview, and information architecture. From there we can
+start talking about the system architecture for the software necessary to
+deliver the experience we want to deliver, and on down to specific libraries
+and tools.
+
+Then we can start building back out. The second deliverable will be a
+redesigned www.gittip.com, the first project delivered using our new Building
+Gittip infrastructure.

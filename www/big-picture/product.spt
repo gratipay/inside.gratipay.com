@@ -1,0 +1,35 @@
+nav_title = "Product Overview"
+[---]
+[---] text/html
+
+Gittip is a way to give money every week to people and teams you believe in.
+Here are the four main features of the www.gittip.com website as we understand
+them (per the 2014 Gittip company retreat):
+
+ - **Giving.** We enable individuals and groups to participate in the stories
+   of others through long-term, no-strings-attached, small financial gifts.
+
+ - **Profiles.** We enable individuals and groups to tell a story about how
+   they're making the world better, and receive financial gifts.
+
+ - **Teams.** We enable groups to receive and distribute funds openly and
+   transparently.
+
+ - **Communities.** We enable communities to share and sustain a collective story.
+
+Here are the ways that www.gittip.com interfaces with the outside world:
+
+ - **Accounts Elsewhere.** We support connecting as many other services as
+   possible to a Gittip profile.
+
+ - **Widgets & Embeds.** We provide ways for participants to embed Gittip
+   functionality on other websites.
+
+ - **API.** We provide APIs that enable third parties to build tools for
+   participants to work with their data stored in Gittip.
+
+ - **Browser Extensions.** We provide extensions for all major browsers, adding
+   Gittip links on websites with whom were not yet partners.
+
+ - **Partnerships.** We seek out partnerships with third parties to add Gittip
+   links to their products. We practice engineering as marketing.

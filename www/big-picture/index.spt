@@ -1,34 +1,45 @@
 nav_title = 'The&nbsp;Big Picture'
+nav_children = ['brand', 'audience', 'product', 'ia']
 [---]
 [---] text/html
-<h2>Mission and Vision</h2>
 
-<p>Gittip&rsquo;s mission is to redeem the economy.</p>
+## Mission and Vision
 
-<p>We envision a future in which the economy is characterized by trust,
+Gittip&rsquo;s mission is to redeem the economy.
+
+We envision a future in which the economy is characterized by trust,
 collaboration, cooperation, sharing, openness, transparency, care for one
 another, inclusion, inspiration, purpose, generosity, patience, empathy,
-optimism, and love.</p>
+optimism, and love.
 
 
-<h2>Projects</h2>
+## Process
 
-<p>A project is a high-level, months-long effort that encompasses a number of
-lower-level milestones and issues. Not all of our work fits into a project,
-and, in fact, we only have one project right now:</p>
+*by Chad Whitacre*
 
-<p><a
-href="https://docs.google.com/document/d/1TQATN7-IxphyguJzEqxgo-99hJYavdOObNYNlVoX0us/edit?usp=sharing">Breathing
-With Both Lungs: The 2014 Gittip Redesign Project</a> </p>
+Gittip is a new kind of organization called an &ldquo;[open
+        company](http://blog.gittip.com/post/26350459746/the-first-open-company).&rdquo;
+Anyone can volunteer to help with almost anything at any time, and [everyone
+        who volunteers](https://www.gittip.com/Gittip/members/) gets to [take
+                some of the
+                money](https://medium.com/building-gittip/eba0a27825b8) that
+        has been given on Gittip to Gittip itself&mdash;Gittip is funded on
+        Gittip.
+
+Our prime directive is:
+
+> Design from the outside in, build from the inside out.
+
+We organize our work into high-level [projects](/projects/), medium-level
+[milestones](https://github.com/gittip/www.gittip.com/issues/milestones), and
+low-level [issues](/policies/label-github-issues). Dive in to find something to
+work on. Reach out on <a href="https://twitter.com/Gittip">Twitter</a> or
+[GitHub](/policies/label-github-issues) or <a
+href="irc://irc.freenode.net/#gittip">IRC</a> when you get stuck.
+
+Thanks! :-)
 
 
-<h2>Milestones and Issues</h2>
+## More of the Big Picture
 
-<p>At a lower level we use <a
-href="https://github.com/gittip/www.gittip.com/issues/milestones">milestones</a>
-and <a href="/policies/label-github-issues">issues</a> to track our work. Dive in
-there to find something to work on. Reach out on <a
-href="https://twitter.com/Gittip">Twitter</a> or <a
-href="irc://irc.freenode.net/#gittip">IRC</a> if you get stuck.</p>
-
-<p>Thanks! :-)</p>
+{{ toc(nav_current) }}

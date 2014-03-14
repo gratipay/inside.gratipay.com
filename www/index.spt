@@ -1,21 +1,12 @@
-nav_title = "Introduction"
-nav_children = ['big-picture', 'brand', 'audience', 'ia', 'hackers', 'policies', 'appendices']
+nav_title = "Building Gittip"
+nav_children = ['big-picture', 'projects', 'hackers', 'policies', 'appendices']
 [---]
 [---] text/html
 
+*by Chad Whitacre*
+
 Welcome! This website is for people building [Gittip](https://www.gittip.com/).
 
-Gittip is a new kind of organization called an &ldquo;[open
-        company](http://blog.gittip.com/post/26350459746/the-first-open-company).&rdquo;
-Anyone can volunteer to help with almost anything at any time, and [everyone
-        who volunteers](https://www.gittip.com/Gittip/members/) gets to [take
-                some of the
-                money](https://medium.com/building-gittip/eba0a27825b8) that
-        has been given on Gittip to Gittip itself&mdash;Gittip is funded on
-        Gittip.
-
-Our main principle is "Design from the outside in, and build from the inside
-out." So that's how this site is organized. We start at the outer layer, and
-work our way inward to more and more specific details.
+First time? Start at ... [the beginning](/big-picture)! :-)
 
 {{ toc(nav_current) }}

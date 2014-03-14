@@ -10,15 +10,15 @@ the system by which we deliver this experience.
 
 Gittip basically has six kinds of pages:
 
-  1. [Homepage](/ia/homepage)
-  1. [Profile](/ia/profile)&mdash;A representation of an individual Gittip
+  1. [Homepage](/big-picture/ia/homepage)
+  1. [Profile](/big-picture/ia/profile)&mdash;A representation of an individual Gittip
     participant.
-  1. [Community](/ia/community)&mdash;A page aggregating many participants
+  1. [Community](/big-picture/ia/community)&mdash;A page aggregating many participants
     together.
-  1. [Account Elsewhere](/ia/account-elsewhere)&mdash;A representation of an
+  1. [Account Elsewhere](/big-picture/ia/account-elsewhere)&mdash;A representation of an
     account on a different social network or platform.
-  1. [About](/ia/about)&mdash;Documentation about Gittip.
-  1. [External](/ia/external)&mdash;Widgets, embeds, buttons, browser
+  1. [About](/big-picture/ia/about)&mdash;Documentation about Gittip.
+  1. [External](/big-picture/ia/external)&mdash;Widgets, embeds, buttons, browser
     extensions, etc. Off-site experiences that none-the-less are part of our
     information architecture.
 
@@ -30,9 +30,9 @@ but rule of thumb we have 10x-100x the off-site impressions that we have
 on-site.
 
 The first on-site experience most users (65%) have is a [profile
-page](/ia/profile), with a significant minority (24%) starting out on
-the [homepage](/ia/homepage).  [Community](/ia/community) pages and [accounts
-elsewhere](/ia/account-elsewhere) get a lot less traffic.
+page](/big-picture/ia/profile), with a significant minority (24%) starting out on
+the [homepage](/big-picture/ia/homepage).  [Community](/ia/community) pages and [accounts
+elsewhere](/big-picture/ia/account-elsewhere) get a lot less traffic.
 
 <p><iframe width='500' height='300' frameborder='0'
     src='https://docs.google.com/spreadsheet/pub?key=0AiDJ5uiG6Hp3dDUyNTFiZUlSUGNFY3d3UXZzRmtBT2c&single=true&gid=0&range=a1%3Ae11&output=html&widget=true'></iframe></p>

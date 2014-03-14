@@ -3,7 +3,8 @@ nav_title = "Label GitHub Issues"
 [---] text/html
 *by Chad Whitacre*
 
-This document explains our use of GitHub issue labels.
+This document explains our use of GitHub issue labels. Click on a label below
+to go to a listing of related issues.
 
 Every ticket should have exactly one of the following:
 
@@ -12,7 +13,7 @@ Every ticket should have exactly one of the following:
     - <a href="https://github.com/gittip/www.gittip.com/issues?labels=%E2%98%85%E2%98%85%E2%98%86">&#9733;&#9733;&#9734;</a>
     - <a href="https://github.com/gittip/www.gittip.com/issues?labels=%E2%98%85%E2%98%86%E2%98%86">&#9733;&#9734;&#9734;</a>
   - <a href="https://github.com/gittip/www.gittip.com/issues?labels=Blog Post">Blog Post</a> is
-    for planning blog posts and <a href="https://github.com/gittip/www.gittip.com/issues?labels=Marketing">Marketing</a> is for other marketing-related TODOs.
+    for planning blog posts, and <a href="https://github.com/gittip/www.gittip.com/issues?labels=Marketing">Marketing</a> is for other marketing-related TODOs.
   - <a href="https://github.com/gittip/www.gittip.com/issues?labels=TeamX %E2%98%85">TeamX
     &#9733;</a> and
     <a href="https://github.com/gittip/www.gittip.com/issues?labels=TeamX">TeamX</a> are for high-

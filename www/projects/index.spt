@@ -1,0 +1,6 @@
+nav_title = "Projects"
+nav_children = ['breathing-with-both-lungs']
+[---]
+[---] text/html
+
+{{ toc(nav_current) }}
