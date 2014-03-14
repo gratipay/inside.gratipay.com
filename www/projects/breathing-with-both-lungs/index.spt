@@ -13,7 +13,8 @@ in 2013, and in 2014 we're going to learn how to design, so we can build a
 truly world-class product. We're going to breath with both lungs.
 
 This document starts with a history of Gittip's design, and then we define the
-goals and deliverables of our redesign project.
+goals and deliverables of our redesign project, ending with pointers to
+milestones and issues.
 
 
 ## History
@@ -83,3 +84,13 @@ and tools.
 Then we can start building back out. The second deliverable will be a
 redesigned www.gittip.com, the first project delivered using our new Building
 Gittip infrastructure.
+
+
+## Milestones &amp; Issues
+
+For the first deliverable, we're basically using GitHub issues without
+milestones, in [the building.gittip.com
+        repo](https://github.com/gittip/building.gittip.com/issues).
+
+Once we get to the second deliverable, I expect we'll see milestones emerge in
+[the www.gittip.com repo](https://github.com/gittip/www.gittip.com/issues/milestones).
