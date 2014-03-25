@@ -1,0 +1,25 @@
+nav_title = 'Who Has Access'
+[---]
+[---] text/html via markdown
+
+Short story:
+
+ - Heroku: @whit537 @bruceadams @pjf @clone1018 @zwn, also @kennethreitz (employed
+   by Heroku, but also explicitly listed w/ access)
+ - Digital Ocean: @whit537, @rummik (root access to gttp.co server), @seanlinsley
+   (deploy access to gttp.co)
+ - GitHub: @whit537 @bruceadams @clone1018 @zwn ("owners" team for @gittip)
+ - [Sentry](https://getsentry.com/): @whit537 @bruceadams @clone1018 @zwn @patcon
+   @rummik @seanlinsley
+ - Google Analytics: @clone1018 @rummik @abnor @seanlinsley @whit537 @patcon
+ - Supportbee: @whit537 @bruceadams
+ - Freshdesk: @whit537 @bruceadams @pjf @clone1018 @zwn @patcon
+ - Balanced: @whit537 @clone1018 @bruceadams @pjf
+ - Coinbase: @whit537
+ - PayPal: @whit537
+ - New Alliance: @whit537
+ - Ally: @whit537
+ - Capital One: @whit537
+ - Owner of LLC: @whit537
+ - Twitter: @whit537
+ - Tumblr (shared password): @whit537 @heidigardner @equis
