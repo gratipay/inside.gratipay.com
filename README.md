@@ -1,5 +1,7 @@
 # http://building.gittip.com/
 
+[![Build Status](https://travis-ci.org/patcon/building.gittip.com.svg)](https://travis-ci.org/patcon/building.gittip.com)
+
 Quickstart:
 
 ```

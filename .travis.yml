@@ -1,0 +1,24 @@
+language: python
+
+python:
+  - "2.7"
+
+install_script: pip install -r requirements.txt
+
+# Dummy command until we have real tests
+script: true
+
+branches:
+  only:
+    # Travis will build annotated tags as branches unless we restrict to this
+    - 23-travis-deploy
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: UW2RYWtLOrC/Annjo8jvFUK/v+mgZJUTBnbrePRGED81zVBKqoLAGGxAcIMuyWt3JYNSpbz4RrgzWqE09ykeVTf7uzHYEgvYUWuS+UNDnvPohYRM2WQ8RgqDn5QCfkSn8cerYOFeQtwdrL6siXbfIx9AhfdzStOi/Kxz2LNJp2s=
+  app:
+    23-travis-deploy: gittip-building-test
+  on:
+    repo: patcon/building.gittip.com
+    branch: 23-travis-deploy
