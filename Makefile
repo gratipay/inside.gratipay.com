@@ -14,7 +14,7 @@ env:
 				--extra-search-dir=./vendor/ \
 				--distribute \
 				./env/
-	./$(env_bin)/pip install git+https://github.com/caladd/peep.git@master
+	./$(env_bin)/pip install git+https://github.com/caladd/peep.git@a6db186cf52b5fd78a9d44b9ab33fd4b54be5659
 	./$(env_bin)/peep install -r requirements.txt --no-deps
 
 clean:
