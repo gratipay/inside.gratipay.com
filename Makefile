@@ -15,7 +15,7 @@ env:
 				--distribute \
 				./env/
 	./$(env_bin)/pip install git+https://github.com/caladd/peep.git@master
-	./$(env_bin)/peep install -r requirements.txt
+	./$(env_bin)/peep install -r requirements.txt --no-deps
 
 clean:
 	rm -rf env *.egg *.egg-info
