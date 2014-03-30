@@ -1,19 +1,40 @@
-
+# sha256: _CFJ_l70N4_SMEp1jcdKdEJZTzFBRYHTnN5dGyfL7go
 Cheroot==4.0.0beta
+
+# sha256: U0_2_u_hzQOYT0ROZBWqzHnAqF87ho7EGi_VADAEwx4
 mimeparse==0.1.3
+
+# sha256: xXEZQfi6iwkec3E-sLRd2rZjwGDeMklztM3SKQoVJOw
 first==2.0.0
+
+# sha256: XEwNXR43M5uZZdTOu_qtq_BIOTieLeGbwLoY6DJwogI
 dependency_injection==1.1.0
+
+# sha256: dxpi2Q9rIM7EOmJuZR29D93lkx4V42CcHbWnxKQtUuo
 algorithm==1.0.0
+
+# sha256: XfTvSFrvo-qHDeTWCy8AsSN_Yl_vm89etNgSwVRARas
 aspen==0.28.3
 
+# sha256: t9XWiL3TRb-ol3d9KXdWaIzwLhs3QsVoheLlwrmW_4I
 MarkupSafe==0.18
+
+# sha256: XMCgh6gdyhwINoSC-3qS_ivdjPuyK8D8z-bIWv-wTIs
 Jinja2==2.7.1
+
+# sha256: Q7al_M9tJq4hj1KrO5dh59ptwJC_JbgOqkwqHeHPWGg
 aspen-jinja2==0.3
 
+# sha256: J2wYN75HCiEXj55wsGiBieGk4tCeqFzvNQeLkptgVCg
 simplejson==2.3.2
 
+# sha256: YZfkiG_wwnGN8bRy5Atf6kX0R6elsBkqSBI-6GiXNRc
 misaka==1.0.2
 
+# sha256: Yj_jJZOSGfYbQathJMV_SWDOT0hlFoRqqvfUd10qLto
 honcho==0.5.0
 
 libsass==0.3.0
+
+# sha256: WZD1hUx16oOXNR8i8wW2cRSndYvvRxGGwh5DxpLy7Dc
+filesystem-tree==1.0.1

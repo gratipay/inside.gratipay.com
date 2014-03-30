@@ -14,7 +14,8 @@ env:
 				--extra-search-dir=./vendor/ \
 				--distribute \
 				./env/
-	./$(env_bin)/pip install -r requirements.txt
+	./$(env_bin)/pip install git+https://github.com/caladd/peep.git@master
+	./$(env_bin)/peep install -r requirements.txt
 
 clean:
 	rm -rf env *.egg *.egg-info
