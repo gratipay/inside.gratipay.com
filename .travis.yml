@@ -22,3 +22,8 @@ deploy:
   on:
     repo: patcon/building.gittip.com
     branch: 23-travis-deploy
+
+before_deploy:
+  - cd www/repos && git clone https://github.com/gittip/www.gittip.com.git
+  - cd www/repos && git clone https://github.com/gittip/gttp.co.git
+  - cd www/repos && git clone https://github.com/gittip/Gittip-Everywhere.git
