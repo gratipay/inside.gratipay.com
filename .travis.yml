@@ -16,11 +16,11 @@ branches:
 deploy:
   provider: heroku
   api_key:
-    secure: E8P42osrixrUqtZ+jiPiYgGCI/mf3Lnjf4d5a7X9wCVOhk8g+mdCBZkUXU+rwHaO2tgrAnKXIDSrriU4P9zYAT4Hfg/hEa3DN9XA5NCj96pm5+gNVt6L8BUFM57Yfb2ZjH8FUf9k7ePRda5jC3B7oGBQv+sI7XHH6IdaiEWXmBw=
+    secure: heKQCkltw4rqkVV++nl5EIB8bEZrVPiLZBneoZ8+bkgimlQ+3bmv+/g9CJKqFfUro+S/zpJc7qBR35DUWZpS8tTgG3c8YNb49pUl3wbcxk4On9v2PwLPe4SyLmn8Zbuwr41mOjqeh60KWJ+aws7U3FuIqbQdLK9y98WI+2CSRQk=
   app:
     23-travis-deploy: gittip-building-test
   on:
-    repo: patcon/building.gittip.com
+    repo: gittip/building.gittip.com
     branch: 23-travis-deploy
 
 before_deploy:

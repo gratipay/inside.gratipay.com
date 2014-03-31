@@ -1,6 +1,6 @@
 # http://building.gittip.com/
 
-[![Build Status](https://travis-ci.org/patcon/building.gittip.com.svg)](https://travis-ci.org/patcon/building.gittip.com)
+[![Build Status](https://travis-ci.org/gittip/building.gittip.com.svg)](https://travis-ci.org/gittip/building.gittip.com)
 
 Quickstart:
 
