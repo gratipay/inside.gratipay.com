@@ -31,6 +31,25 @@ Gittip uses [FreshDesk](http://gittip.freshdesk.com/) for managing support queri
 
 ## Common requests
 
+### Pay-ins & Pay-outs
+
 Our most common requests involve pay-ins or pay-outs. For both of these, you should verify the user's
 identity by asking them for their Gittip username or URL, and the first eight digits of their
 API key.
+
+
+### Deactivating accounts
+
+The process depends on whether the user has any balance on their account. A
+Gittip employee with admin
+[access](http://building.gittip.com/appendices/access) on the site will be able
+to determine the balance from the user's "History" page.
+
+If the **user has a balance**, we must determine what they would like done with
+the funds. Common options include:
+
+1. refunding it back onto a credit card
+
+2. redistributing it to the user's current recipients
+
+If the **user has NO balance**...
