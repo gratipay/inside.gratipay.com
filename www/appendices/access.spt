@@ -4,6 +4,7 @@ nav_title = 'Who Has Access to What'
 
 Short story:
 
+ - Gittip (admin): @whit537 @bruceadams @patcon
  - Heroku: @whit537 @bruceadams @pjf @clone1018 @zwn @seanlinsley @patcon, also
    @kennethreitz (employed by Heroku, but also explicitly listed w/ access)
  - Digital Ocean: @whit537, @rummik (root access to gttp.co server), @seanlinsley
