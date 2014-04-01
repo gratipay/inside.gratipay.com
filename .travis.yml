@@ -1,0 +1,31 @@
+language: python
+
+python:
+  - "2.7"
+
+install_script: pip install -r requirements.txt
+
+# Dummy command until we have real tests
+script: true
+
+branches:
+  only:
+    # Travis will build annotated tags as branches unless we restrict to this
+    - 23-travis-deploy
+
+deploy:
+  provider: heroku
+  strategy: git
+  api_key:
+    secure: heKQCkltw4rqkVV++nl5EIB8bEZrVPiLZBneoZ8+bkgimlQ+3bmv+/g9CJKqFfUro+S/zpJc7qBR35DUWZpS8tTgG3c8YNb49pUl3wbcxk4On9v2PwLPe4SyLmn8Zbuwr41mOjqeh60KWJ+aws7U3FuIqbQdLK9y98WI+2CSRQk=
+  app:
+    23-travis-deploy: gittip-building-test
+  on:
+    repo: gittip/building.gittip.com
+    branch: 23-travis-deploy
+
+before_deploy:
+  - cd www/repos
+  - git clone https://github.com/gittip/www.gittip.com.git
+  - git clone https://github.com/gittip/gttp.co.git
+  - git clone https://github.com/gittip/Gittip-Everywhere.git
