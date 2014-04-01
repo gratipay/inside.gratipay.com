@@ -14,7 +14,7 @@ branches:
 
 deploy:
   provider: heroku
-  strategy: git
+  strategy: anvil
   api_key:
     secure: heKQCkltw4rqkVV++nl5EIB8bEZrVPiLZBneoZ8+bkgimlQ+3bmv+/g9CJKqFfUro+S/zpJc7qBR35DUWZpS8tTgG3c8YNb49pUl3wbcxk4On9v2PwLPe4SyLmn8Zbuwr41mOjqeh60KWJ+aws7U3FuIqbQdLK9y98WI+2CSRQk=
   app:
