@@ -75,11 +75,14 @@ Our prime directive is:
 > Design from the outside in, build from the inside out.
 
 So we're writing content on this site that starts with our
-[mission](/big-picture) and zooms in progressively through brand guidelines,
-audience, product overview, and information architecture. From there we can
-start talking about the system architecture for the software necessary to
-deliver the experience we want to deliver, and on down to specific libraries
-and tools.
+[mission](/big-picture) and zooms in progressively through [brand
+        guidelines](/big-picture/brand),
+[audience](/big-picture/audience), [product
+        overview](/big-picture/product), and [information
+                architecture](/big-picture/ia). From there we can start talking
+        about the [system architecture](/hackers/sa) for the software necessary
+        to deliver the experience we want to deliver, and on down to specific
+        libraries and tools.
 
 Then we can start building back out. The second deliverable will be a
 redesigned www.gittip.com, the first project delivered using our new Building
