@@ -14,7 +14,7 @@ env:
 				--extra-search-dir=./vendor/ \
 				--distribute \
 				./env/
-	./$(env_bin)/pip install git+https://github.com/erikrose/peep.git@43b8e5790edec7457512b8d10a5f7ffeb666bad4
+	./$(env_bin)/pip install peep==1.0.1
 	./$(env_bin)/peep install -r requirements.txt --no-deps
 
 clean:
