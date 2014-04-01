@@ -34,6 +34,7 @@ misaka==1.0.2
 # sha256: Yj_jJZOSGfYbQathJMV_SWDOT0hlFoRqqvfUd10qLto
 honcho==0.5.0
 
+# sha256: BgTm-LY9qKMx1DINbeJND5Xdi4DVVMSPOOBOSL93CZk
 libsass==0.3.0
 
 # sha256: WZD1hUx16oOXNR8i8wW2cRSndYvvRxGGwh5DxpLy7Dc
