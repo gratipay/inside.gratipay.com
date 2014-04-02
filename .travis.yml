@@ -28,3 +28,14 @@ before_deploy:
   - git clone https://github.com/gittip/www.gittip.com.git
   - git clone https://github.com/gittip/gttp.co.git
   - git clone https://github.com/gittip/Gittip-Everywhere.git
+
+notifications:
+  email: false
+  irc:
+    channels:
+      - "chat.freenode.org#gittip"
+    on_success: change
+    on_failure: always
+    template:
+      - "%{repository} (%{branch}:%{commit} by %{author}): %{message} (%{build_url})"
+    skip_join: true
