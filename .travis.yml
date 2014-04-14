@@ -16,7 +16,7 @@ deploy:
   provider: heroku
   strategy: git
   api_key:
-    secure: heKQCkltw4rqkVV++nl5EIB8bEZrVPiLZBneoZ8+bkgimlQ+3bmv+/g9CJKqFfUro+S/zpJc7qBR35DUWZpS8tTgG3c8YNb49pUl3wbcxk4On9v2PwLPe4SyLmn8Zbuwr41mOjqeh60KWJ+aws7U3FuIqbQdLK9y98WI+2CSRQk=
+    secure: DEgQdY5qAukGtKb2kBh00g9iY5+ncKcIxT59H0Yart/1qW56IrrDdZnm4Cb8mx6yIw+Jn2W6wKnLTXl0tDivO+tzv981uk3Wa49bmU7sF9XxaO35BhspvfmPQIUodjsjVe3gUs2OVbPZJaJn/z0k1nClQmJGmzNVYIAvfD07VUQ=
   app:
     master: building-gittip-com
   on:
