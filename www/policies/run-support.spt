@@ -46,9 +46,14 @@ Required access: [[?]](http://building.gittip.com/appendices/access)
 - Heroku `gittip` app (to run scripts)
 
 Setting up paypal payouts if pretty straight-forward with the
-[`bin/set-paypal-email.py`](https://github.com/gittip/www.gittip.com/blob/master/bin/set-paypal-email.py)
-script. Feel free to use and expand on the canned responses in Freshdesk
-related to this task.
+[`set_paypal_email` invoke
+task](https://github.com/gittip/www.gittip.com/blob/master/tasks/__init__.py).
+Learn how to use this command via it's help output:
+
+    $ env/bin/invoke --help set_paypal_email
+
+Feel free to use and expand on the canned responses in Freshdesk related
+to this task.
 
 
 ### Deactivating accounts
