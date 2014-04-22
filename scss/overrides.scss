@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /*
-/* Override styles from the base www.gittip.com stylesheet.
+/* Override and extend styles from the base www.gittip.com stylesheet.
 /*
 /*****************************************************************************/
 
@@ -21,6 +21,19 @@ blockquote {
     p:last-child {
         padding-bottom: 0;
     }
+}
+
+
+// for iframed pages
+html { height: 100%; }
+body { height: 100%; }
+iframe {
+    width: 100%;
+
+    // calc + libsass: https://github.com/hcatlin/libsass/issues/104
+    height: calc(unquote("100% - 81px"));
+
+    border: 0;
 }
 
 
