@@ -64,6 +64,8 @@ together and build the platform.
 - Aspen
 - PostgreSQL
 - Python
+- [Misc. production libraries](https://github.com/gittip/www.gittip.com/blob/master/requirements.txt)
+- [Misc. testing libraries](https://github.com/gittip/www.gittip.com/blob/master/requirements_tests.txt)
 
 ## Theming
 
