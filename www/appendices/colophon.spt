@@ -1,0 +1,74 @@
+nav_title = 'Colophon'
+[---]
+[---] text/html via markdown
+
+These are the tools and services that the Gittip team uses to work
+together and build the platform.
+
+## Version-control
+
+- Git
+- GitHub
+
+## Build, Test & Deploy
+
+- Travis CI
+
+## Hosting
+
+- DigitalOcean
+- Heroku
+
+## Communication
+
+- BotBot.me
+- Google+
+- Google Hangouts
+- HuBoard
+- Hubot
+- IRC
+- Mandrill
+- Medium
+- Twitter
+- YouTube
+
+## Support
+
+- Freshdesk
+
+## Monitoring & Metrics
+
+- Google Analytics
+- Librato
+- PagerDuty
+- Sentry
+- UptimeRobot
+
+## Banking & Finance
+
+- Ally
+- Balanced Payments
+- Capital One
+- Coinbase
+- New Alliance
+- PayPal
+
+## Development
+
+- Docker
+- Vagrant
+
+## Code
+
+- Aspen
+- PostgreSQL
+- Python
+
+## Theming
+
+- Jinja2
+- Sass
+
+## Translation
+
+- [*Undecided...*](https://github.com/gittip/www.gittip.com/issues/957)
