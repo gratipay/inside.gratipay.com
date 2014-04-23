@@ -5,6 +5,9 @@ nav_title = 'Colophon'
 These are the tools and services that the Gittip team uses to work
 together and build the platform.
 
+Wherever possible, we link directly to a place where we work via a
+linked asterisk\*.
+
 ## Version-control
 
 - [Git][git]
