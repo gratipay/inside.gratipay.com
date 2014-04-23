@@ -14,4 +14,3 @@ $ make run
 Then: [http://localhost:8536/](http://localhost:8536/).
 
 You need `python` and `make`, which means you need Xcode.
-
