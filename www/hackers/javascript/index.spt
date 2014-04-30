@@ -1,4 +1,0 @@
-nav_title = "JavaScript"
-[---]
-request.redirect('./gittip.js')
-[---] text/plain

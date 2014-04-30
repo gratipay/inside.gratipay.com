@@ -1,5 +1,5 @@
 nav_title = "Hacker's Reference"
-nav_children = ['sa', 'style']
+nav_children = ['sa', 'style', 'src']
 [---]
 [---] text/html
 
