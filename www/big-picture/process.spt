@@ -1,0 +1,30 @@
+nav_title = 'Process'
+nav_children = []
+[---]
+[---] text/html
+
+*by Chad Whitacre*
+
+Gittip is a new kind of organization called an &ldquo;[open
+        company](http://blog.gittip.com/post/26350459746/the-first-open-company).&rdquo;
+Anyone can volunteer to help with almost anything at any time, and [everyone
+        who volunteers](https://www.gittip.com/Gittip/members/) gets to [take
+                some of the
+                money](https://medium.com/building-gittip/eba0a27825b8) that
+        has been given on Gittip to Gittip itself&mdash;Gittip is funded on
+        Gittip.
+
+Our prime directive is:
+
+> Design from the outside in, build from the inside out.
+
+We organize our work into high-level
+[projects](https://medium.com/building-gittip), medium-level
+[milestones](https://github.com/gittip/www.gittip.com/issues/milestones), and
+low-level [issues](/policies/label-github-issues). Dive in to find something to
+work on. Reach out on <a href="https://twitter.com/Gittip">Twitter</a> or
+[GitHub](/policies/label-github-issues) or <a
+href="irc://irc.freenode.net/#gittip">IRC</a> when you get stuck.
+
+Thanks! :-)
+
