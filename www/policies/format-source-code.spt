@@ -12,6 +12,7 @@ And here are a couple "house rules" (these apply to all languages):
 
 - 4-space indents
 - 100-character lines
+- trim trailing space
 
 When in doubt:
 
