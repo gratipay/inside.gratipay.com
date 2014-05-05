@@ -4,13 +4,26 @@
 /*
 /*****************************************************************************/
 
+
+$brown: #614C3E;
+$green: #2A8F79;
+$gold: #FFC300;
+$white: #FFF;
+
+$ideal: 'Ideal Sans SSm A', 'Ideal Sans SSm B';
+$surveyor: 'Surveyor SSm A', 'Surveyor SSm B';
+
+// http://css-tricks.com/just-one-of-those-weird-things-about-css-background-on-body/
+html { background: none; }
+
 #page { padding: 0; }
 h2:nth-child(1) { margin-top: 0 !important; }
 ol { margin-bottom: 2em; }
 .content { padding-bottom: 120px; }
 strong, b { font-weight: bold; }
 em, i { font-style: italic; }
-ul li { list-style: circle; margin-left: 1.5em; }
+ul li { list-style: circle; margin: 0 0 0 1.5em; }
+li:nth-child(-1) { margin-bottom: 1em; }
 ul ul { margin-top: 1em; }
 ol ol { margin-top: 1em; }
 blockquote {
@@ -53,7 +66,7 @@ iframe {
 }
 
 h1 {
-    font: normal 32px/40px 'Ideal Sans SSm A', 'Ideal Sans SSm B' ! important;
+    font: normal 32px/40px $ideal ! important;
     font-weight: 700 ! important;
     text-transform: none ! important;
     color: $brown ! important;
@@ -61,7 +74,16 @@ h1 {
 }
 
 h2 {
-    font: normal 16px/24px 'Ideal Sans SSm A', 'Ideal Sans SSm B' ! important;
+    font: normal 16px/24px $ideal ! important;
+    font-weight: 700 ! important;
+    margin-bottom: 96px 0 32px ! important;
+    color: $brown ! important;
+    text-transform: uppercase ! important;
+    letter-spacing: 0 ! important;
+}
+
+h3 {
+    font: normal 16px/24px $ideal ! important;
     font-weight: 700 ! important;
     margin-bottom: 96px 0 32px ! important;
     color: $brown ! important;
@@ -70,7 +92,7 @@ h2 {
 }
 
 body {
-    font: normal 16px/24px 'Surveyor SSm A', 'Surveyor SSm B';
+    font: normal 16px/24px $surveyor;
     font-weight: 300;
     color: $black;
 }

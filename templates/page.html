@@ -19,16 +19,16 @@
               href="//cloud.typography.com/6540672/682244/css/fonts.css" />
 
     </head>
-    <body>
-        {% macro toc(nav) %}
-            <ul>
-                {% for child in nav.children %}
-                <li><a href="{{ child.url }}">{{ child.title }}</a>{% if child.children %}
-                {{ toc(child) }}
-                {% endif %}</li>
-                {% endfor %}
-            </ul>
-        {%- endmacro %}
+    {% macro toc(nav) %}
+        <ul>
+            {% for child in nav.children %}
+            <li><a href="{{ child.url }}">{{ child.title }}</a>{% if child.children %}
+            {{ toc(child) }}
+            {% endif %}</li>
+            {% endfor %}
+        </ul>
+    {%- endmacro %}
+    {% block body %}<body>
         {% block page %}
         <div id="page">
             <div class="content col0">
@@ -48,5 +48,5 @@
                 {% for child in website.nav.children %}<li><a href="{{ child.url }}">{{ child.title }}</a></li>{% endfor %}
             </ul>
         </div>
-    </body>
+    </body>{% endblock %}
 </html>

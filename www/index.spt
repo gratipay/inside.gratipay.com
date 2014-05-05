@@ -1,14 +1,31 @@
 nav_title = "Building Gittip"
 nav_children = ['big-picture', 'policies', 'appendices']
 [---]
-[---] text/html
+[---] text/html via jinja2
+{% extends "templates/page.html" %}
+{% block body %}
+<body class="homepage">
 
-*by Chad Whitacre*
+    <div class="top">
+        <h1><img src="/assets/building-gittip.svg" alt="Building Gittip"></h1>
 
-Welcome! This website is for people building [Gittip](https://www.gittip.com/).
+        <p>Welcome!&nbsp;We&apos;re
+           building&nbsp;<a href="https://www.gittip.com/">Gittip</a>.
+           First&nbsp;time?&nbsp;Start&nbsp;at&nbsp;<a href="/big-picture">the&nbsp;top</a>!&nbsp;<span>☺</span>
+    </div>
 
-First time? Start at ... [the beginning](/big-picture)! :-)
+    <div class="toc">
+        {% for node in nav_current.values() %}
+        <section>
+        <h2>{{ node.title }}</h2>
+        <ul>
+            {% for child in node.children %}
+            <li><a href="{{ child.url }}">{{ child.title }}</a></li>
+            {% endfor %}
+        </ul>
+        </section>
+        {% endfor %}
+    </div>
 
-## Table of Contents
-
-{{ toc(nav_current) }}
+</body>
+{% endblock %}

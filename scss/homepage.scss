@@ -4,151 +4,72 @@
 /*
 /*****************************************************************************/
 
-#page .homepage {
+.homepage {
+    background: $brown;
 
-    margin: 0 auto;
-
-    h1 {
-        line-height: 0;
-        margin: 0;
-        img { width: 100%; }
-    }
-
-    .top-nav {
-
-        width: 100%;
-        background: url("/assets/hero-bg.png");
-        border: 1px solid #dddddd;
-        border-style: solid none;
-        line-height: 0;
-        
-        ul {
-            list-style: none;
+    .top {
+        background: $white;
+        text-align: center;
+        h1 {
+            line-height: 0;
             margin: 0;
-            padding: 0;
-            text-align: center;
-        
-            li {
-                box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                font-weight: bold;
-                font-size: 30px;
-                line-height: 30px;
-                overflow: hidden;
-                display: inline-block;
-                width: 20%;
-                text-align: left;
-                border: 2px solid #663300;
-                border-radius: 5px;
-                margin: 5% 0 5% calc(10% / 3);
-                padding: 0;
-                background: white;
-            
-                &:nth-child(1) { margin-left: 0; }
+            img { width: 100%; }
+        }
+        p {
+            padding: 0 8.55% 1em;
+            font-style: italic;
+            span {
+                font-style: normal;
+            }
+        }
+    }
 
-                a {
-                    box-sizing: content-box;
-                    -moz-box-sizing: content-box;
-                    display: block;
-                    text-decoration: none;
-                    color: #663300;
-                    padding: 10px;
-                    height: 120px;
-                    
-                    &:hover { color: #339966; }
-                }
-    }}}
-
-    .lower {
+    .toc {
+        width: 100%;
+        padding: 5% 8.55%;
         overflow: auto; /* http://www.quirksmode.org/css/clearing.html */
-        padding: 5%;
-        p { line-height: 21px; }
-    }
-}
 
+        section {
+            width: 30%;
+            margin: 0 1.5%;
+            float: left;
+            color: $white;
+            li {
+                list-style: none;
+                margin-left: 1em;
+                text-indent: -1em;
+            }
+            a {
+                color: $white;
+                font-family: $ideal;
+                font-weight: 300;
+            }
 
-/* 
+            &:nth-child(1) {
+            }
+        }
 
-Responsiveness for Top Nav
-==========================
+        h1, h2 {
+            color: $gold ! important;
+        }
 
-XXX I tried to DRY this up but ran afoul of a bug in libsass-python. There's a
-fix for it in master but there hasn't been a release yet. See:
-
-    https://github.com/dahlia/libsass-python/issues/12
-
-*/
-
-@media screen and (max-width: 1200px) {
-    #page .homepage .top-nav ul li {
-        font-size: 24px;
-        line-height: 24px;
-        a { height: 96px; }
-    }
-}
-
-@media screen and (max-width: 950px) {
-    #page .homepage .top-nav ul li {
-        font-size: 20px;
-        line-height: 20px;
-        a { height: 80px; }
-    }
-}
-
-@media screen and (max-width: 700px) {
-    #page .homepage .top-nav ul li {
-        font-size: 16px;
-        line-height: 16px;
-        a { height: 64px; }
     }
 }
 
 @media screen and (max-width: 600px) {
-    #page .homepage .top-nav ul li {
-        font-size: 12px;
-        line-height: 12px;
-        a { height: 48px; }
-    }
-}
-
-@media screen and (max-width: 450px) {
-    #page .homepage .top-nav ul li {
-        box-sizing: border-box;
-        display: block;
-        width: 90%;
-        margin: 5% ! important;
-
-        font-size: 16px;
-        line-height: 16px;
-        a { height: 32px; }
-    }
-}
-
-
-/* 
-
-Responsiveness for Lower Content
-================================
-
-This is the "Layout Shifter" pattern:
-
-    http://codepen.io/bradfrost/full/LtryA
-
-*/
-
-@media screen and (max-width: 640px) {
-    #page .right h2:nth-child(1) { margin-top: 35px ! important; }
-}
-@media screen and (min-width: 640px) {
-    #page .homepage .lower {
-        .channels {
-            width: 30%;
-            float: left;
-        }
-        .right {
-            width: 70%;
-            float: left;
-            padding-left: 5%;
+    .homepage {
+        .toc {
+            text-align: center;
+            section {
+                margin-bottom: 2em;
+                float: none;
+                width: auto;
+                li {
+                    padding-top: 0.5em;
+                    padding-bottom: 0.5em;
+                }
+            }
         }
     }
 }
+
