@@ -23,7 +23,7 @@ ol { margin-bottom: 2em; }
 strong, b { font-weight: bold; }
 em, i { font-style: italic; }
 ul li { list-style: circle; margin: 0 0 0 1.5em; }
-li:nth-child(-1) { margin-bottom: 1em; }
+li:last-child { margin-bottom: 1em; }
 ul ul { margin-top: 1em; }
 ol ol { margin-top: 1em; }
 blockquote {
