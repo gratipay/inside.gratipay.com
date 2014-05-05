@@ -1,6 +1,0 @@
-nav_title = "Hacker's Reference"
-nav_children = ['sa', 'style', 'src']
-[---]
-[---] text/html
-
-{{ toc(nav_current) }}

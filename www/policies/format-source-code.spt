@@ -1,0 +1,20 @@
+nav_title = 'Format Source Code'
+[---]
+[---] text/html
+Here are the style guides we use as a baseline for various languages:
+
+- [Python](http://www.python.org/dev/peps/pep-0008/)
+- [JavaScript](http://nodeguide.com/style.html)
+- CSS - ???
+- SQL - ???
+
+And here are a couple "house rules" (these apply to all languages):
+
+- 4-space indents
+- 100-character lines
+
+When in doubt:
+
+- Make it look like existing code.
+- Ask around on IRC or GitHub.
+- Assume we'll flag issues in code review or reformat after the fact.
