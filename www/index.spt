@@ -9,4 +9,6 @@ Welcome! This website is for people building [Gittip](https://www.gittip.com/).
 
 First time? Start at ... [the beginning](/big-picture)! :-)
 
+## Table of Contents
+
 {{ toc(nav_current) }}
