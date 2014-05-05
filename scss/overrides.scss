@@ -44,7 +44,7 @@ iframe {
     width: 100%;
 
     // calc + libsass: https://github.com/hcatlin/libsass/issues/104
-    height: calc(unquote("100% - 81px"));
+    height: calc(100% - 81px);
 
     border: 0;
 }
