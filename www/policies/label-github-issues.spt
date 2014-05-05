@@ -25,7 +25,7 @@ In addition, a ticket may have one of the following. These are for <a
 href="http://huboard.com/gittip/www.gittip.com">HuBoard</a>, a workflow
 management tool atop GitHub issues that we sort-of use:
 
-  - <a href="https://github.com/gittip/www.gittip.com/issues?labels=0 - Marketing">0 - Backlog</a>
+  - <a href="https://github.com/gittip/www.gittip.com/issues?labels=0 - Backlog">0 - Backlog</a>
   - <a href="https://github.com/gittip/www.gittip.com/issues?labels=1 - Ready to Start">1 - Ready to Start</a>
   - <a href="https://github.com/gittip/www.gittip.com/issues?labels=2 - Stalled">2 - Stalled</a>
   - <a href="https://github.com/gittip/www.gittip.com/issues?labels=3 - Work in Progress">3 - Work in Progress</a>
