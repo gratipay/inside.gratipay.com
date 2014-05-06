@@ -16,11 +16,13 @@
         h2 {
             display: inline;
         }
+        text-indent: -1em;
+        padding-left: 1em;
     }
 }
 
 @media screen and (max-width: 479px) {
     #page .content {
-        padding: 0 5%;
+        padding: 0 5% 120px;
     }
 }
