@@ -31,10 +31,15 @@ def add_nav_current_to_context(request, website):
         fs = dirname(fs)
     request.context['nav_current'] = website.nav.by_fs.get(fs, website.nav)
 
+def add_nav_next_to_context(request, website):
+    nav_current = request.context['nav_current']
+    request.context['nav_next'] = nav_current.next_child
+
 add_nav_to_website(website)
 
 website.algorithm.insert_after('dispatch_request_to_filesystem', add_nav_to_website)
-website.algorithm.insert_after('dispatch_request_to_filesystem', add_nav_current_to_context)
+website.algorithm.insert_after('add_nav_to_website', add_nav_current_to_context)
+website.algorithm.insert_after('add_nav_current_to_context', add_nav_next_to_context)
 
 
 # Download repos.

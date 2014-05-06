@@ -62,6 +62,20 @@ class NavItem(OrderedDict):
 
 
     @property
+    def next_child(self):
+        next = None
+        parent = self.parent
+        if parent is not None:
+            siblings = parent.children
+            for i, child in enumerate(siblings):
+                if child is self:
+                    break
+            if i+1 < len(siblings):
+                next = siblings[i+1]
+        return next
+
+
+    @property
     def children(self):
         return self.values()
 

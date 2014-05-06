@@ -39,6 +39,11 @@
                 </div>
                 {% if nav_title %}<h1>{{ nav_title }}</h1>{% endif %}
                 {% block content %}{% endblock %}
+                {% if nav_next.by_fs %}
+                <div class="nav-next">
+                    <h2>Next:</h2> <a href="{{ nav_next.url }}">{{ nav_next.title }}</a>
+                </div>
+                {% endif %}
             </div>
         </div>
         {% endblock %}
