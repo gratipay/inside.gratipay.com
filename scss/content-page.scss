@@ -4,25 +4,22 @@
 /*
 /*****************************************************************************/
 
-.tools-next {
+.next {
     margin: 96px 0 0;
-    .tools {
-        width: 50%;
-        float: left;
-    }
-    .next {
-        float: right;
-        width: 50%;
-        h2 {
-            display: inline;
-        }
-        text-indent: -1em;
-        padding-left: 1em;
+    overflow: auto;
+    text-align: right;
+    h2 {
+        display: inline;
     }
 }
 
+@media screen and (max-width: 700px) {
+    #page .content {
+        margin-bottom: 48px;
+    }
+}
 @media screen and (max-width: 479px) {
     #page .content {
-        padding: 0 5% 120px;
+        padding: 0 5%;
     }
 }

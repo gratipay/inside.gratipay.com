@@ -41,24 +41,20 @@
                 </div>
                 {% if nav_title %}<h1>{{ nav_title }}</h1>{% endif %}
                 {% block content %}{% endblock %}
-                <div class="tools-next">
-                    <div class="tools">
-                        <a href="{{ nav_current.discuss_url }}" class="icon icon-bubble"
-                            title="Discuss on GitHub"></a>
-                        &nbsp;
-                        <a href="{{ nav_current.edit_url }}" class="icon icon-pencil"
-                            title="Edit on GitHub"></a>
-                        &nbsp;
-                    </div>
-                    <div class="next">
-                        {% if nav_next.by_fs %}
-                        <h2>Next:</h2> <a href="{{ nav_next.url }}">{{ nav_next.title }}</a>
-                        {% endif %}
-                    </div>
-                </div>
+                {% if nav_next.by_fs %}
+                <div class="next"><div>
+                    <h2>Next:</h2> <a href="{{ nav_next.url }}">{{ nav_next.title }}</a>
+                </div></div>
+                {% endif %}
             </div>
         </div>
         {% endblock %}
-        <a class="bottom-nav" href="/">Table of Contents</a>
+        <div class="bottom"><div class="tools"><a
+                href="{{ nav_current.discuss_url }}" class="tool icon-bubble"
+                title="Discuss on GitHub"></a><a
+                href="{{ nav_current.edit_url }}" class="tool icon-pencil"
+                title="Edit on GitHub"></a></div><a
+            class="toc" href="/">Table of Contents</a>
+        </div>
     </body>{% endblock %}
 </html>

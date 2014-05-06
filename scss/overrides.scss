@@ -19,7 +19,7 @@ html { background: none; }
 #page { padding: 0; }
 h2:nth-child(1) { margin-top: 0 !important; }
 ol { margin-bottom: 2em; }
-.content { padding-bottom: 120px; }
+.content { margin-bottom: 64px; }
 strong, b { font-weight: bold; }
 em, i { font-style: italic; }
 ul li { list-style: circle; margin: 0 0 0 1.5em; }
@@ -35,6 +35,7 @@ blockquote {
         padding-bottom: 0;
     }
 }
+a { color: $green; }
 
 
 // for iframed pages
@@ -83,4 +84,10 @@ body {
     font: normal 16px/24px $surveyor;
     font-weight: 300;
     color: $black;
+}
+
+@media screen and (max-width: 479px) {
+    body {
+        font: normal 14px/21px $surveyor;
+    }
 }
