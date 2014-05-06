@@ -42,10 +42,7 @@ html { height: 100%; }
 body { height: 100%; }
 iframe {
     width: 100%;
-
-    // calc + libsass: https://github.com/hcatlin/libsass/issues/104
     height: calc(100% - 81px);
-
     border: 0;
 }
 
