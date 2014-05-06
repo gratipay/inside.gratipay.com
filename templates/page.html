@@ -14,9 +14,11 @@
         <meta property="og:title" content="Building Gittip" />
 
         <link rel="stylesheet" type="text/css"
-              href="/assets/{{ website.version }}/building.gittip.css">
-        <link rel="stylesheet" type="text/css"
               href="//cloud.typography.com/6540672/682244/css/fonts.css" />
+        <link rel="stylesheet"
+              href="http://i.icomoon.io/public/temp/f69ffede16/UntitledProject1/style.css">
+        <link rel="stylesheet" type="text/css"
+              href="/assets/{{ website.version }}/building.gittip.css">
 
     </head>
     {% macro toc(nav) %}
@@ -39,11 +41,21 @@
                 </div>
                 {% if nav_title %}<h1>{{ nav_title }}</h1>{% endif %}
                 {% block content %}{% endblock %}
-                {% if nav_next.by_fs %}
-                <div class="nav-next">
-                    <h2>Next:</h2> <a href="{{ nav_next.url }}">{{ nav_next.title }}</a>
+                <div class="tools-next">
+                    <div class="tools">
+                        <a href="{{ nav_current.discuss_url }}" class="icon icon-bubble"
+                            title="Discuss on GitHub"></a>
+                        &nbsp;
+                        <a href="{{ nav_current.edit_url }}" class="icon icon-pencil"
+                            title="Edit on GitHub"></a>
+                        &nbsp;
+                    </div>
+                    <div class="next">
+                        {% if nav_next.by_fs %}
+                        <h2>Next:</h2> <a href="{{ nav_next.url }}">{{ nav_next.title }}</a>
+                        {% endif %}
+                    </div>
                 </div>
-                {% endif %}
             </div>
         </div>
         {% endblock %}

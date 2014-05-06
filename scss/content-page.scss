@@ -4,11 +4,18 @@
 /*
 /*****************************************************************************/
 
-.nav-next {
+.tools-next {
     margin: 96px 0 0;
-    text-align: right;
-    h2 {
-        display: inline;
+    .tools {
+        width: 50%;
+        float: left;
+    }
+    .next {
+        float: right;
+        width: 50%;
+        h2 {
+            display: inline;
+        }
     }
 }
 

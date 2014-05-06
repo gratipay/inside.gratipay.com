@@ -3,7 +3,7 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 from collections import OrderedDict
-from os.path import join, realpath, isfile, isdir
+from os.path import join, realpath, isfile, isdir, basename
 
 from aspen import resources
 from aspen.http.request import Request
@@ -27,6 +27,7 @@ class NavItem(OrderedDict):
         OrderedDict.__init__(self)
         self.parent = parent
         self.fs = fs
+        self.filename = basename(fs)
         self.url = '/' if parent is None else \
                    '/'.join([parent.url if parent.url != '/' else '', slug])
 
@@ -78,6 +79,18 @@ class NavItem(OrderedDict):
     @property
     def children(self):
         return self.values()
+
+
+    @property
+    def discuss_url(self):
+        tmpl = 'https://github.com/gittip/building.gittip.com/issues/new?title=feedback on {}'
+        return tmpl.format(self.title)
+
+
+    @property
+    def edit_url(self):
+        tmpl = 'https://github.com/gittip/building.gittip.com/edit/master/www{}.spt'
+        return tmpl.format(self.url)
 
 
     def find_index(self, indices, fs):
