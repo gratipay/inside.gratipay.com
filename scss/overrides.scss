@@ -40,7 +40,7 @@ blockquote {
 // for iframed pages
 html { height: 100%; }
 body { height: 100%; }
-iframe {
+iframe.full-page {
     width: 100%;
     height: calc(100% - 81px);
     border: 0;
