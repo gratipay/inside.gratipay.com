@@ -35,8 +35,9 @@ class NavItem(OrderedDict):
         self.by_url[self.url] = self
 
         self.slug = slug
+        self.isdir = isdir(fs)
 
-        if isdir(fs):
+        if self.isdir:
             simplate = self.find_index(website.indices, fs)
         elif fs.endswith('.spt'):
             simplate = fs
@@ -90,7 +91,10 @@ class NavItem(OrderedDict):
     @property
     def edit_url(self):
         tmpl = 'https://github.com/gittip/building.gittip.com/edit/master/www{}.spt'
-        return tmpl.format(self.url)
+        github_snip = self.url
+        if self.isdir:
+            github_snip += '/index'
+        return tmpl.format(github_snip)
 
 
     def find_index(self, indices, fs):
