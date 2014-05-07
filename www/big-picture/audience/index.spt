@@ -63,7 +63,7 @@ Another way to slice the pie is:
  - Groups
 
 We started with a strong focus on individuals, and then gradually realized we
-needed some higher level of aggregation. Groups are supported in a two ways:
+needed some higher level of aggregation. Groups are supported in two ways:
 
  - Any given Gittip account can represent a group of people. We have a number
    of accounts like this, both givers and receivers.
