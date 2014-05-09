@@ -5,15 +5,19 @@ nav_title = "Cancel Account"
 Next time I build a tech product I'll build in account cancellation from the
 beginning. Turns out it's a big pain to bolt on after the fact and it's really
 important in terms of respecting users. Anyway, for now we're stuck doing this
-quasi-manually (taken from
-        [54](https://github.com/gittip/www.gittip.com/issues/54#issuecomment-29240281)).
+quasi-manually (see also:
+        [#54](https://github.com/gittip/www.gittip.com/issues/54#issuecomment-29240281)).
             Given that `foo` is the username of the account to cancel:
 
  1. If foo has a balance, deal with it per their instruction. Present them with
  options depending on how their account is configured:
   - Issue a credit card refund using the Balanced dashboard.
   - Issue a bank account payout using the Balanced dashboard (or let it run on Thursday?).
-  - Refund to patrons.
-  - Distribute to tippees, pro-rated, using [`final-gift.py`](https://gist.github.com/whit537/ec82f7d908b530336380)
+  - Refund to patrons (we need a script for this!).
+  - Distribute to tippees, pro-rated.<br>To do this, run `./bin/final-gift.py foo api-eight`.
  1. Run `./bin/untip.py foo` to zero out tips to foo.
- 1. Run `./bin/cancel.py foo [api-eight]` to cancel foo's account.
+ 1. Run `./bin/deactivate.py foo api-eight` to deactivate foo's account.
+
+Note that you have to run those scripts like this:
+
+`heroku config -sa gittip | honcho run -e /dev/stdin ./env/bin/python ./bin/script.py blah blah`
