@@ -21,3 +21,9 @@ quasi-manually (see also:
 Note that you have to run those scripts like this:
 
 `heroku config -sa gittip | honcho run -e /dev/stdin ./env/bin/python ./bin/script.py blah blah`
+
+
+## Required Access [[?]](http://building.gittip.com/appendices/access)
+
+- Gittip site admin (to view user's "History" page)
+- Heroku `gittip` app (to run scripts)
