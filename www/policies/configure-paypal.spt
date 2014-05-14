@@ -9,7 +9,7 @@ to use them at scale (because we're a marketplace and they won't want to
             so we're doing this quasi-manually and not first-class.
 
 1. Collect username, PayPal email, and API eight on support@gittip.com.
-1. `heroku run --app gittip invoke set_paypal_email --username=user --api-key-fragment=decafbad --email=user@example.com`
+1. [Run](/policies/run-a-script) `invoke set_paypal_email`.
 
 ## Required Access [[?]](http://building.gittip.com/appendices/access)
 

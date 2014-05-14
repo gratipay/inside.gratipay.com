@@ -14,13 +14,10 @@ quasi-manually (see also:
   - Issue a credit card refund using the Balanced dashboard.
   - Issue a bank account payout using the Balanced dashboard (or let it run on Thursday?).
   - Refund to patrons (we need a script for this!).
-  - Distribute to tippees, pro-rated.<br>To do this, run `./bin/final-gift.py foo api-eight`.
- 1. Run `./bin/untip.py foo` to zero out tips to foo.
- 1. Run `./bin/deactivate.py foo api-eight` to deactivate foo's account.
-
-Note that you have to run those scripts like this:
-
-`heroku config -sa gittip | honcho run -e /dev/stdin ./env/bin/python ./bin/script.py blah blah`
+  - Distribute to tippees, pro-rated.<br>To do this, [run](/policies/run-a-script)
+    `./bin/final-gift.py`.
+ 1. [Run](/policies/run-a-script) `./bin/untip.py` to zero out tips to foo.
+ 1. [Run](/policies/run-a-script) `./bin/deactivate.py` to deactivate foo's account.
 
 
 ## Required Access [[?]](http://building.gittip.com/appendices/access)
