@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'icomoon';
+    src:url('/assets/fonts/icomoon.eot?k2ifhw');
+    src:url('/assets/fonts/icomoon.eot?#iefixk2ifhw') format('embedded-opentype'),
+        url('/assets/fonts/icomoon.woff?k2ifhw') format('woff'),
+        url('/assets/fonts/icomoon.ttf?k2ifhw') format('truetype'),
+        url('/assets/fonts/icomoon.svg?k2ifhw#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    
+    /* Enable Ligatures ================ */
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil:before {
+    content: "\e600";
+}
+.icon-stack:before {
+    content: "\e602";
+}
+.icon-history:before {
+    content: "\e603";
+}
+.icon-clock:before {
+    content: "\e604";
+}
+.icon-bubble:before {
+    content: "\e601";
+}
+.icon-backward:before {
+    content: "\e605";
+}
