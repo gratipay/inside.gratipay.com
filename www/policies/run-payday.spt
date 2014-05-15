@@ -3,8 +3,18 @@ nav_title="Run Payday"
 [---] text/html
 *by Chad Whitacre*
 
-Here's how I run payday. After each step, I record the result on the ticket I
-create in step two.
+The payday process begins every Thursday morning. Our payment processor
+initiates their internal bank settling process at 3:30pm PST each
+business day, resulting in bank deposits received by Gittip users in the
+afternoon of the following business day. We aim to complete the running
+of the Payday script by Thursday's deadline, resulting in a Friday
+afternoon deposit. If we experience any unexpected issues that prevent
+us from hitting Thursday's deadline, then we have until the Friday's
+deadline to ensure that deposits will be received by users on Monday
+afternoon.
+
+Here's how I run payday. After each step, I record the result on the
+ticket I create in step two.
 
   1. Open the [charts page](https://www.gittip.com/about/charts.html). Determine the week number,
      NNN.
