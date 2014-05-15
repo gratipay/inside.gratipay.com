@@ -87,15 +87,22 @@ class NavItem(OrderedDict):
         tmpl = 'https://github.com/gittip/building.gittip.com/issues/new?title=feedback on {}'
         return tmpl.format(self.title)
 
-
     @property
     def edit_url(self):
         tmpl = 'https://github.com/gittip/building.gittip.com/edit/master/www{}.spt'
+        return tmpl.format(self._github_snip)
+
+    @property
+    def history_url(self):
+        tmpl = 'https://github.com/gittip/building.gittip.com/commits/master/www{}.spt'
+        return tmpl.format(self._github_snip)
+
+    @property
+    def _github_snip(self):
         github_snip = self.url
         if self.isdir:
             github_snip += '/index'
-        return tmpl.format(github_snip)
-
+        return github_snip
 
     def find_index(self, indices, fs):
         for name in indices:
