@@ -61,12 +61,6 @@
             &:last-child {
                 border-right-width: 2px;
             }
-            &.icon-history {
-                // The history icon is sized smaller than the others. Bump it up.
-                font-size: 21px;
-                position: relative;
-                top: 1px;
-            }
         }
     }
 }
