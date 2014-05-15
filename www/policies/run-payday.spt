@@ -22,7 +22,7 @@ create in step two.
   1. Triple-check the [charts page](https://www.gittip.com/about/charts.html) to get the week
      number right.
   1. On `payday`: `./payday.sh NNN for_real_please`. Answer yes at the prompts.
-  1. `Ctrl-Z` to put the `payday.sh` process in the backround.
+  1. `Ctrl-Z` and `bg` to put the `payday.sh` process in the background.
   1. `pstree -p` to determine the PID of the parent shell process of `payday.sh`.
   1. `kill -6 PID` to orphan the `payday.sh` process. This logs me out of `payday`.
   1. Log back in to `payday`.

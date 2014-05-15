@@ -4,7 +4,7 @@ nav_title="Run Support"
 
 ## Support software
 
-Gittip uses [FreshDesk](http://gittip.freshdesk.com/) for managing support queries.
+Gittip uses [Freshdesk](http://gittip.freshdesk.com/) for managing support queries.
 
 ## Support Workflow
 
@@ -26,60 +26,16 @@ Gittip uses [FreshDesk](http://gittip.freshdesk.com/) for managing support queri
 * Tickets that you're dealing with are unlikely to be touched by someone else, so it's important to check them regularly.
 * Use the 'waiting on customer' status liberally. A lot of processes involve asking our clients for more details.
 * Do *not* include the Freshdesk URL in tickets. It's not immediately useful to users, and is only likely to confuse them.
-* Update this page on github! You can make Gittip support even better!
+* Update this page on GitHub! You can make Gittip support even better!
 
 
 ## Common requests
 
-Our most common requests involve pay-ins or pay-outs. For both of these, you should verify the user's
-identity by asking them for their Gittip username or URL, and the first eight digits of their
-API key.
+Our most common requests involve pay-ins or pay-outs. For both of these, you
+should verify the user's identity by asking them for their Gittip username or
+URL, and the first eight digits of their API key.
 
-### PayPal Pay-outs
+Here are instructions for specific common requests:
 
-Required information:
-- Gittip username
-- PayPal account email
-- first 8 characters of API key
-
-Required access: [[?]](http://building.gittip.com/appendices/access)
-- Heroku `gittip` app (to run scripts)
-
-Setting up paypal payouts if pretty straight-forward with the
-[`set_paypal_email` invoke
-task](https://github.com/gittip/www.gittip.com/blob/master/tasks/__init__.py).
-Learn how to use this command via it's help output:
-
-    $ env/bin/invoke --help set_paypal_email
-
-Feel free to use and expand on the canned responses in Freshdesk related
-to this task.
-
-
-### Deactivating accounts
-
-Required information:
-- Gittip username
-- first 8 characters of API key
-
-Required access: [[?]](http://building.gittip.com/appendices/access)
-- Gittip site admin (to view user's "History" page)
-- Heroku `gittip` app (to run scripts)
-
-The process depends on whether the user has any balance on their
-account, which is determined on the user's "History" page.
-
-If the **user has a balance**, we must determine what they would like
-done with the funds, and zero that balance first. Common options
-include:
-
-1. refunding it back onto a credit card
-
-2. redistributing it to the user's current recipients using the
-   [`bin/final-gift.py`](https://github.com/gittip/www.gittip.com/blob/master/bin/final-gift.py)
-script.
-
-Once the **user has NO balance** (or had none to begin with), you can
-use the
-[`bin/deactivate-final-rename.py`](https://github.com/gittip/www.gittip.com/blob/master/bin/deactivate-final-rename.py)
-script to deactiviate the account.
+- [Cancel Account](cancel-account)
+- [Configure PayPal](configure-paypal)
