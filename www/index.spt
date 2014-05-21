@@ -1,5 +1,5 @@
 nav_title = "Building Gittip"
-nav_children = ['big-picture', 'policies', 'appendices']
+nav_children = ['big-picture', 'howto', 'appendices']
 [---]
 [---] text/html via jinja2
 {% extends "templates/page.html" %}

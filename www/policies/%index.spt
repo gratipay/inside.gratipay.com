@@ -1,0 +1,3 @@
+[---]
+request.redirect('/howto/' + path['index'])
+[---] text/html

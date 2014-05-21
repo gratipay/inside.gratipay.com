@@ -14,10 +14,10 @@ quasi-manually (see also:
   - Issue a credit card refund using the Balanced dashboard.
   - Issue a bank account payout using the Balanced dashboard (or let it run on Thursday?).
   - Refund to patrons (we need a script for this!).
-  - Distribute to tippees, pro-rated.<br>To do this, [run](/policies/run-a-script)
+  - Distribute to tippees, pro-rated.<br>To do this, [run](/howto/run-a-script)
     `./bin/final-gift.py`.
- 1. [Run](/policies/run-a-script) `./bin/untip.py` to zero out tips to foo.
- 1. [Run](/policies/run-a-script) `./bin/deactivate.py` to deactivate foo's account.
+ 1. [Run](/howto/run-a-script) `./bin/untip.py` to zero out tips to foo.
+ 1. [Run](/howto/run-a-script) `./bin/deactivate.py` to deactivate foo's account.
 
 
 ## Required Access [[?]](http://building.gittip.com/appendices/access)

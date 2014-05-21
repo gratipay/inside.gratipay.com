@@ -1,7 +1,7 @@
 import os
 
-nav_title = 'Policies &amp; Procedures'
-nav_children = [ name.rsplit('.', 1)[0] for name in os.listdir('policies')
+nav_title = 'How To'
+nav_children = [ name.rsplit('.', 1)[0] for name in os.listdir('howto')
                  if name not in ('.', '..', 'index.spt')]
 nav_children.sort()
 [---]
