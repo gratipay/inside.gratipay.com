@@ -1,0 +1,7 @@
+nav_title = 'Advocate for Users'
+[---]
+[---] text/html
+
+Gittip is an open company, which means in part that we conduct all of our internal company discussions in public, primarily using [GitHub](/howto/label-issues) and [IRC](/appendices/chat). This makes it theoretically possible for anyone on the Internet who speaks English to participate in building Gittip. However, not everyone is comfortable working like this, including some folks who nonetheless want to *use* Gittip. Just because we conduct our business in public doesn't mean everyone wants to participate on our terms.
+
+Therefore, we need a go-between. We need someone who *is* comfortable working in public to proxy our users who *aren't*. We need people who can mediate the relationship between communities on Gittip and Gittip itself, by participating in our public discussions and representing users that they may be talking to privately.
