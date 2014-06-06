@@ -51,3 +51,16 @@ ticket I create in step two.
   1. [Shuffle escrow](shuffle-escrow).
   1. Review and edit these documents.
   1. Close the ticket from step 2.
+
+## Notes
+
+  - When a patron's credit card fails, the tips from that user are
+    *excluded* from the total receiving amounts of those they gift, so
+    as not to mislead the receiver about likely future earning.
+  - Even when a patron's card fails, we continue to attempt charges in
+    subsequent weeks. Sometimes, failures are permanent, but often they
+    are temporary. If a card starts working again, the patron's
+    receivers will see their contribution reflected in their totals once
+    again.
+  - For discussion of improvements, see
+    [#1127](https://github.com/gittip/www.gittip.com/issues/1127).
