@@ -1,0 +1,21 @@
+$lightest-brown: desaturate(lighten($brown, 60), 60);
+$poo-brown: lighten($brown, 66);
+
+.script {
+    font-family: monospace;
+    border: 1px solid $brown;
+    border-style: solid none;
+    margin: 0 1em 3em;
+    padding: 0 1em;
+    background: $poo-brown;
+
+    .character {
+        margin: 1em 0 0 40%;
+    }
+    .dialogue {
+        margin: 0 20%;
+    }
+    .action {
+        margin: 1em 5%;
+    }
+}

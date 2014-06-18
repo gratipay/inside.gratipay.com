@@ -1,0 +1,140 @@
+nav_title = 'Handle Conflict'
+[---]
+[---] text/html via markdown
+
+<style>
+</style>
+
+When members of the community building Gittip do not [behave
+        well](./behave-well), we handle conflict. In doing so, our goal is
+repentance and forgiveness, leading to reconciliation between the wrongdoer and
+the one wronged, and an even deeper unity within the community than we enjoyed
+before.
+
+## Level 1: Communicate Directly
+
+**Your resentment is your responsibility.** If someone does something wrong to
+you personally, tell them so directly. Here's a short script you can use:
+
+<div class="script">
+    <div class="character">WRONGED</div>
+    <div class="dialogue">Hey, Wrongdoer! I'm frustrated at you because you stole my
+    breakfast. Why am I frustrated at you?</div>
+
+    <div class="character">WRONGDOER</div>
+    <div class="dialogue">You're frustrated at me because I stole your breakfast. Am I
+    hearing you right?</div>
+
+    <div class="character">WRONGED</div>
+    <div class="dialogue">Yes. Stealing each other's breakfast isn't something we do in
+    the Gittip community, because that's not kind and we try to be kind to each
+    other here. Does that make sense?</div>
+
+    <div class="character">WRONGDOER</div>
+    <div class="dialogue">Yes. I'm sorry for stealing your breakfast. Do you forgive me?</div>
+
+    <div class="character">WRONGED</div>
+    <div class="dialogue">Yes.</div>
+
+    <div class="character">WRONGDOER</div>
+    <div class="dialogue">Thank you. What can I do to make it up to you?</div>
+
+    <div class="character">WRONGED</div>
+    <div class="dialogue">Buy me lunch?</div>
+
+    <div class="character">WRONGDOER</div>
+    <div class="dialogue">Deal!</div>
+
+    <div class="action">WRONGED and WRONGDOER high-five and head to lunch.</div>
+
+</div>
+
+**Your guilt is your responsibility.** If you wrong someone and realize it on
+your own, apologize:
+
+<div class="script">
+    <div class="character">WRONGDOER</div>
+    <div class="dialogue">Hey Wronged, I stole your breakfast and that was wrong.
+    I'm sorry for stealing your breakfast. Do you forgive me?</div>
+
+    <div class="character">WRONGED</div>
+    <div class="dialogue">Thanks for apologizing! Yes, I forgive you.</div>
+
+    <div class="character">WRONGDOER</div>
+    <div class="dialogue">Thank you. What can I do to make it up to you?</div>
+
+    <div class="character">WRONGED</div>
+    <div class="dialogue">Buy me lunch?</div>
+
+    <div class="character">WRONGED</div>
+    <div class="dialogue">Deal!</div>
+
+    <div class="action">Wronged and Wrongdoer high-five and head to lunch.</div>
+</div>
+
+**Community guidelines are everyone's responsibility**. If you observe bad
+[behavior](./behave-well) that is not directed at a specific person, speak up:
+
+<div class="script">
+    <div class="character">WRONGDOER</div>
+    <div class="dialogue">Hey everyone, check out my big dongle.</div>
+
+    <div class="character">YOU</div>
+    <div class="dialogue">You just made a sexist joke, my friend! We don't do that around
+    here, because it's not kind, especially to the women among us. We want to be kind! Make
+    sense?</div>
+
+    <div class="character">WRONGDOER</div>
+    <div class="dialogue">I'm sorry, but ...</div>
+
+    <div class="character">YOU</div>
+    <div class="dialogue">No buts! If you're not ready to apologize right now, you should take
+    a break for a bit and go offline.</div>
+
+    <div class="action">Time passes. Perhaps YOU educate WRONGDOER, publicly or privately.</div>
+
+    <div class="character">WRONGDOER</div>
+    <div class="dialogue">Hey you! You're right, I was a jerk. Sorry for making a sexist
+    joke, everyone. Do you forgive me?</div>
+
+    <div class="character">EVERYONE</div>
+    <div class="dialogue">Yes, we forgive you!</div>
+
+    <div class="character">YOU</div>
+    <div class="dialogue">Thanks for apologizing! Now didn't you have a pull
+    request waiting for review?</div>
+
+    <div class="character">WRONGDOER</div>
+    <div class="dialogue">Yes!</div>
+
+    <div class="action">YOU and WRONGDOER high-five and work on the pull request.</div>
+</div>
+
+
+## Level 2: Involve Gittip's Conflict Team
+
+If you are not able to resolve a conflict by communicating directly with the
+person who wronged you, or if for any reason you don't feel comfortable
+directly approaching the person who wronged you without someone else present,
+then contact [conflict@gittip.com](mailto:conflict@gittip.com) to involve
+Gittip's conflict management team.
+
+Gittip's conflict team will mediate a conversation between you and the person
+who wronged you. We are here to help and to ensure your safety, but ultimately
+you are responsible for dealing with your own resentment by communicating
+directly with the person who wronged you.
+
+If a person in the wrong is stubbornly unrepentant or a repeat offender,
+Gittip's conflict team will take action to exclude the wrongdoer from the
+community building Gittip, by removing their access to online channels and/or
+physical spaces. If in the future the person repents, they may be allowed back
+into the community. This will be on a limited basis at first while they earn
+back trust.
+
+
+## Level 3: Involve Law Enforcement
+
+If you believe you or someone else is in physical danger in a Gittip space,
+please notify law enforcement. If you are unsure what law enforcement agency is
+appropriate, contact [conflict@gittip.com](mailto:conflict@gittip.com) or
+on-site event staff, and we will help you.
