@@ -72,8 +72,51 @@ your own, apologize:
     <div class="action">Wronged and Wrongdoer high-five and head to lunch.</div>
 </div>
 
-**Community guidelines are everyone's responsibility**. If you observe bad
-[behavior](./behave-well) that is not directed at a specific person, speak up:
+**Community guidelines are everyone's responsibility**. If you observe
+harassment against someone, speak up:
+
+<div class="script">
+    <div class="character">WRONGDOER</div>
+    <div class="dialogue">Hey Wronged, you're dumb!</div>
+
+    <div class="character">YOU</div>
+
+    <div class="dialogue">Whoa! Wrongdoer, it looks like you're harassing
+    Wronged. That's not okay. We want to be kind to each other here. You should
+    stop and apologize!</div>
+
+    <div class="character">WRONGDOER</div>
+    <div class="dialogue">But ... !</div>
+
+    <div class="character">YOU</div>
+    <div class="dialogue">No buts! If you're not ready to apologize right now,
+    you should take a break for a bit and go offline.</div>
+
+    <div class="action">Time passes. Perhaps YOU educate WRONGDOER, publicly or privately.</div>
+
+    <div class="character">WRONGDOER</div>
+    <div class="dialogue">Hey Wronged, I was a jerk. Sorry for calling you
+    dumb. Do you forgive me?</div>
+
+    <div class="character">WRONGED</div>
+    <div class="dialogue">Yeah, I was frustrated when you called me dumb.
+    Thanks for apologizing. I forgive you.</div>
+
+    <div class="character">WRONGDOER</div>
+    <div class="dialogue">Thanks. What can I do to make it up to you?</div>
+
+    <div class="character">WRONGED</div>
+    <div class="dialogue">Wanna help me with this thing?</div>
+
+    <div class="character">WRONGDOER</div>
+    <div class="dialogue">Sure!</div>
+
+    <div class="action">WRONGED and WRONGDOER high-five and work on the thing.</div>
+
+</div>
+
+And if you observe bad [behavior](./behave-well) that isn't directed at anyone
+in particular, speak up:
 
 <div class="script">
     <div class="character">WRONGDOER</div>
@@ -117,12 +160,15 @@ If you are not able to resolve a conflict by communicating directly with the
 person who wronged you, or if for any reason you don't feel comfortable
 directly approaching the person who wronged you without someone else present,
 then contact [conflict@gittip.com](mailto:conflict@gittip.com) to involve
-Gittip's conflict management team.
+Gittip's conflict team.
 
 Gittip's conflict team will mediate a conversation between you and the person
 who wronged you. We are here to help and to ensure your safety, but ultimately
 you are responsible for dealing with your own resentment by communicating
-directly with the person who wronged you.
+directly with the person who wronged you. By working through the process of
+repentance and forgiveness together with the person who wronged you, you help
+them to become a better person, and you make the Gittip community as a whole
+stronger.
 
 If a person in the wrong is stubbornly unrepentant or a repeat offender,
 Gittip's conflict team will take action to exclude the wrongdoer from the
