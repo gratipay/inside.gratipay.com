@@ -51,8 +51,7 @@ We're in the process of migrating scripts to
             virtualenv. Here's how to list the `invoke` tasks locally:
 
 ```
-$ heroku config -sa gittip | ./env/bin/honcho run -e /dev/stdin \
-    ./env/bin/invoke --list
+$ ./env/bin/invoke --list
 ```
 
 And remotely:
