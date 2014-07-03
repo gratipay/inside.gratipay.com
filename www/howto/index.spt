@@ -3,6 +3,10 @@ import os
 nav_title = 'How To'
 nav_children = [ name.rsplit('.', 1)[0] for name in os.listdir('howto')
                  if name not in ('.', '..', 'index.spt')]
+
+# remove redirect(s)
+nav_children.remove('handle-conflict')
+
 nav_children.sort()
 [---]
 [---] text/html

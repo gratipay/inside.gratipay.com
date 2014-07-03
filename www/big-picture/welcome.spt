@@ -1,0 +1,41 @@
+nav_title = 'Welcome to Gittip'
+nav_children = []
+[---]
+[---] text/html
+
+Welcome to Gittip! We are an [open company](http://www.opencompany.org/), which
+for us means that we want to invite and empower *everyone* to participate in
+running our company. We think of people in relation to Gittip in several roles:
+
+  - **users**---people with an account on Gittip
+  - **confabulators**(!)---people conversing in [our space](/appendices/channels)
+  - **owners**---users who buy into [our mission](./mission)
+  - **staff**---owners who are on [our payroll](https://www.gittip.com/Gittip/members/)
+
+Each role is open to anyone, and *you* are the only one with the power to
+decide what you are in relation to Gittip. That said, each role does come with
+responsibilities and expectations, which you should understand before making
+a commitment.
+
+To be a **user**, [create an account](https://www.gittip.com/)! We'll expect
+you to abide by our [terms and
+        conditions](https://www.gittip.com/about/terms/).
+
+To be a **confabulator**, simply [enter our space](/appendices/channels) and
+join the conversation! We'll expect you to [behave well](/howto/behave-well)
+and to be willing to [resolve conflict](/howto/resolve-conflict) when it
+arises.
+
+To be an **owner**, simply think of yourself as an owner! We'll expect you to
+identify with and pursue [our mission](./mission). We're [working on
+bylaws](https://github.com/gittip/building.gittip.com/issues/72) to formalize
+what it means to be an owner.
+
+To join our **staff**, simply contribute some work! Soon after you start
+contributing, we'll ask permission to add you to the payroll. We'll expect you
+to be comfortable with our [team take
+        system](https://www.gittip.com/about/teams/).
+
+Thanks for your interest in helping out with Gittip! Hopefully this gets you
+pointed in the right direction to get involved. The next step is to read the
+links on this page and then confabulate! :^)

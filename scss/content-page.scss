@@ -4,6 +4,14 @@
 /*
 /*****************************************************************************/
 
+.internal-notice {
+    font: normal 12px/18px $ideal;
+    border-left: 36px solid $gold;
+    padding-left: 10px;
+    text-align: left;
+    margin: 10px 0 64px;
+}
+
 .next {
     margin: 48px 0 0;
     overflow: auto;
