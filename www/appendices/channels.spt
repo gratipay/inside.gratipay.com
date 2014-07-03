@@ -2,22 +2,53 @@ nav_title = 'Communication Channels'
 [---]
 [---] text/html via markdown
 
-## [The Monday Morning Missive](http://tinyletter.com/gittip/letters)
+As an [open company](/big-picture/welcome), practically all of our internal
+communication happens on channels with open registration and public logging.
+This page lists the places that we consider to be internal Gittip channels.
+You're welcome to join us! When you're in a Gittip space, we expect you to
+[behave well](/howto/behave-well) and to be willing to [resolve
+        conflict](/howto/resolve-conflict) when it arises.
 
-Our weekly email newsletter, summarizing projects going on around Gittip.
-Everyone building Gittip should read this.
+If you would rather communicate with us privately, please send email to
+[support@gittip.com](mailto:support@gittip.com).
 
-## [IRC (Internet Relay Chat)](irc://irc.freenode.net/#gittip)
 
-We hang out in the #gittip channel on the Freenode network, and this is the
-best place to become a part of the community of people building Gittip. If you
-don&rsquo;t know what IRC is but feel brave, try [this web
-    interface](http://chat.gittip.com/).
+## [Chatroom](/appendices/chat)
+
+Our chatroom is the burning heart of Gittip. We're experimenting with a [second
+channel](https://gittip.slack.com/) using Slack, focused on marketing.
 
 
 ## [GitHub](https://github.com/gittip)
 
-We use GitHub to manage our source code and discuss issues.
+We use GitHub to manage our source code and discuss issues. High-level
+discussion happens in the [Building Gittip
+    repo](https://github.com/gittip/building.gittip.com/issues). Lower-level
+discussion happens in the repo for the relevant project.
+
+
+## [*Building Gittip* Collection](https://medium.com/building-gittip/latest)
+
+We use a collection on the Medium blogging platform to share long-form analysis
+and strategy. Unlike our <a href="http://blog.gittip.com/">blog</a>, which is
+for the general public, the primary audience for the *Building Gittip*
+collection is people building Gittip.
+
+
+## [Google Hangouts On Air](http://www.youtube.com/playlist?list=PLivwfG4q6DTAYCmRDmGpljRrpR3yNNSFP)
+
+We do video conferences with Google Hangouts On Air, which means they get
+live-streamed and posted to YouTube.
+
+
+# Moribund Channels
+
+We don't really use these anymore. They're mentioned here as archives.
+
+## [The Monday Morning Missive](http://tinyletter.com/gittip/letters)
+
+Our weekly email newsletter, summarizing projects going on around Gittip.
+Everyone building Gittip should read this.
 
 
 ## [LayerVault](https://layervault.com/gittip)
@@ -28,17 +59,3 @@ GitHub for design deliverables.
 ## [Dribbble](http://dribbble.com/Gittip)
 
 Show and tell for the design community.
-
-
-## [Google Hangouts On Air](http://www.youtube.com/playlist?list=PLivwfG4q6DTAYCmRDmGpljRrpR3yNNSFP)
-
-We do video conferences with Google Hangouts On Air, which means they get
-live-streamed and posted to YouTube.
-
-
-## [Medium](https://medium.com/building-gittip/latest)
-
-Blogging platform. We use it to collect long-form analysis and strategy ideas.
-Unlike our <a href="http://blog.gittip.com/">blog</a>, which is for the general
-public, the primary audience for our Medium collection is people building
-Gittip.
