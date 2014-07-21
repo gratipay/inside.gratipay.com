@@ -17,7 +17,8 @@
         }
         p {
             padding: 0 8.55% 1em;
-            font-style: italic;
+            font: italic 16px/24px $surveyor;
+            color: $black;
             span {
                 font-style: normal;
             }
