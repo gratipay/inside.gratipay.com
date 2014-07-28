@@ -3,8 +3,7 @@ nav_title = 'System Architecture'
 [---] text/html via markdown
 
 This is Gittip's system architecture, a high-level view of the software system
-by which we deliver the product experience defined in our [information
-architecture](/big-picture/ia/).
+by which we deliver [our product](/big-picture/product).
 
 Gittip is composed of two main system components:
 
