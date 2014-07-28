@@ -37,7 +37,7 @@ def lr(issue=None):
 
 Gittip is a way to make and receive weekly payments motivated by gratitude.
 This document is our top-level information architecture. These are all the
-main parts of our app, with links to issues.
+main parts of our app, with links to issues to drill down.
 
 Last Refactored | Part
 --------------- | -----------------------------------
@@ -55,7 +55,7 @@ Last Refactored | Part
 {{ lr() }}      | Profile - Payroll
 {{ lr() }}      | Community
 {{ lr(1369) }}  | Accounts Elsewhere
-{{ lr() }}      | Widgets &amp; Embeds
+{{ lr(1167) }}  | Widgets &amp; Embeds
 {{ lr() }}      | Gittip Everywhere
 {{ lr(2508) }}  | Payday
 {{ lr() }}      | API
