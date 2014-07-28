@@ -8,6 +8,7 @@ YEAR = datetime.timedelta(days=365)
 issues = {}
 issues[1074] = '2014-07-21'
 issues[1369] = '2014-02-26'
+issues[2323] = '2014-04-29'
 
 now = datetime.datetime.now(tz=utc)
 
@@ -44,18 +45,18 @@ Last Refactored | Part
 {{ lr(1074) }}  | Homepage (unauthenticated)
 {{ lr(2584) }}  | Homepage (authenticated)
 {{ lr() }}      | Onboarding Flow
-{{ lr() }}      | About
-{{ lr() }}      | Profile - Basic Info
-{{ lr() }}      | Profile - Giving
+{{ lr(949) }}   | About
+{{ lr(133) }}   | Profile - Basic Info
+{{ lr(716) }}   | Profile - Giving
 {{ lr() }}      | Profile - Receiving
 {{ lr(838) }}   | Profile - History &amp; Billing
-{{ lr() }}      | Profile - Widgets
-{{ lr() }}      | Profile - Account
+{{ lr(1145) }}  | Profile - Widgets
+{{ lr(2323) }}  | Profile - Account
 {{ lr() }}      | Profile - Event Log
-{{ lr() }}      | Profile - Payroll
-{{ lr() }}      | Community
+{{ lr(2569) }}  | Profile - Payroll
+{{ lr(967) }}   | Community
 {{ lr(1369) }}  | Accounts Elsewhere
 {{ lr(1167) }}  | Widgets &amp; Embeds
 {{ lr() }}      | Gittip Everywhere
 {{ lr(2508) }}  | Payday
-{{ lr() }}      | API
+{{ lr(1475) }}  | API
