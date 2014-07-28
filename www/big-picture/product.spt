@@ -1,35 +1,61 @@
+import datetime
+from aspen.utils import to_age, utc
+
 nav_title = "Product Overview"
+YEAR = datetime.timedelta(days=365)
 [---]
+
+issues = {}
+issues[1074] = '2014-07-21'
+issues[1369] = '2014-02-26'
+
+now = datetime.datetime.now(tz=utc)
+
+def lr(issue=None):
+
+    if issue is None:
+        cls = "too-long-ago"
+        href = "https://github.com/gittip/www.gittip.com/issues/new"
+        text = "never"
+    elif issue not in issues:
+        cls = "future"
+        href = 'https://github.com/gittip/www.gittip.com/issues/{}'.format(issue)
+        text = '#{}'.format(issue)
+    else:
+        year, month, day = [int(x) for x in issues[issue].split('-')]
+        last_refactored = datetime.datetime(year, month, day, tzinfo=utc)
+        print(now - last_refactored, YEAR)
+        if (now - last_refactored) > YEAR:
+            cls = "too-long-ago"
+        else:
+            cls = "past"
+        href = 'https://github.com/gittip/www.gittip.com/issues/{}'.format(issue)
+        text = to_age(last_refactored)
+
+    return '<a class="refactored {}" href="{}">{}</a>'.format(cls, href, text)
 [---] text/html
 
-Gittip is a way to give money every week to people and teams you believe in.
-Here are the four main features of the www.gittip.com website as we understand
-them (per the 2014 Gittip company retreat):
+Gittip is a way to make and receive weekly payments motivated by gratitude.
+This document is our top-level information architecture. These are all the
+main parts of our app, with links to issues.
 
- - **Giving.** We enable individuals and groups to participate in the stories
-   of others through long-term, no-strings-attached, small financial gifts.
-
- - **Profiles.** We enable individuals and groups to tell a story about how
-   they're making the world better, and receive financial gifts.
-
- - **Teams.** We enable groups to receive and distribute funds openly and
-   transparently.
-
- - **Communities.** We enable communities to share and sustain a collective story.
-
-Here are the ways that www.gittip.com interfaces with the outside world:
-
- - **Accounts Elsewhere.** We support connecting as many other services as
-   possible to a Gittip profile.
-
- - **Widgets & Embeds.** We provide ways for participants to embed Gittip
-   functionality on other websites.
-
- - **API.** We provide APIs that enable third parties to build tools for
-   participants to work with their data stored in Gittip.
-
- - **Browser Extensions.** We provide extensions for all major browsers, adding
-   Gittip links on websites with whom were not yet partners.
-
- - **Partnerships.** We seek out partnerships with third parties to add Gittip
-   links to their products. We practice engineering as marketing.
+Last Refactored | Part
+--------------- | -----------------------------------
+{{ lr(1074) }}  | Homepage (unauthenticated)
+{{ lr(2584) }}  | Homepage (authenticated)
+{{ lr() }}      | Onboarding Flow
+{{ lr() }}      | About
+{{ lr() }}      | Profile - Basic Info
+{{ lr() }}      | Profile - Giving
+{{ lr() }}      | Profile - Receiving
+{{ lr(838) }}   | Profile - History &amp; Billing
+{{ lr() }}      | Profile - Widgets
+{{ lr() }}      | Profile - Account
+{{ lr() }}      | Profile - Event Log
+{{ lr() }}      | Profile - Payroll
+{{ lr() }}      | Community
+{{ lr(1369) }}  | Accounts Elsewhere
+{{ lr() }}      | Widgets &amp; Embeds
+{{ lr() }}      | Gittip Everywhere
+{{ lr(2508) }}  | Payday
+{{ lr() }}      | API

@@ -6,7 +6,8 @@ from aspen_jinja2_renderer import Renderer as Jinja2Renderer, Factory as Jinja2F
 
 def gfm(md):
     html = misaka.html( md
-                      , misaka.EXT_STRIKETHROUGH | misaka.EXT_AUTOLINK | misaka.EXT_FENCED_CODE
+                      , misaka.EXT_STRIKETHROUGH | misaka.EXT_AUTOLINK | misaka.EXT_FENCED_CODE | \
+                        misaka.EXT_TABLES
                       , misaka.HTML_SMARTYPANTS | misaka.HTML_TOC
                        )
     return html

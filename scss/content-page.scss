@@ -21,6 +21,45 @@
     }
 }
 
+table {
+    margin: 0 0 2em;
+    color: $brown;
+    tr {
+        th {
+            font: bold 16px/24px $ideal;
+        }
+        td {
+            font: normal 16px/20px $ideal;
+        }
+        td, th {
+            padding: 0 1em 0 0;
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+.refactored {
+    font: normal 10px/10px $ideal;
+    padding: 3px 10px;
+    border-radius: 3px;
+    float: right;
+
+    &.too-long-ago {
+        background: $green;
+        color: white;
+    }
+    &.past {
+        background: $brown;
+        color: white;
+    }
+    &.future {
+        background: $gold;
+        color: $brown;
+    }
+}
+
 @media screen and (max-width: 700px) {
     #page .content {
         margin-bottom: 64px;

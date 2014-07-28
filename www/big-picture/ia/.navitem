@@ -1,6 +1,0 @@
-#!python
-from nav import NavItem
-from os.path import join
-
-def nav(parent):
-    return [NavItem(parent, join(parent.fs, 'www', 'foo'), 'foo', 'baz')]
