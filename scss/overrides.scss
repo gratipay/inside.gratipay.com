@@ -5,11 +5,6 @@
 /*****************************************************************************/
 
 
-$brown: #614C3E;
-$green: #2A8F79;
-$gold: #FFC300;
-$white: #FFF;
-
 $ideal: 'Ideal Sans SSm A', 'Ideal Sans SSm B';
 $surveyor: 'Surveyor SSm A', 'Surveyor SSm B';
 
@@ -61,6 +56,7 @@ iframe.full-page {
 
     &.green { background: $green; }
     &.brown { background: $brown; }
+    &.gold { background: $gold; color: $brown; }
 }
 
 h1 {
