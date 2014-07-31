@@ -1,4 +1,0 @@
-nav_title = 'Handle Conflict'
-[---]
-request.redirect('./resolve-conflict')
-[---] text/html via markdown
