@@ -55,7 +55,6 @@ linked asterisk\*.
 - [Coinbase][coinbase]
 - [New Alliance][new-alliance]
 - [PayPal][paypal]
-- [Stripe][stripe]
 
 ## Development
 
@@ -119,7 +118,6 @@ linked asterisk\*.
 [python]:       https://www.python.org/
 [sass]:         http://sass-lang.com/
 [sentry]:       http://getsentry.com/
-[stripe]:       https://stripe.com/
 [travis]:       https://travis-ci.com/
 [travis-us]:    https://travis-ci.org/gittip/www.gittip.com
 [twitter]:      https://twitter.com/
