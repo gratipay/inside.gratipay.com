@@ -1,4 +1,4 @@
-nav_title = "Building Gittip"
+nav_title = "Inside Gratipay"
 nav_children = ['big-picture', 'howto', 'appendices']
 [---]
 [---] text/html via jinja2
@@ -7,10 +7,10 @@ nav_children = ['big-picture', 'howto', 'appendices']
 <body class="homepage">
 
     <div class="top">
-        <h1><img src="/assets/building-gittip.svg" alt="Building Gittip"></h1>
+        <h1><img src="/assets/inside-gratipay.svg" alt="Inside Gratipay"></h1>
 
         <p>Welcome!&nbsp;We&apos;re
-           building&nbsp;<a href="https://www.gittip.com/">Gittip</a>.
+           building&nbsp;<a href="https://gratipay.com/">Gratipay</a>.
            First&nbsp;time?&nbsp;Start&nbsp;at&nbsp;<a href="/big-picture/welcome">the&nbsp;top</a>!&nbsp;<span>:-)</span>
     </div>
 

@@ -4,7 +4,7 @@ nav_title = 'Audience'
 
 *by Chad Whitacre*
 
-Gittip's audience is everyone; it's intended to be a mass-market consumer
+Gratipay's audience is everyone; it's intended to be a mass-market consumer
 product. This document looks at different ways to segment our audience.
 
 
@@ -17,33 +17,33 @@ we have two basic kinds of user:
  - Receivers (tippees)
 
 We have some basic stats on our [Stats
-page](https://www.gittip.com/about/stats.html). Here's a snapshot:
+page](https://gratipay.com/about/stats.html). Here's a snapshot:
 
- - Gittip has 2486 active users (either gave or received last week, or both).
+ - Gratipay has 2486 active users (either gave or received last week, or both).
  - 1582 participants gave money in the past week.
  - 1318 received money.
  - 414 did both.
 
 Amongst givers, there's a further distinction:
 
- - **General Givers**&mdash;Givers who come to Gittip with a desire to give,
+ - **General Givers**&mdash;Givers who come to Gratipay with a desire to give,
    but nobody specific in mind. They need "discovery" features.
 
- - **Specific Givers**&mdash;Givers who come to Gittip with a desire to give to
+ - **Specific Givers**&mdash;Givers who come to Gratipay with a desire to give to
    a specific person. They need a nice profile page for the person/team they
    want to give to, with an easy checkout flow.
 
 See also:
 
- - [Reaching out to content creators](https://github.com/gittip/www.gittip.com/issues/737).
+ - [Reaching out to content creators](https://github.com/gratipay/gratipay.com/issues/737).
 
  - [Requiring a certain voice of our
-         users](https://github.com/gittip/www.gittip.com/issues/1659). "The
+         users](https://github.com/gratipay/gratipay.com/issues/1659). "The
    question is, am I going to be using my project's voice when I write my
    profile, or the voice you've chosen?"
 
- - Browsing [our communities](https://www.gittip.com/for/) indicates what we
-   all know: Gittip's users are mostly drawn from the open-source world.
+ - Browsing [our communities](https://gratipay.com/for/) indicates what we
+   all know: Gratipay's users are mostly drawn from the open-source world.
    [PG](http://paulgraham.com/ambitious.html): "The way to win here is to build
    the __________ all the hackers use. A __________ whose users consisted of the
    top 10,000 hackers and no one else would be in a very powerful position despite
@@ -61,13 +61,13 @@ Another way to slice the pie is:
 We started with a strong focus on individuals, and then gradually realized we
 needed some higher level of aggregation. Groups are supported in two ways:
 
- - Any given Gittip account can represent a group of people. We have a number
+ - Any given Gratipay account can represent a group of people. We have a number
    of accounts like this, both givers and receivers.
 
 
  - We have special support for groups that want to split the money they receive
    in an open and transparent manner. We call these
-   "[Teams](https://www.gittip.com/about/teams/)."
+   "[Teams](https://gratipay.com/about/teams/)."
 
 
 The Communities feature is kind of related (and we sometimes confuse people

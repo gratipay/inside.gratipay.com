@@ -1,4 +1,4 @@
-"""Navigation aides for Building Gittip.
+"""Navigation aides for Inside Gratipay.
 """
 from __future__ import absolute_import, division, print_function, unicode_literals
 
@@ -84,17 +84,17 @@ class NavItem(OrderedDict):
 
     @property
     def discuss_url(self):
-        tmpl = 'https://github.com/gittip/building.gittip.com/issues/new?title=feedback on {}'
+        tmpl = 'https://github.com/gratipay/inside.gratipay.com/issues/new?title=feedback on {}'
         return tmpl.format(self.title)
 
     @property
     def edit_url(self):
-        tmpl = 'https://github.com/gittip/building.gittip.com/edit/master/www{}.spt'
+        tmpl = 'https://github.com/gratipay/inside.gratipay.com/edit/master/www{}.spt'
         return tmpl.format(self._github_snip)
 
     @property
     def history_url(self):
-        tmpl = 'https://github.com/gittip/building.gittip.com/commits/master/www{}.spt'
+        tmpl = 'https://github.com/gratipay/inside.gratipay.com/commits/master/www{}.spt'
         return tmpl.format(self._github_snip)
 
     @property

@@ -9,24 +9,24 @@ to go to a listing of related issues.
 Every ticket should have exactly one of the following:
 
   - The stars are for user experience-related issues, high, medium, and low priority:<br>
-    - <a href="https://github.com/gittip/www.gittip.com/issues?labels=%E2%98%85%E2%98%85%E2%98%85">&#9733;&#9733;&#9733;</a>
-    - <a href="https://github.com/gittip/www.gittip.com/issues?labels=%E2%98%85%E2%98%85%E2%98%86">&#9733;&#9733;&#9734;</a>
-    - <a href="https://github.com/gittip/www.gittip.com/issues?labels=%E2%98%85%E2%98%86%E2%98%86">&#9733;&#9734;&#9734;</a>
-  - <a href="https://github.com/gittip/www.gittip.com/issues?labels=Blog Post">Blog Post</a> is
-    for planning blog posts, and <a href="https://github.com/gittip/www.gittip.com/issues?labels=Marketing">Marketing</a> is for other marketing-related TODOs.
-  - <a href="https://github.com/gittip/www.gittip.com/issues?labels=TeamX %E2%98%85">TeamX
+    - <a href="https://github.com/gratipay/gratipay.com/issues?labels=%E2%98%85%E2%98%85%E2%98%85">&#9733;&#9733;&#9733;</a>
+    - <a href="https://github.com/gratipay/gratipay.com/issues?labels=%E2%98%85%E2%98%85%E2%98%86">&#9733;&#9733;&#9734;</a>
+    - <a href="https://github.com/gratipay/gratipay.com/issues?labels=%E2%98%85%E2%98%86%E2%98%86">&#9733;&#9734;&#9734;</a>
+  - <a href="https://github.com/gratipay/gratipay.com/issues?labels=Blog Post">Blog Post</a> is
+    for planning blog posts, and <a href="https://github.com/gratipay/gratipay.com/issues?labels=Marketing">Marketing</a> is for other marketing-related TODOs.
+  - <a href="https://github.com/gratipay/gratipay.com/issues?labels=TeamX %E2%98%85">TeamX
     &#9733;</a> and
-    <a href="https://github.com/gittip/www.gittip.com/issues?labels=TeamX">TeamX</a> are for high-
+    <a href="https://github.com/gratipay/gratipay.com/issues?labels=TeamX">TeamX</a> are for high-
     and low-priority "team experience" issues. Basically a catch-all for things that don't fit the
     above, this ends up including "improve the build system" and devops tickets as well as
     administrative and bureaucratic issues ("buy insurance").
 
 In addition, a ticket may have one of the following. These are for <a
-href="http://huboard.com/gittip/www.gittip.com">HuBoard</a>, a workflow
+href="http://huboard.com/gratipay/gratipay.com">HuBoard</a>, a workflow
 management tool atop GitHub issues that we sort-of use:
 
-  - <a href="https://github.com/gittip/www.gittip.com/issues?labels=0 - Backlog">0 - Backlog</a>
-  - <a href="https://github.com/gittip/www.gittip.com/issues?labels=1 - Ready to Start">1 - Ready to Start</a>
-  - <a href="https://github.com/gittip/www.gittip.com/issues?labels=2 - Stalled">2 - Stalled</a>
-  - <a href="https://github.com/gittip/www.gittip.com/issues?labels=3 - Work in Progress">3 - Work in Progress</a>
-  - <a href="https://github.com/gittip/www.gittip.com/issues?labels=4 - Review">4 - Review</a>
+  - <a href="https://github.com/gratipay/gratipay.com/issues?labels=0 - Backlog">0 - Backlog</a>
+  - <a href="https://github.com/gratipay/gratipay.com/issues?labels=1 - Ready to Start">1 - Ready to Start</a>
+  - <a href="https://github.com/gratipay/gratipay.com/issues?labels=2 - Stalled">2 - Stalled</a>
+  - <a href="https://github.com/gratipay/gratipay.com/issues?labels=3 - Work in Progress">3 - Work in Progress</a>
+  - <a href="https://github.com/gratipay/gratipay.com/issues?labels=4 - Review">4 - Review</a>

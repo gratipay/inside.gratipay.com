@@ -1,20 +1,20 @@
-nav_title="Build Gittip"
+nav_title="Build Gratipay"
 [---]
 [---] text/html
 
 <ol class="decimal">
 
-<li>Find something about Gittip that annoys you. Specifically, don't start
-by browsing issues. Start by using Gittip.
+<li>Find something about Gratipay that annoys you. Specifically, don't start
+by browsing issues. Start by using Gratipay.
 
   <ol class="lower-roman">
 
     <li>When you cognize an annoyance, <a
-      href="https://github.com/gittip/www.gittip.com/search?state=open&type=Issues">search</a>
+      href="https://github.com/gratipay/gratipay.com/search?state=open&type=Issues">search</a>
     for a ticket.</li>
 
     <li>If you don't find a ticket, <a
-      href="https://github.com/gittip/www.gittip.com/issues/new">make
+      href="https://github.com/gratipay/gratipay.com/issues/new">make
       one</a>.</li>
 
     <li>Pick something interesting and within reach.</li>
@@ -58,7 +58,7 @@ you're not a collaborator, you will be soon). The rules of assignment are:
         that on the ticket.</li>
 
         <li><a href="http://www.bohemiancoding.com/sketch/">Sketch</a>.
-        Post a <a href="https://layervault.com/gittip">LayerVault</a> link
+        Post a <a href="https://layervault.com/gratipay">LayerVault</a> link
         on the ticket.</li> </ol>
 
     </li>

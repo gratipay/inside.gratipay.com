@@ -20,23 +20,23 @@ deploy:
   api_key:
     secure: DEgQdY5qAukGtKb2kBh00g9iY5+ncKcIxT59H0Yart/1qW56IrrDdZnm4Cb8mx6yIw+Jn2W6wKnLTXl0tDivO+tzv981uk3Wa49bmU7sF9XxaO35BhspvfmPQIUodjsjVe3gUs2OVbPZJaJn/z0k1nClQmJGmzNVYIAvfD07VUQ=
   app:
-    master: building-gittip-com
+    master: inside-gratipay-com
   on:
-    repo: gittip/building.gittip.com
+    repo: gratipay/inside.gratipay.com
     branch: master
 
 before_deploy:
   - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
   - cd www/repos
-  - git clone https://github.com/gittip/www.gittip.com.git
-  - git clone https://github.com/gittip/gttp.co.git
-  - git clone https://github.com/gittip/Gittip-Everywhere.git
+  - git clone https://github.com/gratipay/gratipay.com.git
+  - git clone https://github.com/gratipay/gttp.co.git
+  - git clone https://github.com/gratipay/Gratipay-Everywhere.git
 
 notifications:
   email: false
   irc:
     channels:
-      - "chat.freenode.org#gittip"
+      - "chat.freenode.org#gratipay"
     on_success: change
     on_failure: always
     template:

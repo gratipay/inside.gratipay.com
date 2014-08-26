@@ -10,7 +10,7 @@ require two levels of configuration: virtualenv and heroku.
 
 Python's sandboxing mechanism is called
 [`virtualenv`](https://virtualenv.pypa.io/en/latest/). When you build the
-`www.gittip.com` repo locally, you get a virtualenv at `./env/` that has all
+`gratipay.com` repo locally, you get a virtualenv at `./env/` that has all
 the libraries and tools you'll need to run scripts.
 
 If you invoke a script as `./env/bin/python bin/script.py` then you're using
@@ -27,14 +27,14 @@ To call a script locally use `heroku config` with
 [`honcho`](https://github.com/nickstenning/honcho):
 
 ```
-$ heroku config -sa gittip | ./env/bin/honcho run -e /dev/stdin \
+$ heroku config -sa gratipay | ./env/bin/honcho run -e /dev/stdin \
     ./env/bin/python bin/script.py
 ```
 
 To call a script on a remote Heroku dyno use `heroku run`:
 
 ```
-$ heroku run -a gittip bash
+$ heroku run -a gratipay bash
 Running `bash` attached to terminal... up, run.2359
 ~ $ python bin/script.py
 ```
@@ -46,8 +46,8 @@ We pay by the minute for dynos, so close it when you're done!
 
 We're in the process of migrating scripts to
 [`invoke`](https://github.com/pyinvoke/invoke) tasks (see
-        [#2294](https://github.com/gittip/www.gittip.com/issues/2294)). When
-            you build `www.gittip.com` we'll install `invoke` in the
+        [#2294](https://github.com/gratipay/gratipay.com/issues/2294)). When
+            you build `gratipay.com` we'll install `invoke` in the
             virtualenv. Here's how to list the `invoke` tasks locally:
 
 ```
@@ -57,7 +57,7 @@ $ ./env/bin/invoke --list
 And remotely:
 
 ```
-$ heroku run -a gittip bash
+$ heroku run -a gratipay bash
 Running `bash` attached to terminal... up, run.2359
 ~ $ invoke --list
 ```

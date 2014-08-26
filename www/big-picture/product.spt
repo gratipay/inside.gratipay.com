@@ -17,11 +17,11 @@ def lr(issue=None):
 
     if issue is None:
         cls = "too-long-ago"
-        href = "https://github.com/gittip/www.gittip.com/issues/new"
+        href = "https://github.com/gratipay/gratipay.com/issues/new"
         text = "never"
     elif issue not in issues:
         cls = "future"
-        href = 'https://github.com/gittip/www.gittip.com/issues/{}'.format(issue)
+        href = 'https://github.com/gratipay/gratipay.com/issues/{}'.format(issue)
         text = '#{}'.format(issue)
     else:
         year, month, day = [int(x) for x in issues[issue].split('-')]
@@ -31,13 +31,13 @@ def lr(issue=None):
             cls = "too-long-ago"
         else:
             cls = "past"
-        href = 'https://github.com/gittip/www.gittip.com/issues/{}'.format(issue)
+        href = 'https://github.com/gratipay/gratipay.com/issues/{}'.format(issue)
         text = to_age(last_refactored)
 
     return '<a class="refactored {}" href="{}">{}</a>'.format(cls, href, text)
 [---] text/html
 
-Gittip is a way to make and receive weekly payments motivated by gratitude.
+Gratipay is a way to make and receive weekly payments motivated by gratitude.
 This document is our top-level information architecture. These are all the
 main parts of our app, with links to issues to drill down.
 
@@ -58,6 +58,6 @@ Last Refactored | Part
 {{ lr(967) }}   | Community
 {{ lr(1369) }}  | Accounts Elsewhere
 {{ lr(1167) }}  | Widgets &amp; Embeds
-{{ lr() }}      | Gittip Everywhere
+{{ lr() }}      | Gratipay Everywhere
 {{ lr(2579) }}  | Payday
 {{ lr(1475) }}  | API

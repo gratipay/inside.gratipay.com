@@ -9,7 +9,7 @@ venv := "./vendor/virtualenv-1.9.1.py"
 env:
 	$(python)  $(venv)\
 				--unzip-setuptools \
-				--prompt="[building.gittip.com] " \
+				--prompt="[inside.gratipay.com] " \
 				--never-download \
 				--extra-search-dir=./vendor/ \
 				--distribute \

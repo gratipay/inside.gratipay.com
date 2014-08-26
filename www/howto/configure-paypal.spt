@@ -5,12 +5,12 @@ nav_title = "Configure PayPal"
 We're flying under PayPal's radar right now. It's unlikely that we'll be able
 to use them at scale (because we're a marketplace and they won't want to
         underwrite us; see
-        [#63](https://github.com/gittip/www.gittip.com/issues/63#issuecomment-14676114)),
+        [#63](https://github.com/gratipay/gratipay.com/issues/63#issuecomment-14676114)),
             so we're doing this quasi-manually and not first-class.
 
-1. Collect username, PayPal email, and API eight on support@gittip.com.
+1. Collect username, PayPal email, and API eight on support@gratipay.com.
 1. [Run](/howto/run-a-script) `invoke set_paypal_email`.
 
-## Required Access [[?]](http://building.gittip.com/appendices/access)
+## Required Access [[?]](http://inside.gratipay.com/appendices/access)
 
-- *Heroku `gittip` app (to run scripts)*
+- *Heroku `gratipay` app (to run scripts)*

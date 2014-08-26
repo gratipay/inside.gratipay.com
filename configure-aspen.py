@@ -47,9 +47,9 @@ website.algorithm.insert_after('add_nav_current_to_context', add_nav_next_to_con
 # We try to take documentation from source code where possible.
 
 repos = [
-    'https://github.com/gittip/www.gittip.com.git',
-    'https://github.com/gittip/gttp.co.git',
-    'https://github.com/gittip/Gittip-Everywhere.git',
+    'https://github.com/gratipay/gratipay.com.git',
+    'https://github.com/gratipay/grtp.co.git',
+    'https://github.com/gratipay/Gratipay-Everywhere.git',
 ]
 
 website.repo_root = realpath(join(website.project_root, 'repos'))
