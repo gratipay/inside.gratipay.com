@@ -20,7 +20,7 @@ deploy:
   api_key:
     secure: DEgQdY5qAukGtKb2kBh00g9iY5+ncKcIxT59H0Yart/1qW56IrrDdZnm4Cb8mx6yIw+Jn2W6wKnLTXl0tDivO+tzv981uk3Wa49bmU7sF9XxaO35BhspvfmPQIUodjsjVe3gUs2OVbPZJaJn/z0k1nClQmJGmzNVYIAvfD07VUQ=
   app:
-    master: building-gratipay-com
+    master: inside-gratipay-com
   on:
     repo: gratipay/inside.gratipay.com
     branch: master

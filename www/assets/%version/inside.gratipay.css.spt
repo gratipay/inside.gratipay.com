@@ -1,7 +1,7 @@
 import os
 import sass
 
-filename = os.path.join(website.project_root, 'scss', 'building.gratipay.scss')
+filename = os.path.join(website.project_root, 'scss', 'inside.gratipay.scss')
 output_style = 'compressed' if website.compress_assets else 'nested'
 cache = os.environ.get('INSIDE_GRATIPAY_CACHE_CSS', '')
 [---]

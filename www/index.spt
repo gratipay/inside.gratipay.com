@@ -7,7 +7,7 @@ nav_children = ['big-picture', 'howto', 'appendices']
 <body class="homepage">
 
     <div class="top">
-        <h1><img src="/assets/building-gratipay.svg" alt="Inside Gratipay"></h1>
+        <h1><img src="/assets/inside-gratipay.svg" alt="Inside Gratipay"></h1>
 
         <p>Welcome!&nbsp;We&apos;re
            building&nbsp;<a href="https://gratipay.com/">Gratipay</a>.
