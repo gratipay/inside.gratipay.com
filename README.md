@@ -1,12 +1,12 @@
-# http://building.gittip.com/
+# http://inside.gratipay.com/
 
-[![Build Status](https://travis-ci.org/gittip/building.gittip.com.svg)](https://travis-ci.org/gittip/building.gittip.com)
+[![Build Status](https://travis-ci.org/gratipay/inside.gratipay.com.svg)](https://travis-ci.org/gratipay/inside.gratipay.com)
 
 Quickstart:
 
 ```
-$ git clone https://github.com/gittip/building.gittip.com.git
-$ cd building.gittip.com
+$ git clone https://github.com/gratipay/inside.gratipay.com.git
+$ cd inside.gratipay.com
 $ make run
 [...]
 ```

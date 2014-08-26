@@ -1,5 +1,5 @@
 nav_title = 'Who Has Access to What'
-src = "http://gittip-access-dashboard.herokuapp.com/"
+src = "http://gratipay-access-dashboard.herokuapp.com/"
 [---]
 [---] text/html via jinja2
 {% include "templates/iframed.html" %}

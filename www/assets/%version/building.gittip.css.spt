@@ -1,9 +1,9 @@
 import os
 import sass
 
-filename = os.path.join(website.project_root, 'scss', 'building.gittip.scss')
+filename = os.path.join(website.project_root, 'scss', 'building.gratipay.scss')
 output_style = 'compressed' if website.compress_assets else 'nested'
-cache = os.environ.get('BUILDING_GITTIP_CACHE_CSS', '')
+cache = os.environ.get('INSIDE_GRATIPAY_CACHE_CSS', '')
 [---]
 css = sass.compile(output_style=str(output_style),filename=str(filename))
 if cache:

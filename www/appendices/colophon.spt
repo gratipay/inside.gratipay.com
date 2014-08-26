@@ -2,7 +2,7 @@ nav_title = 'Colophon'
 [---]
 [---] text/html via markdown
 
-These are the tools and services that the Gittip team uses to work
+These are the tools and services that the Gratipay team uses to work
 together and build the platform.
 
 Wherever possible, we link directly to a place where we work via a
@@ -83,7 +83,7 @@ linked asterisk\*.
 [aspen]:        http://aspen.io/
 [balanced]:     https://www.balancedpayments.com/
 [botbot]:       https://botbot.me/
-[botbot-us]:    https://botbot.me/freenode/gittip/
+[botbot-us]:    https://botbot.me/freenode/gratipay/
 [capital-one]:  https://www.capitalone.com/
 [coinbase]:     https://coinbase.com/
 [digitalocean]: https://www.digitalocean.com/
@@ -91,26 +91,26 @@ linked asterisk\*.
 [freshdesk]:    http://freshdesk.com/
 [ga]:           http://www.google.com/analytics/
 [gplus]:        https://www.google.com/+/learnmore/
-[gplus-us]:     https://plus.google.com/+gittip
+[gplus-us]:     https://plus.google.com/+gratipay
 [git]:          http://git-scm.com/
 [github]:       https://github.com/
-[github-us]:    https://github.com/gittip/www.gittip.com
+[github-us]:    https://github.com/gratipay/gratipay.com
 [hangouts]:     https://www.google.com/+/learnmore/hangouts/
 [heroku]:       https://www.heroku.com/
 [huboard]:      https://huboard.com/
-[huboard-us]:   https://huboard.com/gittip/www.gittip.com
+[huboard-us]:   https://huboard.com/gratipay/gratipay.com
 [hubot]:        https://hubot.github.com/
-[i18n-issue]:   https://github.com/gittip/www.gittip.com/issues/957
+[i18n-issue]:   https://github.com/gratipay/gratipay.com/issues/957
 [irc]:          https://en.wikipedia.org/wiki/Internet_Relay_Chat
-[irc-us]:       http://webchat.freenode.net/?channels=gittip
+[irc-us]:       http://webchat.freenode.net/?channels=gratipay
 [jinja2]:       http://jinja.pocoo.org/2/
 [librato]:      https://metrics.librato.com/
 [librato-us]:   https://metrics.librato.com/share/dashboards/42hmoj9j?duration=3600&source=production
-[libs-prod]:    https://github.com/gittip/www.gittip.com/blob/master/requirements.txt
-[libs-testing]: https://github.com/gittip/www.gittip.com/blob/master/requirements_tests.txt
+[libs-prod]:    https://github.com/gratipay/gratipay.com/blob/master/requirements.txt
+[libs-testing]: https://github.com/gratipay/gratipay.com/blob/master/requirements_tests.txt
 [mandrill]:     http://mandrill.com/
 [medium]:       https://medium.com/
-[medium-us]:    https://medium.com/building-gittip
+[medium-us]:    https://medium.com/building-gratipay
 [new-alliance]: http://www.newalliancefcu.com/
 [pagerduty]:    http://www.pagerduty.com/
 [paypal]:       https://www.paypal.com/
@@ -119,9 +119,9 @@ linked asterisk\*.
 [sass]:         http://sass-lang.com/
 [sentry]:       http://getsentry.com/
 [travis]:       https://travis-ci.com/
-[travis-us]:    https://travis-ci.org/gittip/www.gittip.com
+[travis-us]:    https://travis-ci.org/gratipay/gratipay.com
 [twitter]:      https://twitter.com/
-[twitter-us]:   https://twitter.com/gittip
+[twitter-us]:   https://twitter.com/gratipay
 [uptimerobot]:  http://uptimerobot.com/
 [vagrant]:      http://www.vagrantup.com/
 [youtube]:      https://www.youtube.com/

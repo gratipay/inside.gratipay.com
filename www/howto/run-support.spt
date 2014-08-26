@@ -4,14 +4,14 @@ nav_title="Run Support"
 
 ## Support software
 
-Gittip uses [Freshdesk](http://gittip.freshdesk.com/) for managing support queries.
+Gratipay uses [Freshdesk](http://gratipay.freshdesk.com/) for managing support queries.
 
 ## Support Workflow
 
 ### Existing tickets
 
 * View tickets that are *assigned to you*, and see if any can be responded to, closed, or otherwise have action taken on them.
-* View all [unassigned tickets](http://gittip.freshdesk.com/helpdesk/tickets/filter/new), which will usually be new arrivals.
+* View all [unassigned tickets](http://gratipay.freshdesk.com/helpdesk/tickets/filter/new), which will usually be new arrivals.
 * Close or merge any tickets which are spam, duplicates, or otherwise can be immediately resolved.
 * If you spot a ticket you can help with, then assign the ticket to yourself. This lets others know you're working on it.
 * If your response then requires the user to do something, set the status to "Waiting on Customer".
@@ -26,13 +26,13 @@ Gittip uses [Freshdesk](http://gittip.freshdesk.com/) for managing support queri
 * Tickets that you're dealing with are unlikely to be touched by someone else, so it's important to check them regularly.
 * Use the 'waiting on customer' status liberally. A lot of processes involve asking our clients for more details.
 * Do *not* include the Freshdesk URL in tickets. It's not immediately useful to users, and is only likely to confuse them.
-* Update this page on GitHub! You can make Gittip support even better!
+* Update this page on GitHub! You can make Gratipay support even better!
 
 
 ## Common requests
 
 Our most common requests involve pay-ins or pay-outs. For both of these, you
-should verify the user's identity by asking them for their Gittip username or
+should verify the user's identity by asking them for their Gratipay username or
 URL, and the first eight digits of their API key.
 
 Here are instructions for specific common requests:
