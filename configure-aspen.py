@@ -48,7 +48,7 @@ website.algorithm.insert_after('add_nav_current_to_context', add_nav_next_to_con
 
 repos = [
     'https://github.com/gratipay/gratipay.com.git',
-    'https://github.com/gratipay/gttp.co.git',
+    'https://github.com/gratipay/grtp.co.git',
     'https://github.com/gratipay/Gratipay-Everywhere.git',
 ]
 
