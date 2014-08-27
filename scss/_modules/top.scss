@@ -31,6 +31,7 @@
         text-align: right;
         .smile {
             font-style: normal;
+            white-space: nowrap ! important;
         }
     }
 }
@@ -44,7 +45,7 @@
             }
         }
         .welcome {
-            position: absolute;
+            top: auto;
             bottom: 0;
             right: 0;
             width: 50%;
@@ -57,15 +58,30 @@
 
 
 @media screen and (max-width: 600px) {
+    .homepage .top p {
+        font-size: 16px;
+        line-height: 19px;
+    }
     .top p {
-        font: normal 16px/19px $surveyor;
+        font-size: 12px;
+        line-height: 15px;
     }
 }
 
 @media screen and (max-width: 479px) {
+    .homepage .top {
+        p {
+            font-size: 14px;
+            line-height: 17px;
+        }
+        .welcome span {
+            white-space: normal;
+        }
+    }
     .top {
         p {
-            font: normal 14px/17px $surveyor;
+            font-size: 10px;
+            line-height: 13px;
         }
         .welcome span {
             white-space: normal;
