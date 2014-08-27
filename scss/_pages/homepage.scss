@@ -5,23 +5,33 @@
 /*****************************************************************************/
 
 .homepage {
-    background: $brown;
+    background: url('/assets/inside.jpg') 50% 50% repeat-y;
+    background-size: cover;
 
     .top {
-        background: $white;
-        text-align: center;
+        background: transparentize($white, 0.2);
+        position: relative;
+
         h1 {
             line-height: 0;
             margin: 0;
-            img { width: 100%; }
+            img {
+                width: 50%;
+                margin: -20% 0 12px 12px;
+            }
+        }
+        .welcome {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50%;
+            padding: 0 24px;
+            color: $brown;
+            span { white-space: nowrap; }
         }
         p {
-            padding: 0 8.55% 1em;
-            font: italic 16px/24px $surveyor;
-            color: $black;
-            span {
-                font-style: normal;
-            }
+            font: normal 18px/22px $surveyor;
+            text-align: right;
         }
     }
 
@@ -29,6 +39,7 @@
         width: 100%;
         padding: 5% 8.55%;
         overflow: auto; /* http://www.quirksmode.org/css/clearing.html */
+        background: transparentize($brown, 0.1);
 
         section {
             width: 30%;
@@ -59,6 +70,11 @@
 
 @media screen and (max-width: 600px) {
     .homepage {
+        .top {
+            p {
+                font: normal 16px/19px $surveyor;
+            }
+        }
         .toc {
             text-align: center;
             section {
@@ -73,4 +89,13 @@
         }
     }
 }
-
+@media screen and (max-width: 479px) {
+    .homepage .top {
+        p {
+            font: normal 14px/17px $surveyor;
+        }
+        .welcome span {
+            white-space: normal;
+        }
+    }
+}

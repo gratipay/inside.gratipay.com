@@ -9,9 +9,16 @@ nav_children = ['big-picture', 'howto', 'appendices']
     <div class="top">
         <h1><img src="/assets/inside-gratipay.svg" alt="Inside Gratipay"></h1>
 
-        <p>Welcome!&nbsp;We&apos;re
-           building&nbsp;<a href="https://gratipay.com/">Gratipay</a>.
-           First&nbsp;time?&nbsp;Start&nbsp;at&nbsp;<a href="/big-picture/welcome">the&nbsp;top</a>!&nbsp;<span>:-)</span>
+        <div class="welcome">
+
+            <p>
+                <span>This is <a href="https://gratipay.com/">Gratipay</a>'s</span> 
+                <span>internal company portal.</span>
+                <span>First time here? Welcome!</span>
+                <span>Start at <a href="/big-picture/welcome">the top</a>. :-)</span>
+            </p>
+
+        </div>
     </div>
 
     <div class="toc">
