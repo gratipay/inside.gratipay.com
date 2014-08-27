@@ -30,19 +30,9 @@
     {%- endmacro %}
     {% block body %}<body>
         {% block page %}
+        {% include "templates/top.html" %}
         <div id="page">
             <div class="content">
-                <div class="internal-notice">
-                    <a href="/big-picture/welcome">Welcome!</a>
-                    You are on Gratipay&apos;s company portal.<br>
-                    <b>Looking for Gratipay itself?</b>
-                    Go to <a href="https://gratipay.com/">gratipay.com</a>.
-                </div>
-                <div class="breadcrumbs">
-                    <ul>
-                        <li><a href="/"><img src="/assets/inside-gratipay-tight.svg"></a></li>
-                    </ul>
-                </div>
                 {% if nav_title %}<h1>{{ nav_title }}</h1>{% endif %}
                 {% block content %}{% endblock %}
                 {% if nav_next.by_fs %}

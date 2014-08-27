@@ -6,20 +6,7 @@ nav_children = ['big-picture', 'howto', 'appendices']
 {% block body %}
 <body class="homepage">
 
-    <div class="top">
-        <h1><img src="/assets/inside-gratipay.svg" alt="Inside Gratipay"></h1>
-
-        <div class="welcome">
-
-            <p>
-                <span>This is <a href="https://gratipay.com/">Gratipay</a>'s</span> 
-                <span>internal company portal.</span>
-                <span>First time here? Welcome!</span>
-                <span>Start at <a href="/big-picture/welcome">the top</a>. :-)</span>
-            </p>
-
-        </div>
-    </div>
+    {% include "templates/top.html" %}
 
     <div class="toc">
         {% for node in nav_current.values() %}
