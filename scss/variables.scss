@@ -1,0 +1,24 @@
+/*****************************************************************************/
+/*                                                                           */
+/* Color and font variables                                                  */
+/*                                                                           */
+/*****************************************************************************/
+
+$ideal: 'Ideal Sans SSm A', 'Ideal Sans SSm B';
+$surveyor: 'Surveyor SSm A', 'Surveyor SSm B';
+
+// Colors
+$green: #396;
+$darker-green: darken($green, 10);
+$lighter-green: lighten($green, 10);
+$brown: #630;
+$light-brown: desaturate(lighten($brown, 60), 60);
+$gray: #555;
+$light-gray: #DDD;
+$darker-gray: #CCC;
+$lighter-gray: #EEE;
+$black: #333;
+$red: #C00;
+$light-red: #F99;
+$gold: #FFC300;
+$white: #FFF;

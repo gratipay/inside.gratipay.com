@@ -1,0 +1,20 @@
+/*****************************************************************************/
+/*                                                                           */
+/* http://inside.gratipay.com/big-picture/brand/                             */
+/*                                                                           */
+/*****************************************************************************/
+
+.chip {
+    width: 128px;
+    height: 128px;
+    display: inline-block;
+    margin-right: 16px;
+    color: white;
+    text-align: center;
+    line-height: 128px;
+    font-family: monospace;
+
+    &.green { background: $green; }
+    &.brown { background: $brown; }
+    &.gold { background: $gold; color: $brown; }
+}

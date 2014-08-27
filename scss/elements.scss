@@ -1,0 +1,67 @@
+/*****************************************************************************/
+/*                                                                           */
+/* Styles for contentish HTML elements                                       */
+/*                                                                           */
+/*****************************************************************************/
+
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
+
+ol { margin-bottom: 2em; }
+ul li { list-style: circle; margin: 0 0 0 1.5em; }
+li:last-child { margin-bottom: 1em; }
+ul ul { margin-top: 1em; }
+ol ol { margin-top: 1em; }
+
+a {
+    color: $green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p {
+    padding: 0 0 1em;
+}
+
+blockquote {
+    border-left: 2px solid $light-gray;
+    padding-left: 1em;
+    margin-bottom: 1em;
+
+    p:last-child {
+        padding-bottom: 0;
+    }
+}
+
+h1 {
+    font: 700 32px/40px $ideal;
+    margin: 35px 0 20px;
+    color: $brown;
+}
+
+h2 {
+    font: 700 16px/24px $ideal;
+    margin: 35px 0 8px;
+    color: $brown;
+    text-transform: uppercase;
+    &:nth-child(1) { margin-top: 0; }
+}
+
+table {
+    margin: 0 0 2em;
+    color: $brown;
+    tr {
+        th {
+            font: bold 16px/24px $ideal;
+        }
+        td {
+            font: normal 16px/20px $ideal;
+        }
+        td, th {
+            padding: 0 1em 0 0;
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+}

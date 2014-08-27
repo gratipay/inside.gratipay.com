@@ -1,0 +1,25 @@
+/*****************************************************************************/
+/*                                                                           */
+/* http://inside.gratipay.com/big-picture/product                            */
+/*                                                                           */
+/*****************************************************************************/
+
+.refactored {
+    font: normal 10px/10px $ideal;
+    padding: 3px 10px;
+    border-radius: 3px;
+    float: right;
+
+    &.too-long-ago {
+        background: $green;
+        color: white;
+    }
+    &.past {
+        background: $brown;
+        color: white;
+    }
+    &.future {
+        background: $gold;
+        color: $brown;
+    }
+}

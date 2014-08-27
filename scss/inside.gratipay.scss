@@ -1,12 +1,20 @@
-/* Import base styles from gratipay.com. By doing this internally rather than
- * externally, we have access to all of our Sass mixins. */
+/*****************************************************************************/
+/*                                                                           */
+/* Top Level of SCSS for Inside Gratipay                                     */
+/*                                                                           */
+/*****************************************************************************/
 
-@import "../repos/gratipay.com/scss/gratipay.scss";
-@import "overrides";
-
+@import "reset";
+@import "variables";
 @import "fonts";
-@import "homepage";
-@import "content-page";
-@import "script";
-@import "breadcrumbs";
-@import "bottom-nav";
+@import "elements";
+@import "layout";
+@import "responsiveness";
+
+@import "_modules/breadcrumbs";
+@import "_modules/bottom-nav";
+
+@import "_pages/homepage";
+@import "_pages/brand-guidelines";
+@import "_pages/product-overview";
+@import "_pages/iframed";

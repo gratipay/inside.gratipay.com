@@ -1,0 +1,43 @@
+/*****************************************************************************/
+/*                                                                           */
+/* Page Layout                                                               */
+/*                                                                           */
+/*****************************************************************************/
+
+/* Needed for iframe pages to work properly. */
+html { height: 100%; }
+body { height: 100%; }
+
+body {
+    font: 300 16px/24px $surveyor;
+    font-weight: 300;
+    color: $black;
+    background: $white;
+}
+
+#page {
+    background: transparentize($white, 0.1);
+}
+
+.content {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0 0 100px;
+}
+
+.internal-notice {
+    font: normal 12px/18px $ideal;
+    border-left: 36px solid $gold;
+    padding-left: 10px;
+    text-align: left;
+    margin: 10px 0 64px;
+}
+
+.next {
+    margin: 48px 0 0;
+    overflow: auto;
+    text-align: right;
+    h2 {
+        display: inline;
+    }
+}
