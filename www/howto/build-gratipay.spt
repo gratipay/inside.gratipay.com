@@ -32,21 +32,6 @@ by browsing issues. Start by using Gratipay.
 
 </li>
 
-<li>If you're a collaborator on our repo, assign yourself to the ticket (if
-you're not a collaborator, you will be soon). The rules of assignment are:
-
-  <ol class="lower-roman">
-
-    <li>Only one assignment per person at a time.</li>
-
-    <li>Only you can assign and unassign yourself.</li>
-
-    <li>You are the benevolent dictator of your ticket.</li>
-
-  </ol>
-
-</li>
-
 <li>Design from the outside in, build from the inside out:
 
   <ol class="lower-roman">
