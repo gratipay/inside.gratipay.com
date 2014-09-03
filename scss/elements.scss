@@ -7,6 +7,10 @@
 strong, b { font-weight: bold; }
 em, i { font-style: italic; }
 
+ol { list-style: decimal; }
+ul { list-style: disc; }
+li { margin: 0 0 0 1.5em; }
+
 ol { margin-bottom: 2em; }
 ul li { list-style: circle; margin: 0 0 0 1.5em; }
 li:last-child { margin-bottom: 1em; }
