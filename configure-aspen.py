@@ -3,6 +3,7 @@ import string
 import random
 from os.path import basename, dirname, join, realpath, isdir
 
+import canonizer
 import gfm
 from nav import NavItem
 
@@ -40,6 +41,13 @@ add_nav_to_website(website)
 website.algorithm.insert_after('dispatch_request_to_filesystem', add_nav_to_website)
 website.algorithm.insert_after('add_nav_to_website', add_nav_current_to_context)
 website.algorithm.insert_after('add_nav_current_to_context', add_nav_next_to_context)
+
+
+# Hostname canonicalization
+# =========================
+
+canonize = canonizer.Canonizer(os.environ.get('CANONICAL_LOCATION', ''))
+website.algorithm.insert_after('parse_environ_into_request', canonize)
 
 
 # Download repos.
