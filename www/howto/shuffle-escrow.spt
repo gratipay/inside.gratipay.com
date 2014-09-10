@@ -1,8 +1,6 @@
 nav_title="Shuffle Escrow"
 [---]
 [---] text/html
-*by Chad Whitacre*
-
 We hold escrow in five accounts:
 
  1. **Balanced (Source)**&mdash;Most money enters Gratipay via a credit card
@@ -15,14 +13,14 @@ We hold escrow in five accounts:
     more) and accruing a significant Gratipay balance. Looking at
     [withdrawals](https://gratipay.com/about/charts.html), the biggest week over
     week spike I'm seeing is about 5x (week 38 to 39), and that's when we were much
-    smaller, so a single new large payout had a major affect. Based on that, I keep
+    smaller, so a single new large payout had a major affect. Based on that, we keep
     **7x the current week's withdrawal** in Balanced.
 
- 1. **New Alliance (Hot Swap)**&mdash;I send the remainder over 7x current withdrawal to our
-    main escrow bank account. From there we connect to Balanced (we also still have
-    a [trickle](https://github.com/gratipay/gratipay.com/issues/173) coming in from
-    Stripe), PayPal, Coinbase, and Cold Storage. We need to keep enough in here to
-    fund PayPal and Coinbase. We should keep an amount equal to whatever we have in
+ 1. **New Alliance (Hot Swap)**&mdash;We send the remainder over 7x current withdrawal 
+    to our main escrow bank account. From there we connect to Balanced (we also still 
+    have a [trickle](https://github.com/gratipay/gratipay.com/issues/173) coming in 
+    from Stripe), PayPal, Coinbase, and Cold Storage. We need to keep enough in here 
+    to fund PayPal and Coinbase. We should keep an amount equal to whatever we have in
     PayPal. That way we can fund PayPal as needed, and we can also float Coinbase
     purchases.
 
@@ -36,7 +34,7 @@ We hold escrow in five accounts:
     [withdrawal cap](https://github.com/gratipay/gratipay.com/issues/2096). Our
     current max growth week-over-week is 4x. However, we're
     [nervous](https://github.com/gratipay/gratipay.com/issues/63#issuecomment-14676114)
-    about PayPal freezing our funds, so I think we should only keep **5x the current
+    about PayPal freezing our funds, so we should only keep **5x the current
     week's MassPay** in PayPal.
 
  1. **Coinbase (JIT Bitcoin)**&mdash;Since buying and selling bitcoin involves
@@ -50,7 +48,7 @@ We hold escrow in five accounts:
     [interest](https://github.com/gratipay/gratipay.com/issues/1988).
 
 At the end of [payday](run-payday), after [running MassPay](run-masspay),
-here's how I shuffle escrow around:
+here's how to shuffle escrow around:
 
   1. From [Balanced](https://dashboard.balancedpayments.com/), do an "add" or
      "withdraw" from/to New Alliance, so that we have 7x current

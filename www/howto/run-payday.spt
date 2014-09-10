@@ -1,8 +1,6 @@
 nav_title="Run Payday"
 [---]
 [---] text/html
-*by Chad Whitacre*
-
 The payday process begins every Thursday morning. Our payment processor
 initiates their internal bank settling process at 3:30pm PST each
 business day, resulting in bank deposits received by Gratipay users in the
@@ -13,8 +11,8 @@ us from hitting Thursday's deadline, then we have until the Friday's
 deadline to ensure that deposits will be received by users on Monday
 afternoon.
 
-Here's how I run payday. After each step, I record the result on the
-ticket I create in step two.
+Here's how to run payday. After each step, record the result on the
+ticket created in step two.
 
   1. Open the [charts page](https://gratipay.com/about/charts.html). Determine the week number,
      NNN.
