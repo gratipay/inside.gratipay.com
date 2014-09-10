@@ -1,8 +1,32 @@
 nav_title="Run MassPay"
 [---]
 [---] text/html
-*by Chad Whitacre*
 
 Immediately after [payday](run-payday) we send money to some people using
-PayPal's MassPay feature. This is where I will eventually document that
-process.
+PayPal's MassPay feature.
+
+1. [Run](http://inside.gratipay.com/howto/run-a-script) `./bin/masspay.py -i`
+   to hit the database and generate input files.
+1. Run `./bin/masspay.py -o` to generate output files.
+1. Log in to PayPal and navigate to the MassPay feature.
+1. Upload the `*.paypal.csv` file from step 2 and write a note with subject
+   "Gratipay Payout" and body "Here you go! Thanks for using Gratipay! :D - chad"
+1. Submit the MassPay and double check the amount and the fee against the `stdout`
+   from step 2 (not to be confused with the output files from step 2!).
+1. If the amounts don't match then we probably have a bad `paypal_fee_cap` for one
+   of the users. Manually bisect the input file from step 1, running through steps
+   2 through 5 with half the file at a time until you discover the culprit. Manually
+   update `paypal_fee_cap` for the culprit in the participants table, then start all
+   over from step 1.
+1. When everything checks out, pull the trigger on the MassPay.
+1. Click the button like "Download details of this MassPay."
+1. Wait a few minutes, then refresh the page. You should see "N claimed" or
+   something.
+1. Download the CSV they give you. It will save as `Masspay_Blah.CSV` or something.
+1. Move the `Masspay_Blah.CSV` file to `../masspay/yyyy-mm-dd.report.paypal.csv`.
+1. `cd ../masspay` and `git commit` the four new files.
+1. If any of the payments *aren't* claimed (very rare), then ... deal with it somehow.
+1. Run `./bin/masspay.py -p` to post back to Gratipay using the `record-an-exchange`
+   endpoint. Make sure this works by inspecting the `exchanges` table. **Don't forget 
+   this step!**
+1. Note the result on the payday ticket: "MassPay done and posted back for N users."
