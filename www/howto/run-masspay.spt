@@ -19,11 +19,11 @@ PayPal's MassPay feature.
    update `paypal_fee_cap` for the culprit in the participants table, then start all
    over from step 1.
 1. When everything checks out, pull the trigger on the MassPay.
-1. Click the button like "Download details of this MassPay."
+1. Click the link, "View details of this Mass Payment."
 1. Wait a few minutes, then refresh the page. You should see "N claimed" or
    something.
-1. Download the CSV they give you. It will save as `Masspay_Blah.CSV` or something.
-1. Move the `Masspay_Blah.CSV` file to `../masspay/yyyy-mm-dd.report.paypal.csv`.
+1. Download the CSV they give you. It will save as `MassPayment_Details.csv`.
+1. Move the `MassPayment_Details.csv` file to `../masspay/yyyy-mm-dd.report.paypal.csv`.
 1. `cd ../masspay` and `git commit` the four new files.
 1. If any of the payments *aren't* claimed (very rare), then ... deal with it somehow.
 1. Run `./bin/masspay.py -p` to post back to Gratipay using the `record-an-exchange`
