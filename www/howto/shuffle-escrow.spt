@@ -17,12 +17,10 @@ We hold escrow in five accounts:
     **7x the current week's withdrawal** in Balanced.
 
  1. **New Alliance (Hot Swap)**&mdash;We send the remainder over 7x current withdrawal 
-    to our main escrow bank account. From there we connect to Balanced (we also still 
-    have a [trickle](https://github.com/gratipay/gratipay.com/issues/173) coming in 
-    from Stripe), PayPal, Coinbase, and Cold Storage. We need to keep enough in here 
-    to fund PayPal and Coinbase. We should keep an amount equal to whatever we have in
-    PayPal. That way we can fund PayPal as needed, and we can also float Coinbase
-    purchases.
+    to our main escrow bank account. From there we connect to Balanced, PayPal, Coinbase,
+    and Cold Storage. We need to keep enough in here to fund PayPal and Coinbase.
+    We should keep an amount equal to whatever we have in PayPal. That way we can fund
+    PayPal as needed, and we can also float Coinbase purchases.
 
  1. **PayPal (Non-U.S. Bandaid)**&mdash;We keep a standing balance in PayPal,
     because it takes 3-5 days to add funds, and we want to be able to run MassPay
