@@ -18,7 +18,7 @@ deploy:
   # See: https://botbot.me/freenode/gittip/msg/13686229/
   strategy: git
   api_key:
-    secure: DEgQdY5qAukGtKb2kBh00g9iY5+ncKcIxT59H0Yart/1qW56IrrDdZnm4Cb8mx6yIw+Jn2W6wKnLTXl0tDivO+tzv981uk3Wa49bmU7sF9XxaO35BhspvfmPQIUodjsjVe3gUs2OVbPZJaJn/z0k1nClQmJGmzNVYIAvfD07VUQ=
+    secure: "ZynRIt4f63rugdQn11x0GIC7W47fc/+uoCbiraiGtNev2q01O5XHckh5DCDJvBgrCX4eJ+IpGZw7O64nG+sEhXqg4O8WZtgK/2GJWT7Ymw8Ksg5B+PLOiJbXf3LjfsGvcTcO+crf6eikJfrtE7z/jYAUrQP8g4NxqPjAVOwOvNY="
   app:
     master: inside-gratipay-com
   on:
