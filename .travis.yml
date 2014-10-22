@@ -17,7 +17,7 @@ deploy:
   # Required for some reason (default anvil strategy doesn't work)
   # See: https://botbot.me/freenode/gittip/msg/13686229/
   api_key:
-    secure: "ZynRIt4f63rugdQn11x0GIC7W47fc/+uoCbiraiGtNev2q01O5XHckh5DCDJvBgrCX4eJ+IpGZw7O64nG+sEhXqg4O8WZtgK/2GJWT7Ymw8Ksg5B+PLOiJbXf3LjfsGvcTcO+crf6eikJfrtE7z/jYAUrQP8g4NxqPjAVOwOvNY="
+    secure: "PlaeO2woN4LUCtCg2GjOzbXkp9OGR0UHKmsge6RLcCjLBisNWX3akxLDh8zyqNm4BKRmG1sTNw0GHssSniCYf0RtF5PwVeP4K5DRPMVcLtcfOxbVEsU4Bq8/5MKqArPC2mG9qiG8/4gtkE4XtAUbdjU0MWpfLT2pmmpp8kuDd7k="
   app:
     master: inside-gratipay-com
   on:
