@@ -16,6 +16,7 @@ deploy:
   provider: heroku
   # Required for some reason (default anvil strategy doesn't work)
   # See: https://botbot.me/freenode/gittip/msg/13686229/
+  strategy: git
   api_key:
     secure: "PlaeO2woN4LUCtCg2GjOzbXkp9OGR0UHKmsge6RLcCjLBisNWX3akxLDh8zyqNm4BKRmG1sTNw0GHssSniCYf0RtF5PwVeP4K5DRPMVcLtcfOxbVEsU4Bq8/5MKqArPC2mG9qiG8/4gtkE4XtAUbdjU0MWpfLT2pmmpp8kuDd7k="
   app:
