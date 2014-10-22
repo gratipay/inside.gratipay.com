@@ -50,24 +50,6 @@ canonize = canonizer.Canonizer(os.environ.get('CANONICAL_LOCATION', ''))
 website.algorithm.insert_after('parse_environ_into_request', canonize)
 
 
-# Download repos.
-# ===============
-# We try to take documentation from source code where possible.
-
-repos = [
-    'https://github.com/gratipay/gratipay.com.git',
-    'https://github.com/gratipay/grtp.co.git',
-    'https://github.com/gratipay/Gratipay-Everywhere.git',
-]
-
-website.repo_root = realpath(join(website.project_root, 'repos'))
-
-if not isdir(website.repo_root):
-    os.system('mkdir {}'.format(website.repo_root))
-    for repo in repos:
-        os.system('cd {} && git clone {}'.format(website.repo_root, repo))
-
-
 # Set website.version.
 # ====================
 # Yeesh, what a hack. At Heroku we don't have a git repo once deployed, so

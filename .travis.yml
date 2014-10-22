@@ -25,13 +25,6 @@ deploy:
     repo: gratipay/inside.gratipay.com
     branch: master
 
-before_deploy:
-  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
-  - cd www/repos
-  - git clone https://github.com/gratipay/gratipay.com.git
-  - git clone https://github.com/gratipay/gttp.co.git
-  - git clone https://github.com/gratipay/Gratipay-Everywhere.git
-
 notifications:
   email: false
   irc:
