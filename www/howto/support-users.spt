@@ -9,7 +9,7 @@ We use [Freshdesk](http://gratipay.freshdesk.com/) for managing support queries.
 * View all [open tickets](http://gratipay.freshdesk.com/helpdesk/tickets/filter/open), and see if any can be responded to, closed, or otherwise have action taken on them.
 * Close or merge any tickets which are spam, duplicates, or otherwise can be immediately resolved.
 * If you spot a ticket you can help with, then start working on it. Freshdesk supposedly shows when two agents are working on the same ticket, so don't worry about clobbering someone else.
-* Regardless of what action you take, close the ticket when you're done with it. If/whent the user responds, it will be reopened automatically.
+* Regardless of what action you take, close the ticket when you're done with it. If/when the user responds, it will be reopened automatically.
 
 ## Tips for providing great support
 
