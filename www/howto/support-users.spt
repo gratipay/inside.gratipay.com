@@ -1,0 +1,25 @@
+nav_title="Support Users"
+[---]
+[---] text/html via markdown
+
+We use [Freshdesk](http://gratipay.freshdesk.com/) for managing support queries. We use a simple workflow with two states: **open** and **closed**.
+
+### Support Workflow
+
+* View all [open tickets](http://gratipay.freshdesk.com/helpdesk/tickets/filter/open), and see if any can be responded to, closed, or otherwise have action taken on them.
+* Close or merge any tickets which are spam, duplicates, or otherwise can be immediately resolved.
+* If you spot a ticket you can help with, then start working on it. Freshdesk supposedly shows when two agents are working on the same ticket, so don't worry about clobbering someone else.
+* Regardless of what action you take, close the ticket when you're done with it. If/whent the user responds, it will be reopened automatically.
+
+## Tips for providing great support
+
+* Respond quickly! Even if that response says you need to spend more time, this really makes people feel appreciated.
+* Don't hesitate to ask for help. IRC can be great for this.
+* Support staff with access to the database or financial systems have a *lot* on their plate. Help them out by getting basic details first (identity verifications, amounts, etc), and then pass them on.
+* Do *not* include the Freshdesk URL in tickets. It's not immediately useful to users, and is only likely to confuse them.
+* Update this page on GitHub! You can make Gratipay support even better!
+
+
+## Common requests
+
+- [Configure PayPal](configure-paypal)
