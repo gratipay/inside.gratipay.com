@@ -4,7 +4,7 @@ nav_title="Support Users"
 
 We use [Freshdesk](http://gratipay.freshdesk.com/) for managing support queries. We use a simple workflow with two states: **open** and **closed**.
 
-### Support Workflow
+## Support Workflow
 
 * View all [open tickets](http://gratipay.freshdesk.com/helpdesk/tickets/filter/open), and see if any can be responded to, closed, or otherwise have action taken on them.
 * Close or merge any tickets which are spam, duplicates, or otherwise can be immediately resolved.
