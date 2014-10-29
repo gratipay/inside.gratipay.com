@@ -76,7 +76,7 @@ linked asterisk\*.
 
 ## Translation
 
-- [*Undecided...*][i18n-issue]
+- [Transifex][i18n-issue]
 
 <!-- Links -->
 [ally]:         http://www.ally.com/
@@ -118,6 +118,7 @@ linked asterisk\*.
 [python]:       https://www.python.org/
 [sass]:         http://sass-lang.com/
 [sentry]:       http://getsentry.com/
+[transifex]:    https://www.transifex.com/
 [travis]:       https://travis-ci.com/
 [travis-us]:    https://travis-ci.org/gratipay/gratipay.com
 [twitter]:      https://twitter.com/
