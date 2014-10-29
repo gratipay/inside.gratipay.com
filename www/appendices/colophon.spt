@@ -76,7 +76,7 @@ linked asterisk\*.
 
 ## Translation
 
-- [Transifex][i18n-issue]
+- [Transifex][transifex]
 
 <!-- Links -->
 [ally]:         http://www.ally.com/
@@ -100,7 +100,6 @@ linked asterisk\*.
 [huboard]:      https://huboard.com/
 [huboard-us]:   https://huboard.com/gratipay/gratipay.com
 [hubot]:        https://hubot.github.com/
-[i18n-issue]:   https://github.com/gratipay/gratipay.com/issues/957
 [irc]:          https://en.wikipedia.org/wiki/Internet_Relay_Chat
 [irc-us]:       http://webchat.freenode.net/?channels=gratipay
 [jinja2]:       http://jinja.pocoo.org/2/
