@@ -1,0 +1,16 @@
+nav_title="Translate Gratipay"
+[---]
+[---] text/html via markdown
+
+We use Transifex to manage our translations. To get involved, you'll need an
+account on Transifex. The place to start is on [our Transifex project
+page](https://www.transifex.com/projects/p/gratipay/).
+
+The way we have Transifex set up is that anyone can join one of our language
+teams as a translator, and you can start translating strings. Someone else will
+review your translations before they go live.
+
+Transifex lets you suggest new languages if you don't see the one you're
+interested in.
+
+We need 50% of the strings translated for a language before it gets deployed.
