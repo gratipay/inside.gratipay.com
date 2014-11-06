@@ -29,19 +29,14 @@ ticket created in step two.
   1. Triple-check the [charts page](https://gratipay.com/about/charts.html) to get the week
      number right.
   1. On `payday`: `./payday.sh NNN for_real_please`. Answer yes at the prompts.
-  1. `Ctrl-Z` and `bg` to put the `payday.sh` process in the background.
-  1. `pstree -p` to determine the PID of the parent shell process of `payday.sh`.
-  1. `kill -6 PID` to orphan the `payday.sh` process. This logs me out of `payday`.
-  1. Log back in to `payday`.
+  1. `Ctrl-C` to stop tailing the logfile (the `release.sh` script uses `disown` to detach itself from the controlling terminal).
+  1. Log out of `payday`.
+  1. Log back in to `payday` (to satisfy myself that payday is not dependent on my shell session).
   1. `cd paydays` and `tail -f gratipay-NNN.log`. Wait a minute for log output to appear, indicating
      that the `payday.sh` process is healthy. Exit the tail.
-  1. `watch -n1 'grep gratipay-NNN.log "COMPLETED" | tail -n1'`. I think that's it. I have
-     a bullet in my bash history on `payday` to show the log message that appears
-     every 100 users during the three payday loops. I keep this in a little screen
-     window to monitor progress.
-  1. Wait three hours.
+  1. Wait 15 minutes.
   1. If `payday.sh` fails, fix it, documenting everything on the ticket from step 2.
-  1. Once `payday.sh` finishes successfully, tweet from the Gratipay account using the form, "Gratipay
+  1. Once `payday.sh` finishes successfully, tweet from the Gratipay account using the form, "Week
      NNN&mdash;10,000 users exchanged $100,000: https://gratipay.com/about/charts.html." Fill in
      the numbers from the charts page. Add any fitting color commentary.
   1. [Run MassPay](run-masspay).
