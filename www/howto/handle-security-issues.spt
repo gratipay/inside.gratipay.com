@@ -3,9 +3,8 @@ nav_title = 'Handle Security Issues'
 [---] text/html via markdown
 
 Security issues may be responsibly disclosed to
-[chad@zetaweb.com](mailto:chad@zetaweb.com) using [this PGP
-key](http://pgp.mit.edu:11371/pks/lookup?op=get&search=0x6EE18A8DC47977C2). See
-[security.txt](https://gratipay.com/security.txt) for acknowledgements.
+[chad@zetaweb.com](mailto:chad@zetaweb.com). See
+[security.txt](https://gratipay.com/security.txt) for acknowledgements and PGP key.
 
 When we receive a security disclosure, we create a private repo in GitHub to
 track the issue. We can add the security researcher to the repo and any
