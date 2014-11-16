@@ -45,7 +45,7 @@
     .homepage {
         .top {
             p {
-                font: normal 16px/19px $surveyor;
+                font: normal 16px/19px $chronicle;
             }
         }
         .toc {
@@ -65,7 +65,7 @@
 @media screen and (max-width: 479px) {
     .homepage .top {
         p {
-            font: normal 14px/17px $surveyor;
+            font: normal 14px/17px $chronicle;
         }
         .welcome span {
             white-space: normal;

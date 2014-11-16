@@ -9,7 +9,7 @@ html { height: 100%; }
 body { height: 100%; }
 
 body {
-    font: 300 16px/24px $surveyor;
+    font: 300 16px/170% $chronicle;
     font-weight: 300;
     color: $black;
     background: $white;
@@ -57,7 +57,7 @@ body {
 
 @media screen and (max-width: 479px) {
     body {
-        font: normal 14px/21px $surveyor;
+        font: normal 14px/21px $chronicle;
     }
     #page .content {
         padding: 0 5%;
