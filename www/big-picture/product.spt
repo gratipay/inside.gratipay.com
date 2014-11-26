@@ -49,7 +49,7 @@ Last Refactored | Part
 {{ lr(949) }}   | About
 {{ lr(133) }}   | Profile - Basic Info
 {{ lr(716) }}   | Profile - Giving
-{{ lr() }}      | Profile - Receiving
+{{ lr(2938) }}  | Profile - Receiving
 {{ lr(838) }}   | Profile - History &amp; Billing
 {{ lr(1145) }}  | Profile - Widgets
 {{ lr(2323) }}  | Profile - Account
