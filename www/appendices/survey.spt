@@ -1,5 +1,4 @@
-nav_title = 'Finances'
-src = "https://docs.google.com/spreadsheets/d/1cp4SSYcc15eC7C4u2OYa5iCZhv3MUJfUw-lFSrmKYXU/pubhtml?widget=true&amp;headers=false"
+nav_title = 'Survey'
 src = "https://docs.google.com/spreadsheet/pub?key=1cp4SSYcc15eC7C4u2OYa5iCZhv3MUJfUw-lFSrmKYXU&output=html&widget=true"
 [---]
 [---] text/html via jinja2
