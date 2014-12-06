@@ -55,6 +55,7 @@ Last Refactored | Part
 {{ lr(2323) }}  | Profile - Account
 {{ lr() }}      | Profile - Event Log
 {{ lr(2569) }}  | Profile - Payroll
+{{ lr(2630) }}  | Profile - Takeover
 {{ lr() }}      | Emails
 {{ lr() }}      | On-site Notifications
 {{ lr(967) }}   | Community
