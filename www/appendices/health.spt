@@ -1,0 +1,5 @@
+nav_title = 'Application Health'
+src = "https://metrics.librato.com/share/dashboards/42hmoj9j?source=production"
+[---]
+[---] text/html via jinja2
+{% include "templates/iframed.html" %}

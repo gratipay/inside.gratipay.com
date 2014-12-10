@@ -1,5 +1,6 @@
 nav_title = 'Appendices'
-nav_children = ['calendar', 'chat', 'colophon', 'channels', 'finances', 'see-also', 'survey', 'access']
+nav_children = ['health', 'calendar', 'chat', 'colophon', 'channels', 'finances', 'see-also', 
+                'survey', 'access']
 [---]
 [---] text/html
 {{ toc(nav_current) }}
