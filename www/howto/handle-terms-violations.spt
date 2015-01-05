@@ -14,9 +14,10 @@ because they're the only ones with access to that repo.
 Conduct an investigation using the ticket, reaching a decision about whether to
 suspend the user's account. Involve the user, lawyers and law enforcement as
 appropriate. In the event that we suspend an account, notify the user in
-question privately via email if possible. Don't discuss the matter publicly,
-because that would violate the privacy of the user we're investigating. [Like
-the
+question privately via email if possible (see
+[3059](https://github.com/gratipay/gratipay.com/issues/3059)). Don't discuss
+the matter publicly, because that would violate the privacy of the user we're
+investigating. [Like the
 FBI](https://github.com/gratipay/inside.gratipay.com/issues/121#issuecomment-68372636),
 the Gratipay Bureau of Investigation (GBI!) takes in information but doesn't
 give it out.
