@@ -1,0 +1,26 @@
+nav_title = 'Handle Terms Violations'
+[---]
+[---] text/html via markdown
+
+Gratipay users and contributors and the public may report potential violations
+of our [terms and conditions](https://gratipay.com/about/terms/) using any of
+our [contact methods](https://gratipay.com/about/contact).
+
+When we receive a new report of a terms violation, [create an
+issue](https://github.com/gratipay/violations/issues/new) in the `violations`
+repo. Only "Owners" and "Safety" GitHub team members will be able to do this,
+because they're the only ones with access to that repo.
+
+Conduct an investigation using the ticket, reaching a decision about whether to
+suspend the user's account. Involve the user, lawyers and law enforcement as
+appropriate. In the event that we suspend an account, notify the user in
+question privately via email if possible. Don't discuss the matter publicly,
+because that would violate the privacy of the user we're investigating. [Like
+the
+FBI](https://github.com/gratipay/inside.gratipay.com/issues/121#issuecomment-68372636),
+the Gratipay Bureau of Investigation (GBI!) takes in information but doesn't
+give it out.
+
+Right now `is_suspicious` is the only real tool we have to suspend accounts, so
+use that (but see [2992](https://github.com/gratipay/gratipay.com/issues/2992)
+and [3058](https://github.com/gratipay/gratipay.com/issues/3058)).
