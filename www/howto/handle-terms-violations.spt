@@ -2,9 +2,10 @@ nav_title = 'Handle Terms Violations'
 [---]
 [---] text/html via markdown
 
-Gratipay users and contributors and the public may report potential violations
-of our [terms and conditions](https://gratipay.com/about/terms/) using any of
-our [contact methods](https://gratipay.com/about/contact).
+Gratipay users and contributors, law enforcement and other organizations, and
+the public may report potential violations of our [terms and
+conditions](https://gratipay.com/about/terms/) using any of our [contact
+methods](https://gratipay.com/about/contact).
 
 When we receive a new report of a terms violation, [create an
 issue](https://github.com/gratipay/violations/issues/new) in the `violations`
@@ -12,7 +13,7 @@ repo. Only "Owners" and "Safety" GitHub team members will be able to do this,
 because they're the only ones with access to that repo.
 
 Conduct an investigation using the ticket, reaching a decision about whether to
-suspend the user's account. Involve the user, lawyers and law enforcement as
+suspend the user's account. Involve the user, lawyers, and law enforcement as
 appropriate. In the event that we suspend an account, notify the user in
 question privately via email if possible (see
 [3059](https://github.com/gratipay/gratipay.com/issues/3059)). Don't discuss
