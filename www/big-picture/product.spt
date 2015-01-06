@@ -10,6 +10,7 @@ issues[1074] = '2014-07-21'
 issues[1369] = '2014-02-26'
 issues[2323] = '2014-04-29'
 issues[2579] = '2014-08-12'
+issues[2938] = '2015-01-06'
 
 now = datetime.datetime.now(tz=utc)
 
