@@ -1,0 +1,31 @@
+nav_title="Review Accounts"
+[---]
+[---] text/html
+
+Every week early on during [payday](./run-payday) we review accounts that have
+[ended up with a new Balanced
+account](https://github.com/gratipay/gratipay.com/blob/master/www/dashboard/index.spt#L13-14)
+in the past week. That happens on the [admin
+dashboard](https://gratipay.com/dashboard/) (if you're not logged in as an
+admin you should get a bare-bones 404). The purpose here is **to filter out
+accounts that are likely to use stolen credit cards**.
+
+What makes an account likely to be using a stolen credit card? That's up to you
+to decide. Eventually we'll need to develop algorithms to help us decide, but
+at our scale we depend on humans to decide. You are that human!
+
+Things to check:
+
+ - Elsewhere accounts: Do they have more than one connected? Are they clearly a
+   real person?
+ - Profile statement: Do they sound like someone who is the sort of person that
+   is already using Gratipay?
+ - Balanced account
+
+Go see [The Delpan Incident](https://gratipay.com/about/fraud/2012-11-05.html)
+for examples of accounts that were *definitely* fraudulent.
+
+Make a [ticket in
+`violations`](https://github.com/gratipay/violations/issues/new) for each
+payday, and keep track of any review discussion and decisions there. Cross-link
+the violations ticket to the public payday ticket.
