@@ -57,5 +57,3 @@ ticket created in step two.
     are temporary. If a card starts working again, the patron's
     receivers will see their contribution reflected in their totals once
     again.
-  - For discussion of improvements, see
-    [#1127](https://github.com/gratipay/gratipay.com/issues/1127).
