@@ -9,8 +9,8 @@ methods](https://gratipay.com/about/contact).
 
 When we receive a new report of a terms violation, [create an
 issue](https://github.com/gratipay/violations/issues/new) in the `violations`
-repo. Only "Owners" and "Safety" GitHub team members will be able to do this,
-because they're the only ones with access to that repo.
+repo. Only "Owners," "Violations," and "Safety" GitHub team members will be able 
+to do this, because they're the only ones with access to that repo.
 
 Conduct an investigation using the ticket, reaching a decision about whether to
 suspend the user's account. Involve the user, lawyers, and law enforcement as
