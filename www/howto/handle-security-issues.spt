@@ -4,8 +4,14 @@ nav_title = 'Handle Security Issues'
 
 Security issues may be responsibly disclosed to
 [chad@zetaweb.com](mailto:chad@zetaweb.com). See
-[security.txt](https://gratipay.com/security.txt) for acknowledgements and PGP key.
+[security.txt](https://gratipay.com/about/security) for more information, 
+including my PGP key and our Hall of Fame.
 
 When we receive a security disclosure, we create a private repo in GitHub to
 track the issue. We can add the security researcher to the repo and any
 relevant Gratipay staff. Once the issue is resolved, we make the repo public.
+Here are the repos we've opened up so far:
+
+ - https://github.com/gratipay/security-00000
+ - https://github.com/gratipay/security-00001
+ - https://github.com/gratipay/security-00001
