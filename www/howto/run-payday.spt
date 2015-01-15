@@ -13,7 +13,7 @@ will be received by users on Monday afternoon.
 Here's how to run payday. After each step, record the result on the
 ticket created in step two.
 
-  1. Open the [charts page](https://gratipay.com/about/charts.html). Determine the week number,
+  1. Open the [stats page](https://gratipay.com/about/stats). Determine the week number,
      NNN.
   1. [Start a ticket](https://github.com/gratipay/gratipay.com/issues/new) named "run Gratipay NNN."
   1. Locate and, in the ticket description, link to the ticket for the previous payday. Linked list!
