@@ -26,7 +26,7 @@ ticket created in step two.
      while now, though), and remove the `payday` entry from `~/.ssh/known_hosts`.
   1. `ssh payday` (the image has a key of mine on it under the `whit537` user).
   1. `cd gratipay.com && git fetch && git rebase && make`
-  1. Triple-check the [charts page](https://gratipay.com/about/charts.html) to get the week
+  1. Triple-check the [stats page](https://gratipay.com/about/stats) to get the week
      number right.
   1. On `payday`: `./payday.sh NNN for_real_please`. Answer yes at the prompts.
   1. `Ctrl-C` to stop tailing the logfile (the `release.sh` script uses `disown` to detach itself 
