@@ -22,14 +22,15 @@ ticket created in step two.
      matches the production `/explore/` page.
   1. Login to Digital Ocean, and spin up a new droplet using the `payday` image. Smallest droplet
      is fine. Image is in NYC2.
-  1. Update `payday` in my `/etc/hosts` with the IP address of the new droplet, and remove the
-     `payday` entry from `~/.ssh/known_hosts`.
+  1. Update `payday` in `/etc/hosts` with the IP address of the new droplet (it hasn't changed for a 
+     while now, though), and remove the `payday` entry from `~/.ssh/known_hosts`.
   1. `ssh payday` (the image has a key of mine on it under the `whit537` user).
   1. `cd gratipay.com && git fetch && git rebase && make`
   1. Triple-check the [charts page](https://gratipay.com/about/charts.html) to get the week
      number right.
   1. On `payday`: `./payday.sh NNN for_real_please`. Answer yes at the prompts.
-  1. `Ctrl-C` to stop tailing the logfile (the `release.sh` script uses `disown` to detach itself from the controlling terminal).
+  1. `Ctrl-C` to stop tailing the logfile (the `release.sh` script uses `disown` to detach itself 
+     from the controlling terminal).
   1. Log out of `payday`.
   1. Log back in to `payday` (to satisfy myself that payday is not dependent on my shell session).
   1. `cd paydays` and `tail -f gratipay-NNN.log`. Wait a minute for log output to appear, indicating
