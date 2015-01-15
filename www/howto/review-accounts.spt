@@ -28,5 +28,5 @@ for examples of accounts that were *definitely* fraudulent.
 
 Make a [ticket in
 `violations`](https://github.com/gratipay/violations/issues/new) for each
-payday, and keep track of any review discussion and decisions there. Cross-link
-the violations ticket to the public payday ticket.
+payday titled "review Gratipay NNN," and keep track of any review discussion and 
+decisions there. Cross-link the violations ticket to the public payday ticket.
