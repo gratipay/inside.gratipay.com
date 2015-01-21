@@ -1,0 +1,78 @@
+# encoding: utf8
+nav_title = 'Welcome to Gratipay'
+nav_children = []
+[---]
+[---]
+
+Bienvenue à Gratipay
+
+Bienvenue à Gratipay! Nous sommes une [société ouverte](), qui pour nous signifie
+que nous voulons inviter et responsabiliser chacun de participer à la gestion
+de notre entreprise. Nous pensons que des personnes par rapport à Gratipay dans
+plusieurs rôles:
+
+    - Les gens **utilisateurs** avec un compte sur Gratipay
+    - Les gens **contributeurs** converser dans notre espace
+    - users **propriétaires** qui achètent dans notre mission
+    - owners **du personnel** qui sont sur ​​notre liste de paie
+
+Chaque rôle est ouvert à tous, et vous êtes le seul à avoir le pouvoir de
+décider ce que vous êtes en relation avec Gratipay. Cela dit, chaque rôle ne
+vient avec des responsabilités et des attentes, que vous devez comprendre avant
+de prendre un engagement.
+
+Pour être un utilisateur, créer un compte ! Nous comptons sur vous pour
+respecter nos termes et conditions .
+
+Pour être un contributeur, tout simplement entrer dans notre espace et
+participer à la conversation! Nous comptons sur vous pour bien se comporter .
+
+Pour être un propriétaire, il suffit de penser que vous êtes un propriétaire!
+Nous attendons de vous à se identifier et poursuivre notre mission . Nous
+travailler sur les règlements de formaliser ce que cela signifie d'être un
+propriétaire.
+
+Pour vous joindre à notre personnel, de contribuer simplement un peu de
+travail! Peu de temps après que vous commencez à cotiser, nous demandons la
+permission de vous ajouter à la masse salariale. Nous attendons de vous d'être
+à l'aise avec notre système équipe de prise .
+
+Merci de votre intérêt pour aider avec Gratipay! Espérons que cela devient vous
+l'avez fait dans la bonne direction à se impliquer. La prochaine étape est de
+lire les liens sur cette page, puis contribuer! : ^)
+
+
+Welcome to Gratipay! We are an [open company](http://www.opencompany.org/), which
+for us means that we want to invite and empower *everyone* to participate in
+running our company. We think of people in relation to Gratipay in several roles:
+
+  - **users**---people with an account on Gratipay
+  - **contributors**---people conversing in [our space](/appendices/channels)
+  - **owners**---users who buy into [our mission](./mission)
+  - **staff**---owners who are on [our payroll](https://gratipay.com/Gratipay/members/)
+
+Each role is open to anyone, and *you* are the only one with the power to
+decide what you are in relation to Gratipay. That said, each role does come with
+responsibilities and expectations, which you should understand before making
+a commitment.
+
+To be a **user**, [create an account](https://gratipay.com/)! We'll expect
+you to abide by our [terms and
+        conditions](https://gratipay.com/about/terms/).
+
+To be a **contributor**, simply [enter our space](/appendices/channels) and
+join the conversation! We'll expect you to [behave well](/howto/behave-well).
+
+To be an **owner**, simply think of yourself as an owner! We'll expect you to
+identify with and pursue [our mission](./mission). We're [working on
+bylaws](https://github.com/gratipay/inside.gratipay.com/issues/72) to formalize
+what it means to be an owner.
+
+To join our **staff**, simply contribute some work! Soon after you start
+contributing, we'll ask permission to add you to the payroll. We'll expect you
+to be comfortable with our [team take
+        system](https://gratipay.com/about/teams/).
+
+Thanks for your interest in helping out with Gratipay! Hopefully this gets you
+pointed in the right direction to get involved. The next step is to read the
+links on this page and then contribute! :^)

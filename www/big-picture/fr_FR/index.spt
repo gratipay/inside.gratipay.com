@@ -1,0 +1,3 @@
+[---]
+request.redirect('/big-picture/')
+[---] text/html
