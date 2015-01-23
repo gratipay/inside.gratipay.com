@@ -16,6 +16,7 @@ We use [Freshdesk](http://gratipay.freshdesk.com/) for managing support queries.
 * Respond quickly! Even if that response says you need to spend more time, this really makes people feel appreciated.
 * Don't hesitate to ask for help. IRC can be great for this.
 * Support staff with access to the database or financial systems have a *lot* on their plate. Help them out by getting basic details first (identity verifications, amounts, etc), and then pass them on.
+* Use `about/me/*` URLs wherever you can. Providing users with a link to [their account page](https://gratipay.com/about/me/account) is better than asking them to find it on their own. This works for [history pages](https://gratipay.com/about/me/history) and [profiles](https://gratipay.com/about/me) too.
 * Do *not* include the Freshdesk URL in tickets. It's not immediately useful to users, and is only likely to confuse them.
 * Update this page on GitHub! You can make Gratipay support even better!
 
