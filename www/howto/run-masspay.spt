@@ -5,17 +5,15 @@ nav_title="Run MassPay"
 Immediately after [payday](run-payday) we send money to some people using
 PayPal's MassPay feature.
 
-1. [Run](http://inside.gratipay.com/howto/run-a-script) `./bin/masspay.py -i`
-   to hit the database and generate input files.
-1. Run `./bin/masspay.py -o` to generate output files.
+1. Run `./masspay.sh` to hit the database and generate three CSV files.
 1. Log in to PayPal and navigate to the MassPay feature.
-1. Upload the `*.paypal.csv` file from step 2 and write a note with subject
+1. Upload the `*.paypal.csv` file from step 1 and write a note with subject
    "Gratipay Payout" and body "Here you go! Thanks for using Gratipay! :D - chad"
 1. Submit the MassPay and double check the amount and the fee against the `stdout`
-   from step 2 (not to be confused with the output files from step 2!).
+   from step 1 (not to be confused with the output files from step 1!).
 1. If the amounts don't match then we probably have a bad `paypal_fee_cap` for one
    of the users. Manually bisect the input file from step 1, running through steps
-   2 through 5 with half the file at a time until you discover the culprit. Manually
+   2 through 4 with half the file at a time until you discover the culprit. Manually
    update `paypal_fee_cap` for the culprit in the participants table, then start all
    over from step 1.
 1. When everything checks out, pull the trigger on the MassPay.
