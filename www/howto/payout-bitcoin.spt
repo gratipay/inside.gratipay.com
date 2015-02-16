@@ -1,0 +1,36 @@
+nav_title="Payout Bitcoin"
+[---]
+[---] text/html
+
+Eventually we'll
+[automate](https://github.com/gratipay/gratipay.com/issues/1960) this but for
+now we have to run a
+[script](https://github.com/gratipay/gratipay.com/blob/master/tasks/__init__.py#L103-L218).
+
+```
+$ heroku run bash
+Running `bash` attached to terminal... up, run.NNNN
+~ $ invoke bitcoin_payout -u username -a 100.00 -p deadbeef
+```
+
+Take the amount from their history page (or message to support if they don't
+want the whole amount), and the username/API key from their message to support.
+
+We can only pay out $1,000 per day using Coinbase's instant transfer feature.
+If we don't have enough to cover the transfer, you'll get an error like this:
+
+```
+Coinbase transaction didn't succeed!
+{ u'success': False
+, u'errors': [ u"You don't have that much - please visit the Buy/Sell page to add more funds to your account."
+             , u'The purchase amount would exceed the instant buy limit on this account'
+              ]
+, u'transaction': {...}
+ }
+```
+
+According to [Coinbase
+support](https://gratipay.freshdesk.com/helpdesk/tickets/1311), the instant buy
+limit refills linearly across a seven day period, according to the formula,
+`CurrentLimit = (MaxLimit * T) / (7 * 24)`, where `T` is the time since the
+last instant purchase.
