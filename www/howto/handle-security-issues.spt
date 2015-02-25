@@ -7,11 +7,36 @@ Security issues may be responsibly disclosed to
 [security.txt](https://gratipay.com/about/security) for more information, 
 including my PGP key and our Hall of Fame.
 
-When we receive a security disclosure, we create a private repo in GitHub to
-track the issue. We can add the security researcher to the repo and any
-relevant Gratipay staff. Once the issue is resolved, we make the repo public.
-Here are the repos we've opened up so far:
+When we receive a security disclosure, create a private repo in GitHub to track
+the issue, using the naming convention `security-deadbeef`. Add any relevant 
+security researchers and Gratipay staff to the repo.
 
+If the issue requires code changes, here's how to make them privately:
+
+```
+repo=security-xxxxxx
+branch=fix-participant-inequality
+git remote add $repo "git@github.com:gratipay/$repo.git"
+git push $repo master:upstream
+# ↑ This takes a while, gratipay's history is pretty big and full of tarballs
+git push -u $repo $branch:$branch
+```
+
+And here's how to deploy them before merging back to upstream:
+
+```
+git checkout master && git pull
+git merge $branch
+make test  # can't be too careful, right?
+./release.sh
+```
+
+Once the issue is resolved and any fix is deployed, make the repo public. Here
+are the repos we've opened up so far:
+
+ - https://github.com/gratipay/security-oh6fq
+ - https://github.com/gratipay/security-00004
  - https://github.com/gratipay/security-00002
  - https://github.com/gratipay/security-00001
  - https://github.com/gratipay/security-00000
+
