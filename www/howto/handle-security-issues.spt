@@ -14,7 +14,7 @@ If the issue requires code changes, here's how to make them privately:
 
 ```
 repo=security-xxxxxx
-branch=fix-participant-inequality
+branch=some-branch-name
 git remote add $repo "git@github.com:gratipay/$repo.git"
 git push $repo master:upstream
 # ^ This takes a while, gratipay's history is pretty big and full of tarballs
