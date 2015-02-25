@@ -2,10 +2,9 @@ nav_title = 'Handle Security Issues'
 [---]
 [---] text/html via markdown
 
-Security issues may be responsibly disclosed to
-[chad@zetaweb.com](mailto:chad@zetaweb.com). See
-[security.txt](https://gratipay.com/about/security) for more information, 
-including my PGP key and our Hall of Fame.
+*Are you a security researcher? Please see our
+[disclosure policy](https://gratipay.com/about/security/). This document is for
+internal Gratipay staff.*
 
 When we receive a security disclosure, create a private repo in GitHub to track
 the issue, using the naming convention `security-deadbeef`. Add any relevant 
