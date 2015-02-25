@@ -17,7 +17,7 @@ repo=security-xxxxxx
 branch=fix-participant-inequality
 git remote add $repo "git@github.com:gratipay/$repo.git"
 git push $repo master:upstream
-# ↑ This takes a while, gratipay's history is pretty big and full of tarballs
+# ^ This takes a while, gratipay's history is pretty big and full of tarballs
 git push -u $repo $branch:$branch
 ```
 
