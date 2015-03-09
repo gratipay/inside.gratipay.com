@@ -60,7 +60,7 @@ new subdomain. Therefore ...
 1. Add a random subdomain. Here's one: `{{ random_subdomain }}`. I actually use
 this in the `gratipay.com.*.{crt,csr,key}` filenames, too. 
 
-1. Add the remaining alternate domains and subdomains for the certificate.
+1. Add the remaining alternate domains and subdomains.
 
 1. Submit the request. StartSSL will review the request and we'll get an email
 when the certificate is ready.
