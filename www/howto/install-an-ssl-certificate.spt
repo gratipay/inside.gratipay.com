@@ -57,7 +57,8 @@ actually uses the first *sub*domain you add as the common name, so that you can
 avoid revoking a certificate in the future by simply issuing a new one under a
 new subdomain. Therefore ...
 
-1. Add a random subdomain. Here's one: `{{ random_subdomain }}`.
+1. Add a random subdomain. Here's one: `{{ random_subdomain }}`. I actually use
+this in the `gratipay.com.*.{crt,csr,key}` filenames, too. 
 
 1. Add the remaining alternate domains and subdomains for the certificate.
 
@@ -68,7 +69,7 @@ when the certificate is ready.
 to `gratipay.com.crt`.
 
 1. [Install](https://devcenter.heroku.com/articles/ssl-endpoint#provision-the-add-on)
-the certificate at Heroku:<pre>$ heroku --app gratipay certs:add gratipay.com.crt gratipay.com.key</pre>
+the certificate at Heroku:<pre>$ heroku certs:update --app gratipay certs:add gratipay.com.crt gratipay.com.key</pre>
 
 1. Confirm that the new certficate is installed.
 
