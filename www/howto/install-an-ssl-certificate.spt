@@ -34,13 +34,10 @@ gratipay.com
 gratipay.net
 gratipay.org</pre>
 
-1. Make a certificate signing request (I used Heroku's
-[docs](https://devcenter.heroku.com/articles/ssl-endpoint) as a starting
-point). The first command requires a password, but you immediately strip it, so
-use something simple like `cheese`. All StartSSL takes from the CSR is the key
-and the signature algorithm, so you don't need to fill out the org info, which
-they take from Step 2.<pre>$ openssl genrsa -des3 -out gratipay.com.pass.key 4096
-$ openssl rsa -in gratipay.com.pass.key -out gratipay.com.key
+1. Make a certificate signing request. All StartSSL takes from the CSR is the
+key and the signature algorithm, so you don't need to fill out the org info,
+which they take from Step 
+2.<pre>$ openssl genrsa -out gratipay.com.pass.key 4096
 $ yes '' | openssl req -nodes -new -sha256 -key gratipay.com.key -out gratipay.com.csr
 </pre>
 
