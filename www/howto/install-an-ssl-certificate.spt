@@ -1,0 +1,75 @@
+import random
+import string
+
+nav_title="Install an SSL Certificate"
+[---]
+pool = string.lowercase + string.digits
+random_subdomain = ''.join([random.choice(pool) for i in range(8)])
+[---] text/html
+
+Our certificate vendor is [StartSSL](http://www.startssl.com/). Their site uses
+certificate authentication, so you have to have a certificate installed in your
+browser in order to authenticate there. These instructions are for
+`gratipay.com`. Adapt as necessary for other domains (`grtp.co`,
+`assets.gratipay.com`).
+
+1. Go through their personal identity validation if necessary. This costs
+$59.90 and expires after 350 days. I'm good through August 12, 2015. They have
+an old phone number on file for me and it's a pain to update. Search "startssl
+attempted phone call" in my personal Gmail for history.
+
+1. Go through their organization validation if necessary. This costs $59.90 and
+expires after 350 days. We're good through February 22, 2016. This involves
+uploading some paperwork.
+
+1. Go through their domain validation workflow if necessary. These expire after
+30 days so you probably need to do this. This requires access to an email
+address on file in DNS (support@gratipay.com should be on file for all our
+domains). Make sure you do it for all domains that you'll want to add as
+alternates down in step 11:<pre>gittip.co
+gittip.com
+gittip.org
+gratipay.co
+gratipay.com
+gratipay.net
+gratipay.org</pre>
+
+1. Make a certificate signing request (I used Heroku's
+[docs](https://devcenter.heroku.com/articles/ssl-endpoint) as a starting
+point). The first command requires a password, but you immediately strip it, so
+use something simple like `cheese`. All StartSSL takes from the CSR is the key
+and the signature algorithm, so you don't need to fill out the org info, which
+they take from Step 2.<pre>$ openssl genrsa -des3 -out gratipay.com.pass.key 4096
+$ openssl rsa -in gratipay.com.pass.key -out gratipay.com.key
+$ yes '' | openssl req -nodes -new -sha256 -key gratipay.com.key -out gratipay.com.csr
+</pre>
+
+1. Review the CSR:<pre>$ openssl req -in gratipay.com.csr -text | less</pre>
+
+1. Start the Web Server SSL/TLS Certificate wizard at StartSSL.
+
+1. Skip the step where they prompt you to generate a private key.
+
+1. Paste in the CSR from Step 4, and continue with the wizard.
+
+1. Add `gratipay.com` as the first domain. But, don't be fooled! StartSSL
+actually uses the first *sub*domain you add as the common name, so that you can
+avoid revoking a certificate in the future by simply issuing a new one under a
+new subdomain. Therefore ...
+
+1. Add a random subdomain. Here's one: `{{ random_subdomain }}`.
+
+1. Add the remaining alternate domains and subdomains for the certificate.
+
+1. Submit the request. StartSSL will review the request and we'll get an email
+when the certificate is ready.
+
+1. Browse to "Retrieve Certificate" at StartSSL and copy/paste the certificate
+to `gratipay.com.crt`.
+
+1. [Install](https://devcenter.heroku.com/articles/ssl-endpoint#provision-the-add-on)
+the certificate at Heroku:<pre>$ heroku --app gratipay certs:add gratipay.com.crt gratipay.com.key</pre>
+
+1. Confirm that the new certficate is installed.
+
+1. Take a deep breath.
