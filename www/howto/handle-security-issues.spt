@@ -31,11 +31,4 @@ make test  # can't be too careful, right?
 ```
 
 Once the issue is resolved and any fix is deployed, make the repo public. Here
-are the repos we've opened up so far:
-
- - https://github.com/gratipay/security-oh6fq
- - https://github.com/gratipay/security-00004
- - https://github.com/gratipay/security-00002
- - https://github.com/gratipay/security-00001
- - https://github.com/gratipay/security-00000
-
+is [a list of our security repos](https://github.com/gratipay/?query=security-).
