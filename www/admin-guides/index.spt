@@ -1,0 +1,9 @@
+import os
+
+nav_title = 'Administrator Guides'
+nav_children = [ name.rsplit('.', 1)[0] for name in os.listdir('admin-guides')
+                 if name not in ('.', '..', 'index.spt')]
+nav_children.sort()
+[---]
+[---] text/html
+{{ toc(nav_current) }}

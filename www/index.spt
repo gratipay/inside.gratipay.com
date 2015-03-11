@@ -1,5 +1,5 @@
 nav_title = "Inside Gratipay"
-nav_children = ['big-picture', 'howto', 'appendices']
+nav_children = ['big-picture', 'general-guides', 'developer-guides', 'admin-guides', 'appendices']
 [---]
 [---] text/html via jinja2
 {% extends "templates/page.html" %}

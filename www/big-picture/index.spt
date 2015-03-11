@@ -1,5 +1,5 @@
 nav_title = 'The&nbsp;Big Picture'
-nav_children = ['welcome', 'mission', 'brand', 'audience', 'product', 'sa', 'src']
+nav_children = ['welcome', 'mission', 'brand', 'audience', 'product']
 [---]
 [---] text/html
 
