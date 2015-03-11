@@ -11,7 +11,7 @@ nav_children = ['big-picture', 'general-guides', 'developer-guides', 'admin-guid
     <div class="toc">
         {% for node in nav_current.values() %}
         <section>
-        <h2>{{ node.title }}</h2>
+        <a href="{{ node.url }}"><h2>{{ node.title }}</h2></a>
         <ul>
             {% for child in node.children %}
             <li><a href="{{ child.url }}">{{ child.title }}</a></li>
