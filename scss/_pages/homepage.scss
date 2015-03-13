@@ -30,7 +30,8 @@
                 font-weight: 300;
             }
 
-            &:nth-child(1) {
+            &:nth-child(3n+1) {
+                clear: left;
             }
         }
 

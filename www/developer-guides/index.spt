@@ -1,7 +1,7 @@
 import os
 
-nav_title = 'How To'
-nav_children = [ name.rsplit('.', 1)[0] for name in os.listdir('howto')
+nav_title = 'Developer Guides'
+nav_children = [ name.rsplit('.', 1)[0] for name in os.listdir('developer-guides')
                  if name not in ('.', '..', 'index.spt')]
 nav_children.sort()
 [---]

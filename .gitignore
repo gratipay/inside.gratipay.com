@@ -1,5 +1,4 @@
 /env
 *.pyc
 local.env
-/repos
 *.egg-info
