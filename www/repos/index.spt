@@ -1,8 +1,0 @@
-import os
-from os.path import realpath, join
-[---]
-repo_names = os.listdir(website.repo_root)
-[---] text/plain
-POST to the following to do a `git pull`:
-{% for repo in repo_names %}
-/repos/{{ repo }}{% endfor %}
