@@ -2,7 +2,7 @@ import os
 
 nav_title = 'How To'
 nav_children = [ name.rsplit('.', 1)[0] for name in os.listdir('howto')
-                 if name not in ('.', '..', 'index.spt')]
+                 if name.endswith('.spt') and name not in ('.', '..', 'index.spt')]
 nav_children.sort()
 [---]
 [---] text/html

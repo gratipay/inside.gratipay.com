@@ -1,0 +1,21 @@
+nav_title = "Choose Technology"
+[---]
+[---] text/html
+
+<img src="product-dog.jpg" width="100%">
+
+**Wrong:** "Hey, I've got this technology available. Where can I use it?"
+
+**Right:** "Here's the experience I want my users to have. How do I deliver it?"
+
+In tooling decisions, we find a trade-off between control and convenience. We
+err on the side of control. Yes, we could use Django or Rails with their
+ecosystem of convenient plugins and ORMs. Instead, we use Aspen and PostgreSQL,
+because that gives us more control. Yes, that also makes us responsible for the
+bugs in Aspen and Postgres.py, but it's worth it to us for the increased
+control.
+
+Another take: Technology is a stack, and any user of technology parks at a place on the
+stack. Below where you're parked, everything is a black box. Above where you're
+parked, everything's a white box. Where you park is a function of which other
+pieces of technology you trust to be your black box.

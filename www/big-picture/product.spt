@@ -39,11 +39,12 @@ def lr(issue=None):
 [---] text/html
 
 Gratipay is a way to make and receive weekly payments motivated by gratitude.
-This document is our top-level information architecture. These are all the
-main parts of our app, with links to issues to drill down.
+This page is a living information architecture showing the parts of our product
+and how recently each has received attention.
 
 Last Refactored | Part
 --------------- | -----------------------------------
+{{ lr(3220) }}  | Gratipay
 {{ lr(1074) }}  | Homepage (unauthenticated)
 {{ lr(2584) }}  | Homepage (authenticated)
 {{ lr() }}      | Onboarding Flow
