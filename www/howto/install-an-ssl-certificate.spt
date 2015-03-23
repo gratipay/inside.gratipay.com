@@ -68,6 +68,6 @@ to `gratipay.com.crt`.
 1. [Install](https://devcenter.heroku.com/articles/ssl-endpoint#provision-the-add-on)
 the certificate at Heroku:<pre>$ heroku certs:update --app gratipay certs:add gratipay.com.crt gratipay.com.key</pre>
 
-1. Confirm that the new certficate is installed.
+1. Confirm that the new certificate is installed.
 
 1. Take a deep breath.
