@@ -1,68 +1,97 @@
-import datetime
-from aspen.utils import to_age, utc
-
-nav_title = "Product Overview"
-YEAR = datetime.timedelta(days=365)
+nav_title = "Product Roadmap"
 [---]
-
-issues = {}
-issues[1074] = '2014-07-21'
-issues[1369] = '2014-02-26'
-issues[2323] = '2014-04-29'
-issues[2579] = '2014-08-12'
-issues[2938] = '2015-01-06'
-
-now = datetime.datetime.now(tz=utc)
-
-def lr(issue=None):
-
-    if issue is None:
-        cls = "too-long-ago"
-        href = "https://github.com/gratipay/gratipay.com/issues/new"
-        text = "never"
-    elif issue not in issues:
-        cls = "future"
-        href = 'https://github.com/gratipay/gratipay.com/issues/{}'.format(issue)
-        text = '#{}'.format(issue)
-    else:
-        year, month, day = [int(x) for x in issues[issue].split('-')]
-        last_refactored = datetime.datetime(year, month, day, tzinfo=utc)
-        print(now - last_refactored, YEAR)
-        if (now - last_refactored) > YEAR:
-            cls = "too-long-ago"
-        else:
-            cls = "past"
-        href = 'https://github.com/gratipay/gratipay.com/issues/{}'.format(issue)
-        text = to_age(last_refactored)
-
-    return '<a class="refactored {}" href="{}">{}</a>'.format(cls, href, text)
 [---] text/html
 
-Gratipay is a way to make and receive weekly payments motivated by gratitude.
-This page is a living information architecture showing the parts of our product
-and how recently each has received attention.
+This loosely follows David Allen's "[Natural Planning
+Model](https://www.google.com/search?q=natural+planning+model)."
 
-Last Refactored | Part
---------------- | -----------------------------------
-{{ lr(3220) }}  | Gratipay
-{{ lr(1074) }}  | Homepage (unauthenticated)
-{{ lr(2584) }}  | Homepage (authenticated)
-{{ lr() }}      | Onboarding Flow
-{{ lr(949) }}   | About
-{{ lr(133) }}   | Profile - Basic Info
-{{ lr(716) }}   | Profile - Giving
-{{ lr(2938) }}  | Profile - Receiving
-{{ lr(838) }}   | Profile - History &amp; Billing
-{{ lr(1145) }}  | Profile - Widgets
-{{ lr(2323) }}  | Profile - Account
-{{ lr() }}      | Profile - Event Log
-{{ lr(2569) }}  | Profile - Payroll
-{{ lr(2630) }}  | Profile - Takeover
-{{ lr(2752) }}  | Emails
-{{ lr() }}      | On-site Notifications
-{{ lr(967) }}   | Community
-{{ lr(1369) }}  | Accounts Elsewhere
-{{ lr(1167) }}  | Widgets &amp; Embeds
-{{ lr() }}      | Gratipay Everywhere
-{{ lr(2579) }}  | Payday
-{{ lr(1475) }}  | API
+## Purpose and Principles
+
+Gratipay's [mission](mission) is to enable an economy of gratitude, generosity,
+and love. Our [values](brand) are:
+
+ - gratitude, generosity, and love
+ - honesty
+ - kindness
+ - direct, interpersonal communication
+ - discussion and deliberation
+ - safety
+ - idealism and optimism
+ - awkwardness and weirdness
+
+[Gratipay, the product](https://gratipay.com/), is a tool, the purpose of which
+is to aid all who share our mission to catalyze and amplify a virtuous cycle
+between gratitude and generosity&mdash;inspiring generosity&mdash;until an
+entire economy comes to flourish on this reciprocity.
+
+
+## Outcome
+
+We recognize two kinds of actors in our economy: individuals (people) and
+groups (organizations, companies, teams, projects, etc). The relationships
+between these kinds of actors give rise to three "moments" or experiences on
+which Gratipay is built:
+
+ 1. a moment of "pure" generosity and gratitude, when an individual gives a
+    small, altruistic, no-strings-attached gift, which another individual 
+    receives; and,
+
+ 2. a moment of "calculated" generosity and gratitude, when: 
+
+    a. an individual/group pays money (as a customer) to a group; or,
+
+    b. an individual/group takes (as a staff member/division) or receives (as a
+       contractor/vendor) money from a group.
+
+These three moments lead to three levels to our product:
+
+ 1. We are a marketplace for small, no-strings-attached gifts between
+    individuals.
+
+ 2. a. We are a marketplace for pay-what-you-want goods and services.
+
+    b. We are a marketplace for take-what-you-need work.
+
+Which is to say that Gratipay is three marketplaces in one ... aaaaand that's a
+lot of marketplaces. But what could we cut? Without Marketplace 1, we lose the
+"pure" moment that authenticates and validates and animates the rest. Without
+Marketplace 2b we lose the ability for normal people to find a living within
+our economy, and without Marketplace 2a we lose the ability for groups to
+sustain themselves and provide a living for individuals. It seems that we have
+to build a triple marketplace in order to achieve our mission.
+
+As a triple marketplace we serve "buyers" and "sellers" on both sides of all
+three exchanges. For each marketplace there is a primary customer of ours, who
+is the initiator or active partner in each exchange. They bring with them their
+passive partner, who is then our secondary customer. Our primary customers for
+each markeplace are:
+
+ 1. the individual giver
+
+ 2. 
+    a. the group receiver (company/organization collecting payments/donations)
+
+    b. the group giver (company/organization offering work)
+
+
+Our secondary customers for each marketplace are:
+
+ 1. the individual receiver
+
+ 2. 
+    a. the individual or group giver (customer)
+
+    b. the individual/group receiver/taker (contractor/vendor/staff member/division)
+
+
+Our ideal product serves the needs of all of these constituencies while
+managing the complexity of a triple marketplace and not confusing anyone too
+much.
+
+Also, we like stable, predictable funding because it creates room for gratitude and
+generosity in a way that artificial financial crises don't.
+
+Also, we like belief-in. "I don't want you to pay me unless you *really* want to."
+
+
+## Ideas 
