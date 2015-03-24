@@ -16,6 +16,7 @@ ul li { list-style: circle; margin: 0 0 0 1.5em; }
 li:last-child { margin-bottom: 1em; }
 ul ul { margin-top: 1em; }
 ol ol { margin-top: 1em; }
+ul p, ol p { padding-bottom: 0; }
 
 a {
     color: $green;

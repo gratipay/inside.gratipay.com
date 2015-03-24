@@ -2,86 +2,28 @@ nav_title = "Product Roadmap"
 [---]
 [---] text/html
 
-This loosely follows David Allen's "[Natural Planning
-Model](https://www.google.com/search?q=natural+planning+model)."
+*This loosely follows David Allen's "[Natural Planning
+Model](https://www.google.com/search?q=natural+planning+model)."*
 
 ## Purpose and Principles
 
-Gratipay's [mission](mission) is to enable an economy of gratitude, generosity,
-and love. Our [values](brand) are:
+Gratipay's [mission](./mission) is to enable an economy of gratitude,
+generosity, and love. Our [values](./brand/) additionally include honesty,
+kindness, directness, and optimism. Our [audience](./audience/), the potential
+partners in our mission, is two-fold: people who want to tip their friends, and
+people who want to run an open company.
 
- - gratitude, generosity, and love
- - honesty
- - kindness
- - direct, interpersonal communication
- - discussion and deliberation
- - safety
- - idealism and optimism
- - awkwardness and weirdness
-
-[Gratipay, the product](https://gratipay.com/), is a tool, the purpose of which
-is to aid all who share our mission to catalyze and amplify a virtuous cycle
-between gratitude and generosity&mdash;inspiring generosity&mdash;until an
-entire economy comes to flourish on this reciprocity.
+[Gratipay, the product](https://gratipay.com/), is a tool, the primary purpose
+of which is to enable [our users](./audience/) to delight their friends and run
+their companies. The secondary purpose is to enable our users' users to receive
+tips, make payments, and collect payroll. The tertiary purpose, for the subset
+of users who share our mission (we [think of them](./welcome) as owners), is
+to aid them in amplifying a virtuous cycle between gratitude and
+generosity&mdash;"inspiring generosity"&mdash;until an entire economy comes to
+flourish on this reciprocity.
 
 
 ## Outcome
-
-We recognize two kinds of actors in our economy: individuals (people) and
-groups (organizations, companies, teams, projects, etc). The relationships
-between these kinds of actors give rise to three "moments" or experiences on
-which Gratipay is built:
-
- 1. a moment of "pure" generosity and gratitude, when an individual gives a
-    small, altruistic, no-strings-attached gift, which another individual 
-    receives; and,
-
- 2. a moment of "calculated" generosity and gratitude, when: 
-
-    a. an individual/group pays money (as a customer) to a group; or,
-
-    b. an individual/group takes (as a staff member/division) or receives (as a
-       contractor/vendor) money from a group.
-
-These three moments lead to three levels to our product:
-
- 1. We are a marketplace for small, no-strings-attached gifts between
-    individuals.
-
- 2. a. We are a marketplace for pay-what-you-want goods and services.
-
-    b. We are a marketplace for take-what-you-need work.
-
-Which is to say that Gratipay is three marketplaces in one ... aaaaand that's a
-lot of marketplaces. But what could we cut? Without Marketplace 1, we lose the
-"pure" moment that authenticates and validates and animates the rest. Without
-Marketplace 2b we lose the ability for normal people to find a living within
-our economy, and without Marketplace 2a we lose the ability for groups to
-sustain themselves and provide a living for individuals. It seems that we have
-to build a triple marketplace in order to achieve our mission.
-
-As a triple marketplace we serve "buyers" and "sellers" on both sides of all
-three exchanges. For each marketplace there is a primary customer of ours, who
-is the initiator or active partner in each exchange. They bring with them their
-passive partner, who is then our secondary customer. Our primary customers for
-each markeplace are:
-
- 1. the individual giver
-
- 2. 
-    a. the group receiver (company/organization collecting payments/donations)
-
-    b. the group giver (company/organization offering work)
-
-
-Our secondary customers for each marketplace are:
-
- 1. the individual receiver
-
- 2. 
-    a. the individual or group giver (customer)
-
-    b. the individual/group receiver/taker (contractor/vendor/staff member/division)
 
 
 Our ideal product serves the needs of all of these constituencies while

@@ -2,78 +2,71 @@ nav_title = 'Audience'
 [---]
 [---] text/html via markdown
 
-*by Chad Whitacre*
+Our [mission](../mission) is to enable an economy of gratitude, generosity, and
+love. Our [values](../brand/) additionally include honesty, kindness,
+directness, safety, and optimism. We've identified two audiences that
+potentially share our mission and values:
 
-Gratipay's audience is everyone; it's intended to be a mass-market consumer
-product. This document looks at different ways to segment our audience.
+ 1. People who want to tip their friends and family.
 
+ 1. People who want to run an open company.
 
-## According to Intent
+Let's unpack that.
 
-Though we don't presort people (the way Patreon and Subbable do),
-we have two basic kinds of user:
+We recognize two basic kinds of actors in our economy: individuals (people) and
+groups (organizations, companies, teams, projects, etc). The relationships
+between these two kinds of actors give rise to three "moments" or experiences
+on which Gratipay is built:
 
- - Givers (tippers, donors, patrons)
- - Receivers (tippees)
+ 1. a moment of "pure" generosity and gratitude, when an individual gives a
+    small, altruistic, no-strings-attached gift, which another individual 
+    receives; and,
 
-We have some basic stats on our [Stats
-page](https://gratipay.com/about/stats.html). Here's a snapshot:
+ 2. a moment of "calculated" generosity and gratitude, when: 
 
- - Gratipay has 2486 active users (either gave or received last week, or both).
- - 1582 participants gave money in the past week.
- - 1318 received money.
- - 414 did both.
+    <ol style="list-style: lower-alpha"> 
+     <li>an individual or group pays money (as a customer) to a group; or,</li>
+     <li>an individual or group takes (as a staff member or division) or receives
+       (as a contractor or vendor) money from a group.</li>
+    </ol>
 
-Amongst givers, there's a further distinction:
+These three moments lead to three levels to our product:
 
- - **General Givers**&mdash;Givers who come to Gratipay with a desire to give,
-   but nobody specific in mind. They need "discovery" features.
+ 1. We are a marketplace for small, no-strings-attached gifts between
+    individuals.
 
- - **Specific Givers**&mdash;Givers who come to Gratipay with a desire to give to
-   a specific person. They need a nice profile page for the person/team they
-   want to give to, with an easy checkout flow.
+ 2. <ol style="list-style: lower-alpha"> 
+     <li>We are a marketplace for pay-what-you-want goods and services.</li>
+     <li>We are a marketplace for take-what-you-need work.</li>
+    </ol>
 
-See also:
+Which is to say that Gratipay is three marketplaces in one ... aaaaand that's a
+lot of marketplaces. But what could we cut? Without Marketplace 1, we lose the
+"pure" moment that authenticates and validates and animates the rest. Without
+Marketplace 2b we lose the ability for normal people to find a living within
+our economy, and without Marketplace 2a we lose the ability for groups to
+sustain themselves and provide a living for individuals. It seems that we have
+to build a triple marketplace in order to achieve our mission.
 
- - [Reaching out to content creators](https://github.com/gratipay/gratipay.com/issues/737).
+As a triple marketplace we serve "buyers" and "sellers" on both sides of all
+three exchanges. For each marketplace there is a primary customer of ours, who
+is the initiator or active partner in each exchange. They bring with them their
+passive partner, who is then our secondary customer. Our primary customer for
+each marketplace is:
 
- - [Requiring a certain voice of our
-         users](https://github.com/gratipay/gratipay.com/issues/1659). "The
-   question is, am I going to be using my project's voice when I write my
-   profile, or the voice you've chosen?"
+ 1. the individual giver
 
- - Browsing [our communities](https://gratipay.com/for/) indicates what we
-   all know: Gratipay's users are mostly drawn from the open-source world.
-   [PG](http://paulgraham.com/ambitious.html): "The way to win here is to build
-   the __________ all the hackers use. A __________ whose users consisted of the
-   top 10,000 hackers and no one else would be in a very powerful position despite
-   its small size." We very much aim to be a mass market platform, and we're
-   starting in the open-source world.
-
-
-## According to [Grammatical] Number
-
-Another way to slice the pie is:
-
- - Individuals
- - Groups
-
-We started with a strong focus on individuals, and then gradually realized we
-needed some higher level of aggregation. Groups are supported in two ways:
-
- - Any given Gratipay account can represent a group of people. We have a number
-   of accounts like this, both givers and receivers.
+ 2. <ol style="list-style: lower-alpha"> 
+     <li>the group receiver (company or organization collecting payments or donations)</li>
+     <li>the group giver (company or organization offering work)</li>
+    </ol>
 
 
- - We have special support for groups that want to split the money they receive
-   in an open and transparent manner. We call these
-   "[Teams](https://gratipay.com/about/teams/)."
+Our secondary customer for each marketplace is:
 
+ 1. the individual receiver
 
-The Communities feature is kind of related (and we sometimes confuse people
-with the difference between Teams and Communities and plain old accounts that
-represent a company/non-profit/etc.).
-
-The individual/group distinction is orthogonal to the
-giver(specific/general)/receiver distinction. I don't have numbers to
-demonstrate this, however.
+ 2. <ol style="list-style: lower-alpha"> 
+     <li>the individual or group giver (customer)</li>
+     <li>the individual or group receiver or taker (contractor, vendor, staff member, or division)</li>
+    </ol>
