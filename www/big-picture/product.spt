@@ -1,39 +1,120 @@
-nav_title = "Product Roadmap"
+nav_title = "Product"
 [---]
 [---] text/html
-
-*This loosely follows David Allen's "[Natural Planning
-Model](https://www.google.com/search?q=natural+planning+model)."*
-
-## Purpose and Principles
 
 Gratipay's [mission](./mission) is to enable an economy of gratitude,
 generosity, and love. Our [values](./brand/) additionally include honesty,
 kindness, directness, and optimism. Our [audience](./audience/), the potential
 partners in our mission, is two-fold: people who want to tip their friends, and
-people who want to run an open company.
+people who want to run an open company. What product are we building to deliver
+on this mission with this audience?
 
-[Gratipay, the product](https://gratipay.com/), is a tool, the primary purpose
-of which is to enable [our users](./audience/) to delight their friends and run
-their companies. The secondary purpose is to enable our users' users to receive
-tips, make payments, and collect payroll. The tertiary purpose, for the subset
-of users who share our mission (we [think of them](./welcome) as owners), is
-to aid them in amplifying a virtuous cycle between gratitude and
+
+## Overview
+
+Gratipay, the product, is a tool, the primary purpose of which is to enable
+[our users](./audience/) to delight their friends and run their companies. The
+secondary purpose is to enable our users' users to receive tips, make payments,
+and collect payroll. The tertiary purpose, for the subset of users who share
+our mission (we [think of them](./welcome) as owners), is to aid them in
+steadily amplifying a virtuous cycle between gratitude and
 generosity&mdash;"inspiring generosity"&mdash;until an entire economy comes to
 flourish on this reciprocity.
 
 
-## Outcome
+## Information Architecture
+
+We have four top-level components to our information architecture:
+
+ 1. [Gratipay.com](https://gratipay.com/)&mdash;our main website
+ 1. [API](https://github.com/gratipay/gratipay.com/#api)&mdash;endpoints integrated within gratipay.com
+ 1. [grtp.co](http://grtp.co/)&mdash;widget server
+ 1. [Gratipay-Everywhere](https://chrome.google.com/webstore/detail/gratipay-everywhere/ffbkkncpfcobpjaolefljnpmianmflig?hl=en)&mdash;browser extension
 
 
-Our ideal product serves the needs of all of these constituencies while
-managing the complexity of a triple marketplace and not confusing anyone too
-much.
+### Gratipay.com
 
-Also, we like stable, predictable funding because it creates room for gratitude and
-generosity in a way that artificial financial crises don't.
+This is our main website and receives the most attention. Here's its structure:
 
-Also, we like belief-in. "I don't want you to pay me unless you *really* want to."
+```
+  Key
+  ----------------------------------------------------------------------------
+  (  restricted to authenticated user
+  [  restricted to admin
+  $  variable
+  -  table/listing
+  .  form controls
 
 
-## Ideas 
+  UI                            URL
+  ----------------------------------------------------------------------------
+  Homepage                      /
+    About                       /about/
+      Basic Info                /about/
+        Overview                /about/
+        FAQ                     /about/faq
+        Stats                   /about/stats
+        Pricing                 /about/pricing
+        Contact Us              /about/contact
+      Features                  /about/features/
+        Overview                /about/features/
+        Teams                   /about/features/teams/
+        Do Not Track            /about/features/dnt
+      Policies                  /about/policies/terms-and-conditions
+        Terms and Conditions    /about/policies/terms-and-conditions
+        Terms of Service        /about/policies/terms-of-service
+        Privacy Policy          /about/policies/privacy
+      Security                  /about/security/
+        Disclosure              /about/security/
+        Hall of Fame            /about/security/hall-of-fame
+        PGP Key                 /about/security/pgp.asc
+    Explore                     /explore/
+.     Communities               /explore/
+-     Teams                     /explore/teams/
+    Search                      /search
+    $community                  /for/$community/
+    $username                   /$username/
+     (Dashboard                 /
+.     Profile                   /$username/
+-     Members                   /$username/members/
+-     Receiving                 /$username/receiving/
+-    (Giving                    /$username/giving/
+-    (History                   /$username/history/
+.      [Record an Exchange      /$username/history/record-an-exchange.html
+-       $year                   /$username/history/?year=$year
+     (Widgets                   /$username/widgets/
+     (Identity                  /$username/identity
+.    (Settings                  /$username/settings/
+.       Credit Card             /credit-card.html
+.       Bank Account            /bank-account.html
+.       Close                   /$username/settings/close
+     [Events                    /$username/events/
+.[Dashboard                     /dashboard/
+```
+
+Here are the cross-cutting concerns we see:
+
+ - overall visual language
+ - layout
+ - navigation
+ - tables/listings
+ - form controls
+ - global call-to-action (to fund Gratipay itself)
+
+
+### API
+
+Our [public API](https://github.com/gratipay/gratipay.com/#api) is comprised of
+ad-hoc JSON endpoints integrated within Gratipay.com.
+
+
+### grtp.co
+
+Our [widget server](http://grtp.co/) serves a JavaScript client for our API and
+a library for embedding HTML components into a third-party website.
+
+
+### Gratipay-Everywhere
+
+The point of this is to add Gratipay buttons to third-party websites such as
+GitHub and Twitter. Currently only implemented for Chrome.

@@ -61,6 +61,13 @@ h2 {
     &:nth-child(1) { margin-top: 0; }
 }
 
+h3 {
+    font: 700 16px/24px $ideal;
+    margin: 35px 0 8px;
+    color: $black;
+    &:nth-child(1) { margin-top: 0; }
+}
+
 table {
     margin: 0 0 2em;
     color: $brown;
