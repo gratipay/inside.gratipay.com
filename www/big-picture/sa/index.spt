@@ -26,13 +26,13 @@ includes and bases are in
 Heavy lifting is in a Python library at
 [`gratipay/`](https://github.com/gratipay/gratipay.com/tree/master/gratipay).
 The
-[`configure-aspen.py`](https://github.com/gratipay/gratipay.com/tree/master/configure-aspen.py)
-script gets run on startup. Scripts and styles are in
+[`main.py`](https://github.com/gratipay/gratipay.com/tree/master/gratipay/main.py)
+module is our top-level configuration. Scripts and styles are in
 [`js/`](https://github.com/gratipay/gratipay.com/tree/master/js) and
 [`scss/`](https://github.com/gratipay/gratipay.com/tree/master/scss),
 respectively, and are pipelined dynamically via simplates:
-[`gratipay.js.spt`](https://github.com/gratipay/gratipay.com/blob/master/www/assets/%25version/gratipay.js.spt)
-and [`gratipay.css.spt`](https://github.com/gratipay/gratipay.com/blob/master/www/assets/%25version/gratipay.css.spt).
+[`gratipay.js.spt`](https://github.com/gratipay/gratipay.com/blob/master/www/assets/gratipay.js.spt)
+and [`gratipay.css.spt`](https://github.com/gratipay/gratipay.com/blob/master/www/assets/gratipay.css.spt).
 
 ## Database
 
