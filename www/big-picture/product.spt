@@ -2,28 +2,17 @@ nav_title = "Product"
 [---]
 [---] text/html
 
-Gratipay's [mission](./mission) is to enable an economy of gratitude,
-generosity, and love. Our [values](./brand/) additionally include honesty,
-kindness, directness, and optimism. Our [audience](./audience/), the potential
-partners in our mission, is two-fold: people who want to tip their friends, and
-people who want to run an open company. What product are we building to deliver
-on this mission with this audience?
+What product are we building to further our [mission](./mission) according to
+our [values](./brand/) for our [audience](./audience/)? Our product is a social
+payments platform. A user creates an account, configures a (weekly) payment,
+and connects a funding instrument. We process payments every Thursday.
 
-
-## Overview
-
-Gratipay, the product, is a tool, the primary purpose of which is to enable
-[our users](./audience/) to delight their friends and run their companies. The
-secondary purpose is to enable our users' users to receive tips, make payments,
-and collect payroll. The tertiary purpose, for the subset of users who share
-our mission (we [think of them](./welcome) as owners), is to aid them in
-steadily amplifying a virtuous cycle between gratitude and
+The immediate purpose of our product is to enable [our users](./audience/) to
+delight their friends and run their companies. The secondary purpose is to
+enable our users' users to receive tips, make payments, and collect payroll.
+The wider purpose is to steadily amplify a virtuous cycle between gratitude and
 generosity&mdash;"inspiring generosity"&mdash;until an entire economy comes to
 flourish on this reciprocity.
-
-Our product is a social payments platform. A user creates an account,
-configures a payment, and connects a funding instrument. We process payments
-every Thursday.
 
 
 ## Information Architecture
