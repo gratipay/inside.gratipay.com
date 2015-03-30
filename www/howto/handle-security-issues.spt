@@ -8,7 +8,10 @@ internal Gratipay staff.*
 
 When we receive a security disclosure, create a private repo in GitHub to track
 the issue, using the naming convention `security-deadbeef`. Add any relevant 
-security researchers and Gratipay staff to the repo.
+security researchers and Gratipay staff to the repo. Clear out all the labels
+in the repo and make a 'Security' label; apply it to the issue so we can track
+it in the [security 
+queue](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+user%3Agratipay+label%3ASecurity).
 
 If the issue requires code changes, here's how to make them privately:
 
@@ -30,5 +33,4 @@ make test  # can't be too careful, right?
 ./release.sh
 ```
 
-Once the issue is resolved and any fix is deployed, make the repo public. Here
-is [a list of our security repos](https://github.com/gratipay/?query=security-).
+Once the issue is resolved and any fix is deployed, make the repo public.
