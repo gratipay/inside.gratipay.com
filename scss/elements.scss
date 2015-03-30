@@ -16,6 +16,7 @@ ul li { list-style: circle; margin: 0 0 0 1.5em; }
 li:last-child { margin-bottom: 1em; }
 ul ul { margin-top: 1em; }
 ol ol { margin-top: 1em; }
+ul p, ol p { padding-bottom: 0; }
 
 a {
     color: $green;
@@ -57,6 +58,13 @@ h2 {
     margin: 35px 0 8px;
     color: $brown;
     text-transform: uppercase;
+    &:nth-child(1) { margin-top: 0; }
+}
+
+h3 {
+    font: 700 16px/24px $ideal;
+    margin: 35px 0 8px;
+    color: $black;
     &:nth-child(1) { margin-top: 0; }
 }
 
