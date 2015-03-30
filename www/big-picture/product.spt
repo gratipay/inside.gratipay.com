@@ -21,6 +21,10 @@ steadily amplifying a virtuous cycle between gratitude and
 generosity&mdash;"inspiring generosity"&mdash;until an entire economy comes to
 flourish on this reciprocity.
 
+Our product is a social payments platform. A user creates an account,
+configures a payment, and connects a funding instrument. We process payments
+every Thursday.
+
 
 ## Information Architecture
 
@@ -37,15 +41,6 @@ We have four top-level components to our information architecture:
 This is our main website and receives the most attention. Here's its structure:
 
 ```
-  Key
-  ----------------------------------------------------------------------------
-  (  restricted to authenticated user
-  [  restricted to admin
-  $  variable
-  -  table/listing
-  .  form controls
-
-
   UI                            URL
   ----------------------------------------------------------------------------
   Homepage                      /
@@ -72,27 +67,36 @@ This is our main website and receives the most attention. Here's its structure:
 .     Communities               /explore/
 -     Teams                     /explore/teams/
     Search                      /search
-    $community                  /for/$community/
-    $username                   /$username/
+    $COMMUNITY                  /for/$COMMUNITY/
+    $USERNAME                   /$USERNAME/
      (Dashboard                 /
-.     Profile                   /$username/
--     Members                   /$username/members/
--     Receiving                 /$username/receiving/
--    (Giving                    /$username/giving/
--    (History                   /$username/history/
-.      [Record an Exchange      /$username/history/record-an-exchange.html
--       $year                   /$username/history/?year=$year
-     (Widgets                   /$username/widgets/
-     (Identity                  /$username/identity
-.    (Settings                  /$username/settings/
+.     Profile                   /$USERNAME/
+-     Members                   /$USERNAME/members/
+-     Receiving                 /$USERNAME/receiving/
+-    (Giving                    /$USERNAME/giving/
+-    (History                   /$USERNAME/history/
+.      [Record an Exchange      /$USERNAME/history/record-an-exchange.html
+-       $YEAR                   /$USERNAME/history/?year=$YEAR
+     (Widgets                   /$USERNAME/widgets/
+     (Identity                  /$USERNAME/identity
+.    (Settings                  /$USERNAME/settings/
 .       Credit Card             /credit-card.html
 .       Bank Account            /bank-account.html
-.       Close                   /$username/settings/close
-     [Events                    /$username/events/
+.       Close                   /$USERNAME/settings/close
+     [Events                    /$USERNAME/events/
 .[Dashboard                     /dashboard/
+
+
+  Key
+  ----------------------------------------------------------------------------
+  (  restricted to authenticated user
+  [  restricted to admin
+  $  variable
+  -  table/listing
+  .  form controls
 ```
 
-Here are the cross-cutting concerns we see:
+Here are our cross-cutting concerns:
 
  - overall visual language
  - layout
