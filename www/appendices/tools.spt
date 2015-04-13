@@ -1,0 +1,128 @@
+nav_title = 'Tools'
+[---]
+[---] text/html via markdown
+
+These are the tools and services that the Gratipay team uses to work
+together and build the platform.
+
+Wherever possible, we link directly to a place where we work via a
+linked asterisk\*.
+
+## Version-control
+
+- [Git][git]
+- [GitHub][github]    [\*][github-us]
+
+## Build, Test & Deploy
+
+- [Travis CI][travis] [\*][travis-us]
+
+## Hosting
+
+- [DigitalOcean][digitalocean]
+- [Heroku][heroku]
+
+## Communication
+
+- [BotBot.me][botbot] [\*][botbot-us]
+- [Google+][gplus]    [\*][gplus-us]
+- [Google Hangouts][hangouts]
+- [HuBoard][huboard]  [\*][huboard-us]
+- [Hubot][hubot]
+- [IRC][irc]          [\*][irc-us]
+- [Mandrill][mandrill]
+- [Medium][medium]    [\*][medium-us]
+- [Twitter][twitter]  [\*][twitter-us]
+- [YouTube][youtube]  [\*][youtube-us]
+
+## Support
+
+- [Freshdesk][freshdesk]
+
+## Monitoring & Metrics
+
+- [Google Analytics][ga]
+- [Librato][librato] [\*][librato-us]
+- [PagerDuty][pagerduty]
+- [Sentry][sentry]
+- [UptimeRobot][uptimerobot]
+
+## Banking & Finance
+
+- [Ally][ally]
+- [Balanced Payments][balanced]
+- [Capital One][capital-one]
+- [Coinbase][coinbase]
+- [New Alliance][new-alliance]
+- [PayPal][paypal]
+
+## Development
+
+- [Docker][docker]
+- [Vagrant][vagrant]
+
+## Code
+
+- [Aspen][aspen]
+- [PostgreSQL][postgres]
+- [Python][python]
+- [Misc. production libraries][libs-prod]
+- [Misc. testing libraries][libs-testing]
+
+## Theming
+
+- [Jinja2][jinja2]
+- [Sass][sass]
+
+## Translation
+
+- [Transifex][transifex]
+
+<!-- Links -->
+[ally]:         http://www.ally.com/
+[aspen]:        http://aspen.io/
+[balanced]:     https://www.balancedpayments.com/
+[botbot]:       https://botbot.me/
+[botbot-us]:    https://botbot.me/freenode/gratipay/
+[capital-one]:  https://www.capitalone.com/
+[coinbase]:     https://coinbase.com/
+[digitalocean]: https://www.digitalocean.com/
+[docker]:       https://www.docker.io/
+[freshdesk]:    http://freshdesk.com/
+[ga]:           http://www.google.com/analytics/
+[gplus]:        https://www.google.com/+/learnmore/
+[gplus-us]:     https://plus.google.com/+gratipay
+[git]:          http://git-scm.com/
+[github]:       https://github.com/
+[github-us]:    https://github.com/gratipay/gratipay.com
+[hangouts]:     https://www.google.com/+/learnmore/hangouts/
+[heroku]:       https://www.heroku.com/
+[huboard]:      https://huboard.com/
+[huboard-us]:   https://huboard.com/gratipay/gratipay.com
+[hubot]:        https://hubot.github.com/
+[irc]:          https://en.wikipedia.org/wiki/Internet_Relay_Chat
+[irc-us]:       http://webchat.freenode.net/?channels=gratipay
+[jinja2]:       http://jinja.pocoo.org/2/
+[librato]:      https://metrics.librato.com/
+[librato-us]:   https://metrics.librato.com/share/dashboards/42hmoj9j?duration=3600&source=production
+[libs-prod]:    https://github.com/gratipay/gratipay.com/blob/master/requirements.txt
+[libs-testing]: https://github.com/gratipay/gratipay.com/blob/master/requirements_tests.txt
+[mandrill]:     http://mandrill.com/
+[medium]:       https://medium.com/
+[medium-us]:    https://medium.com/inside-gratipay
+[new-alliance]: http://www.newalliancefcu.com/
+[pagerduty]:    http://www.pagerduty.com/
+[paypal]:       https://www.paypal.com/
+[postgres]:     http://www.postgresql.org/
+[python]:       https://www.python.org/
+[sass]:         http://sass-lang.com/
+[sentry]:       http://getsentry.com/
+[transifex]:    https://www.transifex.com/
+[travis]:       https://travis-ci.com/
+[travis-us]:    https://travis-ci.org/gratipay/gratipay.com
+[twitter]:      https://twitter.com/
+[twitter-us]:   https://twitter.com/gratipay
+[uptimerobot]:  http://uptimerobot.com/
+[vagrant]:      http://www.vagrantup.com/
+[youtube]:      https://www.youtube.com/
+[youtube-us]:   https://www.youtube.com/channel/UCK4oHY0Uwe9ccTCvcYaKzVg
