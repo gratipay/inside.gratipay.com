@@ -5,7 +5,7 @@ nav_title="Payout Bitcoin"
 Eventually we'll
 [automate](https://github.com/gratipay/gratipay.com/issues/1960) this but for
 now we have to run a
-[script](https://github.com/gratipay/gratipay.com/blob/master/tasks/__init__.py#L103-L218).
+[script](https://github.com/gratipay/gratipay.com/blob/master/tasks/__init__.py#L86-L194).
 
 ```
 $ heroku run bash
