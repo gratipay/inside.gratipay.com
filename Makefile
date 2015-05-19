@@ -14,7 +14,8 @@ env:
 				--extra-search-dir=./vendor/ \
 				--distribute \
 				./env/
-	./$(env_bin)/pip install -r requirements.txt
+	./$(env_bin)/pip install peep==1.0.1
+	./$(env_bin)/peep install -r requirements.txt --no-deps
 
 clean:
 	rm -rf env *.egg *.egg-info
