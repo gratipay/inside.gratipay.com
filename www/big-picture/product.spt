@@ -3,16 +3,11 @@ nav_title = "Product"
 [---] text/html
 
 What product are we building to further our [mission](./mission) according to
-our [values](./brand/) for our [audience](./audience/)? Our product is a social
-payments platform. A user creates an account, configures a (weekly) payment,
-and connects a funding instrument. We process payments every Thursday.
-
-The immediate purpose of our product is to enable [our users](./audience/) to
-delight their friends and run their companies. The secondary purpose is to
-enable our users' users to receive tips, make payments, and collect payroll.
-The wider purpose is to steadily amplify a virtuous cycle between gratitude and
-generosity&mdash;"inspiring generosity"&mdash;until an entire economy comes to
-flourish on this reciprocity.
+our [values](./brand/) for our [audience](./audience/)? Our product offers
+payments and payroll for open work. Companies and organizations apply to join
+Gratipay as a "team," and then they can use Gratipay to collect voluntary
+payments from their customers, and distribute payments to their team members.
+We process payments every Thursday.
 
 
 ## Information Architecture
