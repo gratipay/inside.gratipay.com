@@ -12,12 +12,6 @@ If you would rather communicate with us privately, please send email to
 [support@gratipay.com](mailto:support@gratipay.com).
 
 
-## [Chatroom](/appendices/chat)
-
-Our [chatroom](/appendices/chat) is the burning heart of Gratipay. Here are
-[the logs](https://botbot.me/freenode/gratipay/).
-
-
 ## [GitHub](https://github.com/gratipay)
 
 We use GitHub to manage our source code and discuss issues. High-level
@@ -44,6 +38,15 @@ live-streamed and posted to YouTube. Older ones are in [this
 # Moribund Channels
 
 We don't really use these anymore. They're mentioned here as archives.
+
+
+## [Chatroom](/appendices/chat)
+
+Our [chatroom](/appendices/chat) used to be the burning heart of Gratipay, and 
+you're still welcome to use it if you want. However, core contributors currently 
+spend more time on GitHub. Here are [our chat 
+logs](https://botbot.me/freenode/gratipay/).
+
 
 ## [The Monday Morning Missive](http://tinyletter.com/gittip/letters)
 
