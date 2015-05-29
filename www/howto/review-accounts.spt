@@ -3,8 +3,7 @@ nav_title="Review Accounts"
 [---] text/html
 
 Every week early on during [payday](./run-payday) we review accounts that have
-[ended up with a new Balanced
-account](https://github.com/gratipay/gratipay.com/blob/master/www/dashboard/index.spt#L13-14)
+[connected a payment method](https://github.com/gratipay/gratipay.com/blob/master/www/dashboard/index.spt#L13-14)
 in the past week. That happens on the [admin
 dashboard](https://gratipay.com/dashboard/) (if you're not logged in as an
 admin you should get a bare-bones 404). The purpose here is **to filter out
