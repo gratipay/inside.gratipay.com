@@ -21,9 +21,3 @@ We use [Freshdesk](http://gratipay.freshdesk.com/) for managing support queries.
 1. Use `about/me/*` URLs wherever you can. Providing users with a link to [their settings page](https://gratipay.com/about/me/settings/) is better than asking them to find it on their own. This works for [history pages](https://gratipay.com/about/me/history/) and [profiles](https://gratipay.com/about/me/) too.
 1. Do *not* include the Freshdesk URL in tickets. It's not immediately useful to users, and is only likely to confuse them.
 1. Update this page on GitHub! You can make Gratipay support even better!
-
-
-## Common requests
-
-- [Configure a Bank Account](configure-a-bank-account)
-- [Configure PayPal](configure-paypal)
