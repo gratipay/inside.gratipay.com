@@ -12,12 +12,19 @@ We use [Freshdesk](http://gratipay.freshdesk.com/) for managing support queries.
 1. Make liberal use of "Private Notes" to document your work for the rest of us. Err on the side of over-documentation.
 1. Regardless of what action you take, close the ticket when you're done with it. If/when the user responds, it will be reopened automatically.
 
-## Tips for providing great support
+
+## Protecting User Privacy
+
+1. Before answering questions or performing actions related to an account, verify the user's identity by asking for, "the first eight digits of the API key on your [Gratipay settings page](https://gratipay.com/about/me/settings/)." We generally don't trust even verified email addresses as identity confirmation (because of the risk of spoofing).
+1. Never share personally identifying information about a user on GitHub or anywhere else without their explicit consent.
+1. Copying anonymized and general comments into a public GitHub ticket is okay, and so is a simple "+1" with a link to Freshdesk.
+
+
+## Tips for Providing Great Support
 
 1. Respond quickly! Even if that response says you need to spend more time, this really makes people feel appreciated.
 1. Don't hesitate to ask for help. IRC can be great for this.
 1. Support staff with access to the database or financial systems have a *lot* on their plate. Help them out by getting basic details first (identity verifications, amounts, etc), and then pass them on.
-1. We verify identity by asking for, "the first eight digits of the API key on your [Gratipay settings page](https://gratipay.com/about/me/settings/)." We generally don't trust even verified email addresses as identity confirmation.
 1. Use `about/me/*` URLs wherever you can. Providing users with a link to [their settings page](https://gratipay.com/about/me/settings/) is better than asking them to find it on their own. This works for [history pages](https://gratipay.com/about/me/history/) and [profiles](https://gratipay.com/about/me/) too.
 1. Do *not* include the Freshdesk URL in tickets. It's not immediately useful to users, and is only likely to confuse them.
 1. Update this page on GitHub! You can make Gratipay support even better!
