@@ -31,6 +31,9 @@ responsible disclosure of](https://gratipay.com/about/security/) and [handling
 security issues](http://inside.gratipay.com/howto/handle-security-issues) with
 our systems.
 
+We provide our contractors with access to our sensitive information systems on
+an as-needed basis, and we regularly review permissions across our systems.
+
 We classify our vendors into two tiers:
 
  - Low-risk vendors providing secondary services. We manage access via
@@ -38,9 +41,6 @@ We classify our vendors into two tiers:
 
  - Hi-risk vendors, including production hosting systems and financial partners.
    We manage access manually.
-
-We provide our contractors with access to our sensitive information systems on
-an as-needed basis, and we regularly review permissions across our systems.
 
 We use private GitHub repositories for most private internal communications.
 These are encrypted when using their web interface, though not through their
