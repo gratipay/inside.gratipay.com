@@ -174,5 +174,5 @@ user privacy.
 As we [migrate](https://github.com/gratipay/gratipay.com/issues/3377) to new
 processing infrastructure, our information security risk profile is actively
 changing. We are currently assessing our risk, and developing [a PCI DSS-based
-        security risk managment
+        security risk management
         program](https://github.com/gratipay/inside.gratipay.com/issues/214).
