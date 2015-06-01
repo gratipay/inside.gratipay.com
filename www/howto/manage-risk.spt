@@ -2,21 +2,22 @@ nav_title = 'Manage Risk'
 [---]
 [---] text/html
 
-*This is Gratipay's Risk Management Policy.*
+*This is Gratipay's Risk Management Program.*
 
 Gratipay is an online payment processor for companies and organizations
 offering open work. We define "open work" as work that individuals can begin to
-perform without requiring explicit permission from the company offering it, and
+perform without requiring explicit permission from the company offering it,
 with a clear path to further engagement and eventual compensation. Here is [a
 list of our customers](https://gratipay.com/explore/teams/).
 
-We assess our risk under three headings:
+We assess our risk under four headings:
 
  - Information Security
  - Anti-Money Laundering
+ - Consumer Protection
  - Business Continuity
 
-This document describes our policies for managing risk in these three areas. We
+This document describes our policies for managing risk in these four areas. We
 regularly review this document as our business grows and changes; here is [a
 history of
 changes](https://github.com/gratipay/inside.gratipay.com/commits/master/www/howto/manage-risk.spt).
@@ -143,6 +144,47 @@ Following on from our CIP, our customer due diligence (CDD) currently depends
 largely [on social media accounts](./review-accounts). We will further develop
 the CCD as well as the extended due diligence (EDD) portions of our AML program
 as we grow our business.
+
+
+## Consumer Protection
+
+As a third-party payment processor, Gratipay presents two primary risks to
+consumers.
+
+The first risk Gratipay presents to consumers is the risk of *confusion*.
+Gratipay charges generally appear on bank and credit card statements as
+`GRATIPAY.COM 412-925-4220`. However, if a consumer is not aware enough of the
+Gratipay brand when configuring a payment to a Gratipay user, then they may not
+remember the purpose of the transaction when reviewing their statement,
+especially since we charge on a recurring basis and the charge may occur
+significantly later then the payment was configured. We mitigate this risk by
+sending an email notification whenever we charge a user, informing them of the
+charge from Gratipay and reminding them of the purpose of their payment. When
+confused consumers contact us, we respond promptly according to our [support
+procedures](./support-users). We might further mitigate this risk by:
+
+ - [requiring a verified email address in order to charge a
+   user](https://github.com/gratipay/gratipay.com/issues/3506),
+
+ - [notifying users via email *before* we charge
+   them](https://github.com/gratipay/gratipay.com/issues/2224), and/or
+
+ - [setting the descriptor per-transaction to include the purpose of the
+   charge](https://github.com/gratipay/gratipay.com/issues/3507).
+
+The second risk Gratipay presents to consumers is the risk of *fraud*: a thief
+might use a stolen credit card on Gratipay. We mitigate this risk chiefly by
+implementing a business model that is unattractive to thieves. First, because
+all receivers on Gratipay must pass an underwriting process, it is highly
+difficult for a thief to recover stolen funds. Second, because Gratipay is
+recurring weekly and not instant, it is not as useful for the time-sensitive
+process of determining whether stolen cards still have value. We further
+mitigate this risk by [reviewing accounts](./review-accounts) of Gratipay users
+that attach a credit card.
+
+The regulatory environment for consumer protection in which Gratipay operates
+is determined largely by the [Consumer Financial Protection
+Bureau](http://www.consumerfinance.gov/guidance/).
 
 
 ## Business Continuity
