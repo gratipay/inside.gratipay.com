@@ -171,12 +171,8 @@ email interface. Email is inherently insecure.
 Our policy on [user support](./support-users) includes a section on protecting
 user privacy.
 
-We do not store credit card information. We use
-[Braintree](https://www.braintreepayments.com/) and follow their guidance on
-proper implementation to maintain PCI compliance.
-
-We are in the process of migrating our ACH processing infrastructure, and we
-intend to start transmitting and storing bank account and identity information
-for our users. We intend to [implement a security self-assessment program based
-on PCI](https://github.com/gratipay/inside.gratipay.com/issues/214) to manage
-the risk of transmitting and storing this information.
+As we [migrate](https://github.com/gratipay/gratipay.com/issues/3377) to new
+processing infrastructure, our information security risk profile is actively
+changing. We are currently assessing our risk, and developing [a PCI DSS-based
+        security risk managment
+        program](https://github.com/gratipay/inside.gratipay.com/issues/214).
