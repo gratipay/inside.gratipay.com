@@ -33,86 +33,65 @@ GitHub](https://github.com/gratipay/inside.gratipay.com/issues/new).
 
 ## Anti-Money Laundering
 
-Gratipay maintains an anti-money laundering (AML) program, because we want to
-contribute to the safety and security of the financial system, and in
-particular to avoid the funding of terrorism and other crime. We are actively
-revising our AML program in light of [recent major
-changes](https://medium.com/gratipay-blog/gratipay-2-0-2453d3c53077) to our
-business model. This section describes both our old and new models, as well as
-the state of our AML program today, and changes to our AML program that we
-intend to implement.
-
-Our old business model ("Gratipay 1.0") involved "no-strings-attached" gift
-payments between individuals and/or organizations. When concerns surfaced that
-we may be regulated as a money transmitter under this model, we stopped
-processing immediately. We had been processing about $38,000 per month for
-about 2,800 users (who either gave or received or both).
-
-Our new business model ("Gratipay 2.0") involves payments and payroll for open
-work. Companies or organizations join Gratipay as a so-called "team," and
-individuals may join these teams as contractors or employees of the company or
-organization in question. We provide a migration path for our users from the
-old model to the new model. As of this writing, we are three weeks into the new
-model, and we have 14 customers receiving all together about $5,000 per month
-from 670 of their customers (note that all payments happen on a weekly
-recurring basis).
-
-As a third-party payment processor, we facilitate payments for goods and
-services between providers and their customers. We haven't brought the payroll
-side of our product back online quite yet, but once we do we'll have two types
-of customer:
-
- 1. a company or organization that provides goods and services, and
-
- 1. a contractor or employee of the companies and organizations that are our
-    primary customers.
-
-As the Federal Financial Institutions Examination Council's *Bank Secrecy
+Anti-money laundering (AML) is a catch-all term for policing of the global
+financial system against the funding of crime, particularly terrorism. As a
+third-party payment processor, Gratipay provides its customers with limited,
+indirect access to the financial system, and therefore we are at some risk of
+enabling the funding of crime. Since the access we provide is limited, we're
+[not a big enough
+        risk](http://www.gpo.gov/fdsys/pkg/FR-2011-07-21/pdf/2011-18309.pdf)
+for FinCEN to regulate: "[payment processing] is a relatively controlled flow
+of money that poses little money laundering risk" (p. 43593). However, we *are*
+a bigger risk to our banking partners than most of their clients. As the
+Federal Financial Institutions Examination Council's *Bank Secrecy
 Act/Anti-Money Laundering Examination Manual*
 [states](http://www.ffiec.gov/bsa_aml_infobase/pages_manual/olm_063.htm):
 
->While payment processors generally [e]ffect legitimate payment transactions
->for reputable merchants, the risk profile of such entities can vary
->significantly depending on the make-up of their customer base.
+>Processors generally are not subject to BSA/AML
+regulatory requirements. As a result, some processors may be vulnerable to
+money laundering[.]
 
-Gratipay closely curates its customer base, because we take our responsibility
-as a third-party payment processor seriously, and in general because we care a
-good deal about our reputation. Our target clientele are low-risk businesses
-and organizations generally involved in open-source software and related
-fields. We require every company that receives payments on Gratipay to go
-through an application and approval process, which includes an assessment of
-their legitimacy as a business or organization offering open work, as well as
-their alignment with our
+(Here is [a full discussion of the AML regulatory
+    environment](https://github.com/gratipay/inside.gratipay.com/issues/119#issuecomment-107081615)
+        within which Gratipay operates.)
+
+To mitigate the risk of money laundering on Gratipay, we implement
+know-your-customer (KYC) controls, including a customer identification program
+(CIP) and customer due diligence (CDD), appropriate to the size and type of our
+business and the make-up of our customer base.
+
+Our target clientele are low-risk businesses and organizations generally
+involved in open-source software and related fields. We require every company
+that receives payments on Gratipay to go through an underwriting process, which
+includes an assessment not only of their legitimacy as a business or
+organization offering open work, but also of their alignment with our
 [mission](http://inside.gratipay.com/big-picture/mission) and [brand
-values](http://inside.gratipay.com/big-picture/brand/). The application process
-includes [a public review
-period](https://github.com/gratipay/inside.gratipay.com/labels/Review), and we
-provide a public listing of [our current, prospective, and rejected
-customers](https://gratipay.com/explore/teams/).
+    values](http://inside.gratipay.com/big-picture/brand/), which include
+"honesty," "kindness," and "collaboration." The underwriting process includes
+[a public review
+    period](https://github.com/gratipay/inside.gratipay.com/labels/Review), and
+we provide a public listing of [our current, prospective, and rejected
+    customers](https://gratipay.com/explore/teams/). Approximately half of
+Gratipay's customers are outside of the United States, which, all things
+being equal, does heighten our AML risk. However, our target clientele and
+our underwriting process put us at low risk of money laundering.
 
-To date, our customer identification program (CIP) has involved collecting and
-programmatically verifying identity information for U.S. citizens according to
-the capabilities of a particular vendor (which is going out of business). As we
-rebuild our business as Gratipay 2.0, we intend to implement our own CIP with
-know-your-customer (KYC) controls appropriate to the size and type of our
-business, including:
+We identify customers in the United States by collecting their name, address,
+and date of birth, which we programmatically verify. For customers outside of
+the United States, we require a PayPal account, and are dependent on PayPal's
+AML program. We perform CDD by [reviewing](./review-accounts) the websites and
+social media accounts linked to customer profiles (all customers are required
+    to link at least one social media account).
 
- - [Collecting identity
-   information](https://github.com/gratipay/gratipay.com/issues/3458) (name,
-address, date of birth, citizenship) for all customers of Gratipay, both
-company owners as well as their contractors and employees.
-
- - [Collecting identity
-   documents](https://github.com/gratipay/gratipay.com/issues/2449) for
-high-volume customers.
-
- - Collecting basic and extended identity information for our customers'
-   customers who operate above certain volume thresholds.
-
-Following on from our CIP, our customer due diligence (CDD) currently depends
-largely [on social media accounts](./review-accounts). We will further develop
-the CCD as well as the extended due diligence (EDD) portions of our AML program
-as we grow our business.
+As we [migrate](https://github.com/gratipay/gratipay.com/issues/3377) to new
+processing infrastructure, our AML risk profile is actively changing. We are
+currently assessing our risk, and developing
+[AML](https://github.com/gratipay/inside.gratipay.com/issues/119),
+[CIP](https://github.com/gratipay/gratipay.com/issues/3289), and
+[CDD](https://github.com/gratipay/inside.gratipay.com/issues/219) capabilities
+sufficient to mitigate our risk, while at the same time
+[assessing](https://github.com/gratipay/inside.gratipay.com/issues/223) and
+responding to the implications for our information security risk.
 
 
 ## Consumer Protection
