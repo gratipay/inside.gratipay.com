@@ -4,62 +4,31 @@ nav_title = 'Manage Risk'
 
 *This is Gratipay's Risk Management Program.*
 
-Gratipay is an online payment processor for companies and organizations
-offering open work. We define "open work" as work that individuals can begin to
-perform without requiring explicit permission from the company offering it,
-with a clear path to further engagement and eventual compensation. Here is [a
-list of our customers](https://gratipay.com/explore/teams/).
+[Gratipay](https://gratipay.com/) is an online payment processor for companies
+and organizations offering open work. We define "open work" as work that
+individuals can begin to perform without requiring explicit permission from the
+company offering it, with a clear path to further engagement and eventual
+compensation.
 
-We assess our risk under four headings:
+As a responsible participant in the global financial system, Gratipay manages
+its risk of enabling crime and consumer harm. In order to deliver value to our
+customers without disruption, we manage our business continuity risk.
+Delivering value as a participant in the financial system involves collecting
+and storing sensitive information about our customers, and so we manage our
+information security risk. Therefore, we organize our risk management program
+under these four headings:
 
- - Information Security
  - Anti-Money Laundering
  - Consumer Protection
  - Business Continuity
+ - Information Security
 
-This document describes our policies for managing risk in these four areas. We
-regularly review this document as our business grows and changes; here is [a
-history of
+We regularly review this document as our business evolves; here is [a history
+of
 changes](https://github.com/gratipay/inside.gratipay.com/commits/master/www/howto/manage-risk.spt).
-
-
-## Information Security
-
-Gratipay operates primarily as a web application at https://gratipay.com/.
-
-We follow industry-standard procedures for encrypting all traffic to/from our
-application (via SSL/TLS), and we have policies in place for [accepting
-responsible disclosure of](https://gratipay.com/about/security/) and [handling
-security issues](http://inside.gratipay.com/howto/handle-security-issues) with
-our systems.
-
-We provide our contractors with access to our sensitive information systems on
-an as-needed basis, and we regularly review permissions across our systems.
-
-We classify our vendors into two tiers:
-
- - Low-risk vendors providing secondary services. We manage access via
-   [LastPass](https://lastpass.com/).
-
- - Hi-risk vendors, including production hosting systems and financial partners.
-   We manage access manually.
-
-We use private GitHub repositories for most private internal communications.
-These are encrypted when using their web interface, though not through their
-email interface. Email is inherently insecure.
-
-Our policy on [user support](./support-users) includes a section on protecting
-user privacy.
-
-We do not store credit card information. We use
-[Braintree](https://www.braintreepayments.com/) and follow their guidance on
-proper implementation to maintain PCI compliance.
-
-We are in the process of migrating our ACH processing infrastructure, and we
-intend to start transmitting and storing bank account and identity information
-for our users. We intend to [implement a security self-assessment program based
-on PCI](https://github.com/gratipay/inside.gratipay.com/issues/214) to manage
-the risk of transmitting and storing this information.
+If you have suggestions for improving this document, you may communicate them
+to us privately [via email](mailto:support@gratipay.com), or publicly [via
+GitHub](https://github.com/gratipay/inside.gratipay.com/issues/new).
 
 
 ## Anti-Money Laundering
@@ -194,3 +163,42 @@ owner](https://github.com/gratipay/inside.gratipay.com/issues/196) as a next
 step toward reducing the risks associated with a single owner. We are also
 considering reorganizing as a
 [cooperative](https://github.com/gratipay/inside.gratipay.com/issues/72).
+
+
+## Information Security
+
+Gratipay operates primarily as a web application at https://gratipay.com/.
+
+We follow industry-standard procedures for encrypting all traffic to/from our
+application (via SSL/TLS), and we have policies in place for [accepting
+responsible disclosure of](https://gratipay.com/about/security/) and [handling
+security issues](http://inside.gratipay.com/howto/handle-security-issues) with
+our systems.
+
+We provide our contractors with access to our sensitive information systems on
+an as-needed basis, and we regularly review permissions across our systems.
+
+We classify our vendors into two tiers:
+
+ - Low-risk vendors providing secondary services. We manage access via
+   [LastPass](https://lastpass.com/).
+
+ - Hi-risk vendors, including production hosting systems and financial partners.
+   We manage access manually.
+
+We use private GitHub repositories for most private internal communications.
+These are encrypted when using their web interface, though not through their
+email interface. Email is inherently insecure.
+
+Our policy on [user support](./support-users) includes a section on protecting
+user privacy.
+
+We do not store credit card information. We use
+[Braintree](https://www.braintreepayments.com/) and follow their guidance on
+proper implementation to maintain PCI compliance.
+
+We are in the process of migrating our ACH processing infrastructure, and we
+intend to start transmitting and storing bank account and identity information
+for our users. We intend to [implement a security self-assessment program based
+on PCI](https://github.com/gratipay/inside.gratipay.com/issues/214) to manage
+the risk of transmitting and storing this information.
