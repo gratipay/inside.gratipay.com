@@ -144,7 +144,39 @@ considering reorganizing as a
 
 ## Information Security
 
-Gratipay operates primarily as a web application at https://gratipay.com/.
+Gratipay's information security program is a risk-based application of the
+Payment Card Industry Data Security Standard (PCI DSS) [version
+3.1](https://www.pcisecuritystandards.org/), based on a three-tier risk model
+for the information that we collect, store, and process:
+
+<style>
+    table th { white-space: nowrap;}
+    table tr td { vertical-align: top; padding: 10px 10px 0 0;}
+</style>
+
+| Risk Level | Information | Risk |
+|:------------|:----------------|:------|
+| high | bank account numbers | financial theft |
+| medium | personally identifying information (PII), including national identity numbers (NIN) | identity theft |
+| low | other | indeterminate |
+
+
+We will handle **high-risk** information according to the full PCI standard.
+The PCI Security Standards Council (PCI SSC) has not yet published version 3.1
+Self-Assessment Questionnaires (SAQs), so we will self-attest our compliance
+using SAQ D [version
+3.0](https://www.pcisecuritystandards.org/documents/SAQ_D_v3_Merchant.pdf)
+before we begin handling high-risk information.
+
+For **medium-risk** information, we may make exceptions to PCI DSS, yet to be
+determined.
+
+For **low-risk** information, we make the following exceptions to PCI DSS: [...].
+
+In order to stay up to date with changes to PCI DSS, we receive press releases
+from the PCI SSC on our security@gratipay.com email address.
+
+----
 
 We follow industry-standard procedures for encrypting all traffic to/from our
 application (via SSL/TLS), and we have policies in place for [accepting
@@ -169,9 +201,3 @@ email interface. Email is inherently insecure.
 
 Our policy on [user support](./support-users) includes a section on protecting
 user privacy.
-
-As we [migrate](https://github.com/gratipay/gratipay.com/issues/3377) to new
-processing infrastructure, our information security risk profile is actively
-changing. We are currently assessing our risk, and developing [a PCI DSS-based
-        security risk management
-        program](https://github.com/gratipay/inside.gratipay.com/issues/214).
