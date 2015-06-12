@@ -1,5 +1,5 @@
 nav_title = 'Appendices'
-nav_children = ['health', 'calendar', 'chat', 'colophon', 'channels', 'finances', 'see-also', 
+nav_children = ['health', 'calendar', 'chat', 'channels', 'finances', 'see-also', 'tools',
                 'survey', 'access']
 [---]
 [---] text/html
