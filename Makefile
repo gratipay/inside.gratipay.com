@@ -18,7 +18,7 @@ env:
 	./$(env_bin)/pip install -f file:///$(PWD)/vendor -r requirements.txt
 
 clean:
-	rm -rf env *.egg *.egg-info
+	rm -rf env
 	find . -name \*.pyc -delete
 
 run: env
