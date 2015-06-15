@@ -14,10 +14,11 @@ env:
 				--extra-search-dir=./vendor/ \
 				--distribute \
 				./env/
-	./$(env_bin)/pip install -r requirements.txt
+	./$(env_bin)/pip --version
+	./$(env_bin)/pip install -f file:///$(PWD)/vendor -r requirements.txt
 
 clean:
-	rm -rf env *.egg *.egg-info
+	rm -rf env
 	find . -name \*.pyc -delete
 
 run: env
