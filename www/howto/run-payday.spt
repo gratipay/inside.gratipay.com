@@ -35,7 +35,7 @@ ticket created in step two.
   1. Log back in to `payday` (to satisfy myself that payday is not dependent on my shell session).
   1. `cd paydays` and `tail -f gratipay-NNN.log`. Wait a minute for log output to appear, indicating
      that the `payday.sh` process is healthy. Exit the tail.
-  1. Wait 15 minutes.
+  1. Wait a couple minutes.
   1. If `payday.sh` fails, fix it, documenting everything on the ticket from step 2.
   1. Once `payday.sh` finishes successfully, tweet from the Gratipay account using the form, "Week
      NNN&mdash;10,000 users exchanged $100,000: https://gratipay.com/about/stats." Fill in
