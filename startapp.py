@@ -6,9 +6,14 @@ which also exports WSGI application for production.
 
 from aspen.website import Website
 
+aspen_config = [
+  '--www_root=www/',
+  '--project_root=.'
+]
+
 # by WSGI convention, we need to create webapp object
 # and by default most WSGI servers look for 'application'
-application = Website([])
+application = Website(aspen_config)
 
 if __name__ == '__main__':
     from wsgiref.simple_server import make_server
