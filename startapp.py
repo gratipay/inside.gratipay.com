@@ -7,8 +7,8 @@ which also exports WSGI application for production.
 from aspen.website import Website
 
 aspen_config = [
-  '--www_root=www/',
-  '--project_root=.'
+    '--www_root=www/',
+    '--project_root=.'
 ]
 
 # by WSGI convention, we need to create webapp object
