@@ -8,7 +8,7 @@ that can handle wheels. So, for now create virtualenv
 manually and install dependencies with:
 
 ```
-pip install -r requirements.txt
+pip install -f vendor -r requirements.txt
 ```
 
 
