@@ -7,7 +7,7 @@ install:
   - make env
 
 before_script:
-  - env/bin/python startapp.py
+  - env/bin/python startapp.py&
 
 # Dummy command until we have real tests
 script: true
