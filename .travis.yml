@@ -7,12 +7,12 @@ install:
   - make env
 
 before_script:
-  - env/bin/python startapp.py&
+  - make run&
   - sleep 3  # Give webserver some time to start
 
 # Dummy command until we have real tests
 script:
-  - curl http://localhost:8000/
+  - curl http://localhost:8537/
 
 branches:
   only:

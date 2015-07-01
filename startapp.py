@@ -18,6 +18,7 @@ aspen_config = [
 for param in sys.argv:
     if param.startswith('--port'):
         _, PORT = param.split('=')
+        PORT = int(PORT)
  
  
 # by WSGI convention, we need to create webapp object
