@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/gratipay/inside.gratipay.com.svg)](https://travis-ci.org/gratipay/inside.gratipay.com)
 
 **NOTE**: The quickstart may not work until vendorized
-`virtualenv` + `pip` are not upgraded to latest versions
+`virtualenv` + `pip` are upgraded to latest versions
 that can handle wheels. So, for now create virtualenv
 manually and install dependencies with:
 
