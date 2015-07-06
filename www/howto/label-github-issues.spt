@@ -7,14 +7,14 @@ to go to a listing of related issues.
 Every ticket should have exactly one of the following:
 
   - The stars are for user experience-related issues, high, medium, and low priority:<br>
-    - <a href="https://github.com/gratipay/gratipay.com/issues?labels=%E2%98%85%E2%98%85%E2%98%85">&#9733;&#9733;&#9733;</a>
-    - <a href="https://github.com/gratipay/gratipay.com/issues?labels=%E2%98%85%E2%98%85%E2%98%86">&#9733;&#9733;&#9734;</a>
-    - <a href="https://github.com/gratipay/gratipay.com/issues?labels=%E2%98%85%E2%98%86%E2%98%86">&#9733;&#9734;&#9734;</a>
-  - <a href="https://github.com/gratipay/gratipay.com/issues?labels=TeamX %E2%98%85">TeamX
+    - <a href="https://github.com/gratipay/gratipay.com/labels/%E2%98%85%E2%98%85%E2%98%85">&#9733;&#9733;&#9733;</a>
+    - <a href="https://github.com/gratipay/gratipay.com/labels/%E2%98%85%E2%98%85%E2%98%86">&#9733;&#9733;&#9734;</a>
+    - <a href="https://github.com/gratipay/gratipay.com/labels/%E2%98%85%E2%98%86%E2%98%86">&#9733;&#9734;&#9734;</a>
+  - <a href="https://github.com/gratipay/gratipay.com/labels/TeamX %E2%98%85">TeamX
     &#9733;</a> and
-    <a href="https://github.com/gratipay/gratipay.com/issues?labels=TeamX">TeamX</a> are for high-
+    <a href="https://github.com/gratipay/gratipay.com/labels/TeamX">TeamX</a> are for high-
     and low-priority "team experience" issues.
 
 Once a PR is ready for review, apply the <a 
-href="https://github.com/gratipay/gratipay.com/issues?labels=Review">Review</a>
+href="https://github.com/gratipay/gratipay.com/labels/Review">Review</a>
 label to it.
