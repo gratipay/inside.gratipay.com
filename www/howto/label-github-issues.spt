@@ -15,12 +15,6 @@ Every ticket should have exactly one of the following:
     <a href="https://github.com/gratipay/gratipay.com/issues?labels=TeamX">TeamX</a> are for high-
     and low-priority "team experience" issues.
 
-In addition, a ticket may have one of the following. These are for <a
-href="http://huboard.com/gratipay/gratipay.com">HuBoard</a>, a workflow
-management tool atop GitHub issues that we sort-of use:
-
-  - <a href="https://github.com/gratipay/gratipay.com/issues?labels=0 - Backlog">0 - Backlog</a>
-  - <a href="https://github.com/gratipay/gratipay.com/issues?labels=1 - Ready to Start">1 - Ready to Start</a>
-  - <a href="https://github.com/gratipay/gratipay.com/issues?labels=2 - Stalled">2 - Stalled</a>
-  - <a href="https://github.com/gratipay/gratipay.com/issues?labels=3 - Work in Progress">3 - Work in Progress</a>
-  - <a href="https://github.com/gratipay/gratipay.com/issues?labels=4 - Review">4 - Review</a>
+Once a PR is ready for review, apply the <a 
+href="https://github.com/gratipay/gratipay.com/issues?labels=Review">Review</a>
+label to it.
