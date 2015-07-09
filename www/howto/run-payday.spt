@@ -9,30 +9,17 @@ ticket created in step two.
   1. [Start a ticket](https://github.com/gratipay/gratipay.com/issues/new) named "run Gratipay NNN."
   1. Locate and, in the ticket description, link to the ticket for the previous payday. Linked list!
   1. [Review accounts](./review-accounts).
+  1. Migrate tips: `heroku config -s | run_dammit /dev/stdin -c ./env/bin/python ./bin/migrate-tips.py > migrate-tips.log`
   1. Take a backup using `bin/snapper.py`. Load the backup locally and make sure the `/explore/` page
      matches the production `/explore/` page.
-  1. Login to Digital Ocean, and spin up a new droplet using the `payday` image. Smallest droplet
-     is fine. Image is in NYC2.
-  1. Update `payday` in `/etc/hosts` with the IP address of the new droplet (it hasn't changed for a 
-     while now, though), and remove the `payday` entry from `~/.ssh/known_hosts`.
-  1. `ssh payday` (the image has a key of mine on it under the `whit537` user).
-  1. `cd gratipay.com && git fetch && git rebase && make`
   1. Triple-check the [stats page](https://gratipay.com/about/stats) to get the week
      number right.
-  1. On `payday`: `./payday.sh NNN for_real_please`. Answer yes at the prompts.
-  1. `Ctrl-C` to stop tailing the logfile (the `release.sh` script uses `disown` to detach itself 
+  1. On latest master: `./payday.sh NNN for_real_please`. Answer yes at the prompts. It wants to log 
+     into a `../paydays` directory.
+  1. `Ctrl-C` to stop tailing the logfile (the `payday.sh` script uses `disown` to detach itself 
      from the controlling terminal).
-  1. Log out of `payday`.
-  1. Log back in to `payday` (to satisfy myself that payday is not dependent on my shell session).
-  1. `cd paydays` and `tail -f gratipay-NNN.log`. Wait a minute for log output to appear, indicating
-     that the `payday.sh` process is healthy. Exit the tail.
-  1. Wait a couple minutes.
+  1. Wait a minute or two.
   1. If `payday.sh` fails, fix it, documenting everything on the ticket from step 2.
-  1. Once `payday.sh` finishes successfully, tweet from the Gratipay account using the form, "Week
-     NNN&mdash;10,000 users exchanged $100,000: https://gratipay.com/about/stats." Fill in
-     the numbers from the charts on the stats page. Add any fitting color commentary.
-  1. Download the logfile from the droplet to `../paydays`.
-  1. Destroy the droplet.
   1. [Run MassPay](run-masspay).
   1. [Shuffle escrow](shuffle-escrow).
   1. Commit the logs from payday and masspay to git and push them up the `logs` repo.
