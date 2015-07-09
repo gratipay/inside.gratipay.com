@@ -26,15 +26,14 @@ website.renderer_default = "markdown"
 def add_nav_to_website(website):
     website.nav = NavItem(website, None, website.www_root, '')
 
-def add_nav_current_to_context(dispatch_result, state, website):
+def add_nav_current_to_context(dispatch_result, website):
     path = dispatch_result.match
     if basename(path) in website.indices:
         path = dirname(path)
-    state['nav_current'] = website.nav.by_fs.get(path, website.nav)
+    return {'nav_current': website.nav.by_fs.get(path, website.nav)}
 
-def add_nav_next_to_context(state, website):
-    nav_current = state['nav_current']
-    state['nav_next'] = nav_current.next_child
+def add_nav_next_to_context(nav_current, website):
+    return {'nav_next': nav_current.next_child}
 
 add_nav_to_website(website)
 
