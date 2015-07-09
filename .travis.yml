@@ -12,7 +12,7 @@ before_script:
 
 # Dummy command until we have real tests
 script:
-  - curl http://localhost:8537/
+  - curl http://localhost:8536/
 
 branches:
   only:

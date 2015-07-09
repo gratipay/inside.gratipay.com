@@ -23,4 +23,4 @@ clean:
 
 run: env
 	./$(env_bin)/honcho -e defaults.env,local.env run ./env/bin/python \
-		./startapp.py --port=8537
+		./startapp.py --port=8536
