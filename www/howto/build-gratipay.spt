@@ -25,8 +25,9 @@ by browsing issues. Start by using Gratipay.
     <li>Your first contribution should be almost trivial, so you a) get an
     early win fast, and b) get comfortable with this process.</li>
 
-    <li>Talking with others in <a href="/appendices/chat">IRC</a> is a
-    great way to settle on a good next ticket.</li>
+    <li>Talking with others on <a 
+    href="https://github.com/gratipay/inside.gratipay.com/labels/Radar">the 
+    Radar</a> is a great way to settle on a good next ticket.</li>
 
   </ol>
 
@@ -45,15 +46,15 @@ by browsing issues. Start by using Gratipay.
         <li>Paper. Take a picture, possibly with your laptop's webcam, and post
         that on the ticket.</li>
 
-        <li><a href="http://www.bohemiancoding.com/sketch/">Sketch</a>.
-        Post a <a href="https://layervault.com/gratipay">LayerVault</a> link
-        on the ticket.</li> </ol>
-
+        <li>Sketch or Pixelmator or Affinity Designer or Photoshop or Illustrator 
+        or ...</li>
+        
+      </ol>
     </li>
 
-    <li>Find people to critique your sketch. <a
-      href="/appendices/chat">IRC</a> is the best place to actively
-    look for people.</li>
+    <li>Find people to critique your sketch. <a 
+    href="https://github.com/gratipay/inside.gratipay.com/labels/Radar">the
+    Radar</a> is the best place to actively look for people.</li>
 
     <li>Iterate on the sketch, molding consensus.</li>
 
@@ -68,12 +69,7 @@ by browsing issues. Start by using Gratipay.
         request from there.</li>
 
         <li><a href="http://progrium.com/localtunnel/">Localtunnel</a> is
-        great for sharing your localhost. This works well when discussing
-        on IRC.</li>
-
-        <li>If you're discussing asynchronously on GitHub, deploy the
-        branch to a public QA instance if you can. (This is hard right now
-        and we aim to streamline this.)</li>
+        great for sharing your localhost.</li>
 
         <li>If your pull request stays open a long time, periodically merge
         master out to the branch.</li>
@@ -88,7 +84,8 @@ by browsing issues. Start by using Gratipay.
     <li>Iterate on the implementation, molding consensus.</li>
 
     <li><b>Call for final review/merge</b> by writing a comment on the pull
-    request like, "I'm ready for final review/merge here."
+    request like, "I'm ready for final review/merge here," and applying the
+    `Review` label. Ping specific people if you can.
 
       <ol class="lower-alpha">
 
