@@ -15,6 +15,6 @@ Every ticket should have exactly one of the following:
     <a href="https://github.com/gratipay/gratipay.com/labels/TeamX">TeamX</a> are for high-
     and low-priority "team experience" issues.
 
-Once a PR is ready for review, apply the <a 
+Once a PR (pull request) is ready for review, apply the <a 
 href="https://github.com/gratipay/gratipay.com/labels/Review">Review</a>
 label to it.
