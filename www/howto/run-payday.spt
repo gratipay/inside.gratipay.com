@@ -1,15 +1,6 @@
 nav_title="Run Payday"
 [---]
 [---] text/html
-The payday process begins every Thursday morning. Our payment processor
-initiates their internal bank settling process at 3:30pm PST each
-business day, resulting in bank deposits received by Gratipay users the 
-following business day. We aim to complete the running of the payday 
-script by Thursday's deadline, resulting in a Friday deposit. If we 
-experience any unexpected issues that prevent us from hitting Thursday's 
-deadline, then we have until Friday's deadline to ensure that deposits 
-will be received by users on Monday afternoon.
-
 Here's how to run payday. After each step, record the result on the
 ticket created in step two.
 
@@ -52,11 +43,8 @@ ticket created in step two.
 
 ## Notes
 
-  - When a patron's credit card fails, the tips from that user are
+  - When a supporter's credit card fails, the tips from that user are
     *excluded* from the total receiving amounts of those they gift, so
     as not to mislead the receiver about likely future earning.
-  - Even when a patron's card fails, we continue to attempt charges in
-    subsequent weeks. Sometimes, failures are permanent, but often they
-    are temporary. If a card starts working again, the patron's
-    receivers will see their contribution reflected in their totals once
-    again.
+  - When a supporter's card fails, we don't notify them and they have 
+    to fix it before we start charging them again.
