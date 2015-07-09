@@ -4,11 +4,13 @@
 
 **NOTE**: The quickstart may not work until vendorized
 `virtualenv` + `pip` are upgraded to latest versions
-that can handle wheels. So, for now create virtualenv
-manually and install dependencies with:
+that can handle wheels. So, for now you can create
+virtualenv, install dependencies and run manually with:
 
 ```
-pip install -f vendor -r requirements.txt
+virtualenv env
+./env/bin/pip install -f vendor -r requirements.txt
+./env/bin/python startapp.py
 ```
 
 
