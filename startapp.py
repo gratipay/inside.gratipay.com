@@ -3,10 +3,10 @@
 The main script to start website for development,
 which also exports WSGI application for production.
 """
- 
+
 HOST = ''    # by default run on all interfaces
-PORT = 8537  # default/devserver port
- 
+PORT = 8536  # default/devserver port
+
 import sys
 from aspen.website import Website
  
