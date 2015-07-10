@@ -6,8 +6,13 @@ python:
 install:
   - make env
 
+before_script:
+  - make run&
+  - sleep 3  # Give webserver some time to start
+
 # Dummy command until we have real tests
-script: true
+script:
+  - curl http://localhost:8536/
 
 branches:
   only:

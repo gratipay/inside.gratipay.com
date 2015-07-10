@@ -11,10 +11,7 @@ from aspen.resources.static_resource import StaticResource
 
 
 def get_simplate_context(website, fs):
-    request = Request()
-    request.fs = fs
-    request.website = website
-    resource = resources.get(request)
+    resource = resources.get(website, fs)
     return {} if isinstance(resource, StaticResource) else resource.pages[0]
 
 

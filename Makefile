@@ -22,5 +22,5 @@ clean:
 	find . -name \*.pyc -delete
 
 run: env
-	./$(env_bin)/honcho -e defaults.env,local.env run ./env/bin/aspen \
-		--network_address :8536 --www_root=./www/ --project_root=./
+	./$(env_bin)/honcho -e defaults.env,local.env run ./env/bin/python \
+		./startapp.py --port=8536
