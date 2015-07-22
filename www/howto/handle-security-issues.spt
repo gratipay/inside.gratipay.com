@@ -2,18 +2,18 @@ nav_title = 'Handle Security Issues'
 [---]
 [---] text/html via markdown
 
-*Are you a security researcher? Please see our
-[disclosure policy](https://gratipay.com/about/security/). This document is for
+*Are you a security researcher? Please visit our
+[HackerOne page](https://hackerone.com/gratipay). This document is for
 internal Gratipay staff.*
 
-When we receive a security disclosure, create a private repo in GitHub to track
-the issue, using the naming convention `security-deadbeef`. Add any relevant 
-security researchers and Gratipay staff to the repo. Clear out all the labels
-in the repo and make a 'Security' label; apply it to the issue so we can track
-it in the [security 
-queue](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+user%3Agratipay+label%3ASecurity).
+We manage our entire security queue in HackerOne. We support email as a 
+fall-back. When we receive disclosures on security@gratipay.com, [file a 
+report](https://hackerone.com/gratipay/reports/new) at HackerOne and manage the
+issue there. If the researcher doesn't want to join HackerOne then add them to 
+the old Hall of Fame instead.
 
-If the issue requires code changes, here's how to make them privately:
+If the issue requires code changes, create a private repo in GitHub, using the 
+naming convention `security-deadbeef`, then do this:
 
 ```
 repo=security-xxxxxx
