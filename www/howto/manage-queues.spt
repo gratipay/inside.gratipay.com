@@ -2,4 +2,27 @@ nav_title = 'Manage Queues'
 [---]
 [---] text/html
 
-We run Gratipay via [queue management](http://www.amazon.com/-/dp/1935401009), and we also practice chat-ops. We use a short-hand in [IRC](/appendices/chat) inspired by [Inbox Zero](http://www.43folders.com/2006/03/13/inbox-zero) to signal what queue we're each paying to and what its status is. It's simple! Just say: `Queue 0`. That tells the rest of us what queue you're paying attention to and how full it is. Some common queues are [Support](https://gratipay.freshdesk.com/helpdesk/tickets), [Twitter](https://gratipay.freshdesk.com/social/streams), [WIP](https://github.com/gratipay/gratipay.com/pulls?q=is%3Aopen+is%3Apr+label%3A%223+-+Work+in+Progress%22), [Review](https://github.com/gratipay/gratipay.com/pulls?q=is%3Aopen+is%3Apr+label%3A%224+-+Review%22), Inbox (for our personal email inbox), GitHub (for our personal GitHub notifications queue), and ... Lunch! `Lunch 1` means I'm going to lunch and `Lunch 0` means I'm back. :D
+We run Gratipay via [queue management](http://www.amazon.com/-/dp/1935401009),
+with top-level queue visualization via a somewhat manual posting of tables to
+the Radar (copy, paste, `*click*`, `*click*`, update, post). Here is [an
+example Queues
+post](https://github.com/gratipay/inside.gratipay.com/issues/290#issuecomment-125372200)
+on the Radar; skim the current
+[Radar](https://github.com/gratipay/inside.gratipay.com/labels/Radar) for the
+latest table. The queues in the table are ordered according to their
+approximate priority: as a rule of thumb, we should work the higher queues down
+to zero (or until all issues are blocked) before proceeding to the lower
+queues. The queues tend to pile up towards the bottom, with the last one being
+our single catch-all queue. The queues above "Milestones" should be regularly
+driven to zero ("Errors" is currently
+[collapsed](https://github.com/gratipay/inside.gratipay.com/issues/293)).
+
+In addition to the main "Queues" table, individual contributors may use a
+short-hand inspired by [Inbox
+Zero](http://www.43folders.com/2006/03/13/inbox-zero) to signal what queue
+we're each paying to and what its status is. It's simple! Just say: `Queue 0`
+on the Radar.  That tells the rest of us what queue you're paying attention to
+and how full it is. It's acceptable to refer to personal queues that aren't in
+the table, such as Inbox (for your personal email inbox), GitHub (for your
+personal GitHub notifications queue), and ...  Lunch! `Lunch 1` means "I'm
+going to lunch" and `Lunch 0` means "I'm back." :D
