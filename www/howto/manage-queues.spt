@@ -2,4 +2,16 @@ nav_title = 'Manage Queues'
 [---]
 [---] text/html
 
-We run Gratipay via [queue management](http://www.amazon.com/-/dp/1935401009), and we also practice chat-ops. We use a short-hand in [IRC](/appendices/chat) inspired by [Inbox Zero](http://www.43folders.com/2006/03/13/inbox-zero) to signal what queue we're each paying to and what its status is. It's simple! Just say: `Queue 0`. That tells the rest of us what queue you're paying attention to and how full it is. Some common queues are [Support](https://gratipay.freshdesk.com/helpdesk/tickets), [Twitter](https://gratipay.freshdesk.com/social/streams), [WIP](https://github.com/gratipay/gratipay.com/pulls?q=is%3Aopen+is%3Apr+label%3A%223+-+Work+in+Progress%22), [Review](https://github.com/gratipay/gratipay.com/pulls?q=is%3Aopen+is%3Apr+label%3A%224+-+Review%22), Inbox (for our personal email inbox), GitHub (for our personal GitHub notifications queue), and ... Lunch! `Lunch 1` means I'm going to lunch and `Lunch 0` means I'm back. :D
+We run Gratipay via [queue management](http://www.amazon.com/-/dp/1935401009),
+and we also practice chat-ops. We use a short-hand in [IRC](/appendices/chat)
+inspired by [Inbox Zero](http://www.43folders.com/2006/03/13/inbox-zero) to
+signal what queue we're each paying to and what its status is. It's simple!
+Just say: `Queue 0`. That tells the rest of us what queue you're paying
+attention to and how full it is. Some common queues are
+[Support](https://gratipay.freshdesk.com/helpdesk/tickets),
+[Twitter](https://gratipay.freshdesk.com/social/streams),
+[WIP](https://github.com/gratipay/gratipay.com/pulls?q=is%3Aopen+is%3Apr+label%3A%223+-+Work+in+Progress%22),
+[Review](https://github.com/gratipay/gratipay.com/pulls?q=is%3Aopen+is%3Apr+label%3A%224+-+Review%22),
+Inbox (for our personal email inbox), GitHub (for our personal GitHub
+notifications queue), and ... Lunch! `Lunch 1` means I'm going to lunch and
+`Lunch 0` means I'm back. :D
