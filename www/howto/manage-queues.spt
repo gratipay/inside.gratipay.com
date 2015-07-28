@@ -12,8 +12,8 @@ on the Radar; skim the current
 latest table. The queues in the table are ordered according to their
 approximate priority: as a rule of thumb, we should work the higher queues down
 to zero (or until all issues are blocked) before proceeding to the lower
-queues. The queues tend to pile up towards the bottom, with the last one being
-our single catch-all queue. The queues above "Milestones" should be regularly
+queues. The queues tend to pile up towards the bottom, with the last one, "Issues," 
+being our single catch-all queue. The queues above "Milestones" should be regularly
 driven to zero ("Errors" is currently
 [collapsed](https://github.com/gratipay/inside.gratipay.com/issues/293)).
 
