@@ -1,0 +1,49 @@
+nav_title = 'Sweep the Radar'
+[---]
+[---] text/html
+
+One of our most important [communication tools](/appendices/channels) is [the
+Radar](https://github.com/gratipay/inside.gratipay.com/labels/Radar), a weekly
+ticket on the `inside.gratipay.com` repo. Anyone actively working on Gratipay
+should, if nothing else, pay attention to this ticket. The Radar is the beating
+heart of Gratipay.
+
+The Radar sweep runs Monday to Monday, and contains a few recurring post types.
+
+
+## What and Why?
+
+Every Radar starts out with this question: "What are you working on this week
+and why?" Give it some thought. Communicating the *why* as well as the *what*
+helps the rest of us understand what motivates you, which helps us get to know
+you better and help you achieve your dreams. <img
+src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f483.png"
+height="20" width="20">
+
+
+## Roadmap
+
+The first comment is usually a visual representation of our high-level roadmap,
+for which we use [interactive blockdiag](http://interactive.blockdiag.com/).
+
+
+## Queues
+
+At some point we'll usually post a table showing a snapshot of our queues. This
+is our mid-level view of work to be done, covering maintenance of various types
+as well as Roadmap progress. It's so important that it gets [its own
+howto](./manage-queues).
+
+
+## Mandrill
+
+Usually there's a final comment just after the close of the Radar that contains
+a screenshot of our Mandrill activity report for the preceding week, which we
+receive on Monday morning. Mandrill is our email service provider.
+
+
+## General Interest
+
+The Radar is the place to post items of general interest to the Gratipay
+team&mdash;whether humorous or informational&mdash;that don't have a specific
+action item associated with them (which is actually pretty rare).

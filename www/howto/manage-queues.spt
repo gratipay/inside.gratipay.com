@@ -2,20 +2,26 @@ nav_title = 'Manage Queues'
 [---]
 [---] text/html
 
-We run Gratipay via [queue management](http://www.amazon.com/-/dp/1935401009),
-with top-level queue visualization via a somewhat manual posting of tables to
-the Radar (copy, paste, `*click*`, `*click*`, update, post). Here is [an
-example Queues
+We run Gratipay via queue management ([deep
+dive](http://www.amazon.com/-/dp/1935401009)), and we visualize our queues via
+a somewhat manual posting of tables to [the Radar](./sweep-the-radar) (copy,
+paste, `*click*`, `*click*`, update, post).  Here is [an example Queues
 post](https://github.com/gratipay/inside.gratipay.com/issues/290#issuecomment-125372200)
-on the Radar; skim the current
-[Radar](https://github.com/gratipay/inside.gratipay.com/labels/Radar) for the
+on the Radar; scan the [current
+Radar](https://github.com/gratipay/inside.gratipay.com/labels/Radar) for the
 latest table. The queues in the table are ordered according to their
 approximate priority: as a rule of thumb, we should work the higher queues down
 to zero (or until all issues are blocked) before proceeding to the lower
-queues. The queues tend to pile up towards the bottom, with the last one, "Issues," 
-being our single catch-all queue. The queues above "Milestones" should be regularly
-driven to zero ("Errors" is currently
-[collapsed](https://github.com/gratipay/inside.gratipay.com/issues/293)).
+queues.
+
+The queues tend to pile up towards the bottom, with the last one, "Issues,"
+being our single catch-all queue. The queues above "Milestones" should be
+regularly driven to zero. "Milestones," "Review," and "PRs" should be
+replenished before they ever reach zero, but on the other hand they should be
+constantly flushed: don't let items rot in there, and don't let them collapse
+(i.e., accumulate so many items that they are no longer manageable). "Errors"
+is currently
+[collapsed](https://github.com/gratipay/inside.gratipay.com/issues/293).
 
 In addition to the main "Queues" table, individual contributors may use a
 short-hand inspired by [Inbox
