@@ -7,7 +7,7 @@ nav_title = 'Handle Security Issues'
 internal Gratipay staff.*
 
 We [use HackerOne](https://hackerone.com/gratipay) to manage our security
-[queue](./manage-queues). HackerOne assigns five reputation points for
+[queue](./manage-queues). HackerOne assigns seven reputation points for
 reporting a bug, and two for reporting a duplicate. Therefore, if you need to
 reticket anything from a HackerOne bug, be sure to have the original researcher
 make the reticket so that they get the credit. Publicly disclose all resolved
