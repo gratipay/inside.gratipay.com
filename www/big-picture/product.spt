@@ -52,22 +52,23 @@ This is our main website and receives the most attention. Here's its structure:
 -     Teams                     /explore/teams/
     Search                      /search
     $COMMUNITY                  /for/$COMMUNITY/
-    $USERNAME                   /$USERNAME/
+    $TEAM                       /$TEAM/
+    $USERNAME                   /~$USERNAME/
      (Dashboard                 /
-.     Profile                   /$USERNAME/
--     Members                   /$USERNAME/members/
--     Receiving                 /$USERNAME/receiving/
--    (Giving                    /$USERNAME/giving/
--    (History                   /$USERNAME/history/
-.      [Record an Exchange      /$USERNAME/history/record-an-exchange.html
--       $YEAR                   /$USERNAME/history/?year=$YEAR
-     (Widgets                   /$USERNAME/widgets/
-     (Identity                  /$USERNAME/identity
-.    (Settings                  /$USERNAME/settings/
+.     Profile                   /~$USERNAME/
+-     Members                   /~$USERNAME/members/
+-     Receiving                 /~$USERNAME/receiving/
+-    (Giving                    /~$USERNAME/giving/
+-    (History                   /~$USERNAME/history/
+.      [Record an Exchange      /~$USERNAME/history/record-an-exchange.html
+-       $YEAR                   /~$USERNAME/history/?year=$YEAR
+     (Widgets                   /~$USERNAME/widgets/
+     (Identity                  /~$USERNAME/identity
+.    (Settings                  /~$USERNAME/settings/
 .       Credit Card             /credit-card.html
 .       Bank Account            /bank-account.html
-.       Close                   /$USERNAME/settings/close
-     [Events                    /$USERNAME/events/
+.       Close                   /~$USERNAME/settings/close
+     [Events                    /~$USERNAME/events/
 .[Dashboard                     /dashboard/
 
 
