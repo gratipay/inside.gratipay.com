@@ -10,7 +10,8 @@ We use [Freshdesk](http://gratipay.freshdesk.com/) for managing support queries.
 1. Pick any low-hanging fruit: "Mark spam," "Merge" anything you can merge, "Close" anything that can be immediately resolved.
 1. If you spot a ticket you can help with, then start working on it. Freshdesk supposedly shows when two agents are working on the same ticket, so keep an eye out for that but don't worry too much about clobbering someone else.
 1. Make liberal use of "Private Notes" to document your work for the rest of us. Err on the side of over-documentation.
-1. Regardless of what action you take, "Close" the ticket when you're done with it. If/when the user responds, it will be reopened automatically.
+1. If the Freshdesk ticket is blocking on a GitHub ticket (i.e., a bug fix or new feature), and the GitHub ticket is going to take a while, then link the Freshdesk ticket in the description of the GitHub ticket under a "To Notify" heading and notify the user.
+1. Regardless of what action you take, "Close" the ticket when you're done with it. If/when the user responds, it will be reopened automatically. If/when we address an underlying ticket in GitHub, we can pick up the Freshdesk ticket again.
 1. Periodically dredge [the spam queue](https://gratipay.freshdesk.com/helpdesk/tickets/filter/spam) for false positives.
 
 
