@@ -1,0 +1,19 @@
+nav_title="Review Teams"
+[---]
+[---] text/html
+
+All Teams on Gratipay are subject to a review process when they first apply,
+and as needed thereafter, to make sure they and we are a good fit for each
+other. Review happens in public in [the `team-review`
+repo](https://github.com/gratipay/team-review/issues).
+
+Here are the criteria for approval:
+
+ 1. The Team must offer open work. Can I as an individual voluntarily start
+    doing the Team's work without having to coordinate with anyone?
+
+ 1. The Team must [be willing to eventually] participate in
+    [payroll](https://gratipay.com/about/features/payroll).
+
+ 1. The Team must not clash too strongly with our
+    [mission](/big-picture/mission) and [brand values](/big-picture/brand/).
