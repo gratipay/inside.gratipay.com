@@ -5,15 +5,28 @@ nav_title="Review Teams"
 All Teams on Gratipay are subject to a review process when they first apply,
 and as needed thereafter, to make sure they and we are a good fit for each
 other. Review happens in public in [the `team-review`
-repo](https://github.com/gratipay/team-review/issues).
+repo](https://github.com/gratipay/team-review/issues). To participate in
+Gratipay's Team review process, [watch that
+repo](https://github.com/gratipay/team-review/watchers).
 
-Here are the criteria for approval:
+There are two criteria for approval.
 
- 1. The Team must offer open work. Can I as an individual voluntarily start
-    doing the Team's work without having to coordinate with anyone?
+First, the Team must offer open work. Here's the thought experiment: "Could I
+as an individual voluntarily start doing the Team's work without having to
+coordinate with anyone?" Review their onboarding documentation and to-dos to
+make a determination. This is a positive criterion: we assume a Team is closed
+unless they can show us that they're open.
 
- 1. The Team must [be willing to eventually] participate in
-    [payroll](https://gratipay.com/about/features/payroll).
+Second, the Team's brand must not clash too strongly with our
+[mission](/big-picture/mission) and [brand values](/big-picture/brand/). This
+is obviously much more of a judgement call than the first criterion. Past
+rejections are the best indicator of how to apply this criterion to new
+applications.
 
- 1. The Team must not clash too strongly with our
-    [mission](/big-picture/mission) and [brand values](/big-picture/brand/).
+The second criterion is negative&mdash;Teams are innocent of brand violation
+until proven guilty. Anyone who thinks that a Team *does* clash with our brand
+has to make a case publicly on GitHub, and we have to leave enough time for the
+community to weigh in before rejecting a Team. The buck does have to stop
+somewhere, of course. Currently, Gratipay founder [Chad
+Whitacre](https://github.com/whit537) is the final arbiter of decisions around
+brand fit.
