@@ -46,7 +46,7 @@ and [crowdsourcing.org's](http://www.crowdsourcing.org/directory)*
  - [GoFundMe](http://www.gofundme.com/) - derpy-looking platform that [reaches normal people](http://pittsburgh.cbslocal.com/2013/02/19/crowdfunding-growing-in-popularity-as-fundraising-tool/) (my dad emailed this link to me)
  - [DonorsChoose.org](http://www.donorschoose.org/) - crowd-funded school supplies; Alexis Ohanian [likes it](http://www.donorschoose.org/AlexisOnCNN).
  - [discontinued] [Catincan](https://www.catincan.com/) - FOSS bounty site
- - [Bountysource](https://www.bountysource.com/) - Support for Open-Source Software (bounties + monthly)
+ - [[diff](./diff/bountysource)] [Bountysource](https://www.bountysource.com/) - Support for Open-Source Software (bounties + monthly)
  - [moribund] [IssueHunter](http://issuehunter.co/) - FOSS bounty site
  - [TinyPass](http://www.tinypass.com/) - Soft paywall, formerly used by e.g. [Daily Dish](http://dish.andrewsullivan.com/)
  - [Patreon](http://www.patreon.com/) - Patronage model for content creators
@@ -95,7 +95,7 @@ and [crowdsourcing.org's](http://www.crowdsourcing.org/directory)*
  - [Offbeatr](http://offbeatr.com/) - support interesting adult projects; purchase adult content from independent sellers
  - [Tipsy](http://tipsy.csail.mit.edu/) - Support the creators of content you like. Implemented as a browser extension.
  - [LaterPay](https://laterpay.net/) - Micropayments for digital content, billed in arrears
- - [Salt](https://salt.bountysource.com/) - Salaries for open-source developers, from Bountysource
+ - [[diff](./diff/bountysource)] [Salt](https://salt.bountysource.com/) - Salaries for open-source developers, from Bountysource
  - [pivoted] [Assembly](https://assembly.com/) - Turn ideas into great products with people around the world.
  - [NearlyFreeSpeech.NET](https://www.nearlyfreespeech.net/contribute) - Others can pay your hosting bill! ([e.g.](https://www.nearlyfreespeech.net/contribute/www.xkcdb.com))
  - [Crowd Supply](https://www.crowdsupply.com/) - Launch alongside the best of open hardware

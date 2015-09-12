@@ -1,0 +1,16 @@
+nav_title = 'Bountysource'
+[---]
+[---] text/html via markdown
+
+With the launch of [Salt](https://salt.bountysource.com/), Bountysource is
+[competing](https://github.com/gratipay/inside.gratipay.com/issues/316)
+directly with us for the open-source market. How do we compare, feature-wise?
+
+## Things They Have and We Don't
+
+- [one-time payments](http://github.com/gratipay/gratipay.com/issues/5)
+- [updates](https://github.com/gratipay/gratipay.com/issues/2521)
+- [tagging](https://github.com/gratipay/gratipay.com/issues/3127)
+- [bounties](https://github.com/gratipay/gratipay.com/issues/214) :)
+
+What else?
