@@ -8,11 +8,9 @@ venv := "./vendor/virtualenv-12.0.7.py"
 
 env:
 	$(python)  $(venv)\
-				--unzip-setuptools \
 				--prompt="[inside.gratipay.com] " \
 				--never-download \
 				--extra-search-dir=./vendor/ \
-				--distribute \
 				./env/
 	./$(env_bin)/pip --version
 	./$(env_bin)/pip install -f file:///$(PWD)/vendor -r requirements.txt
