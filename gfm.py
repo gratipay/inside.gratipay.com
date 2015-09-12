@@ -1,11 +1,11 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 
+import mistune
+from mistune_contrib.toc import TocMixin
 from aspen_jinja2_renderer import Renderer as Jinja2Renderer, Factory as Jinja2Factory
 
-# setup Markdown rendering
-import mistune
-# get anchors for headers
-from mistune_contrib.toc import TocMixin
+
+# setup Markdown rendering, with anchors for headers
 class TocRenderer(TocMixin, mistune.Renderer):
     pass
 toc = TocRenderer()
