@@ -6,7 +6,6 @@ from collections import OrderedDict
 from os.path import join, realpath, isfile, isdir, basename
 
 from aspen import resources
-from aspen.http.request import Request
 from aspen.resources.static_resource import StaticResource
 
 
