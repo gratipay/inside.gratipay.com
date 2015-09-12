@@ -12,7 +12,8 @@ aspen-jinja2==0.3
 
 simplejson==2.3.2
 
-misaka==1.0.2
+mistune==0.7.1
+mistune_contrib==0.1
 
 honcho==0.5.0
 

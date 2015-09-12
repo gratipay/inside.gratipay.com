@@ -1,15 +1,20 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 
-import misaka
+import mistune
+from mistune_contrib.toc import TocMixin
 from aspen_jinja2_renderer import Renderer as Jinja2Renderer, Factory as Jinja2Factory
 
 
+# setup Markdown rendering, with anchors for headers
+class TocRenderer(TocMixin, mistune.Renderer):
+    pass
+toc = TocRenderer()
+markdown = mistune.Markdown(renderer=toc)
+
+
 def gfm(md):
-    html = misaka.html( md
-                      , misaka.EXT_STRIKETHROUGH | misaka.EXT_AUTOLINK | misaka.EXT_FENCED_CODE | \
-                        misaka.EXT_TABLES
-                      , misaka.HTML_SMARTYPANTS | misaka.HTML_TOC
-                       )
+    toc.reset_toc()
+    html = markdown( md )
     return html
 
 
