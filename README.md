@@ -17,10 +17,9 @@ virtualenv env
 Quickstart:
 
 ```
-$ git clone https://github.com/gratipay/inside.gratipay.com.git
-$ cd inside.gratipay.com
-$ make run
-[...]
+git clone https://github.com/gratipay/inside.gratipay.com.git
+cd inside.gratipay.com
+make run
 ```
 
 Then: [http://localhost:8536/](http://localhost:8536/).
