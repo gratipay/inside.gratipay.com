@@ -20,7 +20,7 @@ We use [Freshdesk](http://gratipay.freshdesk.com/) for managing support queries.
 
 1. Before answering questions or performing actions related to an account, verify the user's identity by asking for, "the first eight digits of the API key on your [Gratipay settings page](https://gratipay.com/about/me/settings/)." We generally don't trust even verified email addresses as identity confirmation (because of the risk of spoofing).
 1. Never share personally identifying information about a user on GitHub or anywhere else without their explicit consent.
-1. Copying anonymized and general comments into a public GitHub ticket is okay, and so is a simple "+1" with a link to Freshdesk.
+1. Copying anonymized, generic comments into a public GitHub ticket is okay, and so is a simple "+1" with a link to Freshdesk.
 
 
 ## Tips for Providing Great Support
