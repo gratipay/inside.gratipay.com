@@ -16,9 +16,8 @@ You need `python` and `make`.
 
 ### Deployment
 
-Deployment of `master` to Heroku happens automatically from Travis. See
-[`.travis.yml`](https://github.com/gratipay/inside.gratipay.com/blob/master/.travis.yml)
-for clues.
+Deployment of `master` to Heroku happens automatically [from Travis](http://docs.travis-ci.com/user/deployment/heroku/).
+See also: [`.travis.yml`](https://github.com/gratipay/inside.gratipay.com/blob/master/.travis.yml).
 
 ### Manual development setup
 
