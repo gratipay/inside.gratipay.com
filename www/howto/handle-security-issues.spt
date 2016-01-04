@@ -24,25 +24,6 @@ this case). If the researcher doesn't join HackerOne, offer to add them to the
 
 ## Code Changes
 
-If an issue requires code changes, create a private repo in GitHub, using the
-naming convention `security-deadbeef`, then do this:
-
-```
-repo=security-xxxxxx
-branch=some-branch-name
-git remote add $repo "git@github.com:gratipay/$repo.git"
-git push $repo master:upstream
-# ^ This takes a while, gratipay's history is pretty big and full of tarballs
-git push -u $repo $branch:$branch
-```
-
-Here's how to deploy code changes before merging back to upstream:
-
-```
-git checkout master && git pull
-git merge $branch
-make test  # can't be too careful, right?
-./release.sh
-```
-
-Once the issue is resolved and any fix is deployed, make the repo public.
+If an issue requires code changes, make them in the [`security` 
+repo](https://github.com/gratipay/security), using PRs and merging to master as 
+usual, just in a different repo. Release and then merge to the public upstream.
