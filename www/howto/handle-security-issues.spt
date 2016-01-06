@@ -10,8 +10,10 @@ We [use HackerOne](https://hackerone.com/gratipay) to manage our security
 [queue](./manage-queues). HackerOne assigns seven reputation points for
 reporting a bug, and two for reporting a duplicate. Therefore, if you need to
 reticket anything from a HackerOne bug, be sure to have the original researcher
-make the reticket so that they get the credit. Publicly disclose all resolved
-HackerOne tickets.
+make the reticket so that they get the credit. When commenting on HackerOne,
+please use the "All participants" scope, so that the conversation is made
+public when we disclose the ticket once it's resolved. Publicly disclose all
+resolved HackerOne tickets.
 
 We support email as a fall-back reporting mechanism. When we receive
 disclosures on security@gratipay.com, ask the researcher to [file a
@@ -24,6 +26,43 @@ this case). If the researcher doesn't join HackerOne, offer to add them to the
 
 ## Code Changes
 
-If an issue requires code changes, make them in the [`security` 
-repo](https://github.com/gratipay/security), using PRs and merging to master as 
-usual, just in a different repo. Release and then merge to the public upstream.
+If an issue requires code changes, make them in the [`security`
+repo](https://github.com/gratipay/security) in a topic branch. Make a PR to
+help with code review, but don't actually comment on GitHub, only comment on
+HackerOne. Why? We don't have per-PR permissions, so if we have conversation in
+the `security` repo then it's not easy to disclose once the bug is fixed. Keep
+all conversation on HackerOne, so that we can easily make it public when we
+disclose the issue. If you find comments on PRs in the `security` repo then
+please copy them to HackerOne and then delete them from GitHub.
+
+Once the fix is approved, here's how to deploy it:
+
+ 1. Clone the `security` repo, then configure a couple more remotes:
+```
+git remote add upstream git@github.com:gratipay/gratipay.com.git
+git remote add heroku git@heroku.com:gratipay.git
+```
+
+ 1. Squash the topic branch with the fix down to a single commit. We don't
+usually do this, but you're about to commit directly to `master`, which we also
+don't usually do. It's better to have a single commit to point to and say
+"here's the fix," since we don't have a public PR for it. Security fixes
+should be pretty small anyway.
+
+ 1. Locally rebase the single commit from the topic branch onto `master` (`git
+checkout master && git rebase topic-branch`).
+
+ 1. Run `./release.sh` from your local copy of the `security` repo that has the
+new fix on `master` (the release script exits if not run on `master`). After
+pushing to Heroku, the release script will push to `master`'s default remote,
+which should be the private `security` repo in this case.
+
+ 1. Once the fix is deployed and verified and you're ready to announce it to
+the world, sync the public `gratipay.com` repo with the private `security`
+repo, like so:
+```
+git push upstream && git push upstream --tags
+```
+Hopefully you didn't get bit by the race condition (the public `master` may have
+moved since you started deploying). If you did, good luck sorting it out! Maybe
+leave us some hints here? ;-)
