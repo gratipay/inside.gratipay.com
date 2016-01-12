@@ -24,12 +24,9 @@ linked asterisk\*.
 
 ## Communication
 
-- [BotBot.me][botbot] [\*][botbot-us]
 - [Google+][gplus]    [\*][gplus-us]
 - [Google Hangouts][hangouts]
 - [HuBoard][huboard]  [\*][huboard-us]
-- [Hubot][hubot]
-- [IRC][irc]          [\*][irc-us]
 - [Mandrill][mandrill]
 - [Medium][medium]    [\*][medium-us]
 - [Twitter][twitter]  [\*][twitter-us]
@@ -82,8 +79,6 @@ linked asterisk\*.
 [ally]:         http://www.ally.com/
 [aspen]:        http://aspen.io/
 [balanced]:     https://www.balancedpayments.com/
-[botbot]:       https://botbot.me/
-[botbot-us]:    https://botbot.me/freenode/gratipay/
 [capital-one]:  https://www.capitalone.com/
 [coinbase]:     https://coinbase.com/
 [digitalocean]: https://www.digitalocean.com/
@@ -99,9 +94,6 @@ linked asterisk\*.
 [heroku]:       https://www.heroku.com/
 [huboard]:      https://huboard.com/
 [huboard-us]:   https://huboard.com/gratipay/gratipay.com
-[hubot]:        https://hubot.github.com/
-[irc]:          https://en.wikipedia.org/wiki/Internet_Relay_Chat
-[irc-us]:       http://webchat.freenode.net/?channels=gratipay
 [jinja2]:       http://jinja.pocoo.org/2/
 [librato]:      https://metrics.librato.com/
 [librato-us]:   https://metrics.librato.com/share/dashboards/42hmoj9j?duration=3600&source=production
