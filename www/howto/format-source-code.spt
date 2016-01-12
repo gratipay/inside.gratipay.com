@@ -17,5 +17,5 @@ And here are a couple house rules (these apply to all languages):
 When in doubt:
 
 - Make it look like existing code.
-- Ask around on IRC or GitHub.
+- Ask on GitHub.
 - Assume we'll flag issues in code review or reformat after the fact.
