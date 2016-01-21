@@ -9,6 +9,8 @@ dashboard](https://gratipay.com/dashboard/) (if you're not logged in as an
 admin you should get a bare-bones 404). The purpose here is **to filter out
 accounts that are likely to represent thieves and terrorists**.
 
+We also review [1.0 Payout applications](https://gratipay.com/dashboard/1.0-payouts)
+
 What makes an account likely to represent a thief or a terrorist? Eventually 
 we'll need to develop algorithms to help us decide, but at our scale we are 
 depending on humans to decide. You are that human!
