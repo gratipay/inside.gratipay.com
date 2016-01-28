@@ -15,7 +15,7 @@ ticket created in step two.
   1. Triple-check the [stats page](https://gratipay.com/about/stats) to get the week
      number right.
   1. On latest master: `./payday.sh NNN for_real_please`. Answer yes at the prompts. It wants to log 
-     into a `../paydays` directory.
+     into a `../logs/paydays` directory.
   1. `Ctrl-C` to stop tailing the logfile (the `payday.sh` script uses `disown` to detach itself 
      from the controlling terminal).
   1. Wait a minute or two.
