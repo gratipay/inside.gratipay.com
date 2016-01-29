@@ -1,5 +1,0 @@
-nav_title = 'Chat'
-src = "http://webchat.freenode.net/?channels=gratipay"
-[---]
-[---] text/html via jinja2
-{% include "templates/iframed.html" %}
