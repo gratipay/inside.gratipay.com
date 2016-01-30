@@ -19,8 +19,12 @@ We ask that all researchers:
 If you follow these guidelines when reporting an issue to us, we commit to:
 
 *   Not pursue or support any legal action related to your research;
-*   Work with you to understand and resolve the issue quickly (including an initial confirmation of your report within 72 hours of submission);
-*   Recognize your contribution on HackerOne, if you are the first to report the issue and we make a code or configuration change based on the issue.
+*   Work with you to understand and resolve the issue quickly (including an initial confirmation of your report within 72 hours of submission).
+
+Additionally, if you are the first to report the issue, and we make a code or configuration change based on the issue, we commit to:
+
+*   Recognize your contribution on HackerOne;
+*   Reward you with a bounty, ranging from $1 to $100 based on the severity of the vulnerability and the quality of your report (reports received prior to 2016-01-31 are not eligible for monetary rewards).
 
 ## Scope
 
