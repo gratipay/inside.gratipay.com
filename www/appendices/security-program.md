@@ -26,6 +26,8 @@ Additionally, if you are the first to report the issue, and we make a code or co
 *   Recognize your contribution on HackerOne;
 *   Reward you with a bounty, ranging from $1 to $100 based on the severity of the vulnerability and the quality of your report (reports received prior to 2016-01-31 are not eligible for monetary rewards).
 
+Please note that our policy is to fully disclose all resolved issues, in the interest of openness and transparency for our customers.
+
 ## Scope
 
 * [https://gratipay.com](https://gratipay.com)
