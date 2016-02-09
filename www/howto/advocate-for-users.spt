@@ -1,9 +1,0 @@
-nav_title = 'Advocate for Users'
-[---]
-[---] text/html
-
-Gratipay is an open company, which means in part that we conduct all of our internal company discussions in public, primarily using [GitHub](/howto/sweep-the-radar). This makes it theoretically possible for anyone on the Internet who speaks English to participate in building Gratipay. However, not everyone is comfortable working like this, including some folks who nonetheless want to *use* Gratipay. Just because we conduct our business in public doesn't mean everyone wants to participate on our terms.
-
-Therefore, we need a go-between. We need someone who *is* comfortable working in public to proxy our users who *aren't*. We need people who can mediate the relationship between communities on Gratipay and Gratipay itself, by participating in our public discussions and representing users that they may be talking to privately.
-
-See [1683](https://github.com/gratipay/gratipay.com/issues/1683) for the best example so far of what this looks like in practice.
