@@ -64,15 +64,14 @@ that receives payments on Gratipay to go through an underwriting process, which
 includes an assessment not only of their legitimacy as a business or
 organization offering open work, but also of their alignment with our
 [mission](http://inside.gratipay.com/big-picture/mission) and [brand
-    values](http://inside.gratipay.com/big-picture/brand/), which include
-"honesty," "kindness," and "collaboration." The underwriting process includes
-[a public review
-    period](https://github.com/gratipay/inside.gratipay.com/labels/Review), and
-we provide a public listing of [our current, prospective, and rejected
-    customers](https://gratipay.com/explore/teams/). Approximately half of
-Gratipay's customers are outside of the United States, which, all things
-being equal, does heighten our AML risk. However, our target clientele and
-our underwriting process put us at low risk of money laundering.
+values](http://inside.gratipay.com/big-picture/brand/). The underwriting
+process includes [a public review
+period](https://github.com/gratipay/inside.gratipay.com/labels/Review), and we
+provide a public listing of [our current, prospective, and rejected
+customers](https://gratipay.com/explore/teams/). Approximately half of
+Gratipay's customers are outside of the United States, which, all things being
+equal, does heighten our AML risk. However, our target clientele and our
+underwriting process put us at low risk of money laundering.
 
 We identify customers in the United States by collecting their name, address,
 and date of birth, which we programmatically verify. For customers outside of
