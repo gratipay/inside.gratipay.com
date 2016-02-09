@@ -1,7 +1,7 @@
 nav_title="Shuffle Escrow"
 [---]
 [---] text/html
-We hold escrow in three accounts:
+We hold escrow in two accounts:
 
  1. **New Alliance (payins)**&mdash;Money enters our escrow via credit card
     charges on Braintree, which settle to an account at [New Alliance Federal
@@ -11,10 +11,6 @@ Credit Union](http://newalliancefcu.com/) in
  1. **PayPal (payouts)**&mdash;We keep a standing balance in PayPal, because it
     takes 3-5 days to add funds, and we need to be able to run MassPay
 immediately after payins on Thursdays.
-
- 1. **Balanced (legacy)**&mdash;While we work on [flushing 1.0
-    money](https://github.com/gratipay/gratipay.com/issues/3539) out of our
-system, we have some money still in escrow with Balanced.
 
 After [running MassPay](run-masspay), "Add money" to PayPal from New Alliance,
 whatever is needed to bring our PayPal balance up to 5x this week's MassPay.
