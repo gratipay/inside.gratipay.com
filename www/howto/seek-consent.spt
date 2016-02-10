@@ -1,0 +1,42 @@
+nav_title = 'Seek Consent'
+[---]
+[---] text/html
+
+Consent&mdash;not acting on another without their permission&mdash;is one of
+Gratipay's [core values](/big-picture/brand/). In our context, the action in
+question is usually the public sharing of personal information. We have to be
+especially mindful of this because our company operates almost entirely on the
+public Internet.
+
+The medical profession has developed helpful [best
+practices](http://www.health.wa.gov.au/mhareview/resources/documents/UK_DoH_Consent_older.pdf):
+
+> Seeking consent is part of a respectful relationship [...] and
+should usually be seen as a *process*, not a one-off event. When you are
+seeking a person's consent[,] you should make sure that they have the time
+and support they need to make their decision. People who have given consent
+[...] are entitled to change their minds and withdraw their consent at any
+point[.] Similarly, they can change their minds and consent to [something]
+which they have earlier refused. It is important to let the person know this,
+so that they feel able to tell you if they change their mind.
+
+
+## From Users
+
+When providing customer [support](/howto/support-users) in private
+[channels](/appendices/channels) (e.g., email via Freshdesk), seek consent
+before cross-posting personally identifying information in public channels
+(e.g., a GitHub repo).
+
+
+## From Third Parties
+
+When establishing relationships with third parties such as vendors, business
+partners, journalists, and the like, include language such as the following in
+your first private communications with them:
+
+> P.S. So you're aware, Gratipay makes decisions publicly on the Internet, so
+I'll need to at least summarize our conversation for the Gratipay community
+on this public ticket: [link].
+
+Be sure to do this for in-person conversations as well, not just email.
