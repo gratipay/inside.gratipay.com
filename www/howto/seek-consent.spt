@@ -8,7 +8,8 @@ question is usually the public sharing of personal information. We have to be
 especially mindful of this because our company operates almost entirely on the
 public Internet.
 
-The medical profession has developed helpful [best
+Seeking consent is especially important in the medical profession, which has
+developed helpful [best
 practices](http://www.health.wa.gov.au/mhareview/resources/documents/UK_DoH_Consent_older.pdf):
 
 > Seeking consent is part of a respectful relationship [...] and
@@ -38,5 +39,9 @@ your first private communications with them:
 > P.S. So you're aware, Gratipay makes decisions publicly on the Internet, so
 I'll need to at least summarize our conversation for the Gratipay community
 on this public ticket: [link].
+
+After giving this notice it's okay to copy snippets from private email to
+GitHub, but take care not to leak personal information, such as names of
+salespeople, without explicit consent.
 
 Be sure to do this for in-person conversations as well, not just email.
