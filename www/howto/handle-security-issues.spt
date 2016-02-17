@@ -35,22 +35,14 @@ all conversation on HackerOne, so that we can easily make it public when we
 disclose the issue. If you find comments on PRs in the `security` repo then
 please copy them to HackerOne and then delete them from GitHub.
 
-Once the fix is approved, here's how to deploy it:
+Once the fix is approved and the PR is merged to `master` in `security`, here's
+how to deploy it:
 
  1. Clone the `security` repo, then configure a couple more remotes:
 ```
 git remote add upstream git@github.com:gratipay/gratipay.com.git
 git remote add heroku git@heroku.com:gratipay.git
 ```
-
- 1. Squash the topic branch with the fix down to a single commit. We don't
-usually do this, but you're about to commit directly to `master`, which we also
-don't usually do. It's better to have a single commit to point to and say
-"here's the fix," since we don't have a public PR for it. Security fixes
-should be pretty small anyway.
-
- 1. Locally rebase the single commit from the topic branch onto `master` (`git
-checkout master && git rebase topic-branch`).
 
  1. Run `./release.sh` from your local copy of the `security` repo that has the
 new fix on `master` (the release script exits if not run on `master`). After
