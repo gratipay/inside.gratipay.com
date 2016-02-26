@@ -24,7 +24,12 @@ If you follow these guidelines when reporting an issue to us, we commit to:
 Additionally, if you are the first to report the issue, and we make a code or configuration change based on the issue, we commit to:
 
 *   Recognize your contribution on HackerOne;
-*   Reward you with a bounty, ranging from $1 to $100 based on the severity of the vulnerability and the quality of your report (reports received prior to 2016-01-31 are not eligible for monetary rewards).
+*   Reward you with a bounty:
+
+  * $100 if you identified a vulnerability that presented a **severe** risk.
+  * $40 if you identified a vulnerability that presented a **moderate** risk.
+  * $10 if you identified a vulnerability that presented a **mild** risk.
+  * $1 if there was in fact **no vulnerability**, but we made a code or configuration change nonetheless.
 
 Please note that our policy is to fully disclose all resolved issues, in the interest of openness and transparency for our customers.
 
