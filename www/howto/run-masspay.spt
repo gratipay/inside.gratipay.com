@@ -10,12 +10,16 @@ PayPal's MassPay feature.
 1. Upload the `*.paypal.csv` file from step 1 and write a note with subject
    "Gratipay Payout" and body "Here you go! Thanks for using Gratipay! :D - chad"
 1. Submit the MassPay and double check the amount and the fee against the `stdout`
-   from step 1 (not to be confused with the output files from step 1!).
-1. If the amounts don't match then we probably have a bad `paypal_fee_cap` for one
-   of the users. Manually bisect the input file from step 1, running through steps
-   2 through 4 with half the file at a time until you discover the culprit. Manually
-   update `paypal_fee_cap` for the culprit in the participants table, then start all
-   over from step 1.
+   from step 1 (not to be confused with the output files from step 1!). PayPal
+   caps the fee at $1 for U.S. accounts and $20 for non-U.S. accounts.
+   Unfortunately, the only way to determine the fee cap for a given account
+   (that we've discovered) is to try uploading the CSV MassPay file and see if
+   our guess matches what PayPal in fact computes.
+1. If the amounts don't match then we have a bad `paypal_fee_cap` for one of the
+   users. Manually bisect the input file from step 1, running through steps 2
+   through 4 with half the file at a time until you discover the culprit. 
+   Manually update `paypal_fee_cap` for the culprit in the participants table, 
+   then start all over from step 1.
 1. When everything checks out, pull the trigger on the MassPay.
 1. Click the link, "View details of this Mass Payment."
 1. Wait a few minutes, then refresh the page. You should see "N claimed" or
