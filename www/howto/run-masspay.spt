@@ -8,7 +8,7 @@ PayPal's MassPay feature.
 1. Run `./masspay.sh` to hit the database and generate three CSV files.
 1. Log in to PayPal and navigate to the MassPay feature.
 1. Upload the `*.paypal.csv` file from step 1 and write a note with subject
-   "Gratipay Payout" and body "Here you go! Thanks for using Gratipay! :D - chad"
+   "Gratipay Payout" and body "Here you go! Thanks for using Gratipay! :D"
 1. Submit the MassPay and double check the amount and the fee against the `stdout`
    from step 1 (not to be confused with the output files from step 1!). PayPal
    caps the fee at $1 for U.S. accounts and $20 for non-U.S. accounts.
