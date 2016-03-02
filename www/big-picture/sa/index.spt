@@ -17,8 +17,8 @@ The Gratipay web application serves both HTML and JSON endpoints. The JSON
 endpoints have emerged ad-hoc in response to user demand, and do not relate
 rationally to human-browseable pages.
 
-We use [Aspen](http://aspen.io/), a Python web framework, which we also
-[maintain](https://github.com/gratipay/aspen-python). URLs route directly to
+We use [Aspen](http://aspen.io/), a Python web framework, which some of us also
+[maintain](https://github.com/AspenWeb). URLs route directly to
 the filesystem, under
 [`www/`](https://github.com/gratipay/gratipay.com/tree/master/www). Template
 includes and bases are in
