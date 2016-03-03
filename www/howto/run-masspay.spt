@@ -5,6 +5,9 @@ nav_title="Run MassPay"
 Immediately after [payday](run-payday) we send money to some people using
 PayPal's MassPay feature.
 
+1. Run `update exchange_routes set fee_cap = 20.00 where fee_cap is null and 
+   network = 'paypal';` to work around this
+   [bug](https://github.com/gratipay/gratipay.com/issues/3501).
 1. Run `./masspay.sh` to hit the database and generate three CSV files. This 
    script is read-only and can safely be run multiple times.
 1. Log in to PayPal and navigate to the MassPay feature.
