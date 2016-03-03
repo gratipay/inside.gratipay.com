@@ -12,7 +12,7 @@ record the result on Gratipay Bot's ticket.
      matches the production homepage.
   1. Check Gratipay Bot's ticket to get the payday number, `NNN`, from the title.
   1. On latest master: `./payday.sh NNN for_real_please`. Answer yes at the prompts. It wants to log 
-     into a `../logs/paydays` directory.
+     into a `../logs/payday/` directory.
   1. `Ctrl-C` if you want to stop tailing the logfile (the `payday.sh` script uses `disown` to 
      detach itself from the controlling terminal).
   1. Wait a minute or two.
