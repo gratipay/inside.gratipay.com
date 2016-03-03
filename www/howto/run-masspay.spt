@@ -5,7 +5,8 @@ nav_title="Run MassPay"
 Immediately after [payday](run-payday) we send money to some people using
 PayPal's MassPay feature.
 
-1. Run `./masspay.sh` to hit the database and generate three CSV files.
+1. Run `./masspay.sh` to hit the database and generate three CSV files. This 
+   script is read-only and can safely be run multiple times.
 1. Log in to PayPal and navigate to the MassPay feature.
 1. Upload the `*.paypal.csv` file from step 1 and write a note with subject
    "Gratipay Payout" and body "Here you go! Thanks for using Gratipay! :D"
