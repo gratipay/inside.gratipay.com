@@ -30,5 +30,5 @@ record the result on Gratipay Bot's ticket.
   - When a supporter's credit card fails, the tips from that user are
     *excluded* from the total receiving amounts of those they gift, so
     as not to mislead the receiver about likely future earning.
-  - When a supporter's card fails, we don't notify them and they have 
+  - When a supporter's card fails, we notify them once and they have 
     to fix it before we start charging them again.
