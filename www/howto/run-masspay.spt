@@ -29,9 +29,9 @@ PayPal's MassPay feature.
 1. Wait a few minutes, then refresh the page. You should see "N claimed" or
    something.
 1. Download the CSV they give you. It will save as `MassPayment_Details.csv`.
-1. Move the `MassPayment_Details.csv` file to `../masspay/yyyy-mm-dd.report.paypal.csv`.
-1. `cd ../masspay` and `git commit` the four new files.
-1. Run `./bin/masspay.py -p` to post back to Gratipay using the `record-an-exchange`
-   endpoint. Make sure this works by inspecting the `exchanges` table. **Don't forget 
-   this step!**
+1. Move the `MassPayment_Details.csv` file to `../logs/masspay/yyyy-mm-dd.report.paypal.csv`.
+1. `cd ../../masspay` and `git commit` the four new files.
+1. `cd` back to the main repo root and run `./bin/masspay.py -p` to post back to Gratipay 
+   using the `record-an-exchange` endpoint. Make sure this works by inspecting the 
+   `exchanges` table. **Don't forget this step!**
 1. Note the result on the payday ticket: "MassPay done and posted back for N users."
