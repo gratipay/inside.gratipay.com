@@ -1,13 +1,11 @@
 nav_title="Run Payday"
 [---]
 [---] text/html
-Here's how to run payday. After each step, record the result on the
-ticket created in step two.
+Here's how to run payday. Gratipay Bot 
+[should](https://github.com/gratipay/bot#what-does-gratipay-bot-do) 
+start a new payday ticket each Thursday morning. After each step, 
+record the result on Gratipay Bot's ticket.
 
-  1. Open the [stats page](https://gratipay.com/about/stats). Determine the week number,
-     NNN.
-  1. [Start a ticket](https://github.com/gratipay/inside.gratipay.com/issues/new) named "run Gratipay NNN."
-  1. Locate and, in the ticket description, link to the ticket for the previous payday. Linked list!
   1. [Review accounts](./review-accounts).
   1. Migrate tips: `heroku config -s -a gratipay | ./env/bin/honcho run -e /dev/stdin ./env/bin/python ./bin/migrate-tips.py > migrate-tips.log`
   1. Take a backup using `bin/snapper.py`. Load the backup locally and make sure the `/explore/` page
