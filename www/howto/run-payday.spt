@@ -23,7 +23,7 @@ record the result on Gratipay Bot's ticket.
   1. Review the card decline rate in the Braintree [dashboard](https://www.braintreegateway.com/).
      If it's 15% or greater, find a reason and report it to riskteam at getbraintree com.
   1. Review and edit these documents.
-  1. Close the ticket from step 2.
+  1. Close Gratipay Bot's ticket.
 
 ## Notes
 
