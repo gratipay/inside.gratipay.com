@@ -32,6 +32,7 @@ PayPal's MassPay feature.
 1. Move the `MassPayment_Details.csv` file to `../logs/masspay/yyyy-mm-dd.report.paypal.csv`.
 1. `cd ../../masspay` and `git commit` the four new files.
 1. `cd` back to the main repo root and run `./bin/masspay.py -p` to post back to Gratipay 
-   using the `record-an-exchange` endpoint. Make sure this works by inspecting the 
-   `exchanges` table. **Don't forget this step!**
+   using the `record-an-exchange` endpoint. When prompted enter your own personal Gratipay 
+   API key. Make sure this works by inspecting the `exchanges` table. **Don't forget this 
+   step!**
 1. Note the result on the payday ticket: "MassPay done and posted back for N users."
