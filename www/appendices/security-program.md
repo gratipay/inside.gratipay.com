@@ -37,7 +37,6 @@ Please note that our policy is to fully disclose all resolved issues, in the int
 
 * [https://gratipay.com](https://gratipay.com)
 * [https://grtp.co](https://grtp.co)
-* the [Aspen](http://aspen.io/) web framework
 * any other [software we publish](https://github.com/gratipay)
 
 ## Out of scope
