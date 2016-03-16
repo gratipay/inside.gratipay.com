@@ -26,10 +26,10 @@ Additionally, if you are the first to report the issue, and we make a code or co
 *   Recognize your contribution on HackerOne;
 *   Reward you with a bounty:
 
-  * $100 if you identified a vulnerability that presented a **severe** risk.
-  * $40 if you identified a vulnerability that presented a **moderate** risk.
-  * $10 if you identified a vulnerability that presented a **mild** risk.
-  * $1 if there was in fact **no vulnerability**, but we made a code or configuration change nonetheless.
+  * $100 if you identified a **severe** risk.
+  * $40 if you identified a **moderate** risk.
+  * $10 if you identified a **mild** risk.
+  * $1 if you identified a **theoretical** risk.
 
 Please note that our policy is to fully disclose all resolved issues, in the interest of openness and transparency for our customers.
 
