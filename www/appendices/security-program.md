@@ -36,7 +36,7 @@ Please note that our policy is to fully disclose all resolved issues, in the int
 ## Scope
 
 * [https://gratipay.com](https://gratipay.com)
-* [https://grtp.co](https://grtp.co)
+* [https://grtp.co](https://grtp.co) (not in scope for clickjacking)
 * any other [software we publish](https://github.com/gratipay)
 
 ## Out of scope
