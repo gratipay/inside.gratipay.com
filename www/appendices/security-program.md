@@ -31,7 +31,10 @@ Additionally, if you are the first to report the issue, and we make a code or co
   * $10 if you identified a **mild** risk.
   * $1 if you identified a **theoretical** risk.
 
-Please note that our policy is to fully disclose all resolved issues, in the interest of openness and transparency for our customers.
+Please note that, as an [open company](http://inside.gratipay.com/big-picture/welcome), our policy is to fully disclose all resolved issues, in the interest of openness and transparency for our customers.
+
+Please be aware also that we are a small company with only a little revenue, and all of our internal staff are unpaid volunteers. That's why our bounty amounts are so low. We look forward to offering larger bounties as we grow. Please tell us in your report if you would prefer not to receive a bounty.
+
 
 ## Scope
 
