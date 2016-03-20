@@ -82,3 +82,8 @@ $
 ```
 
 We only use PGP to decrypt messages, never to encrypt messages or authenticate our identity. Instead, we'll create a ticket on HackerOne to track your report, which we'll invite you to join (see our [internal policy document](http://inside.gratipay.com/howto/handle-security-issues) for more details). If you do not wish to join HackerOne, we can acknowledge you instead on our legacy [Hall of Fame](https://gratipay.com/about/security/hall-of-fame).
+
+
+### History
+
+Here is this program description's [version history](https://github.com/gratipay/inside.gratipay.com/commits/master/www/appendices/security-program.md).
