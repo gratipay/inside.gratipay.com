@@ -6,16 +6,26 @@ nav_title = 'Handle Security Issues'
 [HackerOne page](https://hackerone.com/gratipay). This document is for
 internal Gratipay staff.*
 
+
+## HackerOne
+
 We [use HackerOne](https://hackerone.com/gratipay) to manage our security
-[queue](./manage-queues). Be aware of [how HackerOne assigns
+[queue](./manage-queues). Our program description lives [in this
+repo](https://github.com/gratipay/inside.gratipay.com/blob/master/www/appendices/security-program.md).
+Make changes using GitHub PRs like normal, and then copy and paste into
+HackerOne once merged.
+
+Be aware of [how HackerOne assigns
 reputation](https://support.hackerone.com/hc/en-us/articles/205072269-What-affects-hacker-Reputation-).
 In particular, if you need to reticket anything from a HackerOne report,
 have the original researcher make the reticket so that they get the credit.
 When commenting on HackerOne, always use the "All participants" scope, so
 that the conversation is made public when we disclose the ticket once it's
-resolved. Publicly disclose all resolved HackerOne tickets (but you don't
-need to rush it, you can let the 30 day window elapse in case we need to
-explain our policy to the researcher).
+resolved.
+
+Publicly disclose all resolved HackerOne tickets. However, you needn't
+rush. Let the 30 day window elapse in case we need to explain our
+disclosure policy to the researcher.
 
 Our program defines four risk levels: theoretical, mild, moderate, and
 severe. HackerOne doesn't give us tools to manage this; they're all lumped
@@ -29,6 +39,9 @@ this order: severe, unclear, moderate, mild, theoretical.
 Don't use the "Needs more info" state on HackerOne, because it doesn't show
 up across the top so it's easy for tickets to get lost in there. Just use
 "New" (unclear risk) and "Triaged" (in one of the four risk classifications).
+
+
+## Email
 
 We support email as a fall-back reporting mechanism. When we receive
 disclosures on security@gratipay.com, ask the researcher to [file a
