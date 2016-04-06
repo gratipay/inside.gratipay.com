@@ -7,13 +7,28 @@ nav_title = 'Handle Security Issues'
 internal Gratipay staff.*
 
 We [use HackerOne](https://hackerone.com/gratipay) to manage our security
-[queue](./manage-queues). HackerOne assigns seven reputation points for
-reporting a bug, and two for reporting a duplicate. Therefore, if you need to
-reticket anything from a HackerOne bug, be sure to have the original researcher
-make the reticket so that they get the credit. When commenting on HackerOne,
-please use the "All participants" scope, so that the conversation is made
-public when we disclose the ticket once it's resolved. Publicly disclose all
-resolved HackerOne tickets.
+[queue](./manage-queues). Be aware of [how HackerOne assigns
+reputation](https://support.hackerone.com/hc/en-us/articles/205072269-What-affects-hacker-Reputation-).
+In particular, if you need to reticket anything from a HackerOne report,
+have the original researcher make the reticket so that they get the credit.
+When commenting on HackerOne, always use the "All participants" scope, so
+that the conversation is made public when we disclose the ticket once it's
+resolved. Publicly disclose all resolved HackerOne tickets (but you don't
+need to rush it, you can let the 30 day window elapse in case we need to
+explain our policy to the researcher).
+
+Our program defines four risk levels: theoretical, mild, moderate, and
+severe. HackerOne doesn't give us tools to manage this; they're all lumped
+under "Triaged". Therefore, we track these on the [Security
+Radar](https://github.com/gratipay/inside.gratipay.com/labels/Radar), with
+a fifth classification for unclear risk (i.e., not processed yet).
+Whenever you work with tickets in HackerOne be sure to update the queue on
+the Radar. When processing the queue, we should tend to work on issues in
+this order: severe, unclear, moderate, mild, theoretical.
+
+Don't use the "Needs more info" state on HackerOne, because it doesn't show
+up across the top so it's easy for tickets to get lost in there. Just use
+"New" (unclear risk) and "Triaged" (in one of the four risk classifications).
 
 We support email as a fall-back reporting mechanism. When we receive
 disclosures on security@gratipay.com, ask the researcher to [file a
