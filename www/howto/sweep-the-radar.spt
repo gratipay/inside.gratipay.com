@@ -3,12 +3,24 @@ nav_title = 'Sweep the Radar'
 [---] text/html
 
 One of our most important [communication tools](/appendices/channels) is [the
-Radar](https://github.com/gratipay/inside.gratipay.com/labels/Radar), a weekly
-ticket on the `inside.gratipay.com` repo. Anyone actively working on Gratipay
-should, if nothing else, pay attention to this ticket. The Radar is the beating
+Radar](https://github.com/gratipay/inside.gratipay.com/labels/Radar), a set of
+weekly tickets on the `inside.gratipay.com` repo. Anyone actively working on Gratipay
+should, if nothing else, pay attention to these tickets. The Radar is the beating
 heart of Gratipay.
 
-The Radar sweep runs Monday to Monday, and contains a few recurring post types.
+The Radar sweep runs Monday to Monday. Our [bot](https://github.com/gratipay-bot)
+rotates the tickets for us—any ticket with the `Radar` label in the
+`inside.gratipay.com` repo. Moreover, the full ticket description and any
+additional labels are copied over week to week (here's the
+[source](https://github.com/gratipay/bot/blob/master/rotate-radar.py)).
+
+Creating a new subteam within Gratipay is as easy as creating a creating a ticket
+with the `Radar` label and a title and description appropriate for the team. Use
+the ticket description to define the scope of the subteam. Gratipay Bot will
+automatically carry this new subteam Radar forward week to week with zero
+additional configuration. Aaaaaand that's kinda cool. :-)
+
+The rest of this document describes the format of the main `Radar NN` ticket.
 
 
 ## What and Why?
