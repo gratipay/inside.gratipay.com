@@ -14,11 +14,11 @@ rotates the tickets for us&mdash;any ticket with the `Radar` label in the
 additional labels are copied over week to week (here's the
 [source](https://github.com/gratipay/bot/blob/master/rotate-radar.py)).
 
-Creating a new subteam within Gratipay is as easy as creating a ticket with 
-the `Radar` label and a title and description appropriate for the team. Use
-the ticket description to define the scope of the subteam. Gratipay Bot will
-automatically carry this new subteam Radar forward week to week with zero
-additional configuration. Aaaaaand that's kinda cool. :-)
+What this means is that creating a new subteam within Gratipay is as easy as
+creating a ticket with the `Radar` label and a title and description appropriate
+for the team. Use the ticket description to define the scope of the subteam.
+Gratipay Bot will automatically carry this new subteam Radar forward week to
+week with zero additional configuration. Aaaaaand that's kinda cool. :-)
 
 The rest of this document describes the format of the main `Radar NN` ticket.
 
