@@ -9,7 +9,7 @@ should, if nothing else, pay attention to these tickets. The Radar is the beatin
 heart of Gratipay.
 
 The Radar sweep runs Monday to Monday. Our [bot](https://github.com/gratipay-bot)
-rotates the tickets for us—any ticket with the `Radar` label in the
+rotates the tickets for us&mdash;any ticket with the `Radar` label in the
 `inside.gratipay.com` repo. Moreover, the full ticket description and any
 additional labels are copied over week to week (here's the
 [source](https://github.com/gratipay/bot/blob/master/rotate-radar.py)).
