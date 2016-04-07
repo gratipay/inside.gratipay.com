@@ -8,14 +8,14 @@ weekly tickets on the `inside.gratipay.com` repo. Anyone actively working on Gra
 should, if nothing else, pay attention to these tickets. The Radar is the beating
 heart of Gratipay.
 
-The Radar sweep runs Monday to Monday. Our [bot](https://github.com/gratipay-bot)
+The Radar sweep runs Sunday to Sunday. Our [bot](https://github.com/gratipay-bot)
 rotates the tickets for us&mdash;any ticket with the `Radar` label in the
 `inside.gratipay.com` repo. Moreover, the full ticket description and any
 additional labels are copied over week to week (here's the
 [source](https://github.com/gratipay/bot/blob/master/rotate-radar.py)).
 
-Creating a new subteam within Gratipay is as easy as creating a creating a ticket
-with the `Radar` label and a title and description appropriate for the team. Use
+Creating a new subteam within Gratipay is as easy as creating a ticket with 
+the `Radar` label and a title and description appropriate for the team. Use
 the ticket description to define the scope of the subteam. Gratipay Bot will
 automatically carry this new subteam Radar forward week to week with zero
 additional configuration. Aaaaaand that's kinda cool. :-)
