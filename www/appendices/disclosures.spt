@@ -24,8 +24,8 @@ def reports():
 
         map(int, new + [report['id']])  # quick validation, will fail with ValueError if invalid
 
-        ts_mute = '-'.join(cur[:-len(ts)])
-        if ts_mute:
+        ts_mute = '-'.join(cur[:-len(ts)] if ts else cur)
+        if ts_mute and ts:
             ts_mute += '-'
         ts_pop = '-'.join(ts)
 
