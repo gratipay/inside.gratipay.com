@@ -29,7 +29,7 @@ def reports():
             ts_mute += '-'
         ts_pop = '-'.join(ts)
 
-        url = 'https://hackerone.com/reports/%(id)s'.format(report)
+        url = 'https://hackerone.com/reports/{id}'.format(**report)
         title = report['title']
         yield ts_mute, ts_pop, url, title
 
