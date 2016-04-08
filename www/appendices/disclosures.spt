@@ -35,14 +35,19 @@ def reports():
 
 [---] text/html
 <style>
+    .reports {
+        display: block;
+        width: 100%;
+    }
     .reports td {
         padding-bottom: 5px;
         vertical-align: top;
+        white-space: nowrap;
     }
     .reports td.ts {
-        white-space: nowrap;
         text-align: right;
         font-family: monospace;
+        width: 30%;
     }
     .reports td.ts .mute {
         opacity: 0.2;
@@ -50,18 +55,28 @@ def reports():
     .reports td.ts .pop {
         opacity: 1;
     }
+    .reports td.link {
+        display: block;
+        width: 70%;
+        text-overflow: ellipsis;
+        overflow: hidden ! important;
+    }
 </style>
 
 <p><i>These are all the vulnerability reports we've disclosed through <a
 href="https://hackerone.com/gratipay">our HackerOne program</a>.</i></p>
 
 <table class="reports">
+    <tr>
+        <th class="ts">Disclosed</th>
+        <th class="ts">Report</th>
+    </tr>
     {% for ts_mute, ts_pop, url, title in reports() %}
     <tr>
         <td class="ts">
             <span class="mute">{{ ts_mute }}</span><span class="pop">{{ ts_pop }}</span>
         </td>
-        <td><a href="{{ url }}">{{ title|escape }}</a></td>
+        <td class="link"><a href="{{ url }}">{{ title|escape }}</a></td>
     </tr>
     {% endfor %}
 </table>
