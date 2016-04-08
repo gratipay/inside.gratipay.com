@@ -22,15 +22,16 @@ def reports():
             ts.append(day)
         cur = new
 
+        map(int, new + [report['id']])  # quick validation, will fail with ValueError if invalid
+
         ts_mute = '-'.join(cur[:-len(ts)])
         if ts_mute:
             ts_mute += '-'
         ts_pop = '-'.join(ts)
 
         url = 'https://hackerone.com/reports/%(id)s'.format(report)
-        hacker = report['username']
         title = report['title']
-        yield ts_mute, ts_pop, url, hacker, title
+        yield ts_mute, ts_pop, url, title
 
 [---] text/html
 <style>
@@ -55,12 +56,12 @@ def reports():
 href="https://hackerone.com/gratipay">our HackerOne program</a>.</i></p>
 
 <table class="reports">
-    {% for ts_mute, ts_pop, url, hacker, title in reports() %}
+    {% for ts_mute, ts_pop, url, title in reports() %}
     <tr>
         <td class="ts">
             <span class="mute">{{ ts_mute }}</span><span class="pop">{{ ts_pop }}</span>
         </td>
-        <td><a href="{{ url }}">{{ title }}</a></td>
+        <td><a href="{{ url }}">{{ title|escape }}</a></td>
     </tr>
     {% endfor %}
 </table>
