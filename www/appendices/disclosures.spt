@@ -1,0 +1,66 @@
+import json
+import urllib
+
+nav_title = 'Security Disclosures'
+nav_children = []
+[---]
+url = 'https://hackerone.com/gratipay/reports/public'
+raw = json.loads(urllib.urlopen(url).read())
+
+def reports():
+    cur = ['9999', '99', '99']
+    for report in raw:
+
+        ts = []
+        year, month, day = report['disclosed_at'][:10].split('-')
+        new = [year, month, day]
+        if year != cur[0]:
+            ts.append(year)
+        if month != cur[1]:
+            ts.append(month)
+        if day != cur[2]:
+            ts.append(day)
+        cur = new
+
+        ts_mute = '-'.join(cur[:-len(ts)])
+        if ts_mute:
+            ts_mute += '-'
+        ts_pop = '-'.join(ts)
+
+        url = 'https://hackerone.com/reports/%(id)s'.format(report)
+        hacker = report['username']
+        title = report['title']
+        yield ts_mute, ts_pop, url, hacker, title
+
+[---] text/html
+<style>
+    .reports td {
+        padding-bottom: 5px;
+        vertical-align: top;
+    }
+    .reports td.ts {
+        white-space: nowrap;
+        text-align: right;
+        font-family: monospace;
+    }
+    .reports td.ts .mute {
+        opacity: 0.2;
+    }
+    .reports td.ts .pop {
+        opacity: 1;
+    }
+</style>
+
+<p><i>These are all the vulnerability reports we've disclosed through <a
+href="https://hackerone.com/gratipay">our HackerOne program</a>.</i></p>
+
+<table class="reports">
+    {% for ts_mute, ts_pop, url, hacker, title in reports() %}
+    <tr>
+        <td class="ts">
+            <span class="mute">{{ ts_mute }}</span><span class="pop">{{ ts_pop }}</span>
+        </td>
+        <td><a href="{{ url }}">{{ title }}</a></td>
+    </tr>
+    {% endfor %}
+</table>
