@@ -18,6 +18,10 @@ else:
     def get_raw():
         return raw
 
+# Manually override some risk assessments
+overrides = { 76303: '1'  # no bounty awarded because the reporter is part of the Gratipay team
+             }
+
 [---]
 
 def group(reports):
@@ -56,7 +60,9 @@ def grouped(all_reports):
               ]
     for report in all_reports:
         for _, lo, reports in groups:
-            bounty = D(report.get('bounty', 0))
+            bounty = report.get('bounty', 0)
+            bounty = overrides.get(report['id'], bounty)
+            bounty = D(bounty)
             if bounty > lo:
                 reports.append(report)
                 break
