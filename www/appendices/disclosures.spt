@@ -60,22 +60,24 @@ def grouped(all_reports):
               ]
     for report in all_reports:
         for _, lo, reports in groups:
-            bounty = report.get('bounty', 0)
-            bounty = overrides.get(report['id'], bounty)
-            bounty = D(bounty)
-            if bounty > lo:
+            if report['bounty'] > lo:
                 reports.append(report)
                 break
     for header, _, reports in groups:
-        yield header, list(group(reports))
+        reports = list(group(reports))
+        yield header, len(reports), reports
 
 
 raw = get_raw()
 reports = json.loads(raw)
 for report in reports:  # standardize bounty values
-    report['bounty'] = D(report.get('bounty', 0))
+    bounty = report.get('bounty', 0)
+    bounty = overrides.get(report['id'], bounty)
+    report['bounty'] = D(bounty)
 reports.sort(key=lambda r: r['bounty'])
 groups = grouped(reports)
+
+nav_title += ' (N={})'.format(len(reports))
 
 [---] text/html
 <style>
@@ -109,11 +111,13 @@ groups = grouped(reports)
     }
 </style>
 
-*These are all the vulnerability reports we've disclosed through <a
-href="https://hackerone.com/gratipay">our HackerOne program</a>.*
+*These are all the vulnerability reports we've disclosed through [our HackerOne
+program](https://gratipay.com/about/security/hall-of-fame). We disclosed
+another fourteen under [our old
+        program](https://gratipay.com/about/security/hall-of-fame).*
 
-{% for header, group in groups %}
-## {{ header }}
+{% for header, N, group in groups %}
+## {{ header }} (N = {{ N }})
 {% if not group %}
 
 None yet.{% else %}<table class="reports">
