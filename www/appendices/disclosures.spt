@@ -1,15 +1,32 @@
 import json
 import urllib
+from decimal import Decimal as D
+from os.path import dirname, join
 
 nav_title = 'Security Disclosures'
 nav_children = []
-[---]
-url = 'https://hackerone.com/gratipay/reports/public'
-raw = json.loads(urllib.urlopen(url).read())
 
-def reports():
+# Workaround a limitation in dev where urllib.urlopen often blocks indefinitely(?!)
+# www/appendices/disclosures.json is in .gitignore
+try:
+    raw = open(join(dirname(__file__), 'disclosures.json')).read()
+except IOError:
+    def get_raw():
+        url = 'https://hackerone.com/gratipay/reports/public'
+        return urllib.urlopen(url).read()
+else:
+    def get_raw():
+        return raw
+
+# Manually override some risk assessments
+overrides = { 76303: '1'  # no bounty awarded because the reporter is part of the Gratipay team
+             }
+
+[---]
+
+def group(reports):
     cur = ['9999', '99', '99']
-    for report in raw:
+    for report in reports:
 
         ts = []
         year, month, day = report['disclosed_at'][:10].split('-')
@@ -33,11 +50,44 @@ def reports():
         title = report['title']
         yield ts_mute, ts_pop, url, title
 
+
+def grouped(all_reports):
+    groups = [ ('Severe Risk',                 40, [])
+             , ('Moderate Risk',               10, [])
+             , ('Mild Risk',                    1, [])
+             , ('Theoretical Risk',             0, [])
+             , ('No Risk',          float('-inf'), [])
+              ]
+    for report in all_reports:
+        for _, lo, reports in groups:
+            if report['bounty'] > lo:
+                reports.append(report)
+                break
+    for header, _, reports in groups:
+        reports = list(group(reports))
+        yield header, len(reports), reports
+
+
+raw = get_raw()
+reports = json.loads(raw)
+for report in reports:  # standardize bounty values
+    bounty = report.get('bounty', 0)
+    bounty = overrides.get(report['id'], bounty)
+    report['bounty'] = D(bounty)
+reports.sort(key=lambda r: r['bounty'])
+groups = grouped(reports)
+
+nav_title += ' (N={})'.format(len(reports))
+
 [---] text/html
 <style>
+    h2 {
+        margin: 24px 0 0;
+    }
     .reports {
-        display: block;
+        table-layout: fixed;
         width: 100%;
+        margin: 0;
     }
     .reports td {
         padding-bottom: 5px;
@@ -45,9 +95,9 @@ def reports():
         white-space: nowrap;
     }
     .reports td.ts {
-        text-align: right;
+        text-align: left;
         font-family: monospace;
-        width: 30%;
+        width: 110px;
     }
     .reports td.ts .mute {
         opacity: 0.2;
@@ -56,22 +106,25 @@ def reports():
         opacity: 1;
     }
     .reports td.link {
-        display: block;
-        width: 70%;
         text-overflow: ellipsis;
         overflow: hidden ! important;
     }
 </style>
 
-<p><i>These are all the vulnerability reports we've disclosed through <a
-href="https://hackerone.com/gratipay">our HackerOne program</a>.</i></p>
+*These are all the vulnerability reports we've disclosed through [our HackerOne
+program](https://gratipay.com/about/security/hall-of-fame). We disclosed
+another fourteen under [our old
+        program](https://gratipay.com/about/security/hall-of-fame). See our
+[Security
+        Radar](https://github.com/gratipay/inside.gratipay.com/issues?q=is%3Aopen+label%3ARadar+label%3A%22Security+Team%22)
+for a listing of currently open reports.*
 
-<table class="reports">
-    <tr>
-        <th class="ts">Disclosed</th>
-        <th class="ts">Report</th>
-    </tr>
-    {% for ts_mute, ts_pop, url, title in reports() %}
+{% for header, N, group in groups %}
+## {{ header }} (N = {{ N }})
+{% if not group %}
+
+None yet.{% else %}<table class="reports">
+    {% for ts_mute, ts_pop, url, title in group %}
     <tr>
         <td class="ts">
             <span class="mute">{{ ts_mute }}</span><span class="pop">{{ ts_pop }}</span>
@@ -80,3 +133,5 @@ href="https://hackerone.com/gratipay">our HackerOne program</a>.</i></p>
     </tr>
     {% endfor %}
 </table>
+{% endif %}
+{% endfor %}
