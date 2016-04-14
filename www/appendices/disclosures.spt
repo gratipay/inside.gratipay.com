@@ -83,7 +83,7 @@ groups = grouped(reports)
         margin: 24px 0 0;
     }
     .reports {
-        display: block;
+        table-layout: fixed;
         width: 100%;
         margin: 0;
     }
@@ -93,9 +93,9 @@ groups = grouped(reports)
         white-space: nowrap;
     }
     .reports td.ts {
-        text-align: right;
+        text-align: left;
         font-family: monospace;
-        width: 30%;
+        width: 110px;
     }
     .reports td.ts .mute {
         opacity: 0.2;
@@ -104,8 +104,6 @@ groups = grouped(reports)
         opacity: 1;
     }
     .reports td.link {
-        display: block;
-        width: 70%;
         text-overflow: ellipsis;
         overflow: hidden ! important;
     }
