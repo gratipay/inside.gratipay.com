@@ -114,7 +114,9 @@ href="https://hackerone.com/gratipay">our HackerOne program</a>.*
 
 {% for header, group in groups %}
 ## {{ header }}
-{% if not group %}None yet.{% else %}<table class="reports">
+{% if not group %}
+
+None yet.{% else %}<table class="reports">
     {% for ts_mute, ts_pop, url, title in group %}
     <tr>
         <td class="ts">
