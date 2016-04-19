@@ -22,6 +22,11 @@ linked asterisk\*.
 - [DigitalOcean][digitalocean]
 - [Heroku][heroku]
 
+## Domains
+
+ - All our domains are registered at [IWantMyName](https://iwantmyname.com/). However, they [don't support](https://iwantmyname.com/blog/2014/01/why-alias-type-records-break-the-internet.html) any of the DNS extensions that allow for apex `CNAME`s (e.g., `ALIAS`).
+ - 10 of our domains have DNS hosted at [DNSimple](https://dnsimple.com/), which [does provide](https://support.dnsimple.com/articles/alias-record/) `ALIAS` records (we're on a grandfathered pricing tier of $3/mo for 10 domains).
+
 ## Communication
 
 - [Google+][gplus]    [\*][gplus-us]
