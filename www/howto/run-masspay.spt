@@ -22,9 +22,9 @@ PayPal's MassPay feature.
 1. If the amounts don't match then we have a bad `paypal_fee_cap` for one of the
    users. Manually bisect the `.*.input.csv` file from step 2, running 
    `./bin/masspay.py -o` to generate the `.*output.*.csv` files, and then running
-   through steps 4 and 5, until you discover the culprit. Manually update
-   `paypal_fee_cap` for the culprit in the participants table, then start all
-   over from step 2.
+   through steps 4 and 5, until you discover the culprit. Manually run
+   `update exchange_routes set fee_cap=1 where address='the email address';`, then
+   start all over from step 2.
 1. When everything checks out, pull the trigger on the MassPay.
 1. Click the link, "View details of this Mass Payment."
 1. Wait a few minutes, then refresh the page. You should see "N claimed" or
