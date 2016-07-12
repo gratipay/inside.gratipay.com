@@ -1,0 +1,45 @@
+# encoding: utf8
+nav_title = 'Bienvenue à Gratipay'
+nav_children = []
+[---]
+[---] text/html
+
+Bienvenue à Gratipay! Nous sommes une [société
+ouverte](http://www.opencompany.org/), qui pour nous signifie que nous voulons
+inviter et responsabiliser chacun de participer à la gestion de notre
+entreprise. Nous pensons que des personnes par rapport à Gratipay dans
+plusieurs rôles:
+
+    - Les gens **utilisateurs** avec un compte sur Gratipay
+    - Les gens **contributeurs** converser dans [notre espace](/appendices/channels)
+    - users **propriétaires** qui achètent dans [notre mission](./mission)
+    - owners **du personnel** qui sont sur [notre liste de paie](https://gratipay.com/Gratipay/members/)
+
+Chaque rôle est ouvert à tous, et *vous* êtes le seul à avoir le pouvoir de
+décider ce que vous êtes en relation avec Gratipay. Cela dit, chaque rôle ne
+vient avec des responsabilités et des attentes, que vous devez comprendre avant
+de prendre un engagement.
+
+Pour être un **utilisateur**, [créer un compte](https://gratipay.com/)! Nous
+comptons sur vous pour respecter nos [termes et
+conditions](https://gratipay.com/about/terms).
+
+Pour être un **contributeur**, tout simplement [entrer dans notre
+espace](/appendices/channels) et participer à la conversation! Nous comptons
+sur vous pour [bien se comporter](/howto/behave-well).
+
+Pour être un **propriétaire**, il suffit de penser que vous êtes un
+propriétaire!  Nous attendons de vous à se identifier et poursuivre [notre
+mission](./mission). Nous [travailler sur les
+règlements](https://github.com/gratipay/inside.gratipay.com/issues/72) de
+formaliser ce que cela signifie d'être un propriétaire.
+
+Pour vous joindre à notre **personnel**, de contribuer simplement un peu de
+travail! Peu de temps après que vous commencez à cotiser, nous demandons la
+permission de vous ajouter à la masse salariale. Nous attendons de vous d'être
+à l'aise avec notre [système équipe de
+prise](https://gratipay.com/about/teams/).
+
+Merci de votre intérêt pour aider avec Gratipay! Espérons que cela devient vous
+l'avez fait dans la bonne direction à se impliquer. La prochaine étape est de
+lire les liens sur cette page, puis contribuer! :^)
