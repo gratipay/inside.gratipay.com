@@ -1,0 +1,59 @@
+nav_title = "Develop Software"
+[---]
+[---] text/html
+
+We use Git hosted on GitHub to coordinate our software development. If you're
+not familiar with Git or GitHub, we'd love to teach you! :-) Start by reading
+some of GitHub's [guides](https://guides.github.com/). Then [sign
+up](https://github.com/join) for a GitHub account, and introduce yourself in [a
+new onboarding
+issue](https://github.com/gratipay/inside.gratipay.com/issues/new?title=onboard+@me).
+You're likely to be invited to join our GitHub team pretty early in the
+[onboarding](/big-picture/welcome#toc-1) process.
+
+
+## Repos
+
+We have a number of [repos](https://github.com/gratipay); the main ones for our
+user-facing software are:
+
+- https://github.com/gratipay/gratipay.com &larr; the main site
+- https://github.com/gratipay/grtp.co &larr; the widget server
+- https://github.com/gratipay/Gratipay-Everywhere &larr; the browser extension (fairly moribund)
+
+
+## Guidelines 
+
+1. The net change for a pull request (PR) shouldn't be more than about 400
+lines (additions + deletions). Split your work up! Small batch sizes are easier
+to process. :-)
+
+1. Every PR should result in deployable software.
+
+1. Make pull requests from topic branches in the relevant repo, rather than
+from personal forks.
+
+1. Every pull request belongs to the whole team. Don't be surprised when
+someone else pushes commits to a PR that you started! :)
+
+1. Every PR should be explicitly approved by at least two people, you and at
+least one other, before it's merged (it doesn't matter who actually merges it).
+Exceptions to this rule should be rare and documented&mdash;*except* ... 
+
+ 1. You can self-merge PRs that only change documentation (still use PRs; no commits
+directly to `master`). More docs!
+
+1. When you're ready, apply the "Review" label (every repo is supposed to have
+this label), and ping a couple specific people to ask for a review and merge.
+If no-one is reviewing your PRs, try reviewing some others to create some
+social pressure! :-)
+
+
+## Rebase or Merge?
+
+We're somewhere in the middle. We often rebase and force-push PR branches,
+especially when constructing a long chain of PRs (see Guideline 1). We'll often
+squash PR branches early in their development, and then end up with additional
+commits in response to code review. We always rebase PRs when syncing with
+`master` (often noting the previous `head` commit in a comment), but we merge
+back to `master` without squashing.
