@@ -23,9 +23,10 @@ When commenting on HackerOne, always use the "All participants" scope, so
 that the conversation is made public when we disclose the ticket once it's
 resolved.
 
-Publicly disclose all resolved HackerOne tickets. However, you needn't
-rush. Let the 30 day window elapse in case we need to explain our
-disclosure policy to the researcher.
+Publicly disclose all resolved HackerOne tickets as soon you close them.
+If the the researcher does not raise any objection, the report will be made
+public after 30 days: use this time window to explain our disclosure policy
+to the researcher.
 
 Our program defines four risk levels: theoretical, mild, moderate, and
 severe. HackerOne doesn't give us tools to manage this; they're all lumped
