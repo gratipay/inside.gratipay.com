@@ -54,6 +54,12 @@ In the interest of the safety of our users, staff, the Internet at large and you
 *   Findings from applications or systems not listed in the ‘Scope’ section
 *   UI and UX bugs and spelling mistakes
 *   Network level Denial of Service (DoS/DDoS) vulnerabilities
+*   Findings related to *weaks* SSL/TLS ciphers, Diffie-Hellman parameters... as long our grade on [ssllabs](https://ssllabs.com/)
+is at least "A"
+
+By example, this means that the following reports will be categorized as "Out of scope":
+*   Any report related to `Server` header disclosure on [https://assets.gratipay.com](https://assets.gratipay.com) (which is not on scope and hosted on MaxCDN)
+*   Any report related to weaks SSL/TLS ciphers for [https://gratipay.com](https://gratipay.com) (hosted on Heroku, we don't have control over it)
 
 Things we do not want to receive:
 
