@@ -1,0 +1,24 @@
+nav_title = "Patch Manage"
+[---]
+[---] text/html
+
+"Patch management is the process of using a strategy and plan of what patches
+should be applied to which systems at a specified time." &mdash
+[Wikipedia](https://en.wikipedia.org/wiki/Patch_(computing))
+
+
+## `grtp.co`
+
+Here's how to update the Digital Ocean droplet, including nginx:
+
+```
+ssh root@grtp.co
+add-apt-repository ppa:nginx/stable
+aptitude update
+aptitude safe-upgrade
+service nginx restart
+```
+
+So far we run this whenever someone on HackerOne notices that we're out of
+date, which is actually harder to depend on now that we don't leak the version
+in the `Server` header or error pages.
