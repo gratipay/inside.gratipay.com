@@ -43,6 +43,9 @@ We take security seriously, and we're proud to be able to offer bounties through
 * [https://grtp.co](https://grtp.co) (not in scope for clickjacking)
 * any other [software we publish](https://github.com/gratipay)
 
+We target an "A" grade on SSLLabs for both [grtp.co](https://www.ssllabs.com/ssltest/analyze.html?d=grtp.co) and [gratipay.com](https://www.ssllabs.com/ssltest/analyze.html?d=gratipay.com), and consider it a theoretical riskif we drop below that.
+
+
 ## Out of scope
 
 Any services hosted by 3rd party providers and services are excluded from scope.
