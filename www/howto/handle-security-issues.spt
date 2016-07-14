@@ -56,14 +56,21 @@ this case). If the researcher doesn't join HackerOne, offer to add them to the
 
 ## Code Changes
 
-If an issue requires code changes, make them in the [`security`
-repo](https://github.com/gratipay/security) in a topic branch. Make a PR to
-help with code review, but don't actually comment on GitHub, only comment on
-HackerOne. Why? We don't have per-PR permissions, so if we have conversation in
-the `security` repo then it's not easy to disclose once the bug is fixed. Keep
-all conversation on HackerOne, so that we can easily make it public when we
-disclose the issue. If you find comments on PRs in the `security` repo then
-please copy them to HackerOne and then delete them from GitHub.
+For theoretical and mild risks, you may use our normal public GitHub workflow
+to make code changes (basically, submit a PR, label it "Review", and ping
+someone to review it).
+
+Making code changes for moderate and severe risks is more complex, because we
+want to avoid telegraphing the presence of such vulnerabilities before they're
+fixed. Make changes in the [`security`
+repo](https://github.com/gratipay/security) in a topic branch. Make a PR (in
+the same repo) to help with code review, but don't actually comment on GitHub,
+only comment on HackerOne. Why? We don't have per-PR permissions, so if we have
+conversation in the `security` repo then it's not easy to disclose once the bug
+is fixed. Keep all conversation on HackerOne, so that we can easily make it
+public when we disclose the issue. If you find comments on PRs in the
+`security` repo then please copy them to HackerOne and then delete them from
+GitHub.
 
 Once the fix is approved and the PR is merged to `master` in `security`, here's
 how to deploy it:
