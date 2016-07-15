@@ -3,6 +3,7 @@ import string
 import random
 from os.path import basename, dirname, join, realpath, isdir
 
+from aspen import Response
 import canonizer
 import gfm
 from nav import NavItem
@@ -35,8 +36,12 @@ def add_nav_current_to_context(dispatch_result, website):
 def add_nav_next_to_context(nav_current, website):
     return {'nav_next': nav_current.next_child}
 
-add_nav_to_website(website)
+def only_allow_certain_methods(request):
+    whitelisted = ['GET', 'HEAD', 'POST']
+    if request.method.upper() not in whitelisted:
+        raise Response(405)
 
+website.algorithm.insert_before('dispatch_request_to_filesystem', only_allow_certain_methods)
 website.algorithm.insert_after('dispatch_request_to_filesystem', add_nav_to_website)
 website.algorithm.insert_after('add_nav_to_website', add_nav_current_to_context)
 website.algorithm.insert_after('add_nav_current_to_context', add_nav_next_to_context)
