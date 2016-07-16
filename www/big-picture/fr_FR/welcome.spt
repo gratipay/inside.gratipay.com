@@ -1,3 +1,4 @@
+# encoding: utf8
 nav_title = 'Bienvenue sur Gratipay'
 nav_children = []
 [---]
