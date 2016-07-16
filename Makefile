@@ -14,6 +14,7 @@ env:
 				./env/
 	./$(env_bin)/pip --version
 	./$(env_bin)/pip install -f file:///$(PWD)/vendor -r requirements.txt
+	./$(env_bin)/pip install -f file:///$(PWD)/vendor -r requirements_tests.txt
 
 clean:
 	rm -rf env
@@ -22,3 +23,6 @@ clean:
 run: env
 	./$(env_bin)/honcho -e defaults.env,local.env run ./env/bin/python \
 		./startapp.py --port=8536
+
+test:
+	./$(env_bin)/py.test ./tests/
