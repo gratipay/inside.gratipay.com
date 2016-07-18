@@ -6,7 +6,14 @@ python:
   - "2.7"
 
 install:
+  - if [ "${TRAVIS_BRANCH}" = "master" -a "${TRAVIS_PULL_REQUEST}" = "false" ]; then rm -rf env; fi
+  - touch requirements.txt
   - make env
+
+cache:
+  directories:
+    - env/bin
+    - env/lib/python2.7/site-packages
 
 script: make test
 
@@ -37,5 +44,3 @@ notifications:
     template:
       - "%{repository} (%{branch}:%{commit} by %{author}): %{message} (%{build_url})"
     skip_join: true
-
-sudo: false
