@@ -1,18 +1,14 @@
 language: python
 
+sudo: false
+
 python:
   - "2.7"
 
 install:
   - make env
 
-before_script:
-  - make run&
-  - sleep 3  # Give webserver some time to start
-
-# Dummy command until we have real tests
-script:
-  - curl http://localhost:8536/
+script: make test
 
 branches:
   only:
