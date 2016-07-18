@@ -6,7 +6,7 @@ bin_dir := $(shell $(python) -c 'import sys; bin = "Scripts" if sys.platform == 
 env_bin := env/$(bin_dir)
 venv := "./vendor/virtualenv-12.0.7.py"
 
-env:
+env: requirements.txt requirements_tests.txt
 	$(python)  $(venv)\
 				--prompt="[inside.gratipay.com] " \
 				--never-download \

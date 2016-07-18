@@ -7,7 +7,7 @@ python:
 
 install:
   - if [ "${TRAVIS_BRANCH}" = "master" -a "${TRAVIS_PULL_REQUEST}" = "false" ]; then rm -rf env; fi
-  - touch requirements.txt
+  - touch requirements.txt requirements_tests.txt
   - make env
 
 cache:
