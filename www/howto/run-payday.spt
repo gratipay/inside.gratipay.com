@@ -24,6 +24,9 @@ record the result on Gratipay Bot's ticket.
      If it's 15% or greater, find a reason and report it to riskteam at getbraintree com.
   1. Review and edit these documents.
   1. Close Gratipay Bot's ticket.
+  1. If it's the last payday of the month, update the rotation in the ticket description:
+     copy/paste the current airplane row to the bottom of the table, then move the airplane
+     back up!
 
 ## Notes
 
