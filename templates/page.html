@@ -13,6 +13,14 @@
         <meta property="og:description" content="Documentation for people building Gratipay." />
         <meta property="og:title" content="Inside Gratipay" />
 
+        <meta property="Content-Security-Policy" content="default-src 'none';
+                                                  script-src 'self';
+                                                  style-src 'self' cloud.typography.com;
+                                                  img-src 'self' assets-cdn.github.com;
+                                                  font-src 'self' cloud.typography.com;
+                                                  child-src gratipay-access-dashboard.herokuapp.com www.google.com metrics.librato.com docs.google.com;
+                                                  referrer no-referrer; ">
+
         <link rel="stylesheet" type="text/css"
               href="//cloud.typography.com/6540672/615104/css/fonts.css" />
         <link rel="stylesheet" type="text/css"
