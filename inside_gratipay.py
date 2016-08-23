@@ -1,12 +1,17 @@
 import os
 import string
 import random
-from os.path import basename, dirname, join, realpath, isdir
+from os.path import basename, dirname
 
 from aspen import Response
+from aspen.website import Website
+
 import canonizer
 import gfm
 from nav import NavItem
+
+
+website = Website(www_root='www', project_root='.')
 
 
 # Manually register markdown renderer to work around Heroku deployment woes.
