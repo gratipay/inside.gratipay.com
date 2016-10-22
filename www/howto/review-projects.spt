@@ -1,0 +1,26 @@
+nav_title="Review Projects"
+[---]
+[---] text/html
+
+In keeping with our [Terms of Service](https://gratipay.com/about/terms/), all
+projects on Gratipay are subject to a review process when they first apply, and
+as needed thereafter, to make sure they and their work are &ldquo;consistent
+with Gratipay's [Brand
+Guidelines](http://inside.gratipay.com/big-picture/brand/) and Acceptable Use
+Policy [AUP].&rdquo; The AUP is defined further down in the Terms.  As far as
+brand fit goes, we're mostly trying to keep out trolls and overly strident
+activists.
+
+Review happens in public in [the `project-review`
+repo](https://github.com/gratipay/project-review/issues). To help review
+projects, [watch](https://help.github.com/articles/watching-repositories/) that
+repo.
+
+Anyone who thinks that a project *does* clash with our brand or AUP has to make
+a case publicly on GitHub, and we have to leave enough time for the community
+to weigh in before rejecting a project. [Chad
+Whitacre](https://github.com/whit537) has the final say.
+
+The only way to find out if a project will be approved is to apply for a
+project. We don't answer, &ldquo;Will you accept foo?&rdquo; questions apart
+from the actual project application process.

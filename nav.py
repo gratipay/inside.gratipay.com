@@ -49,9 +49,11 @@ class NavItem(OrderedDict):
                 if not isdir(new_fs):
                     new_fs += '.spt'
                 child = NavItem(website, self, new_fs, slug)
+                if child.title is None:
+                    continue
                 self[child.slug] = child  # Populate self as an OrderedDict
 
-        self.title = context.get('nav_title', '[Untitled]')
+        self.title = context.get('nav_title')
 
 
     def __str__(self):
