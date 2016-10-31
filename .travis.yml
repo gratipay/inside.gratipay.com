@@ -1,46 +1,39 @@
 language: python
-
 sudo: false
-
 python:
-  - "2.7"
-
+- '2.7'
 install:
-  - if [ "${TRAVIS_BRANCH}" = "master" -a "${TRAVIS_PULL_REQUEST}" = "false" ]; then rm -rf env; fi
-  - touch requirements.txt requirements_tests.txt
-  - make env
-
+- if [ "${TRAVIS_BRANCH}" = "master" -a "${TRAVIS_PULL_REQUEST}" = "false" ]; then
+  rm -rf env; fi
+- touch requirements.txt requirements_tests.txt
+- make env
 cache:
   directories:
-    - env/bin
-    - env/lib/python2.7/site-packages
-
+  - env/bin
+  - env/lib/python2.7/site-packages
 script: make test
-
 branches:
   only:
-    - master
-
+  - master
 deploy:
   provider: heroku
   # Required for some reason (default anvil strategy doesn't work)
   # See: https://botbot.me/freenode/gittip/msg/13686229/
   strategy: git
   api_key:
-    secure: "PlaeO2woN4LUCtCg2GjOzbXkp9OGR0UHKmsge6RLcCjLBisNWX3akxLDh8zyqNm4BKRmG1sTNw0GHssSniCYf0RtF5PwVeP4K5DRPMVcLtcfOxbVEsU4Bq8/5MKqArPC2mG9qiG8/4gtkE4XtAUbdjU0MWpfLT2pmmpp8kuDd7k="
+    secure: o0IjJoL7Ee5y7BiZF5VkAYan+8SigY23+2aG8UsNHkrVcqbd1RIVbhoTjJPyYrwolpSUl20pXZaVwSINQSew7YaCqBJBA6HKjFiA7cDY/t2IhWcIb6cyanFkH//+/WrFMNF6HJHc2n/DzpevYmO4ZAqJmoDToszCRj13dmIdJ2s=
   app:
     master: inside-gratipay-com
   on:
     repo: gratipay/inside.gratipay.com
     branch: master
-
 notifications:
   email: false
   irc:
     channels:
-      - "chat.freenode.org#gratipay"
+    - chat.freenode.org#gratipay
     on_success: change
     on_failure: always
     template:
-      - "%{repository} (%{branch}:%{commit} by %{author}): %{message} (%{build_url})"
+    - "%{repository} (%{branch}:%{commit} by %{author}): %{message} (%{build_url})"
     skip_join: true
