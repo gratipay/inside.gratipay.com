@@ -1,26 +1,20 @@
 language: python
-
 sudo: false
-
 python:
-  - "2.7"
-
+- '2.7'
 install:
-  - if [ "${TRAVIS_BRANCH}" = "master" -a "${TRAVIS_PULL_REQUEST}" = "false" ]; then rm -rf env; fi
-  - touch requirements.txt requirements_tests.txt
-  - make env
-
+- if [ "${TRAVIS_BRANCH}" = "master" -a "${TRAVIS_PULL_REQUEST}" = "false" ]; then
+  rm -rf env; fi
+- touch requirements.txt requirements_tests.txt
+- make env
 cache:
   directories:
-    - env/bin
-    - env/lib/python2.7/site-packages
-
+  - env/bin
+  - env/lib/python2.7/site-packages
 script: make test
-
 branches:
   only:
-    - master
-
+  - master
 deploy:
   provider: heroku
   # Required for some reason (default anvil strategy doesn't work)
@@ -33,14 +27,13 @@ deploy:
   on:
     repo: gratipay/inside.gratipay.com
     branch: master
-
 notifications:
   email: false
   irc:
     channels:
-      - "chat.freenode.org#gratipay"
+    - chat.freenode.org#gratipay
     on_success: change
     on_failure: always
     template:
-      - "%{repository} (%{branch}:%{commit} by %{author}): %{message} (%{build_url})"
+    - "%{repository} (%{branch}:%{commit} by %{author}): %{message} (%{build_url})"
     skip_join: true
