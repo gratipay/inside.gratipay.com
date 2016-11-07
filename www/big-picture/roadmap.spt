@@ -1,0 +1,37 @@
+nav_title = 'Roadmap'
+nav_children = []
+[---]
+[---] text/html
+
+1. Finish cleaning up from the Gratipocalypse:
+   1. [Decouple](https://github.com/gratipay/gratipay.com/milestone/22) ([IG](https://github.com/gratipay/inside.gratipay.com/milestone/9))
+   2. [Finish Team Basics](https://github.com/gratipay/gratipay.com/milestone/18)
+   3. [Pivot](https://github.com/gratipay/gratipay.com/milestone/13)
+2. Knock pay-what-you-want out of the park:
+   1. [Make Widgets 2.0](https://github.com/gratipay/grtp.co/milestone/2)
+   2. [Tighten Onboarding Flow](https://github.com/gratipay/gratipay.com/milestone/3)
+   3. [Solve Corporate Sponsorship of Open-Source](https://github.com/gratipay/gratipay.com/milestone/19)
+3. Knock take-what-you-want out of the park:
+   1. [Implement an AML Program](https://github.com/gratipay/gratipay.com/milestone/15)
+   2. [Expand Take-What-You-Want Beyond Gratipay](https://github.com/gratipay/gratipay.com/issues/3433)
+
+[![](https://cloud.githubusercontent.com/assets/134455/18210111/03659aee-7105-11e6-83e2-f67df0821b26.png)](http://interactive.blockdiag.com/?compression=deflate&src=eJyNUdFqwjAUfe9XXLJXBfdcHGx1DsGBUDcZ6sM1vWqwTUob64r477tpaytjDPOSnJOce8892cRGHiKFOzh7HqRSwTLGDcVDMQsmMApD0QNpYpMNM4p6YOnb1vC0V5bW4AElaat5TdLYlAlpC1M8_S_1YJNj1w0rWX6PTsatLDBJilrRHTq2eoxa4UdOGYwoQR3dM6EtYZnbMqahGPQeB7xalTaabmUOrznLXWaOKZxrUjyMxwEv4buMfVfSd_P7PIxfN_DZ3qX5g_4TKL01Ock6X8b2VJ7qyBg8v0-rGPj4ZgrKNGpJ1XzMjEhy55i4VlOknXrCOCQpOEQVFR0dcfTKliv9SZnaKolWGe1eua7tszkeqL_Yo-1_mWN_gdpWhXRhlFR6d9OlYdw1W20v-OyoFEtz5K--0pHKSNqVbnj3JEAMf31yCZivNEJIWaEkiT8yDgKXsvCgHdwFyYNWeTam3G1N1ZFekTPKW2Oi450VRl3ON-Q1akeJOWECL5grmQtHzFRhrAcX7_IDzQocvA)
+
+**Color code:**
+
+- red&mdash;external forces that we're under
+- green&mdash;product development tasks
+
+
+## Tech Priorites
+
+- [stop using immutable ids as primary key](https://github.com/gratipay/gratipay.com/issues/835)
+- other [embarrassments](https://github.com/gratipay/gratipay.com/labels/Pretty%20Embarrassing)
+
+
+## Accounting Priorities
+
+- [collect historical statement data](https://github.com/gratipay/finances/issues/26)
+- [settle on tooling](https://github.com/gratipay/finances/issues/22)
+- [catch up on books](https://github.com/gratipay/finances/issues/3)
+- [resolve escrow imprecision](https://github.com/gratipay/inside.gratipay.com/issues/389#issuecomment-153929881)

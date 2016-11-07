@@ -1,0 +1,103 @@
+nav_title = 'Org Chart'
+nav_children = []
+[---]
+[---] text/html
+
+Gratipay is organized according to the following teams, each with its own
+mission and scope. Any individual is welcome to work on any team.
+
+[![Org Chart](https://cloud.githubusercontent.com/assets/134455/16766999/3408b5d2-480b-11e6-9058-d7415c7b61cf.png)](http://interactive.blockdiag.com/?compression=deflate&src=eJxVj7sKwzAMRfd8hX-gQ6GULi6UzIVCugfFVmLR1AqKDH3Qf6-dKZkknaurRzeye3iCwXwrY1gIo4ISRzuxqABpxh57SKO2c4AJrXCKHn3Hr5XUc9SZPmj3p0wje2wD0hDUHg9VJjULmt3ZXEEeqBSHUtyEfXJa0ju6UGKDLgnpe2W5OJc3Fs8KNtDj0rWeIRDncbl-KzRpKt9sYc3PaSSIDqvfH7uPVvo)
+
+# Core
+
+The mission of the core team is to steer Gratipay as a whole in pursuit of our
+overall [mission](http://inside.gratipay.com/big-picture/mission): to cultivate
+an economy of gratitude, generosity, and love.
+
+## Scope
+
+Anything not explicitly in scope for another team falls to the core team.
+
+- [Mission](http://inside.gratipay.com/big-picture/mission) and [Brand](http://inside.gratipay.com/big-picture/brand/)
+- Strategy
+- Governance
+- repos:
+  - https://github.com/gratipay/inside.gratipay.com
+  - https://github.com/gratipay/bot
+  - https://github.com/gratipay/access-dashboard
+  - https://github.com/gratipay/gratipay-queue-dashboard
+
+# Marketing
+
+The mission of the marketing team is to communicate with the market, listening
+for problems relevant to our organizational mission, and sharing our solutions.
+
+## Scope
+
+- https://gratipay.news/
+- social media:
+  - https://twitter.com/Gratipay
+  - https://www.facebook.com/Gratipay
+- [Events](https://github.com/gratipay/inside.gratipay.com/labels/Events)
+- repos:
+  - https://github.com/gratipay/guide
+  - https://github.com/gratipay/gratipay-or-bountysource.guide
+  - https://github.com/gratipay/blog.gittip.com
+
+# Support
+
+The mission of the support team is to help people use our products.
+
+## Scope
+
+- support@gratipay.com
+- the [Support](https://gratipay.freshdesk.com/helpdesk/tickets/view/1000240520) and [L2 Support](https://gratipay.freshdesk.com/helpdesk/tickets/view/1000241179) queues in Freshdesk
+- https://github.com/gratipay/team-review
+
+# Product
+
+The mission of the product team is to design and implement solutions to the
+problems identified by the marketing team.
+
+## Scope
+
+- https://github.com/gratipay/gratipay.com
+  - [translation](https://www.transifex.com/gratipay/gratipay/) ([docs](http://inside.gratipay.com/howto/translate-gratipay))
+- https://github.com/gratipay/grtp.co
+- https://github.com/gratipay/gratipay-everywhere
+- https://github.com/gratipay/gratipay-badge
+
+# Accounting
+
+The mission of the accounting team is to account for the money we move.
+
+## Scope
+
+- @gratipay/finances 
+- the https://github.com/gratipay/finances repo
+- the `statements` directory in the https://github.com/gratipay/logs repo
+- the vendors@gratipay.com email address
+
+# Tech
+
+The mission of the tech team is to support the product team in solving problems
+in the market.
+
+## Scope
+
+- dev
+- ops
+- hosting
+  - Heroku
+  - Digital Ocean
+  - AWS
+- monitoring
+  - Sentry
+  - PagerDuty
+  - UptimeRobot
+  - Librato
+- Payday
+- https://github.com/gratipay/postgres.py
+- https://github.com/gratipay/gip.rocks
+- https://github.com/gratipay/honcho
+- https://github.com/gratipay/environment.py
