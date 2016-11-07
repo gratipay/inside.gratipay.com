@@ -34,7 +34,7 @@ Additionally, if you are the first to report the issue, and we make a code or co
 
 Please note that, as an [open organization](http://inside.gratipay.com/big-picture/welcome), our policy is to [fully disclose](http://inside.gratipay.com/appendices/disclosures) all resolved, informative, and not applicable issues, in the interest of openness and transparency for our customers.
 
-We take security seriously, and we're proud to be able to offer bounties through HackerOne. That said, we recognize that the amounts are low. The reason is that we are a small company with only [a little revenue](https://gratipay.com/Gratipay/), and all of our internal staff are unpaid volunteers. We look forward to offering larger bounties as we grow. Thank you for your understanding, and please tell us in your report if you would prefer not to receive a bounty.
+We take security seriously, and we're proud to be able to offer bounties through HackerOne. That said, we recognize that the amounts are low. The reason is that we are a small company with only [a little revenue](https://gratipay.com/Gratipay/). We look forward to offering larger bounties as we grow. Thank you for your understanding, and please tell us in your report if you would prefer not to receive a bounty.
 
 
 ## Scope

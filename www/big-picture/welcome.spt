@@ -3,54 +3,24 @@ nav_children = []
 [---]
 [---] text/html
 
-Welcome to Gratipay! We are an [open organization](https://opensource.com/resources/what-open-organization),
-with a porous boundary between our *users* and our *staff*. The purpose of this
-website is to document Gratipay's business processes for our staff, and the
-purpose of this document is to help you take your first steps to becoming a
-Gratipay staff member.
+Welcome to Gratipay! We are an [open
+organization](https://opensource.com/resources/what-open-organization), with a
+porous boundary between our *users* (people with an account on Gratipay) and
+our *collaborators* (people who are delivering Gratipay). The purpose of this
+website is to document Gratipay's business processes for our collaborators, and
+the purpose of this document is to help you take your first steps to becoming a
+Gratipay collaborator.
 
 
-## Four Roles
-
-We think of people in relation to Gratipay in four roles:
-
-  - **users**&mdash;people with an account on Gratipay
-  - **contributors**&mdash;people conversing in [our space](/appendices/channels)
-  - **owners**&mdash;users who buy into [our mission](./mission)
-  - **staff**&mdash;owners who ~~are~~ *will be* on [our
-    payroll](https://gratipay.com/Gratipay/distributing/)
-
-<img src="roles.jpg" width="100%">
-
-Each role is open to anyone willing and able to fill it, and each carries
-certain responsibilities and expectations.
-
-To be a **user**, [create an account](https://gratipay.com/)! We'll expect
-you to abide by our [terms and
-        conditions](https://gratipay.com/about/terms/).
-
-To be a **contributor**, simply [enter our space](/appendices/channels) and
-join the conversation! We'll expect you to [behave well](/howto/behave-well).
-
-To be an **owner**, simply think of yourself as an owner! We'll expect you to
-identify with and pursue [our mission](./mission) (we're [working on
-bylaws](https://github.com/gratipay/inside.gratipay.com/issues/72) to formalize
-what it means to be an owner).
-
-To join our **staff**, start doing work! We'll expect you to be comfortable
-with our [team takes](https://gratipay.com/about/features/payroll)
-system&mdash;once we bring that back. :-(
-
-
-## Onboarding as a Staff Member
+## Onboarding as a Collaborator
 
 **First**, read through the rest of our [big picture](/big-picture/) documents.
 They provide important context about the nature of our company and what we are
 trying to accomplish.
 
 **Second**, make sure you're aware of our [behavior
-standards](/howto/behave-well) for contributors, and our processes for [dealing
-with bad behavior](/howto/deal-with-bad-behavior).
+standards](/howto/behave-well) for collaborators, and our processes for
+[dealing with bad behavior](/howto/deal-with-bad-behavior).
 
 **Third**, skim through the [howtos](/howto/) on this site as well as the
 [appendices](/appendices/), so you can start to become familiar with what
@@ -62,8 +32,8 @@ one](https://github.com/join?source=gratipay-onboarding). Then [make a
 ticket](https://github.com/gratipay/inside.gratipay.com/issues/new#title=onboard+@me)
 titled "onboard @me" (your GitHub username), and introduce yourself and what
 you're interested in working on. Your onboarding ticket will be your place to
-ask any and all questions you have as you orient yourself as a Gratipay staff
-member.
+ask any and all questions you have as you orient yourself as a Gratipay
+collaborator.
 
 After you make your onboarding ticket, someone from Gratipay will respond and
 you will be off and running! Welcome aboard! :-)
