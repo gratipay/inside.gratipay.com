@@ -3,10 +3,10 @@ nav_title = "Product"
 [---] text/html
 
 What product are we building to further our [mission](./mission) according to
-our [values](./brand/) for our [customers](./customers/)? Our product offers
+our [values](./brand/) for our [customers](./customers/)? We offer Our product offers
 payments and payroll for open work. Companies and organizations apply to join
 Gratipay as a "team," and then they can use Gratipay to collect voluntary
-payments from their customers, and distribute payments to their team members.
+payments from their customers.
 We process payments every Thursday.
 
 
@@ -15,95 +15,14 @@ We process payments every Thursday.
 We have four top-level components to our information architecture:
 
  1. [Gratipay.com](https://gratipay.com/)&mdash;our main website
- 1. [API](https://github.com/gratipay/gratipay.com/#api)&mdash;endpoints integrated within gratipay.com
- 1. [grtp.co](http://grtp.co/)&mdash;widget server
- 1. [Gratipay-Everywhere](https://chrome.google.com/webstore/detail/gratipay-everywhere/ffbkkncpfcobpjaolefljnpmianmflig?hl=en)&mdash;browser extension
 
+ 1. [API](https://github.com/gratipay/gratipay.com/#api)&mdash;ad-hoc endpoints
+    integrated within Gratipay.com
 
-### Gratipay.com
+ 1. [grtp.co](http://grtp.co/)&mdash;our &ldquo;widget
+    server&rdquo;&mdash;serves a JavaScript client for our API and a library
+for embedding HTML components into a third-party website
 
-This is our main website and receives the most attention. Here's its structure:
-
-```
-  UI                            URL
-  ----------------------------------------------------------------------------
-  Homepage                      /
-    About                       /about/
-      Basic Info                /about/
-        Overview                /about/
-        FAQ                     /about/faq
-        Stats                   /about/stats
-        Pricing                 /about/pricing
-        Contact Us              /about/contact
-      Features                  /about/features/
-        Overview                /about/features/
-        Teams                   /about/features/teams/
-        Do Not Track            /about/features/dnt
-      Policies                  /about/policies/terms-and-conditions
-        Terms and Conditions    /about/policies/terms-and-conditions
-        Terms of Service        /about/policies/terms-of-service
-        Privacy Policy          /about/policies/privacy
-      Security                  /about/security/
-        Disclosure              /about/security/
-        Hall of Fame            /about/security/hall-of-fame
-        PGP Key                 /about/security/pgp.asc
-    Explore                     /explore/
-.     Communities               /explore/
--     Teams                     /explore/teams/
-    Search                      /search
-    $COMMUNITY                  /for/$COMMUNITY/
-    $TEAM                       /$TEAM/
-    $USERNAME                   /~$USERNAME/
-     (Dashboard                 /
-.     Profile                   /~$USERNAME/
--     Members                   /~$USERNAME/members/
--     Receiving                 /~$USERNAME/receiving/
--    (Giving                    /~$USERNAME/giving/
--    (History                   /~$USERNAME/history/
-.      [Record an Exchange      /~$USERNAME/history/record-an-exchange.html
--       $YEAR                   /~$USERNAME/history/?year=$YEAR
-     (Widgets                   /~$USERNAME/widgets/
-     (Identity                  /~$USERNAME/identity
-.    (Settings                  /~$USERNAME/settings/
-.       Credit Card             /credit-card.html
-.       Bank Account            /bank-account.html
-.       Close                   /~$USERNAME/settings/close
-     [Events                    /~$USERNAME/events/
-.[Dashboard                     /dashboard/
-
-
-  Key
-  ----------------------------------------------------------------------------
-  (  restricted to authenticated user
-  [  restricted to admin
-  $  variable
-  -  table/listing
-  .  form controls
-```
-
-Here are our cross-cutting concerns:
-
- - overall visual language
- - layout
- - navigation
- - tables/listings
- - form controls
- - global call-to-action (to fund Gratipay itself)
-
-
-### API
-
-Our [public API](https://github.com/gratipay/gratipay.com/#api) is comprised of
-ad-hoc JSON endpoints integrated within Gratipay.com.
-
-
-### grtp.co
-
-Our [widget server](http://grtp.co/) serves a JavaScript client for our API and
-a library for embedding HTML components into a third-party website.
-
-
-### Gratipay-Everywhere
-
-The point of this is to add Gratipay buttons to third-party websites such as
-GitHub and Twitter. Currently only implemented for Chrome.
+ 1. [Gratipay-Everywhere](https://chrome.google.com/webstore/detail/gratipay-everywhere/ffbkkncpfcobpjaolefljnpmianmflig?hl=en)&mdash;a
+browser extension to add buttons to third-party websites such as GitHub and
+Twitter.
