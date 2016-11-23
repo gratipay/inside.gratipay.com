@@ -1,15 +1,3 @@
-nav_title = 'Customers'
 [---]
+request.redirect('../customers')
 [---] text/html via markdown
-
-Our [strategy](../strategy) is to flood the market with open organizations.
-Therefore, we understand our customers as follows:
-
-<a href="http://interactive.blockdiag.com/?compression=deflate&src=eJxLyslPzk7JTExXqOZSUEjMyUxOVYjOSUxKzbFVqgNzlWKBEq5wwZCMVAXXvJLUooKizGKIZHJRaXFGahFCH1QALAkxUtcOaASQgMpYcwFl0ovySwsUSlITc8F2A83Jz8kvslVSNja2tDQzU7IGC7qCyYLM5MSiFIQNED7YglquWgAxeDvp"><img src="customers.png"></a>
-
-Our primary customer is `~picard`: the manager of an open organization.
-
-Our secondary customer is The Enterprise's customer: `~alice`.
-
-Our tertiary customer is The Enterprise's employee (contractor, agent, etc.):
-`~crusher`.
