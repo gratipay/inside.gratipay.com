@@ -1,28 +1,3 @@
-nav_title = "Product"
 [---]
+request.redirect('roadmap')
 [---] text/html
-
-What product are we building to further our [mission](./mission) according to
-our [values](./brand/) for our [customers](./customers/)? We offer Our product offers
-payments and payroll for open work. Companies and organizations apply to join
-Gratipay as a "team," and then they can use Gratipay to collect voluntary
-payments from their customers.
-We process payments every Thursday.
-
-
-## Information Architecture
-
-We have four top-level components to our information architecture:
-
- 1. [Gratipay.com](https://gratipay.com/)&mdash;our main website
-
- 1. [API](https://github.com/gratipay/gratipay.com/#api)&mdash;ad-hoc endpoints
-    integrated within Gratipay.com
-
- 1. [grtp.co](http://grtp.co/)&mdash;our &ldquo;widget
-    server&rdquo;&mdash;serves a JavaScript client for our API and a library
-for embedding HTML components into a third-party website
-
- 1. [Gratipay-Everywhere](https://chrome.google.com/webstore/detail/gratipay-everywhere/ffbkkncpfcobpjaolefljnpmianmflig?hl=en)&mdash;a
-browser extension to add buttons to third-party websites such as GitHub and
-Twitter.

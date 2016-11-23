@@ -3,10 +3,9 @@ nav_children = []
 [---]
 [---] text/html
 
-Welcome to Gratipay! We are an [open
-organization](https://opensource.com/resources/what-open-organization), with a
-porous boundary between our *users* (people with an account on Gratipay) and
-our *collaborators* (people who are delivering Gratipay). The purpose of this
+Welcome to Gratipay! We are an [open organization](strategy), with a porous
+boundary between our *users* (people with an account on Gratipay) and our
+*collaborators* (people who are delivering Gratipay). The purpose of this
 website is to document Gratipay's business processes for our collaborators, and
 the purpose of this document is to help you take your first steps to becoming a
 Gratipay collaborator.

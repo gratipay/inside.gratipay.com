@@ -4,8 +4,8 @@ nav_children = []
 [---] text/html
 
 We're building a [product](https://gratipay.com/) to help companies fund the
-open source software they depend on. Here are the projects we've got going on
-right now (links are to GitHub):
+open source software they depend on. Below are the projects we've got going on
+right now. Links are to GitHub projects and milestones.
 
 1. Finish cleaning up from the Gratipocalypse:
    1. [Decouple](https://github.com/gratipay/gratipay.com/milestone/22) ([IG](https://github.com/gratipay/inside.gratipay.com/milestone/9))
