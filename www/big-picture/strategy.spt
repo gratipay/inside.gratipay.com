@@ -1,0 +1,86 @@
+nav_title = 'Strategy'
+[---]
+[---] text/html
+
+Our strategy for cultivating an economy of gratitude, generosity, and love is
+to fill the market with **open organizations**. [*The Open
+Organization*](https://www.amazon.com/-/dp/1625275277) is a book by Red Hat CEO
+Jim Whitehurst, with an ongoing
+[conversation](https://opensource.com/open-organization) sponsored by Red Hat's
+marketing website OpenSource.com. We are drafting off Red Hat by participating
+in this larger conversation.
+
+Open organizations as we define them have four characteristics:
+
+1. **transparent decisions**&mdash;the default is for information to be shared
+   publicly and decisions to be vetted publicly before being finalized;
+1. **open hiring**&mdash;anyone can start collaborating of their own volition, no
+   permission necessary to get started;
+1. **take-what-you-want compensation**&mdash;individuals have agency to reap a
+   meaningful economic benefit from their collaboration; and
+1. **pay-what-you-want revenue**&mdash;labor and profits are funded by voluntary
+   payments, not hard fees.
+
+Each of these is highly nuanced in practice, and can be implemented somewhat
+independently of each other. The purpose behind each is to emphasize the agency
+of the individual over the group. Lack of agency leads to resentment and guilt.
+When there is personal agency, gratitude and generosity are more likely to
+flourish.
+
+
+## The Open Source Value Vacuum
+
+Open source software projects are the most well-established institutions that
+are closest to our vision of the open organization. Transparent decision-making
+and open &ldquo;hiring&rdquo; are the norm. Insofar as they have any revenue,
+it is voluntary. There's historically not been much revenue, however, so
+practices around compensation are not well-developed (hence the scare quotes
+around &ldquo;hiring&rdquo;).
+
+Our strategy is to evolve open source software projects into open
+organizations: open institutions with a peer economic relationship to closed
+organizations. In economic terms, open source software is a [*public
+good*](https://en.wikipedia.org/wiki/Public_good#Definition_matrix):
+
+![goods matrix](matrix.png)
+
+There are three ways to fit public goods into the economy:
+
+1. **Enclosure**. In other words, taking goods out of the commons, making them
+   excludable. Booooorrriiinnngg!
+
+1. **Taxation**. This is akin to enclosure, in that both involve *forcing* people
+   to pay for the thing.
+
+1. **Social norms**. At its worst, this looks like guilt-tripping and shaming.
+   At its best, it looks like inviting people to be grateful and generous and
+Do the Right Thing&trade;. This is us! &#x1f483;
+
+If we have a chance at (3), it's because open source has created a
+&ldquo;value vacuum&rdquo; in the economy. Closed organizations have been
+unable to ignore the value open source software offers; they've embraced it.
+This creates some pressure to compensate open source projects *after* the fact
+rather than beforehand. Is it enough?
+
+A second pressure point is developer relations. Companies with a good
+reputation in open source communities find it easier to hire from and sell to
+those communities.
+
+Another relevant pressure in the industry is the pressure to address the
+diversity problem in tech
+([e.g.](http://www.npr.org/sections/money/2014/10/17/356944145/episode-576-when-women-stopped-coding)).
+This is a problem worth addressing in its own right, and it dovetails with the
+idea of proactively giving individuals agency to be involved in the engines of
+our economy.
+
+A fourth entrypoint is consumer-facing public goods, such as the services
+provided by Wikipedia, Mozilla, and the Internet Archive, and digital content
+more broadly.
+
+The goal is to tap these pressure points to get some funding moving into open
+organizations. If we get enough money moving in this direction then we might
+even [see](https://www.youtube.com/watch?v=kWH3Waigi5Y#t=5h59m17s) a new
+[sector](https://en.wikipedia.org/wiki/Economic_sector#By_ownership) of the
+economy: public, private, voluntary, ... and open! And if we do that, hopefully
+we'll have increased the gratitude and generosity in the world by a fraction of
+a degree&mdash;maybe enough to get an interesting feedback loop going!
