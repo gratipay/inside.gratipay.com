@@ -1,0 +1,5 @@
+nav_title = 'Slack Chat'
+src = "https://gratipay-slackin.herokuapp.com/"
+[---]
+[---] text/html via jinja2
+{% include "templates/iframed.html" %}
