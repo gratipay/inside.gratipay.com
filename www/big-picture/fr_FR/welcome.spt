@@ -1,45 +1,39 @@
 # encoding: utf8
-nav_title = 'Bienvenue à Gratipay'
+nav_title = 'Bienvenue sur Gratipay'
 nav_children = []
 [---]
 [---] text/html
 
-Bienvenue à Gratipay! Nous sommes une [société
-ouverte](http://www.opencompany.org/), qui pour nous signifie que nous voulons
-inviter et responsabiliser chacun de participer à la gestion de notre
-entreprise. Nous pensons que des personnes par rapport à Gratipay dans
-plusieurs rôles:
+Bienvenue sur Gratipay ! Nous sommes une [entreprise ouverte](http://www.opencompany.org/), avec de fait une frontière très mince entre nos *utilisateurs* et notre *équipe*. Le rôle de ce site est de documenter le fonctionnement de Gratipay, tandis que celui de ce document est de vous aider à faire vos premiers pas en tant que membre de l'équipe !
 
-    - Les gens **utilisateurs** avec un compte sur Gratipay
-    - Les gens **contributeurs** converser dans [notre espace](/appendices/channels)
-    - users **propriétaires** qui achètent dans [notre mission](./mission)
-    - owners **du personnel** qui sont sur [notre liste de paie](https://gratipay.com/Gratipay/members/)
+## Quatre rôles
 
-Chaque rôle est ouvert à tous, et *vous* êtes le seul à avoir le pouvoir de
-décider ce que vous êtes en relation avec Gratipay. Cela dit, chaque rôle ne
-vient avec des responsabilités et des attentes, que vous devez comprendre avant
-de prendre un engagement.
+Nous pensons que les personnes en relation avec Gratipay peuvent avoir quatre rôles :
+- **utilisateurs**&mdash;personnes avec un compte sur Gratipay
+- **contributeurs**&mdash;personnes échangeant dans [notre espace](/appendices/channels)
+- **acteurs**&mdash;personnes qui adhèrent à notre [notre mission](./mission)
+- **membres de l'équipe**&mdash;acteurs qui ~~sont~~ *seront* comprises dans [notre redistribution](https://gratipay.com/Gratipay/members/)
 
-Pour être un **utilisateur**, [créer un compte](https://gratipay.com/)! Nous
-comptons sur vous pour respecter nos [termes et
-conditions](https://gratipay.com/about/terms).
+<img src="roles.jpg" width="100%">
 
-Pour être un **contributeur**, tout simplement [entrer dans notre
-espace](/appendices/channels) et participer à la conversation! Nous comptons
-sur vous pour [bien se comporter](/howto/behave-well).
+Chaque rôle est ouvert à n'importe qui souhaitant et pouvant le remplir, et est lié à un certain nombre de responsabilités et d'attentes.
 
-Pour être un **propriétaire**, il suffit de penser que vous êtes un
-propriétaire!  Nous attendons de vous à se identifier et poursuivre [notre
-mission](./mission). Nous [travailler sur les
-règlements](https://github.com/gratipay/inside.gratipay.com/issues/72) de
-formaliser ce que cela signifie d'être un propriétaire.
+Pour devenir **utilisateur**, [créez un compte](https://gratipay.com/) ! Nous allons attendre de vous que vous vous conformiez à nos [termes et conditions](https://gratipay.com/about/terms/).
 
-Pour vous joindre à notre **personnel**, de contribuer simplement un peu de
-travail! Peu de temps après que vous commencez à cotiser, nous demandons la
-permission de vous ajouter à la masse salariale. Nous attendons de vous d'être
-à l'aise avec notre [système équipe de
-prise](https://gratipay.com/about/teams/).
+Pour devenir **contributeur**, [entrez dans notre espace](/appendices/channels) et rejoignez la conversation ! Nous allons attendre de vous un [bon comportement](/howto/behave-well).
 
-Merci de votre intérêt pour aider avec Gratipay! Espérons que cela devient vous
-l'avez fait dans la bonne direction à se impliquer. La prochaine étape est de
-lire les liens sur cette page, puis contribuer! :^)
+Pour être **acteur**, vous n'avez qu'à vous considérer comme un ! Nous attendons de vous que vous vous identifiez à [notre mission](./mission) et que vous la poursuiviez (nous travaillons sur [un règlement](https://github.com/gratipay/inside.gratipay.com/issues/72) dans le but de formaliser ce que signifie être acteur).
+
+Pour rejoindre notre **équipe**, vous n'avez qu'à commencer à travailler ! Nous attendons néanmoins de vous d'être confortable avec notre système de [redistribution au sein des équipes](https://gratipay.com/about/features/payroll)&mdash;une fois que nous l'aurons rétabli. :-(
+
+## Embarquer en tant que membre de l'équipe
+
+**Premièrement**, lisez le reste de nos documents de [vue d'ensemble](/big-picture/). Ils apportent un contexte important concernant la nature de notre société et ce que nous tentons d'accomplir.
+
+**Deuxièmement**, assurez-vous d'être au courant de notre [standard de comportement](/howto/behave-well) pour les contributeurs, et nos façons de [gérer les mauvais comportements](/howto/deal-with-bad-behavior).
+
+**Troisièmement**, naviguez à travers les [howtos](/howtos/) de ce site, ainsi que les [annexes](/appendices/) : vous commencerez alors à devenir familier avec ce qui existe dans la documentation, utile quand vous vous poserez des questions.
+
+**Quatrièmement…** nous rejoindre ! Notre canal de communication principal est Github, donc si vous n'avez pas de compte Github, [créez-en un](https://github.com/join?source=gratipay-onboarding). Puis [ouvrez un ticket](https://github.com/gratipay/inside.gratipay.com/issues/new) intitulé « onboard @me » (votre nom d'utilisateur Github), présentez-vous et dites-nous ce sur quoi vous souhaitez travailler. Ce ticket d'embarquement sera l'endroit où poser toutes vos questions au fur et à mesure que vous deviendrez un membre de l'équipe de Gratipay.
+
+Après avoir créé votre ticket d'embarquement, quelqu'un de Gratipay vous répondra et vous serez fin prêt ! Bienvenue à bord ! :-)
