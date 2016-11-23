@@ -3,45 +3,9 @@ nav_children = []
 [---]
 [---] text/html
 
-The problem we're trying to solve is funding open culture. There are these new
-kinds of organizations that give value away freely, creating a "value vacuum,"
-pressure to compensate them for the value after the fact rather than
-beforehand. Here are some illustrative buckets:
-
-1. open source software projects
-1. consumer-grade projects like Wikipedia, Mozilla, and the Internet Archive
-1. digital content creators
-1. community-oriented coworking and hacker spaces
-
-In economic terms, these groups are providing *non-excludable* goods,
-specifically *common-pool resources* (if *rivalrous*, like coworking space), or
-*public goods* (if *non-rivalrous*, like software and other digital content).
-Here's the
-[matrix](https://en.wikipedia.org/wiki/Public_good#Definition_matrix):
-
-![goods matrix](matrix.png)
-
-There are three ways to make public goods economically sustainable:
-
-1. **Enclosure**. In other words, taking goods out of the commons, making them
-   excludable. Booooorrriiinnngg!
-
-1. **Taxation**. This is akin to enclosure, in that both involve *forcing* people
-   to pay for the thing.
-
-1. **Social norms**. At its worst, this looks like guilt-tripping and shaming.
-   At its best, it looks like inviting people to be grateful and generous and
-Do the Right Thing&trade;. This is us! &#x1f483; 
-
-If we pull this off then we may very well
-[create](https://www.youtube.com/watch?v=kWH3Waigi5Y#t=5h59m17s) a new
-[sector](https://en.wikipedia.org/wiki/Economic_sector#By_ownership) of the
-economy: public, private, voluntary, ... and open! And if we do that, hopefully
-we'll have increased the gratitude and generosity in the world by a fraction of
-a degree&mdash;maybe enough to get some interesting feedback loops going!
-
-
-## So what's next?
+We're building a [product](https://gratipay.com/) to help companies fund the
+open source software they depend on. Here are the projects we've got going on
+right now (links are to GitHub):
 
 1. Finish cleaning up from the Gratipocalypse:
    1. [Decouple](https://github.com/gratipay/gratipay.com/milestone/22) ([IG](https://github.com/gratipay/inside.gratipay.com/milestone/9))
