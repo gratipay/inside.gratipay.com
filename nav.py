@@ -46,8 +46,9 @@ class NavItem(OrderedDict):
             slugs = context.get('nav_children', [])
             for slug in slugs:
                 new_fs = join(fs, slug)
-                if not isdir(new_fs):
-                    new_fs += '.spt'
+                with_spt = new_fs + '.spt'
+                if isfile(with_spt):
+                    new_fs = with_spt
                 child = NavItem(website, self, new_fs, slug)
                 self[child.slug] = child  # Populate self as an OrderedDict
 

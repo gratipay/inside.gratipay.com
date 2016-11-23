@@ -5,7 +5,7 @@ nav_children = []
 
 Welcome to Gratipay! We are an [open organization](strategy), with a porous
 boundary between our *users* (people with an account on Gratipay) and our
-*collaborators* (people who are delivering Gratipay). The purpose of this
+*collaborators* (people who are providing Gratipay). The purpose of this
 website is to document Gratipay's business processes for our collaborators, and
 the purpose of this document is to help you take your first steps to becoming a
 Gratipay collaborator.
@@ -29,10 +29,10 @@ documentation exists for when you run into questions.
 don't have a GitHub account, [create
 one](https://github.com/join?source=gratipay-onboarding). Then [make a
 ticket](https://github.com/gratipay/inside.gratipay.com/issues/new?title=onboard+@me)
-titled "onboard @me" (where "me" is your GitHub username), and introduce yourself 
-and what you're interested in working on. Your onboarding ticket will be your place 
-to ask any and all questions you have as you orient yourself as a Gratipay
-collaborator.
+titled &ldquo;onboard @me&rdquo; (where &ldquo;me&rdquo; is your GitHub
+username), and introduce yourself and what you're interested in working on.
+Your onboarding ticket will be your place to ask any and all questions you have
+as you orient yourself as a Gratipay collaborator.
 
 After you make your onboarding ticket, someone from Gratipay will respond and
-you will be off and running! Welcome aboard! :-)
+you will be off and running! Welcome aboard! &#x1f483;
