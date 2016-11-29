@@ -3,8 +3,8 @@ import os
 nav_title = 'How To'
 nav_children = []
 for entry in os.listdir(os.path.join(website.www_root, 'howto')):
-   if entry.endswith('.spt') and entry not in ('.', '..', 'index.spt'):
-       nav_children.append(entry.rsplit('.', 1)[0])
+    if entry.endswith('.spt') and entry not in ('.', '..', 'index.spt'):
+        nav_children.append(entry.rsplit('.', 1)[0])
 nav_children.sort()
 [---]
 [---] text/html

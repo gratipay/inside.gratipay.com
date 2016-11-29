@@ -75,8 +75,8 @@ GitHub.
 Once the fix is approved and the PR is merged to `master` in `security`, here's
 how to deploy it:
 
- 1. Announce your intention on the [Radar](/howto/sweep-the-radar) so that no-one
-else deploys from the regular repo while you're deploying from `security`.
+ 1. Announce your intention on [Slack](/appendices/chat) so that no-one else
+deploys from the regular repo while you're deploying from `security`.
 
  1. Clone the `security` repo, then configure a couple more remotes:
 ```
