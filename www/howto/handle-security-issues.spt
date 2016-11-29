@@ -10,7 +10,7 @@ internal Gratipay collaborators.*
 ## HackerOne
 
 We [use HackerOne](https://hackerone.com/gratipay) to manage our security
-[queue](./manage-queues). Our program description lives [in this
+queue. Our program description lives [in this
 repo](https://github.com/gratipay/inside.gratipay.com/blob/master/www/appendices/security-program.md).
 Make changes using GitHub PRs like normal, and then copy and paste into
 HackerOne once merged.
