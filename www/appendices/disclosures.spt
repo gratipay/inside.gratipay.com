@@ -114,10 +114,8 @@ nav_title += ' (N={})'.format(len(reports))
 *These are all the vulnerability reports we've disclosed through [our HackerOne
 program](https://gratipay.com/about/security/hall-of-fame). We disclosed
 another fourteen under [our old
-        program](https://gratipay.com/about/security/hall-of-fame). See our
-[Security
-        Radar](https://github.com/gratipay/inside.gratipay.com/issues?q=is%3Aopen+label%3ARadar+label%3A%22Security+Team%22)
-for a listing of currently open reports.*
+program](https://gratipay.com/about/security/hall-of-fame). We currently have
+{{ n }} unresolved security issues.*
 
 {% for header, N, group in groups %}
 ## {{ header }} (N = {{ N }})
