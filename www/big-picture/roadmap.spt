@@ -8,11 +8,17 @@ help companies fund the open source software they depend on. Below are the
 projects we've got going on right now.  Links are to GitHub projects,
 milestones, and issues. Dive in! &#x1f483;
 
+_**Note:** Unfortunately, GitHub projects require repo access even to view.
+It's a new feature so hopefully GitHub will make them publishable soon.  [Tell
+them to](mailto:support@github.com), and then ping us on
+[Slack](/appendices/chat) or your [onboarding ticket](/big-picture/welcome) for
+access. Sorry!_ &#x1F61E;
+
 
 ## Product
 
 1. Finish cleaning up from the Gratipocalypse:
-   1. [Decouple](https://github.com/gratipay/gratipay.com/milestone/22) ([IG](https://github.com/gratipay/inside.gratipay.com/milestone/9))
+   1. [Relax Open Work Requirement](https://github.com/orgs/gratipay/projects/5?fullscreen=true)
    2. [Finish Team Basics](https://github.com/gratipay/gratipay.com/milestone/18)
    3. [Pivot](https://github.com/gratipay/gratipay.com/milestone/13)
 2. Knock pay-what-you-want out of the park:
