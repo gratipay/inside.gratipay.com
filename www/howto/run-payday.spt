@@ -34,4 +34,7 @@ record the result on Gratipay Bot's ticket.
     *excluded* from the total receiving amounts of those they gift, so
     as not to mislead the receiver about likely future earning.
   - When a supporter's card fails, we notify them once and they have 
-    to fix it before we start charging them again.
+    to fix it before we start charging them again. Gifts accumulate for
+    one week, so if a card fails and they fix it inside of the week, we
+    double-charge the next week. But if they go four months before fixing 
+    then we still only double-charge. [Details](https://github.com/gratipay/inside.gratipay.com/issues/888#issuecomment-259783617).
