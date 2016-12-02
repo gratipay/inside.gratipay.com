@@ -7,7 +7,6 @@ start a new payday ticket each Thursday morning. After each step,
 record the result on Gratipay Bot's ticket.
 
   1. [Review accounts](./review-accounts).
-  1. Migrate tips: `heroku config -s -a gratipay | ./env/bin/honcho run -e /dev/stdin ./env/bin/python ./bin/migrate-tips.py > migrate-tips.log`
   1. Take a backup using `bin/snapper.py`. Load the backup locally and make sure the homepage
      matches the production homepage.
   1. Check Gratipay Bot's ticket to get the payday number, `NNN`, from the title.
