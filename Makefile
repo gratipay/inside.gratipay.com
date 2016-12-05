@@ -15,7 +15,6 @@ env: requirements.txt requirements_tests.txt
 	./$(env_bin)/pip --version
 	./$(env_bin)/pip install --no-index --find-links=file:///$(PWD)/vendor -r requirements.txt
 	./$(env_bin)/pip install --no-index --find-links=file:///$(PWD)/vendor -r requirements_tests.txt
-	./$(env_bin)/pip install --editable .
 
 clean:
 	rm -rf env
