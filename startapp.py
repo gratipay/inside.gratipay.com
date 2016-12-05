@@ -17,7 +17,7 @@ for param in sys.argv:
 
 # by WSGI convention, we need to create webapp object
 # and by default most WSGI servers look for 'application'
-from inside_gratipay import website as application
+from inside_gratipay.main import website as application
 
 if __name__ == '__main__':
     from wsgiref.simple_server import make_server

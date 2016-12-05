@@ -6,9 +6,8 @@ from os.path import basename, dirname
 from aspen import Response
 from aspen.website import Website
 
-import canonizer
-import gfm
-from nav import NavItem
+from . import canonizer, gfm
+from .nav import NavItem
 
 
 website = Website(www_root='www', project_root='.')

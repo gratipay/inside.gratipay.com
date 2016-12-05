@@ -2,10 +2,13 @@ from __future__ import unicode_literals
 from pytest import yield_fixture
 
 from aspen.testing.client import Client
+from inside_gratipay.main import website
 
 @yield_fixture
 def client():
-    yield Client(www_root='www', project_root='')
+    client = Client(www_root='www', project_root='.')
+    client._website = website
+    yield client
 
 def test_disallowed_methods(client):
     for disallowed in ['TRACE', 'trAce', 'DELETE', 'PUT', 'OPTIONS', 'JUNK']:
