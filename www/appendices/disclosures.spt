@@ -1,35 +1,50 @@
-import json
-import urllib
+# -*- coding: utf-8 -*-
+from __future__ import absolute_import, division, print_function, unicode_literals
+
+import os
+from collections import OrderedDict
 from decimal import Decimal as D
 from os.path import dirname, join
+
+import requests
+
 
 nav_title = 'Security Disclosures'
 nav_children = []
 
-# Workaround a limitation in dev where urllib.urlopen often blocks indefinitely(?!)
-# www/appendices/disclosures.json is in .gitignore
 try:
-    raw = open(join(dirname(__file__), 'disclosures.json')).read()
-except IOError:
-    def get_raw():
-        url = 'https://hackerone.com/gratipay/reports/public'
-        return urllib.urlopen(url).read()
-else:
-    def get_raw():
-        return raw
+    hackerone_auth = (os.environ['HACKERONE_USERNAME'], os.environ['HACKERONE_PASSWORD'])
+except KeyError:
+    hackerone_auth = None
 
-# Manually override some risk assessments
-overrides = { 76303: '1'  # no bounty awarded because the reporter is part of the Gratipay team
-             }
 
-[---]
+def pages():
+    url = 'https://api.hackerone.com/v1/reports'
+    session = requests.Session()
+    session.auth = hackerone_auth
+    response = session.get( url
+                          , data={ 'filter[program][]': 'gratipay'
+                                 , 'page[size]': '100'
+                                 , 'disclosed_at__null': 'false'
+                                 , 'sort': '-reports.disclosed_at'
+                                  }
+                           )
+    while response and response.status_code == 200:
+        data = response.json()
+        yield data
+        next_url = data.get('links', {}).get('next', '')
+        if next_url:
+            response = session.get(url)
+        else:
+            response = None
 
-def group(reports):
+
+def formatted(reports):
     cur = ['9999', '99', '99']
     for report in reports:
 
         ts = []
-        year, month, day = report['disclosed_at'][:10].split('-')
+        year, month, day = report['attributes']['disclosed_at'][:10].split('-')
         new = [year, month, day]
         if year != cur[0]:
             ts.append(year)
@@ -47,37 +62,38 @@ def group(reports):
         ts_pop = '-'.join(ts)
 
         url = 'https://hackerone.com/reports/{id}'.format(**report)
-        title = report['title']
+        title = report['attributes']['title']
         yield ts_mute, ts_pop, url, title
 
 
-def grouped(all_reports):
-    groups = [ ('Severe Risk',                 40, [])
-             , ('Moderate Risk',               10, [])
-             , ('Mild Risk',                    1, [])
-             , ('Theoretical Risk',             0, [])
-             , ('No Risk',          float('-inf'), [])
-              ]
-    for report in all_reports:
-        for _, lo, reports in groups:
-            if report['bounty'] > lo:
-                reports.append(report)
-                break
-    for header, _, reports in groups:
-        reports = list(group(reports))
-        yield header, len(reports), reports
+[---]
+N = 0
+groups = OrderedDict([ ('',         ['Unclear',     0, []])
+                     , ('critical', ['Severe',      0, []])
+                     , ('high',     ['Moderate',    0, []])
+                     , ('medium',   ['Mild',        0, []])
+                     , ('low',      ['Theoretical', 0, []])
+                     , ('none',     ['No',          0, []])
+                      ])
 
+for page in pages():
+    for report in page.get('data', []):
+        severity = report.get('relationships', {}) \
+                         .get('severity', {}) \
+                         .get('data', {}) \
+                         .get('attributes', {}) \
+                         .get('rating', '').lower()
+        group = groups[severity]
+        N += 1
 
-raw = get_raw()
-reports = json.loads(raw)
-for report in reports:  # standardize bounty values
-    bounty = report.get('bounty', 0)
-    bounty = overrides.get(report['id'], bounty)
-    report['bounty'] = D(bounty)
-reports.sort(key=lambda r: r['bounty'])
-groups = grouped(reports)
+        disclosed_at = report.get('attributes', {}).get('disclosed_at', '')
+        link = 'https://hackerone.com/reports/{id}'.format(**report['attributes'])
+        if not disclosed_at:
+            report['title'] = link
+        group[1] += 1
+        group[2].append(report)
 
-nav_title += ' (N={})'.format(len(reports))
+nav_title += ' (N={})'.format(N)
 
 [---] text/html
 <style>
@@ -117,12 +133,12 @@ another fourteen under [our old
 program](https://gratipay.com/about/security/hall-of-fame). We currently have
 {{ n }} unresolved security issues.*
 
-{% for header, N, group in groups %}
-## {{ header }} (N = {{ N }})
+{% for header, nundisclosed, reports in groups.values() %}
+## {{ header }} Risk (disclosed = {{ len(reports) }})
 {% if not group %}
 
 None yet.{% else %}<table class="reports">
-    {% for ts_mute, ts_pop, url, title in group %}
+    {% for ts_mute, ts_pop, url, title in formatted(reports) %}
     <tr>
         <td class="ts">
             <span class="mute">{{ ts_mute }}</span><span class="pop">{{ ts_pop }}</span>
