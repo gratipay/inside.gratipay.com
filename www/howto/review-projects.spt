@@ -1,0 +1,28 @@
+nav_title="Review Projects"
+[---]
+[---] text/html
+
+In keeping with our [Terms of Service](https://gratipay.com/about/terms/), all
+projects on Gratipay are subject to a review process when they first apply, and
+as needed thereafter. Review happens in public in [the `project-review`
+repo](https://github.com/gratipay/project-review/issues).
+
+To help review projects,
+[watch](https://help.github.com/articles/watching-repositories/) the repo.
+Anyone who thinks that a project does not belong on Gratipay has to make a case
+publicly on GitHub, and we have to leave enough time for the community to weigh
+in before rejecting a project. [Chad Whitacre](https://github.com/whit537) has
+the final say.
+
+The only way to find out if a project will be approved is to
+[apply](https://gratipay.com/new) for a project. We don't answer, &ldquo;Will
+you accept foo?&rdquo; questions apart from the actual project application
+process.
+
+*Note: Issues in `project-review` before December, 2016 had more stringent
+requirements, explained in the [previous
+version](https://github.com/gratipay/inside.gratipay.com/blob/d73f4c7438bb2cc8781c0298deb3f7b2edeab176/www/howto/review-teams.spt)
+of this document. See also:
+&ldquo;[Gratipocalypse](https://gratipay.news/gratipocalypse-42fd0ec0d9e8)&rdquo;
+and &ldquo;[Gratipay
+2.0](https://gratipay.news/gratipay-2-0-2453d3c53077)&rdquo;.*
