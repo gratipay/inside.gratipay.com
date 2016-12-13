@@ -101,3 +101,18 @@ in the market.
 - https://github.com/gratipay/gip.rocks
 - https://github.com/gratipay/honcho
 - https://github.com/gratipay/environment.py
+
+
+# Security
+
+The mission of the security team is to protect our sensitive information.
+
+## Scope
+
+- [our HackerOne account](https://hackerone.com/gratipay)
+- the &ldquo;[Handle Security Issues](inside.gratipay.com/howto/handle-security-issues)&rdquo; document
+- [`Security Team`](https://github.com/gratipay/inside.gratipay.com/labels/Security%20Team) issues
+- the legacy [Hall of Fame](https://gratipay.com/about/security/hall-of-fame) page on gratipay.com
+- the @gratipay/security team
+- the https://github.com/gratipay/security repo
+- the security@gratipay.com email address
