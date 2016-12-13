@@ -6,12 +6,12 @@ from collections import OrderedDict
 from os.path import join, realpath, isfile, isdir, basename
 
 from aspen import resources
-from aspen.resources.static_resource import StaticResource
+from aspen.http.resource import Static
 
 
 def get_simplate_context(website, fs):
     resource = resources.get(website, fs)
-    return {} if isinstance(resource, StaticResource) else resource.pages[0]
+    return {} if isinstance(resource, Static) else resource.pages[0]
 
 
 class NavItem(OrderedDict):
