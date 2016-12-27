@@ -36,15 +36,15 @@ Please note that, as an [open organization](http://inside.gratipay.com/big-pictu
 
 We take security seriously, and we're proud to be able to offer bounties through HackerOne. That said, we recognize that the amounts are low. The reason is that we are a small company with only [a little revenue](https://gratipay.com/Gratipay/). We look forward to offering larger bounties as we grow. Thank you for your understanding, and please tell us in your report if you would prefer not to receive a bounty.
 
-
 ## Scope
 
 * [https://gratipay.com](https://gratipay.com)
 * [https://grtp.co](https://grtp.co) (not in scope for clickjacking)
 * any other [software we publish](https://github.com/gratipay)
 
-We target an "A" grade on SSLLabs for both [grtp.co](https://www.ssllabs.com/ssltest/analyze.html?d=grtp.co) and [gratipay.com](https://www.ssllabs.com/ssltest/analyze.html?d=gratipay.com), and consider it a theoretical riskif we drop below that.
+We target an "A" grade on SSLLabs for both [grtp.co](https://www.ssllabs.com/ssltest/analyze.html?d=grtp.co) and [gratipay.com](https://www.ssllabs.com/ssltest/analyze.html?d=gratipay.com), and consider it a theoretical risk if we drop below that.
 
+We also encourage researchers who want to test our platform to set up Gratipay locally. That way you can test all sorts of payloads to your hearts' content. Instructions can be found here: https://github.com/gratipay/gratipay.com#quick-start
 
 ## Out of scope
 
@@ -57,6 +57,11 @@ In the interest of the safety of our users, staff, the Internet at large and you
 *   Findings from applications or systems not listed in the ‘Scope’ section
 *   UI and UX bugs and spelling mistakes
 *   Network level Denial of Service (DoS/DDoS) vulnerabilities
+* 	Missing HTTP security headers, like:
+	* 	Strict-Transport-Security
+	* 	X-Frame-Options
+	* 	X-XSS-Protection
+* 	Login brute-forcing and account lockout not being enforced
 
 Things we do not want to receive:
 
@@ -66,6 +71,10 @@ Things we do not want to receive:
 ## How to Report a Security Vulnerability
 
 If you believe you’ve found a security vulnerability in one of our products or platforms, please [send it to us on HackerOne](https://hackerone.com/gratipay/reports/new).
+
+Please provide detailed reports with reproducible steps. If the report is not detailed enough to reproduce the issue, the issue will not be eligible for bounty. Bonus points for reports containing the affected code from our [GitHub repository](https://github.com/gratipay) and possibly even patches.
+
+Also we ask you nicely to cite references and not to copy/paste entire reports. If a researcher copies their entire report (or most of the key sections) from elsewhere, they will not be awarded a bounty.
 
 ### Email
 
