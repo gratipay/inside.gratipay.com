@@ -44,7 +44,7 @@ We take security seriously, and we're proud to be able to offer bounties through
 
 We target an "A" grade on SSLLabs for both [grtp.co](https://www.ssllabs.com/ssltest/analyze.html?d=grtp.co) and [gratipay.com](https://www.ssllabs.com/ssltest/analyze.html?d=gratipay.com), and consider it a theoretical risk if we drop below that.
 
-We also encourage researchers who want to test our platform to set up Gratipay locally. That way you can test all sorts of payloads to your hearts' content. Instructions can be found here: https://github.com/gratipay/gratipay.com#quick-start
+We also encourage researchers who want to test our platform to set up Gratipay locally. That way you can test all sorts of payloads to your heart's content. Instructions can be found here: https://github.com/gratipay/gratipay.com#quick-start
 
 ## Out of scope
 
