@@ -36,6 +36,7 @@ Please note that, as an [open organization](http://inside.gratipay.com/big-pictu
 
 We take security seriously, and we're proud to be able to offer bounties through HackerOne. That said, we recognize that the amounts are low. The reason is that we are a small company with only [a little revenue](https://gratipay.com/Gratipay/). We look forward to offering larger bounties as we grow. Thank you for your understanding, and please tell us in your report if you would prefer not to receive a bounty.
 
+
 ## Scope
 
 * [https://gratipay.com](https://gratipay.com)
@@ -44,7 +45,6 @@ We take security seriously, and we're proud to be able to offer bounties through
 
 We target an "A" grade on SSLLabs for both [grtp.co](https://www.ssllabs.com/ssltest/analyze.html?d=grtp.co) and [gratipay.com](https://www.ssllabs.com/ssltest/analyze.html?d=gratipay.com), and consider it a theoretical risk if we drop below that.
 
-We also encourage researchers who want to test our platform to set up Gratipay locally. That way you can test all sorts of payloads to your heart's content. Instructions can be found here: https://github.com/gratipay/gratipay.com#quick-start
 
 ## Out of Scope
 
@@ -68,13 +68,15 @@ Things we do not want to receive:
 *   Personally identifiable information (PII)
 *   Credit card holder data
 
+
 ## How to Report a Security Vulnerability
 
 If you believe you’ve found a security vulnerability in one of our products or platforms, please [send it to us on HackerOne](https://hackerone.com/gratipay/reports/new).
 
-Please provide detailed reports with reproducible steps. If the report is not detailed enough to reproduce the issue, the issue will not be eligible for bounty. Bonus points for reports containing the affected code from our [GitHub repository](https://github.com/gratipay) and possibly even patches.
+Please provide detailed reports with reproducible steps. If a report is not detailed enough to reproduce the issue, it will not be eligible for a bounty. We also ask you to cite references and not to copy/paste entire reports. Reports copied entirely or mostly from elsewhere will not be eligible for a bounty.
 
-Also we ask you nicely to cite references and not to copy/paste entire reports. If a researcher copies their entire report (or most of the key sections) from elsewhere, they will not be awarded a bounty.
+We especially appreciate reports containing the affected code from our [GitHub repository](https://github.com/gratipay), and possibly even patches, and we encourage you to test our platform by [setting up Gratipay locally](https://github.com/gratipay/gratipay.com#quick-start). That way you can test all sorts of payloads to your heart's content.
+
 
 ### Email
 
