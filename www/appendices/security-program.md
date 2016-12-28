@@ -57,16 +57,12 @@ In the interest of the safety of our users, staff, the Internet at large and you
 *   Findings from applications or systems not listed in the ‘Scope’ section
 *   UI and UX bugs and spelling mistakes
 *   Network level Denial of Service (DoS/DDoS) vulnerabilities
-*   Missing HTTP security headers, like:
-    * Strict-Transport-Security
-    * X-Frame-Options
-    * X-XSS-Protection
-*   Login brute-forcing and account lockout not being enforced
 
 Things we do not want to receive:
 
 *   Personally identifiable information (PII)
 *   Credit card holder data
+*   Duplicates of reports we've already [identified as No Risk](http://inside.gratipay.com/appendices/disclosures)
 
 
 ## How to Report a Security Vulnerability
