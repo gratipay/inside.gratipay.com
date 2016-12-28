@@ -46,7 +46,7 @@ We target an "A" grade on SSLLabs for both [grtp.co](https://www.ssllabs.com/ssl
 
 We also encourage researchers who want to test our platform to set up Gratipay locally. That way you can test all sorts of payloads to your heart's content. Instructions can be found here: https://github.com/gratipay/gratipay.com#quick-start
 
-## Out of scope
+## Out of Scope
 
 Any services hosted by 3rd party providers and services are excluded from scope.
 
