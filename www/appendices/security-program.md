@@ -43,10 +43,10 @@ We take security seriously, and we're proud to be able to offer bounties through
 * [https://grtp.co](https://grtp.co) (not in scope for clickjacking)
 * any other [software we publish](https://github.com/gratipay)
 
-We target an "A" grade on SSLLabs for both [grtp.co](https://www.ssllabs.com/ssltest/analyze.html?d=grtp.co) and [gratipay.com](https://www.ssllabs.com/ssltest/analyze.html?d=gratipay.com), and consider it a theoretical riskif we drop below that.
+We target an "A" grade on SSLLabs for both [grtp.co](https://www.ssllabs.com/ssltest/analyze.html?d=grtp.co) and [gratipay.com](https://www.ssllabs.com/ssltest/analyze.html?d=gratipay.com), and consider it a theoretical risk if we drop below that.
 
 
-## Out of scope
+## Out of Scope
 
 Any services hosted by 3rd party providers and services are excluded from scope.
 
@@ -62,10 +62,17 @@ Things we do not want to receive:
 
 *   Personally identifiable information (PII)
 *   Credit card holder data
+*   Duplicates of reports we've already [identified as No Risk](http://inside.gratipay.com/appendices/disclosures)
+
 
 ## How to Report a Security Vulnerability
 
 If you believe you’ve found a security vulnerability in one of our products or platforms, please [send it to us on HackerOne](https://hackerone.com/gratipay/reports/new).
+
+Please provide detailed reports with reproducible steps. If a report is not detailed enough to reproduce the issue, it will not be eligible for a bounty. We also ask you to cite references and not to copy/paste entire reports. Reports copied entirely or mostly from elsewhere will not be eligible for a bounty.
+
+We especially appreciate reports containing the affected code from our [GitHub repository](https://github.com/gratipay), and possibly even patches, and we encourage you to test our platform by [setting up Gratipay locally](https://github.com/gratipay/gratipay.com#quick-start). That way you can test all sorts of payloads to your heart's content.
+
 
 ### Email
 
