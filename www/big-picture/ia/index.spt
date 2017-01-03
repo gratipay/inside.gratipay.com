@@ -1,4 +1,4 @@
 nav_title = "Information Architecture"
 [---]
-request.redirect('/big-picture/product')
+website.redirect('/big-picture/product')
 [---] text/plain

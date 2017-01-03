@@ -1,5 +1,5 @@
 nav_title = "Source Code"
 nav_children = []
 [---]
-request.redirect('https://github.com/gratipay/')
+website.redirect('https://github.com/gratipay/')
 [---] text/html

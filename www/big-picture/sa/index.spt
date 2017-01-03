@@ -1,3 +1,3 @@
 [---]
-request.redirect('http://gratipay.readthedocs.io/')
+website.redirect('http://gratipay.readthedocs.io/')
 [---] text/html via markdown

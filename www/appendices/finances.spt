@@ -1,6 +1,6 @@
 nav_title = 'Finances'
 src = "https://github.com/gratipay/finances#readme"
 [---]
-request.redirect(src)  # GitHub sets `X-Frame-Options: deny` :-/
+website.redirect(src)  # GitHub sets `X-Frame-Options: deny` :-/
 [---] text/html via jinja2
 {% include "templates/iframed.html" %}
