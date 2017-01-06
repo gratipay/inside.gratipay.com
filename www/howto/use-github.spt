@@ -1,0 +1,23 @@
+# -*- coding: utf-8 -*- 
+nav_title = 'Use GitHub'
+[---]
+[---] text/html via markdown
+
+## Pull Requests
+
+Think of PRs as being owned by the Gratipay team as a whole. Anyone can add
+comments or commits to a PR at any time, and when two or more agree that it's
+ready, then it's ready. The only rule of thumb is that the last person to
+commit should not merge (we do break this rule occasionally, usually because we
+don't have enough reviewers and we need to keep shipping).
+
+Basically anyone who wants to care about a given PR is
+responsible to get in there and be part of the conversation and development. We
+need at least two people, but if a third sticks their head in then the PR now
+has three people who need to agree by consensus before someone besides the last
+committer merges.
+
+Unfortunately, GitHub's review workflow encourages a rather individualistic and
+bureaucratic relation, where a PR is owned by a single person, who has to seek
+formal approval from others—but that's not how we operate. Therefore, think of
+review requests and invitations and not requirements.
