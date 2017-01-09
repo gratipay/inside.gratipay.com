@@ -34,6 +34,8 @@ to process. :-)
 1. Make pull requests from topic branches in the relevant repo, rather than
 from personal forks.
 
+1. Every PR should be signed with your [GPG key](https://help.github.com/articles/signing-commits-using-gpg/).
+
 1. Every pull request belongs to the whole team. Don't be surprised when
 someone else pushes commits to a PR that you started! :)
 
