@@ -57,6 +57,7 @@ In the interest of the safety of our users, staff, the Internet at large and you
 *   Findings from applications or systems not listed in the ‘Scope’ section
 *   UI and UX bugs and spelling mistakes
 *   Network level Denial of Service (DoS/DDoS) vulnerabilities
+* Low severity issues that can be detected with tools such as [Hardenize](https://www.hardenize.com/) and [SecurityHeaders.io](https://securityheaders.io/).
 
 Things we do not want to receive:
 
