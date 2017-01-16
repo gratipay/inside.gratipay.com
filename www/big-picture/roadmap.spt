@@ -21,12 +21,7 @@ place, and making sure it has an impact and isn't squandered. They also care
 about being recognized for paying, boosting their reputation with developers.
 
 Our current active project is &ldquo;[Integrate
-npm](https://github.com/orgs/gratipay/projects/8?fullscreen=true).&rdquo;
-Current open-source crowdfunding options (Kickstarter, Patreon, Gratipay,
-OpenCollective, etc.) are consumer-grade. Our hunch is that a business-grade
-product with better aggregation can better serve the companies that want to pay
-for open source, because companies use hundreds or thousands of open source
-packages, not just a few.
+npm](https://github.com/gratipay/gratipay.com/issues/4148).&rdquo;
 
 
 ## Tech Debt
