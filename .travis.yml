@@ -1,17 +1,19 @@
 language: python
 sudo: false
+git:
+  depth: 5
 python:
 - '2.7'
 install:
 - if [ "${TRAVIS_BRANCH}" = "master" -a "${TRAVIS_PULL_REQUEST}" = "false" ]; then
   rm -rf env; fi
 - touch requirements.txt requirements_tests.txt
-- make env
+- make env -j2
 cache:
   directories:
   - env/bin
   - env/lib/python2.7/site-packages
-script: make test
+script: make test -j2
 branches:
   only:
   - master
