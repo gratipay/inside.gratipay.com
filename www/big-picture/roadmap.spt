@@ -3,40 +3,48 @@ nav_children = []
 [---]
 [---] text/html
 
-Our [organization](org-chart) delivers a [product](https://gratipay.com/) to
-help companies and others pay for open source. Below are the projects we've got
-going on right now. Links are to GitHub projects, milestones, and issues. Dive
-in! &#x1f483;
-
-_**Note:** Unfortunately, GitHub projects require repo access even to view.
-It's a new feature so hopefully GitHub will make them publishable soon.  [Tell
-them to](mailto:support@github.com), and then ping us on
+**Note:** _GitHub doesn't support public project boards. [Ask
+GitHub](mailto:support@github.com) for public projects, then ping us on
 [Slack](/appendices/chat) or your [onboarding ticket](/big-picture/welcome) for
 access. Sorry!_ &#x1F61E;
 
 
 ## Product
 
-1. Finish cleaning up from the Gratipocalypse:
-   2. [Finish Project Basics](https://github.com/gratipay/gratipay.com/milestone/18)
-2. Knock pay-what-you-want out of the park:
-   1. [Make Widgets 2.0](https://github.com/gratipay/grtp.co/milestone/2)
-   2. [Tighten Onboarding Flow](https://github.com/gratipay/gratipay.com/milestone/3)
-   3. [Solve Corporate Sponsorship of Open-Source](https://github.com/gratipay/gratipay.com/milestone/19)
-3. Knock take-what-you-want out of the park:
-   1. [Implement an AML Program](https://github.com/gratipay/gratipay.com/milestone/15)
-   2. [Expand Take-What-You-Want Beyond Gratipay](https://github.com/gratipay/gratipay.com/issues/3433)
+Our [organization](org-chart) delivers a [product](https://gratipay.com/) to
+help companies and others pay for open source, in order to
+[evolve](/big-picture/strategy) open organizations. &#x1f4b8; &#x1f4b8;
+&#x1f4b8; &#x1f483;
+
+Companies who want to pay for open source care about getting money to the right
+place, and making sure it has an impact and isn't squandered. They also care
+about being recognized for paying, boosting their reputation with developers.
+
+Our current active project is &ldquo;[Integrate
+npm](https://github.com/orgs/gratipay/projects/8?fullscreen=true).&rdquo;
+Current open-source crowdfunding options (Kickstarter, Patreon, Gratipay,
+OpenCollective, etc.) are consumer-grade. Our hunch is that a business-grade
+product with better aggregation can better serve the companies that want to pay
+for open source, because companies use hundreds or thousands of open source
+packages, not just a few.
 
 
 ## Tech Debt
 
 - [stop using immutable ids as primary key](https://github.com/gratipay/gratipay.com/issues/835)
 - other [embarrassments](https://github.com/gratipay/gratipay.com/labels/Pretty%20Embarrassing)
+- [see also](https://github.com/orgs/gratipay/projects/7?fullscreen=true)
 
 
 ## Accounting
 
-- [collect historical statement data](https://github.com/gratipay/finances/issues/26)
-- [settle on tooling](https://github.com/gratipay/finances/issues/22)
+- [Port to Beancount](https://github.com/gratipay/finances/issues/22)
+- [account for one month once ever](https://github.com/gratipay/finances/pulls)
 - [catch up on books](https://github.com/gratipay/finances/issues/3)
 - [resolve escrow imprecision](https://github.com/gratipay/inside.gratipay.com/issues/389#issuecomment-153929881)
+
+
+## Security
+
+- [Full security report](https://github.com/orgs/gratipay/projects/10?fullscreen=true)
+- [revise security program for higher signal](https://github.com/gratipay/inside.gratipay.com/issues/789)
