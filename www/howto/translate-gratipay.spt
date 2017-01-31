@@ -14,3 +14,18 @@ Transifex lets you request new languages if you don't see the one you're
 interested in.
 
 We need 50% of the strings translated for a language before it gets deployed.
+
+
+## Determine Context
+
+Since we are open source you can find the context for any string, though it
+takes a few clicks, and you have to be comfortable reading source code. On the
+&ldquo;Context&rdquo; tab for a string, look for &ldquo;Occurences.&rdquo; It
+should look something like this:
+
+![translation context screenshot](translation-context.png)
+
+Then
+find the file by browsing [our source
+code](https://github.com/gratipay/gratipay.com/tree/master/) to see how the
+string is used.
