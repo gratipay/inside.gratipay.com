@@ -13,6 +13,11 @@ If you would rather communicate with us privately, please send email to
 [support@gratipay.com](mailto:support@gratipay.com).
 
 
+## Slack
+
+Real-time chat happens [on Slack](/appendices/chat).
+
+
 ## GitHub
 
 We use [GitHub](https://github.com/gratipay) to manage our source code and
@@ -20,12 +25,6 @@ discuss issues. High-level discussion happens in the [Inside Gratipay
 repo](https://github.com/gratipay/inside.gratipay.com/issues). Lower-level
 discussion happens in the repo for the relevant project, mainly
 [gratipay.com](https://github.com/gratipay/gratipay.com/issues).
-
-
-## Radar
-
-We coordinate using [weekly Radar tickets](/howto/sweep-the-radar). They're a
-good place to start if you're new. Introduce yourself! :-)
 
 
 ## HackerOne
@@ -41,15 +40,16 @@ YouTube](https://www.youtube.com/user/gratipay/videos). Older ones are in [this
 playlist](http://www.youtube.com/playlist?list=PLivwfG4q6DTAYCmRDmGpljRrpR3yNNSFP).
 
 
-## Slack
-
-Real-time chat happens [on Slack](/appendices/chat).
-
-
 
 # Moribund Channels
 
 We don't really use these anymore. They're listed here as archives.
+
+
+## Radar
+
+We coordinate using [~~weekly Radar tickets~~](/howto/sweep-the-radar). They're
+a good place to start if you're new. Introduce yourself! :-)
 
 
 ## IRC
