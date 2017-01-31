@@ -43,13 +43,13 @@ easier to process. :-)
 1. Every PR should be explicitly approved by at least two people, you and at
    least one other, before it's merged.
 
+1. It's best for someone besides the last committer to merge.
+
 1. Basically anyone who wants to care about a given PR is responsible to get in
    there and be part of the conversation and development. We need at least two
 people, but if a third sticks their head in then the PR now has three people
 who need to agree by consensus before someone besides the last committer
 merges.
-
-1. It's best for someone besides the last committer to merge.
 
 1. True self-merging, with no review whatsoever, should be rare and
    documented&mdash;*except* ...
