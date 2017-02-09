@@ -12,7 +12,12 @@ To help review projects,
 Anyone who thinks that a project does not belong on Gratipay has to make a case
 publicly on GitHub, and we have to leave enough time for the community to weigh
 in before rejecting a project. [Chad Whitacre](https://github.com/whit537) has
-the final say.
+the final say. You're also welcome to add feedback in favor of a project being 
+approved.
+
+Projects with no objections can be tagged with either [approve-7-days](https://github.com/gratipay/project-review/labels/approve-7-days) 
+(if this is the owner's first project application) or [approve-3-days](https://github.com/gratipay/project-review/labels/approve-3-days) 
+(if the owner already has one or more approved projects. 
 
 The only way to find out if a project will be approved is to
 [apply](https://gratipay.com/new) for a project. We don't answer, &ldquo;Will
