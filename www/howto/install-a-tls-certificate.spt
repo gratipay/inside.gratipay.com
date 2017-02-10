@@ -1,0 +1,54 @@
+import random
+import string
+
+nav_title="Install a TLS Certificate"
+[---]
+pool = string.lowercase + string.digits
+random_subdomain = ''.join([random.choice(pool) for i in range(8)])
+[---] text/html
+
+Our certificate vendor is [Let's Encrypt](https://letsencrypt.org/), and the
+way to get a certificate from them is via the
+[certbot](https://certbot.eff.org/docs/using.html#manual) command-line tool.
+Go install that, then run it in the `certs` directory of an Inside Gratipay
+repo checkout, with each of the provided [configuration
+files](https://github.com/gratipay/inside.gratipay.com/tree/master/certs/conf/):
+
+```
+git clone git@github.com:gratipay/inside.gratipay.com.git
+cd certs
+certbot certonly -c conf/gratipay.com.ini
+```
+
+Each time, you'll have to agree to having your IP address publicly logged, and
+then you'll be prompted to verify ownership of the domains via [`http-01`
+challenges](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-7.2).
+The way to meet each challenge varies, as does the procedure for installing the
+certificate once you have it.
+
+Let's Encrypt enforces frequent cert rolling via 90-day expirations. Do we
+renew or reissue?
+
+
+## `gratipay.com`
+
+Go visit the [ACME
+Challenger](https://gratipay.com/.well-known/acme-challenge/deadbeef) (you'll
+have to login as an admin to use it). Go through the challenge cycle for
+`gratipay.com` and for each alias, by pasting the token in the URL (replacing
+`deadbeef` in the above link), and the authorization response in the form.
+
+Once you have the cert, install it [at
+Heroku](https://devcenter.heroku.com/articles/ssl-endpoint#provision-the-add-on):
+
+```
+heroku certs:update --app gratipay certs:add gratipay.com.crt gratipay.com.key
+```
+
+
+## `assets.gratipay.com`
+
+
+## `grtp.co`
+
+
