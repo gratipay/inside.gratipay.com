@@ -3,9 +3,13 @@
 ## Table of contents
 
 1) Introduction
+
 2) Scope
+
 3) Tools
+
 4) Results
+
 5) Notes
 
 ## Introduction
@@ -35,13 +39,13 @@ These are the tools that we use to evaluate Gratipay's overall security:
 
 Score is based on the following criteria:
     
-X-XSS-Protection
-X-Content-Type-Options
-X-Frame-Options
-Strict-Transport-Security
-Content-Security-Policy
-Public-Key-Pins
-Referrer-Policy
+- X-XSS-Protection
+- X-Content-Type-Options
+- X-Frame-Options
+- Strict-Transport-Security
+- Content-Security-Policy
+- Public-Key-Pins
+- Referrer-Policy
 
 **gratipay.com:** https://securityheaders.io/?q=gratipay.com&hide=on&followRedirects=on
 
