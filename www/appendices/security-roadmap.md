@@ -152,10 +152,10 @@ Your policy exceeds the allowed number of DNS queries. As a result, parts of it 
 | Subresource Integrity     | X |
 
 | APPLICATION SECURITY  | : |
-|---------------------------|---|
-| Frame Options | X |
+|-----------------------|---|
+| Frame Options         | X |
 | XSS Protection        | X |
-| Content Type Options   | ✓ |
+| Content Type Options  | ✓ |
 
 ## Notes
 
