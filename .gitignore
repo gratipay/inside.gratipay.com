@@ -4,3 +4,4 @@ local.env
 *.egg-info
 www/appendices/disclosures.json
 tests/.cache
+certs/
