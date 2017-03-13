@@ -52,11 +52,11 @@ def group(reports):
 
 
 def grouped(all_reports):
-    groups = [ ('Severe Risk',                 40, [])
-             , ('Moderate Risk',               10, [])
-             , ('Mild Risk',                    1, [])
-             , ('Theoretical Risk',             0, [])
-             , ('No Risk',          float('-inf'), [])
+    groups = [ ('Severity: Critical',        40, [])
+             , ('Severity: High',            10, [])
+             , ('Severity: Medium',           1, [])
+             , ('Severity: Low',              0, [])
+             , ('Severity: None', float('-inf'), [])
               ]
     for report in all_reports:
         for _, lo, reports in groups:

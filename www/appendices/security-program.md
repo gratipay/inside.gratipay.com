@@ -12,7 +12,7 @@ We ask that all researchers:
 
 *   Make every effort to avoid privacy violations, degradation of user experience, disruption to production systems, and destruction of data during security testing;
 *   Perform research only within the scope set out below;
-*   Review [our No Risk disclosures](http://inside.gratipay.com/appendices/disclosures) to avoid filing unwanted reports;
+*   Review [our Severity: None disclosures](http://inside.gratipay.com/appendices/disclosures) to avoid filing unwanted reports;
 *   Use the identified communication channels to report vulnerability information to us;
 *   Report vulnerabilities as soon as you discover them; and
 *   Keep information about any vulnerabilities you’ve discovered confidential between yourself and Gratipay until we’ve had 90 days to resolve the issue.
