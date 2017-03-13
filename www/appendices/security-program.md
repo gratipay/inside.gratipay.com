@@ -24,41 +24,31 @@ If you follow these guidelines when reporting an issue to us, we commit to:
 
 Please note that, as an [open organization](http://inside.gratipay.com/big-picture/welcome), our policy is to [fully disclose](http://inside.gratipay.com/appendices/disclosures) all resolved, informative, and not applicable issues, in the interest of openness and transparency for our customers.
 
-We take security seriously, and we're proud to be able to offer bounties through HackerOne. That said, we recognize that the amounts are low. The reason is that we are a small company with only [a little revenue](https://gratipay.com/Gratipay/). We look forward to offering larger bounties as we grow. Thank you for your understanding, and please tell us in your report if you would prefer not to receive a bounty.
 
+## Awards
 
-## Rewards
+If you are the first to report an issue, and we make a code or configuration change based on the issue, we will award you:
 
-If you are the first to report the issue, and we make a code or configuration change based on the issue, we we will award you:
+| Severity | CVSS       | Award       |
+|----------|:----------:|--------------|
+| Critical | 9.0 - 10.0 | $500 + heart coin + sticker\* + thanks |
+| High     | 7.0 - 8.9  | $100 + sticker\* + thanks |
+| Medium   | 4.0 - 6.9  | sticker\* + thanks |
+| Low      | 0.1 - 3.9  | [thanks](https://hackerone.com/gratipay/thanks) |
+| None     | 0          | ¯\\\_(ツ)\_/¯ |
 
-| Severity             | Reward       |
-|----------------------|--------------|
-| Critical (9.0 - 10.0)| $60-$200*    |
-| High (7.0-8.9)       | $40-$60*     |
-| Medium (4.0-6.9)     | Swag**       |
-| Low (0.1-3.9)        | Hall of Fame |
-| None (0)             | ¯\\\_(ツ)_/¯  |
-
-`*` Additionally, if the report includes a patch that resolves the issue, we will award a bonus.
-
-`**` Swag is only rewarded the first time you report an issue.
-
-## Criteria for awarding bounties
-
-We will use the following criteria to help us determine a final payout amount for each valid issue reported to us:
-
-* The report demonstrates beyond a doubt that that the issue is exploitable, with a working proof of concept or any other appropriate means.
-* The report includes a patch that resolves the issue.
-* Difficulty of exploitation and impact will be considered as well.
+<i>\* We only award a sticker for your first qualifying report.</i>
 
 
 ## Scope
 
 * [https://gratipay.com](https://gratipay.com)
 * [https://grtp.co](https://grtp.co) (not in scope for clickjacking)
-* any other [software we publish](https://github.com/gratipay) that is not listed in the "Out of Scope" section
+* [gratipay-bot](https://github.com/gratipay/bot)
+* [postgres.py](https://github.com/gratipay/postgres.py)
+* [environment.py](https://github.com/gratipay/environment.py)
 
-We target an "A" grade on SSLLabs for both [grtp.co](https://www.ssllabs.com/ssltest/analyze.html?d=grtp.co) and [gratipay.com](https://www.ssllabs.com/ssltest/analyze.html?d=gratipay.com), and consider it a theoretical risk if we drop below that.
+We target an "A" grade on SSLLabs for both [grtp.co](https://www.ssllabs.com/ssltest/analyze.html?d=grtp.co) and [gratipay.com](https://www.ssllabs.com/ssltest/analyze.html?d=gratipay.com), and consider it a low risk if we drop below that.
 
 
 ## Out of Scope
@@ -78,14 +68,7 @@ Things we do not want to receive:
 
 *   Personally identifiable information (PII)
 *   Credit card holder data
-*   Duplicates of reports we've already [identified as No Risk](http://inside.gratipay.com/appendices/disclosures)
-
-Out of scope domains:
-
-~~~
-aspen.io
-*.aspen.io
-~~~
+*   Duplicates of reports we've already [identified as Severity: None](http://inside.gratipay.com/appendices/disclosures)
 
 
 ## How to Report a Security Vulnerability
