@@ -112,7 +112,7 @@ nav_title += ' (N={})'.format(len(reports))
 </style>
 
 *These are all the vulnerability reports we've disclosed through [our HackerOne
-program](https://gratipay.com/about/security/hall-of-fame). We disclosed
+program](https://hackerone.com/gratipay). We disclosed
 another fourteen under [our old
         program](https://gratipay.com/about/security/hall-of-fame). See our
 [Security
