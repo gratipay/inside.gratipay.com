@@ -80,27 +80,6 @@ Please provide detailed reports with reproducible steps. If a report is not deta
 We especially appreciate reports containing the affected code from our [GitHub repository](https://github.com/gratipay), and possibly even patches, and we encourage you to test our platform by [setting up Gratipay locally](https://github.com/gratipay/gratipay.com#quick-start). That way you can test all sorts of payloads to your heart's content.
 
 
-### Email
-
-We prefer that you file reports on HackerOne, but we also accept reports via email to security@gratipay.com. Please include the following details with your report:
-
-*   Description of the location and potential impact of the vulnerability;
-*   A detailed description of the steps required to reproduce the vulnerability (POC scripts, screenshots, and compressed screen captures are all helpful to us); and
-*   Your name/handle and a link for recognition in our legacy [Hall of Fame](https://gratipay.com/about/security/hall-of-fame) (if reporting via email and not willing to join HackerOne).
-
-To encrypt your message, you may use [our PGP key](https://gratipay.com/about/security/pgp.asc):
-
-```sh
-$ curl https://gratipay.com/about/security/pgp.asc | gpg --import
-gpg: key 7A5F6B30: "Gratipay Security <security@gratipay.com>" imported
-gpg: Total number processed: 1
-gpg:               imported: 1
-$
-```
-
-We only use PGP to decrypt messages, never to encrypt messages or authenticate our identity. Instead, we'll create a ticket on HackerOne to track your report, which we'll invite you to join (see our [internal policy document](http://inside.gratipay.com/howto/handle-security-issues) for more details). If you do not wish to join HackerOne, we can acknowledge you instead on our legacy [Hall of Fame](https://gratipay.com/about/security/hall-of-fame).
-
-
 ### History
 
 Here is this program description's [version history](https://github.com/gratipay/inside.gratipay.com/commits/master/www/appendices/security-program.md).
