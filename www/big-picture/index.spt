@@ -1,5 +1,6 @@
 nav_title = 'The&nbsp;Big Picture'
-nav_children = ['welcome', 'mission', 'brand', 'strategy', 'customers', 'org-chart', 'roadmap']
+nav_children = ['welcome', 'mission', 'values', 'brand', 'strategy', 'customers', 'org-chart',
+                'roadmap']
 [---]
 [---] text/html
 
