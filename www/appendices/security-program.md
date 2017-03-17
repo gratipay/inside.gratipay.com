@@ -6,9 +6,7 @@
 ####################################################################################
 
 
-## Guidelines
-
-We ask that all researchers:
+Thank you for helping us keep Gratipay users safe! We ask that all researchers:
 
 *   Make every effort to avoid privacy violations, degradation of user experience, disruption to production systems, and destruction of data during security testing;
 *   Perform research only within the scope set out below;
@@ -25,21 +23,6 @@ If you follow these guidelines when reporting an issue to us, we commit to:
 Please note that, as an [open organization](http://inside.gratipay.com/big-picture/welcome), our policy is to [fully disclose](http://inside.gratipay.com/appendices/disclosures) all resolved, informative, and not applicable issues, in the interest of openness and transparency for our customers.
 
 
-## Awards
-
-If you are the first to report an issue, and we make a code or configuration change based on the issue, we will award you:
-
-| Severity | CVSS       | Award                                           |
-|:---------|:----------:|:------------------------------------------------|
-| Critical | 9.0 - 10.0 | $500 + [heart coin](http://inside.gratipay.com/big-picture/brand#heart-coins) + sticker\* + thanks          |
-| High     | 7.0 - 8.9  | $100 + sticker\* + thanks                       |
-| Medium   | 4.0 - 6.9  | sticker\* + thanks                              |
-| Low      | 0.1 - 3.9  | [thanks](https://hackerone.com/gratipay/thanks) |
-| None     | 0          | ¯\\\_(ツ)\_/¯                                   |
-
-<i>\* We only award a sticker for your first qualifying report.</i>
-
-
 ## Scope
 
 * [https://gratipay.com](https://gratipay.com)
@@ -51,7 +34,7 @@ If you are the first to report an issue, and we make a code or configuration cha
 We target an "A" grade on SSLLabs for both [grtp.co](https://www.ssllabs.com/ssltest/analyze.html?d=grtp.co) and [gratipay.com](https://www.ssllabs.com/ssltest/analyze.html?d=gratipay.com), and consider it a low risk if we drop below that.
 
 
-## Out of Scope
+### Out of Scope
 
 Any services hosted by 3rd party providers and services are excluded from scope.
 
@@ -71,13 +54,30 @@ Things we do not want to receive:
 *   Duplicates of reports we've already [identified as Severity: None](http://inside.gratipay.com/appendices/disclosures)
 
 
-## How to Report a Security Vulnerability
+## Reporting
 
 If you believe you’ve found a security vulnerability in one of our products or platforms, please [send it to us on HackerOne](https://hackerone.com/gratipay/reports/new).
 
 Please provide detailed reports with reproducible steps. If a report is not detailed enough to reproduce the issue, it will not be eligible for a bounty. We also ask you to cite references and not to copy/paste entire reports. Reports copied entirely or mostly from elsewhere will not be eligible for a bounty.
 
 We especially appreciate reports containing the affected code from our [GitHub repository](https://github.com/gratipay), and possibly even patches, and we encourage you to test our platform by [setting up Gratipay locally](https://github.com/gratipay/gratipay.com#quick-start). That way you can test all sorts of payloads to your heart's content.
+
+
+## Awards
+
+If you are the first to report an issue, and we make a code or configuration change based on the issue, we will award you:
+
+| Severity | CVSS       | Award                                           |
+|:---------|:----------:|:------------------------------------------------|
+| Critical | 9.0 - 10.0 | $500\* + [heart coin](http://inside.gratipay.com/big-picture/brand#heart-coins) + sticker\*\* + thanks          |
+| High     | 7.0 - 8.9  | $100\* + sticker\*\* + thanks                       |
+| Medium   | 4.0 - 6.9  | sticker\*\* + thanks                              |
+| Low      | 0.1 - 3.9  | [thanks](https://hackerone.com/gratipay/thanks) |
+| None     | 0          | ¯\\\_(ツ)\_/¯                                   |
+
+<i>\* For `gratipay.com`; for other components we award $50/$10.</i>
+
+<i>\*\* Awarded for your first qualifying report.</i>
 
 
 ### History
