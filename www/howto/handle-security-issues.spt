@@ -17,30 +17,27 @@ HackerOne once merged.
 
 Be aware of [how HackerOne assigns
 reputation](https://support.hackerone.com/hc/en-us/articles/205072269-What-affects-hacker-Reputation-).
-In particular, if you need to reticket anything from a HackerOne report,
-have the original researcher make the reticket so that they get the credit.
-When commenting on HackerOne, always use the "All participants" scope, so
-that the conversation is made public when we disclose the ticket once it's
+In particular, if you need to reticket anything from a HackerOne report, have
+the original researcher make the reticket so that they get the credit.  When
+commenting on HackerOne, always use the &ldquo;All participants&rdquo; scope,
+so that the conversation is made public when we disclose the ticket once it's
 resolved.
 
-"Request public disclosure" for all HackerOne tickets that you close as
-"Resolved", "Informative", or "Not Applicable", as soon you close them. If
-the researcher does not raise any objection, the report will be made public
-after 30 days. Use this time window to explain our disclosure policy to the
-researcher if necessary.
+&ldquo;Request public disclosure&rdquo; for all HackerOne tickets that you
+close as &ldquo;Resolved&rdquo;, &ldquo;Informative&rdquo;, or &ldquo;Not
+Applicable&rdquo;, as soon you close them. If the researcher does not raise any
+objection, the report will be made public after 30 days. Use this time window
+to explain our disclosure policy to the researcher if necessary.
 
-Our program defines four risk levels: theoretical, mild, moderate, and
-severe. HackerOne doesn't give us tools to manage this; they're all lumped
-under "Triaged". Therefore, we track these on the [Security
-Radar](https://github.com/gratipay/inside.gratipay.com/labels/Radar), with
-a fifth classification for unclear risk (i.e., not processed yet).
-Whenever you work with tickets in HackerOne be sure to update the queue on
-the Radar. When processing the queue, we should tend to work on issues in
-this order: severe, unclear, moderate, mild, theoretical.
+Our program uses the [CVSS v3.0](https://www.first.org/cvss) severity categories:
+None, Low, Medium, High, and Critical. Untriaged reports are of unknown
+severity. When processing the queue, we should tend to work on issues in this
+order: Critical, High, unknown, Medium, Low, None.
 
-Don't use the "Needs more info" state on HackerOne, because it doesn't show
-up across the top so it's easy for tickets to get lost in there. Just use
-"New" (unclear risk) and "Triaged" (in one of the four risk classifications).
+Don't use the &ldquo;Needs more info&rdquo; state on HackerOne, because it
+doesn't show up across the top so it's easy for tickets to get lost in there.
+Just use &ldquo;New&rdquo; (unclear risk) and &ldquo;Triaged&rdquo; (in one of
+the four risk classifications).
 
 
 ## Email
@@ -56,13 +53,13 @@ this case). If the researcher doesn't join HackerOne, offer to add them to the
 
 ## Code Changes
 
-For theoretical and mild risks, you may use our normal public GitHub workflow
-to make code changes (basically, submit a PR, label it "Review", and ping
-someone to review it).
+For Low- and Medium-severity issues, you may use our normal public GitHub
+workflow to make code changes (basically, submit a PR, label it
+&ldquo;Review&rdquo;, and ping someone to review it).
 
-Making code changes for moderate and severe risks is more complex, because we
-want to avoid telegraphing the presence of such vulnerabilities before they're
-fixed. Make changes in the [`security`
+Making code changes for High and Critical vulnerabilities is more complex,
+because we want to avoid telegraphing the presence of such vulnerabilities
+before they're fixed. Make changes in the [`security`
 repo](https://github.com/gratipay/security) in a topic branch. Make a PR (in
 the same repo) to help with code review, but don't actually comment on GitHub,
 only comment on HackerOne. Why? We don't have per-PR permissions, so if we have
@@ -84,9 +81,9 @@ git remote add upstream git@github.com:gratipay/gratipay.com.git
 git remote add heroku git@heroku.com:gratipay.git
 ```
 
- 1. Run `./release.sh` from your local copy of the `security` repo that has the
-new fix on `master` (the release script exits if not run on `master`). After
-pushing to Heroku, the release script will push to `master`'s default remote,
+ 1. Run `./deploy.sh` from your local copy of the `security` repo that has the
+new fix on `master` (the deploy script exits if not run on `master`). After
+pushing to Heroku, the deploy script will push to `master`'s default remote,
 which should be the private `security` repo in this case.
 
  1. Once the fix is deployed and verified and you're ready to announce it to

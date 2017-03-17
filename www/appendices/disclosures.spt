@@ -52,11 +52,11 @@ def group(reports):
 
 
 def grouped(all_reports):
-    groups = [ ('Severe Risk',                 40, [])
-             , ('Moderate Risk',               10, [])
-             , ('Mild Risk',                    1, [])
-             , ('Theoretical Risk',             0, [])
-             , ('No Risk',          float('-inf'), [])
+    groups = [ ('Severity: Critical',        40, [])
+             , ('Severity: High',            10, [])
+             , ('Severity: Medium',           1, [])
+             , ('Severity: Low',              0, [])
+             , ('Severity: None', float('-inf'), [])
               ]
     for report in all_reports:
         for _, lo, reports in groups:
@@ -112,12 +112,9 @@ nav_title += ' (N={})'.format(len(reports))
 </style>
 
 *These are all the vulnerability reports we've disclosed through [our HackerOne
-program](https://gratipay.com/about/security/hall-of-fame). We disclosed
+program](https://hackerone.com/gratipay). We disclosed
 another fourteen under [our old
-        program](https://gratipay.com/about/security/hall-of-fame). See our
-[Security
-        Radar](https://github.com/gratipay/inside.gratipay.com/issues?q=is%3Aopen+label%3ARadar+label%3A%22Security+Team%22)
-for a listing of currently open reports.*
+        program](https://gratipay.com/about/security/hall-of-fame).*
 
 {% for header, N, group in groups %}
 ## {{ header }} (N = {{ N }})
