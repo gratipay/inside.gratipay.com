@@ -75,9 +75,9 @@ If you are the first to report an issue, and we make a code or configuration cha
 | Low      | 0.1 - 3.9  | Self-XSS      | [thanks](https://hackerone.com/gratipay/thanks) |
 | None     | 0          | ¯\\\_(ツ)\_/¯ | ¯\\\_(ツ)\_/¯ |
 
-<i>\* For `gratipay.com`; for other components we award $50/$10.</i>
+\* For `gratipay.com`; for other components we award $50/$10.
 
-<i>\*\* Awarded for your first qualifying report.</i>
+\*\* Awarded for your first qualifying report.
 
 
 ### History
