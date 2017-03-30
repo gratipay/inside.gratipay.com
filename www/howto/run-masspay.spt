@@ -26,7 +26,7 @@ PayPal's MassPay feature.
    `update exchange_routes set fee_cap=1 where address='the email address';`, then
    start all over from step 2.
 1. When everything checks out, pull the trigger on the MassPay.
-1. Click the link, "View details of this Mass Payment."
+1. Click "View Activity Details," and then drill down on the new MassPay.
 1. Wait a few minutes, then refresh the page. You should see "N claimed" or
    something.
 1. Download the CSV they give you. It will save as `MassPayment_Details.csv`.
