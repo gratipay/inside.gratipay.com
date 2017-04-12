@@ -32,7 +32,7 @@ place files in there, and then commit and push them together.
 1. Click "History Search".
 1. Set the date range for the desired month (dates are inclusive).
 1. Click "Search".
-1. Click "Export Transactions".
+1. Click "Export".
 1. Check the "Select/Reset All Displayed Records" box.
 1. Export both QIF and CSV formats.
 1. Move the files to `new-alliance.{qif,csv}` in the new `year/month` directory.
