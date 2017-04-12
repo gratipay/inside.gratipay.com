@@ -11,16 +11,16 @@ place files in there, and then commit and push them together.
 ## PNC
 
 1. Log on to [PNC](https://www.pnc.com/).
-1. Select "Gratipay Operations" in the list of accounts.
-1. Click "Online Statements".
-1. Confirm that the "Statement for the period ending" dropdown shows the desired month.
-1. Click "Print Statement" (with a PDF icon).
+1. Select &ldquo;Gratipay Operations&rdquo; in the list of accounts.
+1. Click &ldquo;Online Statements&rdquo;.
+1. Confirm that the &ldquo;Statement for the period ending&rdquo; dropdown shows the desired month.
+1. Click &ldquo;Print Statement&rdquo; (with a PDF icon).
 1. Save the PDF as `pnc.pdf`
 1. Move the PDF into the new `year/month` directory.
-1. Click "Account Activity".
-1. Under "Posted Transactions > Search", set the date range to the desired month (dates are
+1. Click &ldquo;Account Activity&rdquo;.
+1. Under &ldquo;Posted Transactions > Search&rdquo;, set the date range to the desired month (dates are
    inclusive).
-1. Use the "Export" dropdown to download all four available formats (QFX, QBO, OFX, and CSV).
+1. Use the &ldquo;Export&rdquo; dropdown to download all four available formats (QFX, QBO, OFX, and CSV).
 1. Move the files to `pnc.{qfx,qbo,ofx,csv}` in the new `year/month` directory.
 1. Log out of PNC.
 
@@ -28,12 +28,35 @@ place files in there, and then commit and push them together.
 ## New Alliance
 
 1. Log on to [New Alliance](https://www.netit.financial-net.com/newalliancefcu/cgi-bin/ebs).
-1. Select "Gratipay Escrow" under "Overview > Balances".
-1. Click "History Search".
+1. Select &ldquo;Gratipay Escrow&rdquo; under &ldquo;Overview > Balances&rdquo;.
+1. Click &ldquo;History Search&rdquo;.
 1. Set the date range for the desired month (dates are inclusive).
-1. Click "Search".
-1. Click "Export".
-1. Check the "Select/Reset All Displayed Records" box.
+1. Click &ldquo;Search&rdquo;.
+1. Click &ldquo;Export&rdquo;.
+1. Check the &ldquo;Select/Reset All Displayed Records&rdquo; box.
 1. Export both QIF and CSV formats.
 1. Move the files to `new-alliance.{qif,csv}` in the new `year/month` directory.
 1. Log out of New Alliance.
+
+
+## PayPal
+
+1. Log on to [PayPal](https://www.paypal.com/).
+1. Click &ldquo;Reports&rdquo; at the top.
+1. Click &ldquo;Monthly.&rdquo;
+1. &ldquo;Download&rdquo; the PDF for the month in question.
+1. Move the files to `paypal.{pdf,csv}` in the new `year/month` directory.
+1. Log out of PayPal.
+
+So nice and easy! But unfortunately, CSVs are apparently busted for us, both in
+&ldquo;Monthly&rdquo; and &ldquo;Custom.&rdquo; The workaround is to call
+support and have them export a CSV and mail it to us. &#x1f61e;
+
+
+## Braintree
+
+1. Log on to [Braintree](https://www.braintreegateway.com/login).
+1. Click &ldquo;Documents > Merchant Statements&rdquo; at the top.
+1. Click the &ldquo;PDF&rdquo; and &ldquo;CSV&rdquo; links for the month in question.
+1. Move the files to `braintree.{pdf,csv}` in the new `year/month` directory.
+1. Log out of Braintree.
