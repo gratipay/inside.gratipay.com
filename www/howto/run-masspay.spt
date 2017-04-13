@@ -12,7 +12,8 @@ PayPal's MassPay feature.
    script is read-only and can safely be run multiple times.
 1. Log in to PayPal and navigate to the MassPay feature.
 1. Upload the `.*.paypal.csv` file from step 2 and write a note with subject
-   "Gratipay Payout" and body "Here you go! Thanks for using Gratipay! :-)"
+   &ldquo;Gratipay Payout&rdquo; and body &ldquo;Here you go! Thanks for using 
+   Gratipay! :-)&rdquo;
 1. Submit the MassPay and double check the amount and the fee against the `stdout`
    from step 1 (not to be confused with the output files from step 1!). PayPal
    caps the fee at $1 for U.S. accounts and $20 for non-U.S. accounts.
@@ -26,9 +27,9 @@ PayPal's MassPay feature.
    `update exchange_routes set fee_cap=1 where address='the email address';`, then
    start all over from step 2.
 1. When everything checks out, pull the trigger on the MassPay.
-1. Click "View Activity Details," and then drill down on the new MassPay.
-1. Wait a few minutes, then refresh the page. You should see "N claimed" or
-   something.
+1. Click &ldquo;View Activity Details,&rdquo; and then drill down on the new MassPay.
+1. Wait a few minutes, then refresh the page. You should see &ldquo;N claimed&rdquo;
+   or something.
 1. Download the CSV they give you. It will save as `MassPayment_Details.csv`.
 1. Move the `MassPayment_Details.csv` file to `../logs/masspay/yyyy-mm-dd.report.paypal.csv`.
 1. `cd ../../masspay` and `git commit` the four new files.
@@ -36,4 +37,5 @@ PayPal's MassPay feature.
    using the `record-an-exchange` endpoint. When prompted enter your own personal Gratipay 
    API key. Make sure this works by inspecting the `exchanges` table. **Don't forget this 
    step!**
-1. Note the result on the payday ticket: "MassPay done and posted back for N users."
+1. Note the result on the payday ticket: &ldquo;MassPay done and posted back for N
+   users.&rdquo;
