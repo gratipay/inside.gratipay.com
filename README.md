@@ -26,8 +26,6 @@ virtualenv, install dependencies and run it manually with:
 
 ```
 virtualenv env
-./env/bin/pip install -f vendor -r requirements.txt
-./env/bin/python startapp.py
+env\Scripts\pip install -f vendor -r requirements.txt
+env\Scripts\python startapp.py
 ```
-
-
