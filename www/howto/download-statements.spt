@@ -45,12 +45,12 @@ place files in there, and then commit and push them together.
 1. Click &ldquo;Reports&rdquo; at the top.
 1. Click &ldquo;Monthly.&rdquo;
 1. &ldquo;Download&rdquo; the PDF for the month in question.
+1. Now click over to "Activity Download" in the left navigation.
+1. Set the date range as "Past Month" and double-check that the resulting dates are as desired (dates are inclusive).
+1. Click "Create Report."
+1. Wait for "In progress" to change to a "Download" link, and click it.
 1. Move the files to `paypal.{pdf,csv}` in the new `year/month` directory.
 1. Log out of PayPal.
-
-So nice and easy! But unfortunately, CSVs are apparently busted for us, both in
-&ldquo;Monthly&rdquo; and &ldquo;Custom.&rdquo; The workaround is to call
-support and have them export a CSV and mail it to us. &#x1f61e;
 
 
 ## Braintree
