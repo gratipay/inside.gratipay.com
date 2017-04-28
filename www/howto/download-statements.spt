@@ -41,6 +41,8 @@ place files in there, and then commit and push them together.
 
 ## PayPal
 
+*paypal@gratipay.com*
+
 1. Log on to [PayPal](https://www.paypal.com/).
 1. Click &ldquo;Reports&rdquo; at the top.
 1. Click &ldquo;Monthly.&rdquo;
@@ -51,6 +53,13 @@ place files in there, and then commit and push them together.
 1. Wait for &ldquo;In progress&rdquo; to change to a &ldquo;Download&rdquo; link, and click it.
 1. Move the files to `paypal.{pdf,csv}` in the new `year/month` directory.
 1. Log out of PayPal.
+
+
+## PayPal 2
+
+*vendors@gratipay.com*
+
+Follow the same procedure as above, but name the files `paypal-2.{csv,pdf}`.
 
 
 ## Braintree
