@@ -51,7 +51,7 @@ heroku certs:update --app gratipay fullchain.pem privkey.pem
 Once you're done, `rm -rf tmp` to clear out sensitive files from your laptop.
 
 
-## `{assets,downlaods}.gratipay.com`
+## `{assets,downloads}.gratipay.com`
 
 Our `assets.gratipay.com` CDN uses `gratipay.com/assets` as its origin server,
 and we have a read-only ACME Challenger
