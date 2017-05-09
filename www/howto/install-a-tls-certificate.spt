@@ -7,18 +7,16 @@ pool = string.lowercase + string.digits
 random_subdomain = ''.join([random.choice(pool) for i in range(8)])
 [---] text/html
 
-Our certificate vendor is [Let's Encrypt](https://letsencrypt.org/), and the
-way we get certificates from them is via their
-[certbot](https://certbot.eff.org/docs/using.html#manual) command-line tool. We
-have several domains to secure, plus aliases, and the way to verify ownership
-and install the certificate vary for each. They are described below.
-
-Let's Encrypt enforces frequent cert rolling via 90-day expirations. Once we
-hit our first expiration cycle and sort out how to renew, we should update
-these docs. Eventually we can explore further automation.
+Our certificate vendor is [Let's Encrypt](https://letsencrypt.org/), and Heroku
+has [wonderful
+integration](https://devcenter.heroku.com/articles/automated-certificate-management)
+to provide certificate renewal automatically. We're able to take advantage of
+that for `gratipay.com` and `grtp.co`. For our domains hosted at MaxCDN, the
+process is more manual, using the
+[certbot](https://certbot.eff.org/docs/using.html#manual) command-line tool.
 
 
-## `gratipay.com`
+## `{assets,downloads}.gratipay.com`
 
 Install `certbot` locally, then run it in the `certs` directory of an Inside
 Gratipay repo checkout, with the provided [configuration
@@ -27,83 +25,22 @@ file](https://github.com/gratipay/inside.gratipay.com/tree/master/certs/conf/):
 ```
 git clone git@github.com:gratipay/inside.gratipay.com.git
 cd certs
-certbot certonly -c gratipay.com.ini
+certbot certonly -c assets.gratipay.com.ini
 ```
 
 You'll have to agree to having your IP address publicly logged, and then you'll
-be prompted to verify ownership of the domains via [`http-01`
-challenges](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-7.2).
-For that, visit the [ACME
-Challenger](https://gratipay.com/.well-known/acme-challenge/) (you'll have to
-login as an admin to use it). Go through the challenge cycle for `gratipay.com`
-and for each alias (there are a bunch, including `www.*` variants), by
-appending the token to the above link, and then entering the authorization
-response in the form you find there.
+be prompted to verify ownership of the domains via [`dns-01`
+challenges](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-7.4)
+(`http-01` isn't even possible with MaxCDN). Update the relevant DNS records in
+DNSimple, and await verification.
 
-Once you have the cert, install it [at
-Heroku](https://devcenter.heroku.com/articles/ssl-endpoint#provision-the-add-on):
+You should end up with one cert, which we will use with both domains. Login toA
+[MaxCDN](https://www.maxcdn.com/) (creds are in 1Password). Go to Account > SSL
+and edit the one certificate you find there, pasting in values copied from the
+files you find under `tmp/archive`:
 
-```
-cd tmp/live/gratipay.com/
-heroku certs:update --app gratipay fullchain.pem privkey.pem
-```
+- `cert1.pem` &rarr; SSL Certificate (Cert)
+- `privkey1.pem` &rarr; SSL Key
+- `fullchain.pem` &rarr; Certificate Authority (CA) Bundle
 
 Once you're done, `rm -rf tmp` to clear out sensitive files from your laptop.
-
-
-## `{assets,downloads}.gratipay.com`
-
-Our `assets.gratipay.com` CDN uses `gratipay.com/assets` as its origin server,
-and we have a read-only ACME Challenger
-[endpoint](https://assets.gratipay.com/.well-known/acme-challenge/deadbeef)
-under there. Therefore, the process to verify the domain is just like for
-`gratipay.com`: create the challenge response in the normal [ACME
-challenger](https://gratipay.com/.well-known/acme-challenge/), and Let's
-Encrypt should find what it needs in the right place.
-
-However, we use the same cert for `downloads.*` as for `assets.*`, since both
-are hosted at MaxCDN. But since `downloads` is a PUSH zone, you have to
-(manually) upload a file via FTP in order to verify the domain. Here's how to
-[reset](https://www.maxcdn.com/one/tutorial/reset-push-ftp-password/) the ftp
-password. Aaaaaaaaaand there's no way to serve a hidden directory, so you have
-to use [DNS](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-7.4)
-verification after all, so you may as well use it for `assets.*`, too (how do
-we write a config file that splits the authenticators by domain?). Sorry.
-&#x1f61e;
-
-(P.S. The reason we don't just do *all* verification via DNS is because that's
-harder to automate &hellip; though I guess DNSimple does have [an
-API](https://developer.dnsimple.com/v2/zones/records/#create). Hmm &hellip;)
-
-To install the cert, login to [MaxCDN](https://www.maxcdn.com/) (creds are in
-LastPass). Go to Account > SSL to add the new certificate, then navigate to
-EdgeSSL > SNI for each zone, and select the new cert. After installing for both
-zones, go back to Account > SSL and delete the old cert.
-
-Delete the TXT records from DNS.
-
-
-## `grtp.co`
-
-```
-ssh root@grtp.co
-cd certs/
-```
-
-You should find a
-[`certbot-auto`](https://certbot.eff.org/docs/install.html#certbot-auto)
-executable there, along with a `certbot.ini` configuration file, some logfiles,
-etc. I *think* all you need to do is `./certbot-auto renew`, but since we're
-still in our first cert cycle with Let's Encrypt, it's hard to know for sure.
-&#x1f60c;
-
-To verify domains, I ran `./certbot-auto certonly -c certbot.ini`, creating
-(and subsequently cleaning up) files under:
-
-```
-~grtp.co/production/www/.well-known/acme-challenge/
-```
-
-The cert and key are symlinked into `/etc/nginx/certs/`, so you shouldn't need
-to do anything other than `/etc/init.d/nginx reload` once the cert/key are
-updated.
