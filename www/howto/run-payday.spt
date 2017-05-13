@@ -6,10 +6,6 @@ Here's how to run payday. Gratipay Bot
 start a new payday ticket each Thursday morning. After each step, 
 record the result on Gratipay Bot's ticket.
 
-*Note: Since `./payday.sh` runs the payday script using production configuration from Heroku, 
-where `ASPEN_PROJECT_ROOT` is set to `/app`, you should symlink your local repo checkout to
-`/app` so the payday script can find it.*
-
   1. [Review accounts](./review-accounts).
   1. Take a backup using `bin/snapper.py`. Load the backup locally and make sure the homepage
      matches the production homepage.
