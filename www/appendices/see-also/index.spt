@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 
 nav_title = 'See Also'
@@ -120,4 +121,4 @@ and [crowdsourcing.org's](http://www.crowdsourcing.org/directory)*
  - [ko-fi](https://ko-fi.com/) - Get support from people who love your work.
  - [beerpay](https://beerpay.io/) - The way to support your Open Source projects in GitHub.
  - [Jamatto](https://jamatto.com) - Ever wanted to pay or be paid small amounts online? Now you can.
- - [FundRequest](https://fundrequest.io/) — A platform for rewarding open-source contributions
+ - [FundRequest](https://fundrequest.io/) - A platform for rewarding open-source contributions
