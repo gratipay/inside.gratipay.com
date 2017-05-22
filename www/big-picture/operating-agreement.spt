@@ -7,18 +7,18 @@ Gratipay, LLC is a worker-owned cooperative, organized under and subject to the
 laws of the Commonwealth of Pennsylvania in the United States of America. In
 this document, &ldquo;Gratipay,&rdquo; &ldquo;the company,&rdquo; and
 &ldquo;the cooperative&rdquo; refer to Gratipay, LLC. This is the operating
-agreement that defines how the members of Gratipay govern the cooperative,
-manage its money, and share its profits and losses.
+agreement that defines how the members of Gratipay govern the cooperative.
 
 
 ## Basic Definitions
 
 A cooperative is a democratically governed, for-profit company. Non-cooperative
 companies weight power by equity, one vote per share. Cooperatives distribute
-power according to the fundamental equality of all individuals, &ldquo;one
-member, one vote.&rdquo; Gratipay subscribes to the [principles and values of
-the cooperative movement](./values), and intends for this operating agreement
-to be consistent with those values.
+power according to the fundamental equality of all natural persons (also called
+&ldquo;individuals&rdquo; in this document), &ldquo;one member, one
+vote.&rdquo; Gratipay subscribes to the [principles and values of the
+cooperative movement](./values), and intends for this operating agreement to be
+consistent with those values.
 
 An LLC is a Limited Liability Company, a flexible legal structure that protects
 its owners from legal liability, while avoiding the double-taxation that comes
@@ -34,12 +34,11 @@ cooperative.
 
 ## Membership
 
-Gratipay members are natural persons (also called &ldquo;individuals&rdquo; in
-this document). All Gratipay members share in both the work of the cooperative
-and its profits and loses (&ldquo;active&rdquo; members), as opposed to only
-sharing in the profits and losses without sharing in the work
-(&ldquo;passive&rdquo; members). Gratipay is member-managed, not
-manager-managed. Gratipay members are not employees. Members may bind the
+Gratipay members are individuals. They share in both the work of the
+cooperative and its profits and loses (they are &ldquo;active&rdquo; members),
+as opposed to only sharing in the profits and losses without sharing in the
+work (they are not &ldquo;passive&rdquo; members). Gratipay is member-managed,
+not manager-managed. Gratipay members are not employees. Members may bind the
 company.
 
 Gratipay invites new members by a vote of 75% of the existing membership on a
@@ -55,9 +54,9 @@ member against their will for any reason at any time, by a vote of 75% of the
 remaining membership. Gratipay automatically and immediately removes a member
 (no vote required) if they:
 
-- abstain from three votes in a row,
+- are absent from three votes in a row,
 - access a system without permission,
-- spend money without authorization, or
+- spend beyond their allowance, or
 - violate the [code of conduct](../howto/behave-well).
 
 Gratipay may reinvite any individual at any time, but a proposal to reinvite
@@ -85,13 +84,16 @@ is:
 - seven if there are at least seven but fewer than 35 members, and
 - 20% (rounded down) if there are 35 or more members.
 
+If there is not consensus on a call to vote, then any member may call for a vote
+to call a vote. The call to call is open for 24 hours and requires 75% to pass.
+
 Members cast votes using comments and/or reactions on GitHub issues. Any member
 may count the vote and publish their count. The final count is by consensus of
 those members who publish a count within the first 24 hours after voting
 closes.
 
 The following decisions always require a vote with a two-week voting period and
-75% needed to pass:
+75% in favor to pass:
 
 - adding a member,
 - removing a member against their will,
@@ -99,10 +101,10 @@ The following decisions always require a vote with a two-week voting period and
 - selling or dissolving Gratipay, and
 - accepting outside financing.
 
-Gratipay is open-source software. In the case of irreconcilable conflict,
+Gratipay software is open source. In the case of irreconcilable conflict,
 members in the minority have the option to fork.
 
-Gratipay maintains a record of it decisions using [GitHub
+Gratipay maintains a record of it decisions in [GitHub
 issues](https://github.com/search?q=user%3Agratipay&type=Issues).
 
 
@@ -123,32 +125,39 @@ ticket](https://github.com/gratipay/inside.gratipay.com/issues?q=label%3AOnboard
 
 ## Money
 
-guaranteed payments, retained earnings, profit distributions
+Gratipay makes guaranteed payments to its members on a weekly basis, using the
+same &ldquo;take-what-you-want&rdquo; (&ldquo;twyw&rdquo;) system by which it
+also distributes money to certain of its independent contractors. This system
+is integrated into the Gratipay.com website.
 
-twyw for all, ya?
+At the end of Gratipay's fiscal year, which runs from June 1 through May 31,
+Gratipay's profits or losses are allocated to each member's capital account
+based on the amount of time they were a member during the preceding year. When
+Gratipay removes a member, the balance in their capital account is allocated to
+each remaining member's capital account in the same fashion. Gratipay retains
+all earnings. Gratipay does not distribute profits apart from guaranteed
+payments.
 
-Members are entitled to a debit card, and are authorized to spend up to an
-equal share of Gratipay's operating cash in a given calendar month, based on
-the account balance and the number of members at the end of the previous month.
-For example, if at the end of April the account balance is $10,000 and the
-number of members is eight, then each member is authorized to spend up to
-$1,250 in May. As discussed above, all members have access to Gratipay's
-financial statements to inform their decision-making.
+Members are entitled to a debit card, with which they are allowed to spend up
+to an equal share of Gratipay's operating cash in a given calendar month, based
+on the account balance and the number of members at the end of the previous
+month. Members have no allowance in their first month. For example, if at the
+end of April the account balance is $10,000 and the number of members is eight,
+then each member is authorized to spend up to $1,250 in May.
 
-All expenses must be authorized by one or more members. If authorized by more
-than one member then expenses count against their monthly allocation in a ratio
-determined by consensus of the members involved. So, for example, a bill for
-$100 might be authorized by three members at 50%, 30%, and 20%, so that their
-monthly allocations would .
+All expenses are authorized by one or more members, and authorized expenses go
+against each member's monthly allowance. By default, the member whose card is
+used authorizes the expense. Even when charged to a single card, multiple
+members may co-authorize an expense. The expense counts against their total
+monthly allowance in a ratio determined by consensus of the members involved.
+So, for example, payment of an invoice for $200 might be authorized by three
+members at 50%, 30%, and 20%, so that their available monthly allowance would
+decrease by $100, $60, and $40 respectively.
+
+Gratipay maintains financial records [on GitHub](/appendices/finances).
 
 
-### Profits and Losses
+## Details
 
-capital contributions, capital accounts
-guaranteed payments, retained earnings, profit distributions
-
-twyw for all, ya?
-
-### Records.
-
-Gratipay maintains financial records in GitHub and on Inside Gratipay.
+This document constitutes the entire agreement between Gratipay and its
+members. Members may not sell or transfer their membership.
