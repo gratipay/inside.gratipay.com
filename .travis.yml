@@ -14,9 +14,6 @@ cache:
   - env/bin
   - env/lib/python2.7/site-packages
 script: make test -j2
-branches:
-  only:
-  - master
 deploy:
   provider: heroku
   # Required for some reason (default anvil strategy doesn't work)
