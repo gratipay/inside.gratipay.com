@@ -34,18 +34,21 @@ cooperative.
 
 ## Membership
 
+Gratipay members are natural persons (also called &ldquo;individuals&rdquo; in
+this document). All Gratipay members share in both the work of the cooperative
+and its profits and loses (&ldquo;active&rdquo; members), as opposed to only
+sharing in the profits and losses without sharing in the work
+(&ldquo;passive&rdquo; members). Gratipay is member-managed, not
+manager-managed. Gratipay members are not employees. Members may bind the
+company.
 
-Gratipay is a member-managed company (we are not manager-managed). That is, all
-members share in both the work of the cooperative and its profits and loses
-(&ldquo;active&rdquo; members), as opposed to only sharing in the profits and
-losses without sharing in the work (&ldquo;passive&rdquo; members). Members are
-natural persons (also called &ldquo;individuals&rdquo; in this document).
-
-Members may bind the company.
-
-Gratipay invites new members by a vote of 75% of the existing membership. The
-way to earn an invitation is to [collaborate in our work](./welcome) for a long
-time.
+Gratipay invites new members by a vote of 75% of the existing membership on a
+proposal brought by any existing member. In general, the way to earn an
+invitation is to [collaborate in our work](./welcome) for a long time. Invited
+individuals must provide an [SSN or
+ITIN](https://www.irs.gov/individuals/international-taxpayers/taxpayer-identification-numbers-tin)
+and consent to this operating agreement via the Gratipay.com website in order
+to become a member of Gratipay.
 
 Members may remove themselves from Gratipay at any time. Gratipay may remove a
 member against their will for any reason at any time, by a vote of 75% of the
@@ -53,51 +56,69 @@ remaining membership. Gratipay automatically and immediately removes a member
 (no vote required) if they:
 
 - abstain from three votes in a row,
+- access a system without permission,
 - spend money without authorization, or
 - violate the [code of conduct](../howto/behave-well).
 
-Gratipay may reinvite an individual at any time, with the exception that an
-individual removed twice for spending money without authorization and/or
-violating the code of conduct may not be invited ever again.
+Gratipay may reinvite any individual at any time, but a proposal to reinvite
+someone must clearly indicate the circumstances of any and all previous
+removals.
 
-
-### Records
-
-Gratipay maintains membership records as follows: ....
+Gratipay maintains membership records [on
+Gratipay.com](https://gratipay.com/Gratipay/distributing/).
 
 
 ## Governance
 
 Gratipay makes decisions in online [channels](../appendices/channels),
-primarily GitHub. The basic procedure is to announce an intention and leave it
-out there for a certain amount of time. If no-one objects then do it. If
-another member objects then work it out. If you can't work it out then we vote.
+primarily GitHub. Most decisions are by general consent. That is, a member
+announces an intention and waits for an amount of time proportional to the
+importance of the decision. If no-one objects then the matter is decided. If
+another member objects then the members involved work out a consensus. If they
+can't work it out then we vote.
 
-Any member may call for a vote on anything at any time. Voting is open for one
-week, and a simple majority (50%) carries the proposal. The quorum is:
+Any member may call for a vote on anything at any time. In general, voting is
+open for one week, and a simple majority (50%) carries the proposal. The quorum
+is:
 
 - 100% if there are fewer than seven members,
 - seven if there are at least seven but fewer than 35 members, and
 - 20% (rounded down) if there are 35 or more members.
 
-Members cast votes using comments and/or reactions on GitHub issues. Every
-member is responsible for counting the vote.
+Members cast votes using comments and/or reactions on GitHub issues. Any member
+may count the vote and publish their count. The final count is by consensus of
+those members who publish a count within the first 24 hours after voting
+closes.
 
 The following decisions always require a vote with a two-week voting period and
 75% needed to pass:
 
-- changing [the big picture](./),
+- adding a member,
 - removing a member against their will,
+- changing [the big picture](./),
 - selling or dissolving Gratipay, and
 - accepting outside financing.
 
 Gratipay is open-source software. In the case of irreconcilable conflict,
-members in the minority always have the option to fork.
+members in the minority have the option to fork.
+
+Gratipay maintains a record of it decisions using [GitHub
+issues](https://github.com/search?q=user%3Agratipay&type=Issues).
 
 
-### Records
+## Access
 
-Gratipay maintains governance records in GitHub.
+Gratipay restricts access in various ways to its various systems, such as web
+hosting infrastructure, databases, and upstream payment processor dashboards
+and APIs. For each system, Gratipay invites members to have access to the
+system by a vote of 100% of the subset of members who already have access to
+the system.  The usual quorum rules apply, scoped to this subset.
+
+Any member with control over access to a subsystem may withdraw access from any
+other member at any time for any reason.
+
+Gratipay maintains a record of each member's access in their [onboarding
+ticket](https://github.com/gratipay/inside.gratipay.com/issues?q=label%3AOnboarding).
 
 
 ## Money
