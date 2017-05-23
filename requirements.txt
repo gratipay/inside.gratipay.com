@@ -9,7 +9,7 @@ aspen==0.42
  Jinja2==2.7.1
 aspen-jinja2==0.4
 
-simplejson==2.3.2
+simplejson==3.10.0
 
 mistune==0.7.1
 mistune_contrib==0.1
