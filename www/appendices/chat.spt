@@ -1,5 +1,6 @@
 nav_title = 'Slack Chat'
-src = "https://gratipay-slackin.herokuapp.com/"
+src = "https://join.slack.com/gratipay/shared_invite/MTg4NjAyODY4NjkxLTE0OTU4MTY0MzEtZWM4Mjc2YWYxNA"
 [---]
+website.redirect(src)  # afaict the page doesn't work in a frame
 [---] text/html via jinja2
 {% include "templates/iframed.html" %}
