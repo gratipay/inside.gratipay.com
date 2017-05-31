@@ -7,7 +7,7 @@ aspen==0.42
 
   MarkupSafe==0.18
  Jinja2==2.7.1
-aspen-jinja2==0.4
+aspen-jinja2==0.5
 
 simplejson==2.3.2
 
