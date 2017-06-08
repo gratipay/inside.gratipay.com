@@ -18,7 +18,7 @@ record the result on Gratipay Bot's ticket.
   1. If `payday.sh` fails, fix it, documenting everything on Gratipay Bot's ticket.
   1. [Run MassPay](run-masspay).
   1. [Shuffle escrow](shuffle-escrow).
-  1. Commit the logs from payday and masspay to git and push them up the `logs` repo.
+  1. Commit the logs from payday and masspay to git and push them up to the `logs` repo.
   1. Review the card decline rate in the Braintree [dashboard](https://www.braintreegateway.com/).
      If it's 15% or greater, find a reason and report it to riskteam at getbraintree com.
   1. Review and edit these documents.
