@@ -57,11 +57,11 @@ place files in there, and then commit and push them together.
 1. Log out of PayPal.
 
 
-## PayPal 2
+## PayPal (Operations)
 
 *vendors@gratipay.com*
 
-Follow the same procedure as above, but name the files `paypal-2.{csv,pdf}`.
+Follow the same procedure as above, but name the files `paypal-operations.{csv,pdf}`.
 
 
 ## Braintree
