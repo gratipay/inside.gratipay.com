@@ -20,8 +20,8 @@ place files in there, and then commit and push them together.
 1. Click &ldquo;Account Activity&rdquo;.
 1. Under &ldquo;Posted Transactions > Search&rdquo;, set the date range to the desired month (dates are
    inclusive).
-1. Use the &ldquo;Export&rdquo; dropdown to download all four available formats (QFX, QBO, OFX, and CSV).
-1. Move the files to `pnc.{qfx,qbo,ofx,csv}` in the new `year/month` directory.
+1. Use the &ldquo;Export&rdquo; dropdown to download in CSV format.
+1. Move the file to `pnc.csv` in the new `year/month` directory.
 1. Log out of PNC.
 
 
@@ -34,8 +34,8 @@ place files in there, and then commit and push them together.
 1. Click &ldquo;Search&rdquo;.
 1. Click &ldquo;Export&rdquo;.
 1. Check the &ldquo;Select/Reset All Displayed Records&rdquo; box.
-1. Export both QIF and CSV formats.
-1. Move the files to `new-alliance.{qif,csv}` in the new `year/month` directory.
+1. Export in CSV format.
+1. Move the file to `new-alliance.csv` in the new `year/month` directory.
 1. Log out of New Alliance.
 
 
