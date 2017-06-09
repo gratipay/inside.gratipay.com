@@ -47,8 +47,10 @@ place files in there, and then commit and push them together.
 1. Click &ldquo;Reports&rdquo; at the top.
 1. Click &ldquo;Monthly.&rdquo;
 1. &ldquo;Download&rdquo; the PDF for the month in question.
-1. Now click over to &ldquo;Activity Download&rdquo; in the left navigation.
-1. Set the date range as &ldquo;Past Month&rdquo; and double-check that the resulting dates are as desired (dates are inclusive).
+1. Now head over to [Activity download](https://business.paypal.com/merchantdata/reportHome?reportType=DLOG)
+   (they are reorganizing and I didn't find a consistent way to navigate there).
+1. Set the date range as &ldquo;Past Month&rdquo; and double-check that the resulting dates are
+   as desired (dates are inclusive).
 1. Click &ldquo;Create Report.&rdquo;
 1. Wait for &ldquo;In progress&rdquo; to change to a &ldquo;Download&rdquo; link, and click it.
 1. Move the files to `paypal.{pdf,csv}` in the new `year/month` directory.
