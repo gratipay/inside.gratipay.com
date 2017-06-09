@@ -5,7 +5,9 @@ nav_title = 'Download Statements'
 During the first week of every month, download financial statements for the
 previous month. Create a new `year/month` directory under
 [`logs/statements`](https://github.com/gratipay/logs/tree/master/statements),
-place files in there, and then commit and push them together.
+place files in there (here are some [helper
+scripts](https://gist.github.com/whit537/05eb5e8028f50386a46290dc7ae27c16)
+for that), and then commit and push them together.
 
 
 ## PNC
