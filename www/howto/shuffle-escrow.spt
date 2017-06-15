@@ -6,16 +6,16 @@ We hold escrow in two accounts:
  1. **New Alliance (payins)**&mdash;Money enters our escrow via credit card
     charges on Braintree, which settle to an account at [New Alliance Federal
 Credit Union](http://newalliancefcu.com/) in
-[Ambridge](https://medium.com/gratipay-blog/meet-ambridge-8b9b2b6f8628).
+[Ambridge](https://gratipay.news/meet-ambridge-8b9b2b6f8628).
 
  1. **PayPal (payouts)**&mdash;We keep a standing balance in PayPal, because it
     takes 3-5 days to add funds, and we need to be able to run MassPay
 immediately after payins on Thursdays.
 
-After [running MassPay](run-masspay), "Add money" to PayPal from New Alliance,
-whatever is needed to bring our PayPal balance up to 5x this week's MassPay.
-The 5x number is based on historical spikes in new withdrawals, though we're
-going to have to significantly revise our escrow shuffling system as we
+After [running MassPay](run-masspay), &ldquo;Add money&rdquo; to PayPal from
+New Alliance, whatever is needed to bring our PayPal balance up to 5x this week's
+MassPay. The 5x number is based on historical spikes in new withdrawals, though
+we're going to have to significantly revise our escrow shuffling system as we
 [minimize our escrow](https://github.com/gratipay/gratipay.com/issues/1383).
 Here's a markdown template to use on the payday ticket:
 
