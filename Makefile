@@ -21,7 +21,7 @@ clean:
 	find . -name \*.pyc -delete
 
 run: env
-	./$(env_bin)/honcho -e defaults.env,local.env run ./env/bin/python \
+	./$(env_bin)/honcho run -e defaults.env,local.env ./env/bin/python \
 		./startapp.py --port=8536
 
 test:

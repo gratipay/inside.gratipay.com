@@ -14,9 +14,6 @@ cache:
   - env/bin
   - env/lib/python2.7/site-packages
 script: make test -j2
-branches:
-  only:
-  - master
 deploy:
   provider: heroku
   # Required for some reason (default anvil strategy doesn't work)
@@ -26,9 +23,7 @@ deploy:
     secure: o0IjJoL7Ee5y7BiZF5VkAYan+8SigY23+2aG8UsNHkrVcqbd1RIVbhoTjJPyYrwolpSUl20pXZaVwSINQSew7YaCqBJBA6HKjFiA7cDY/t2IhWcIb6cyanFkH//+/WrFMNF6HJHc2n/DzpevYmO4ZAqJmoDToszCRj13dmIdJ2s=
   app:
     master: inside-gratipay-com
-  on:
-    repo: gratipay/inside.gratipay.com
-    branch: master
+    operating-agreement: gratipay-operating-agreement
 notifications:
   email: false
   irc:
