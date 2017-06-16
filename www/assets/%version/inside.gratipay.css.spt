@@ -1,11 +1,11 @@
 import os
-import sass
+import scss
 
 filename = os.path.join(website.project_root, 'scss', 'inside.gratipay.scss')
 output_style = 'compressed' if website.compress_assets else 'nested'
 cache = os.environ.get('INSIDE_GRATIPAY_CACHE_CSS', '')
 [---]
-css = sass.compile(output_style=str(output_style),filename=str(filename))
+css = scss.compiler.compile_file(filename, output_style=output_style)
 if cache:
     response.headers['Expires'] = 'Sun, 17 Jan 2038 19:14:07 GMT'
 [---] via jinja2
