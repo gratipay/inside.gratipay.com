@@ -157,7 +157,7 @@ an as-needed basis, and we regularly review permissions across our systems.
 We classify our vendors into two tiers:
 
  - Low-risk vendors providing secondary services. We manage access via
-   [LastPass](https://lastpass.com/).
+   [1Password](https://1password.com/).
 
  - Hi-risk vendors, including production hosting systems and financial partners.
    We manage access manually.
