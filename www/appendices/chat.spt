@@ -1,5 +1,5 @@
 nav_title = 'Slack Chat'
-src = "https://join.slack.com/gratipay/shared_invite/MTg4NjAyODY4NjkxLTE0OTU4MTY0MzEtZWM4Mjc2YWYxNA"
+src = "https://join.slack.com/t/gratipay/shared_invite/MjE5OTU0MTExOTkwLTE1MDEyNDY4NzktOWYxZWFkNTMxNw"
 [---]
 website.redirect(src)  # afaict the page doesn't work in a frame
 [---] text/html via jinja2
