@@ -34,7 +34,7 @@ challenges](https://tools.ietf.org/html/draft-ietf-acme-acme-03#section-7.4)
 (`http-01` isn't even possible with MaxCDN). Update the relevant DNS records in
 DNSimple, and await verification.
 
-You should end up with one cert, which we will use with both domains. Login toA
+You should end up with one cert to use for both domains. Login to
 [MaxCDN](https://www.maxcdn.com/) (creds are in 1Password). Go to Account > SSL
 and edit the one certificate you find there, pasting in values copied from the
 files you find under `tmp/archive`:
