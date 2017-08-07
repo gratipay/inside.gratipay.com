@@ -3,14 +3,22 @@ nav_title = 'Strategy'
 [---] text/html
 
 Our strategy for [cultivating](mission) an economy of gratitude, generosity,
-and love is to fill the market with **open organizations**. In adopting this
-term, we are participating in a
-[conversation](https://opensource.com/open-organization) hosted by Red Hat on
-their website, OpenSource.com, based on the book [*The Open
-Organization*](https://www.amazon.com/-/dp/1625275277) by their CEO, Jim
-Whitehurst.
+and love is to take advantage of the **open source value vacuum** to fill the
+market with **open organizations**.
 
-Open organizations as we define them have four characteristics:
+
+## Open Organizations
+
+[*The Open Organization*](https://www.amazon.com/-/dp/1625275277) is a book by
+Jim Whitehurst documenting Red Hat's company culture. Red Hat hosts an [ongoing
+conversation](https://opensource.com/open-organization) about the book and its
+themes via their website, OpenSource.com. Prior to Jim's book, Gratipay talked
+about [open
+companies](https://gratipay.news/the-second-open-company-4cbab7ca1a47), but
+with Red Hat stepping forward with so much more momentum, we've folded our
+efforts into theirs.
+
+Open organizations as Gratipay defines them have four characteristics:
 
 1. **transparent decisions**&mdash;the default is for information to be shared
    publicly and decisions to be vetted publicly before being finalized;
@@ -30,16 +38,15 @@ flourish.
 
 ## The Open Source Value Vacuum
 
-Open source software projects are the most well-established institutions that
-are closest to our vision of the open organization. Transparent decision-making
-and open &ldquo;hiring&rdquo; are the norm. Insofar as they have any revenue,
-it is voluntary. There's historically not been much revenue, however, so
-practices around compensation are not well-developed (hence the scare quotes
-around &ldquo;hiring&rdquo;).
+We aim to evolve open organizations from open source software projects, because
+open source software projects are the best-established existing institutions
+that are closest to our vision of the open organization. Transparent
+decision-making and open &ldquo;hiring&rdquo; are the norm. Insofar as they
+have any revenue, it is voluntary. There's historically not been much revenue,
+however, so practices around compensation are not well-developed (hence the
+scare quotes around &ldquo;hiring&rdquo;). 
 
-Our strategy is to evolve open source software projects into open
-organizations: open institutions with a peer economic relationship to closed
-organizations. In economic terms, open source software is a [*public
+In economic terms, open source software is a [*public
 good*](https://en.wikipedia.org/wiki/Public_good#Definition_matrix):
 
 ![goods matrix](matrix.png)
@@ -52,30 +59,98 @@ There are three ways to fit public goods into the economy:
 1. **Taxation**. This is akin to enclosure, in that both involve *forcing* people
    to pay for the thing.
 
-1. **Social norms**. At its worst, this looks like guilt-tripping and shaming.
-   At its best, it looks like inviting people to be grateful and generous and
-Do the Right Thing&trade;. This is us! &#x1f483;
+1. **Persuasion**. The pitch is mostly enlightened self-interest with a
+sprinkling of altruism. This is us! &#x1f483;
 
-If we have a chance at (3), it's because open source has created a
-&ldquo;value vacuum&rdquo; in the economy. Closed organizations have been
-unable to ignore the value open source software offers; they've embraced it.
+Persuading customers to pay for value they may also access for free is an
+&ldquo;extreme&rdquo; solution to the [value capture
+problem](https://hbr.org/2014/10/capture-more-value):
+
+> Taking this idea to an extreme, some companies have *pay what you want*
+> arrangements, whereby the seller must take whatever the customer offers.
+> Given the potential for free-rider abuse, few businesses contemplate this
+> innovation.
+
+Free-rider abuse is the [classic
+difficulty](https://en.wikipedia.org/wiki/Free-rider_problem) in providing
+public goods, and it is intrinsic to open source. &ldquo;The
+license shall not require a royalty or other fee,&rdquo; is the [very first
+article](https://opensource.org/definition) of the open source definition, and
+freedom-as-in-beer was the primary driver for corporate open source adoption
+[until 2011](https://www.blackducksoftware.com/2016-future-of-open-source)
+(slide 10). One of the great strengths of open source is also perhaps its
+greatest weaknesses.
+
+How much value is open source leaving on the table? 
+
+The global economy is nominally
+[$78T/y](https://en.wikipedia.org/wiki/Gross_world_product), and tech accounts
+for
+[$3T](https://go.forrester.com/blogs/16-01-05-global_tech_market_will_continue_to_grow_at_4_5_rates_in_2016_and_2017/)
+(4%) of that.
+[78%](http://www.zdnet.com/article/its-an-open-source-world-78-percent-of-companies-run-open-source-software/)
+of companies use open source, so let's mark those down to $60.8T and $2.3T
+respectively. Using open source in tech companies increases value by
+[21%](https://medium.com/@nayafia/open-source-was-worth-at-least-143m-of-instagram-s-1b-acquisition-808bb85e4681),
+so call that $475B of annual value created by open source in tech ($2.3T
+&times; 21%). Non-tech companies still use [lots of
+software](https://a16z.com/2016/08/20/why-software-is-eating-the-world/); let's
+estimate that open source creates 2.1% of their value: that's another $1.2T
+(($60.8T - $2.3T) &times; 2.1%). Open source creates $1.7T/y of value.
+
+Volunteers produce
+[half](http://dirkriehle.com/2013/08/22/paid-vs-volunteer-work-in-open-source/)
+of open source, thereby adding $853B/y of value to the global economy. Open
+source foundations receive \_\_\_\_\_ in funding capturing 0.001% of the value
+created, and leaving 99.99% on the table.
+
+While open source now finds that it painted itself into an economic corner, the
+sheer size of the value created by open source makes it worthwhile to attempt
+to increase the amount captured. 
+
+Gratipay's strategic plan is to persuade companies to pay for open source
+software.
+
+
+### How much value is available to be captured?
+
+### How much is currently captured?
+
+### What is the capture function?
+
+### How are we going to increase the capture function?
+
+
+Open source has created a tremendous
+amount of value while capturing almost none of it. Because of the size of the
+value creation function, even a fractional increase in the capture function
+will be interesting.
+
+
+
+
 This creates some pressure to compensate open source projects *after* the fact
 rather than beforehand. Is it enough?
 
-A second pressure point is developer relations. Companies with a good
-reputation in open source communities find it easier to hire from and sell to
-those communities.
+Here are the specific points of leverage we see:
 
-Another relevant pressure in the industry is the pressure to address the
-diversity problem in tech
-([e.g.](http://www.npr.org/sections/money/2014/10/17/356944145/episode-576-when-women-stopped-coding)).
-This is a problem worth addressing in its own right, and it dovetails with the
-idea of proactively giving individuals agency to be involved in the engines of
-our economy.
+- **Risk management**. Open source is an upstream supplier for most companies.
+  Insolvent vendors are risky (see:
+[Heartbleed](https://en.wikipedia.org/wiki/Heartbleed#Root_causes.2C_possible_lessons.2C_and_reactions)).
 
-A fourth entrypoint is consumer-facing public goods, such as the services
-provided by Wikipedia, Mozilla, and the Internet Archive, and digital content
-more broadly.
+- **Developer relations**. Companies with a good reputation in open source
+  communities find it easier to hire from those communities.
+
+- **Marketing**. Some companies are also trying to sell to developers.
+
+- **Metrics**. Open source program directors want information about how their
+  organizations consume open source.
+
+- **Diversity in tech**. This is a
+  [problem](http://www.npr.org/sections/money/2014/10/17/356944145/episode-576-when-women-stopped-coding)
+worth addressing in its own right, and it dovetails with the idea of
+proactively giving individuals agency to be involved in the engines of our
+economy.
 
 The goal is to tap these pressure points to get some funding moving into open
 organizations. If we get enough money moving in this direction then we might
