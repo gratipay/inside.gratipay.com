@@ -36,16 +36,29 @@ We target an "A" grade on SSLLabs for both [grtp.co](https://www.ssllabs.com/ssl
 
 ### Out of Scope
 
-Any services hosted by 3rd party providers and services are excluded from scope.
+In the interest of the safety of our users, staff, the Internet at large and you as a security researcher, the following test types and issues are excluded from scope:
 
-In the interest of the safety of our users, staff, the Internet at large and you as a security researcher, the following test types are excluded from scope:
-
-*   Findings from physical testing such as office access (e.g. open doors, tailgating)
-*   Findings derived primarily from social engineering (e.g. phishing, vishing)
-*   Findings from applications or systems not listed in the ‘Scope’ section
-*   UI and UX bugs and spelling mistakes
-*   Network level Denial of Service (DoS/DDoS) vulnerabilities
+* Findings from physical testing such as office access (e.g. open doors, tailgating)
+* Findings derived primarily from social engineering (e.g. phishing, vishing)
+* Findings from applications or systems not listed in the ‘Scope’ section
+* UI and UX bugs and spelling mistakes
+* Network level Denial of Service (DoS/DDoS) vulnerabilities
 * Low severity issues that can be detected with tools such as [Hardenize](https://www.hardenize.com/) and [SecurityHeaders.io](https://securityheaders.io/).
+* Vulnerability reports with video only PoCs
+* Reports that state that software is out of date/vulnerable without a proof of concept.
+* Host header issues without an accompanying proof-of-concept demonstrating vulnerability.
+* XSS issues that affect only outdated browsers.
+* Stack traces that disclose information. We are open source so most of this information is already out there.
+* Highly speculative reports about theoretical damage. Be concrete.
+* Vulnerabilities as reported by automated tools without additional analysis as to how they're an issue.
+* Reports from automated web vulnerability scanners (Acunetix, Vega, etc.) that have not been validated.
+* Content injection issues.
+* Cross-site Request Forgery (CSRF) with minimal security implications (Logout CSRF, etc.)
+* Missing cookie flags on non-security-sensitive cookies.
+* Banner grabbing issues (figuring out what web server we use, etc.).
+* Open ports without an accompanying proof-of-concept demonstrating vulnerability.
+* Recently disclosed 0day vulnerabilities. We need time to patch our systems just like everyone else - please give us 30 days before reporting these types of issues.
+* Issues in third-party services should be reported to the respective team. Please take a look at the "Third-party Services" section for more information.
 
 Things we do not want to receive:
 
@@ -80,6 +93,15 @@ If you are the first to report an issue, and we make a code or configuration cha
 \*\* Awarded for your first qualifying report.
 
 
-### History
+## Third-party Services
 
-Here is this program description's [version history](https://github.com/gratipay/inside.gratipay.com/commits/master/www/appendices/security-program.md).
+Gratipay uses the following third-party services. If you discover an issue make sure to report it to the service's security team.
+
+- gratipay.freshdesk.com - Freshdesk (security@freshworks.com)
+- assets.gratipay.com - MaxCDN (security@maxcdn.com)
+- gratipay.slack.com - Slack (https://hackerone.com/slack)
+
+
+## security@
+
+If you have any questions concerning our program, feel free to send us an email at security@gratipay.com. Please do not send reports by email and make sure **not** to disclose sensitive information in the email.
