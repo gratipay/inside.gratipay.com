@@ -22,12 +22,12 @@ source community, both as producer and consumer. This is the primary role we
 sell to.
 
 `~bob` is a developer who wants his company to pay for open source, but does
-not have budget authority. He takes it upon himself to advocate for open
-source, but does not have it as an explicit responsibility. This is a secondary
-role that we sell through and with by helping them make the case within their
-company.
+not have budget authority. He takes it upon himself to advocate for open source
+within his company, but does not have it as an explicit responsibility. This is
+a secondary role that we sell through and with by helping him make the case
+within his company.
 
-`~alice` and `~bob` accept that supporting open source is the Right
+`~alice` and `~bob` are convinced that supporting open source is the Right
 Thing&trade; &hellip; but we're not selling altruism. Paying for open source is
 actually in each company's enlightened self-interest. How can we help `~alice`
 and `~bob` make the case?
@@ -50,13 +50,14 @@ and `~bob` make the case?
 
 `~picard` is the manager (owner?) of an open organization, and  `~crusher` is a
 contributor to the organization (co-owner, employee, contractor, agent). These
-are the supply-side customers in our markeplace. We saw this side of the market
-grow at 3% month-over-month even while we were growing 0% on the demand side,
-so we're not as focused on selling to this side. The open source community is
-so desperate for money that if we can unlock the demand side, the supply side
-should basically take care of itself.
+are the supply-side customers in our markeplace.
 
-Once unlocked, though, we will get into the interesting question of the
-[marketplace between projects and
+We saw this side of the market grow at 3% month-over-month even while we were
+growing 0% on the demand side, so we're not as focused on selling to this side.
+The open source community is so desperate for money that if we can unlock the
+demand side, the supply side should basically take care of itself, at least at
+first.
+
+Eventually we will get back to our second market, [between projects and
 contributors](https://opensource.com/open-organization/16/7/compensating-employees-letting-them-take-what-they-want).
 Some day!
