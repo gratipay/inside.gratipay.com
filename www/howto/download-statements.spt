@@ -14,16 +14,16 @@ for that), and then commit and push them together.
 
 1. Log on to [PNC](https://www.pnc.com/).
 1. Select &ldquo;Gratipay Operations&rdquo; in the list of accounts.
+1. You should be on &ldquo;Account Activity&rdquo;.
+1. Under &ldquo;Posted Transactions > Search&rdquo;, set the date range to the desired month (dates are
+   inclusive).
+1. Use the &ldquo;Export&rdquo; dropdown to download in CSV format.
+1. Move the file to `pnc.csv` in the new `year/month` directory.
 1. Click &ldquo;Online Statements&rdquo;.
 1. Confirm that the &ldquo;Statement for the period ending&rdquo; dropdown shows the desired month.
 1. Click &ldquo;Print Statement&rdquo; (with a PDF icon).
 1. Save the PDF as `pnc.pdf`
 1. Move the PDF into the new `year/month` directory.
-1. Click &ldquo;Account Activity&rdquo;.
-1. Under &ldquo;Posted Transactions > Search&rdquo;, set the date range to the desired month (dates are
-   inclusive).
-1. Use the &ldquo;Export&rdquo; dropdown to download in CSV format.
-1. Move the file to `pnc.csv` in the new `year/month` directory.
 1. Log out of PNC.
 
 
