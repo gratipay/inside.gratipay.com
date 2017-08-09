@@ -79,8 +79,9 @@ importance of the decision. If no-one objects then the matter is decided. If
 another member objects then the members involved work out a consensus. If they
 can't work it out then Gratipay votes.
 
-Gratipay calls votes by general consent. By default, votes are open for 72
-hours and require a majority to pass. The quorum is:
+Gratipay calls votes by general consent following a period of discussion. By
+default, votes are open for 72 hours and require a majority to pass. The quorum
+is:
 
 - a majority if there are fewer than seven members,
 - seven if there are at least 14 but fewer than 35 members, and
@@ -90,21 +91,21 @@ Members cast votes using comments and/or reactions on GitHub issues. Any member
 may count the vote and publish their count. Those members who publish a count
 within 24 hours after voting closes decide together on the final count.
 
-The following decisions require a vote with a seven day voting period and a
-majority in favor to pass:
+The following decisions require a minimum four-day discussion period prior to
+voting:
 
 - removing a member against their will,
 - changing [the big picture](./), which includes this document, and
 - accepting outside financing, which includes loans from members.
 
-The following decisions require a vote with a 14-day voting period and at least
-75% in favor to pass:
+The following decisions require a minimum 11-day discussion period, and at
+least 75% voting in favor to pass:
 
 - adding a member, and
 - selling or dissolving Gratipay.
 
-In the case of a vote to decide whether to call a vote, the period is 24 hours
-and a majority decides it.
+In the case of a vote to decide whether to call a vote, the voting period is 24
+hours and a majority decides it.
 
 Gratipay software is open source. In the case of irreconcilable conflict,
 members in the minority have the option to fork.
