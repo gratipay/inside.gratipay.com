@@ -1,0 +1,11 @@
+nav_title = 'Refresh the Slack Invite Link'
+[---]
+[---] text/html via markdown
+
+Our Slack [invite link](http://inside.gratipay.com/appendices/chat) expires
+every 30 days. When it's about to expire, generate a new &ldquo;[shared
+invite](https://gratipay.slack.com/admin/shared_invites)&rdquo; link and update
+it in
+[`appendices/chat`](https://github.com/gratipay/inside.gratipay.com/blob/master/www/appendices/chat.spt).
+Then set a [calendar](/appendices/calendar) reminder for the next expiration
+date.
