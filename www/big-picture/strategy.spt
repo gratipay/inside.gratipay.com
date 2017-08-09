@@ -72,91 +72,34 @@ problem](https://hbr.org/2014/10/capture-more-value):
 > innovation.
 
 Free-rider abuse is the [classic
-difficulty](https://en.wikipedia.org/wiki/Free-rider_problem) in providing
-public goods, and it is intrinsic to open source. &ldquo;The
+challenge](https://en.wikipedia.org/wiki/Free-rider_problem) in providing
+public goods, and it is a challenge intrinsic to open source. &ldquo;The
 license shall not require a royalty or other fee,&rdquo; is the [very first
 article](https://opensource.org/definition) of the open source definition, and
 freedom-as-in-beer was the primary driver for corporate open source adoption
 [until 2011](https://www.blackducksoftware.com/2016-future-of-open-source)
-(slide 10). One of the great strengths of open source is also perhaps its
-greatest weaknesses.
+(slide 10). In other words, one of the great strengths of open source is also
+perhaps its greatest weaknesses.
 
-How much value is open source leaving on the table? 
+Open source clearly suffers from free-rider abuse. It creates between [$100B
+and
+$1T/y](https://gratipay.news/open-source-captures-0-02-of-the-value-it-creates-leaving-852b-y-on-the-table-9015eb7e293e)
+in value, and captures less than 2% of that value. Gratipay's strategic plan is
+to solve the free-rider problem in open source by [persuading
+companies](./customers) to pay for open source software. There are
+[20M](https://www.google.com/search?q=number+of+programmers+in+the+world)
+programmers in the world. If 10% of them had an annual budget of $1,000 to pay
+for open source, the distributed open source community would have revenues
+[equivalent to Red
+Hat](https://www.redhat.com/en/about/press-releases/red-hat-reports-fourth-quarter-and-fiscal-year-2017-results).
 
-The global economy is nominally
-[$78T/y](https://en.wikipedia.org/wiki/Gross_world_product), and tech accounts
-for
-[$3T](https://go.forrester.com/blogs/16-01-05-global_tech_market_will_continue_to_grow_at_4_5_rates_in_2016_and_2017/)
-(4%) of that.
-[78%](http://www.zdnet.com/article/its-an-open-source-world-78-percent-of-companies-run-open-source-software/)
-of companies use open source, so let's mark those down to $60.8T and $2.3T
-respectively. Using open source in tech companies increases value by
-[21%](https://medium.com/@nayafia/open-source-was-worth-at-least-143m-of-instagram-s-1b-acquisition-808bb85e4681),
-so call that $475B of annual value created by open source in tech ($2.3T
-&times; 21%). Non-tech companies still use [lots of
-software](https://a16z.com/2016/08/20/why-software-is-eating-the-world/); let's
-estimate that open source creates 2.1% of their value: that's another $1.2T
-(($60.8T - $2.3T) &times; 2.1%). Open source creates $1.7T/y of value.
+Once we have significant revenue to the community, we can approach the [market
+between projects and
+contributors](https://opensource.com/open-organization/16/7/compensating-employees-letting-them-take-what-they-want).
 
-Volunteers produce
-[half](http://dirkriehle.com/2013/08/22/paid-vs-volunteer-work-in-open-source/)
-of open source, thereby adding $853B/y of value to the global economy. Open
-source foundations receive \_\_\_\_\_ in funding capturing 0.001% of the value
-created, and leaving 99.99% on the table.
-
-While open source now finds that it painted itself into an economic corner, the
-sheer size of the value created by open source makes it worthwhile to attempt
-to increase the amount captured. 
-
-Gratipay's strategic plan is to persuade companies to pay for open source
-software.
-
-
-### How much value is available to be captured?
-
-### How much is currently captured?
-
-### What is the capture function?
-
-### How are we going to increase the capture function?
-
-
-Open source has created a tremendous
-amount of value while capturing almost none of it. Because of the size of the
-value creation function, even a fractional increase in the capture function
-will be interesting.
-
-
-
-
-This creates some pressure to compensate open source projects *after* the fact
-rather than beforehand. Is it enough?
-
-Here are the specific points of leverage we see:
-
-- **Risk management**. Open source is an upstream supplier for most companies.
-  Insolvent vendors are risky (see:
-[Heartbleed](https://en.wikipedia.org/wiki/Heartbleed#Root_causes.2C_possible_lessons.2C_and_reactions)).
-
-- **Developer relations**. Companies with a good reputation in open source
-  communities find it easier to hire from those communities.
-
-- **Marketing**. Some companies are also trying to sell to developers.
-
-- **Metrics**. Open source program directors want information about how their
-  organizations consume open source.
-
-- **Diversity in tech**. This is a
-  [problem](http://www.npr.org/sections/money/2014/10/17/356944145/episode-576-when-women-stopped-coding)
-worth addressing in its own right, and it dovetails with the idea of
-proactively giving individuals agency to be involved in the engines of our
-economy.
-
-The goal is to tap these pressure points to get some funding moving into open
-organizations. If we get enough money moving in this direction then we might
-even [see](https://www.youtube.com/watch?v=kWH3Waigi5Y#t=5h59m17s) a new
+Further beyond the horizon, we may even
+[see](https://www.youtube.com/watch?v=kWH3Waigi5Y#t=5h59m17s) a new
 [sector](https://en.wikipedia.org/wiki/Economic_sector#By_ownership) of the
-economy: public, private, voluntary, &hellip; and open! And if we do that,
-hopefully we'll have increased the gratitude and generosity in the world by a
-fraction of a degree&mdash;maybe enough to get an interesting feedback loop
-going!
+economy emerge: public, private, voluntary, &hellip; and open. This new segment
+of the economy may better harmonize personal agency with collective action,
+making room for gratitude, generosity, and love to flourish.
