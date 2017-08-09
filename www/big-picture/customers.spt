@@ -2,7 +2,7 @@ nav_title = 'Customers'
 [---]
 [---] text/html via markdown
 
-Our [strategy](../strategy) for fulfilling our [mission](../mission) is to
+Our [strategy](./strategy) for fulfilling our [mission](./mission) is to
 evolve open organizations by persuading companies to pay open source software
 projects.
 
