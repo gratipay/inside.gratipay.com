@@ -1,39 +1,47 @@
 nav_title="Run Payday"
 [---]
 [---] text/html
-Here's how to run payday. Gratipay Bot 
-[should](https://github.com/gratipay/bot#what-does-gratipay-bot-do) 
-start a new payday ticket each Thursday morning. After each step, 
-record the result on Gratipay Bot's ticket.
+
+Here's how to run payday. Gratipay Bot
+[should](https://github.com/gratipay/bot#what-does-gratipay-bot-do) start a new
+payday ticket each Thursday morning. After each step, record the result on
+Gratipay Bot's ticket.
 
   1. [Review accounts](./review-accounts).
-  1. Take a backup using `bin/snapper.py`. Load the backup locally and make sure the homepage
-     matches the production homepage.
-  1. Check Gratipay Bot's ticket to get the payday number, `NNN`, from the title.
-  1. On latest master: `./payday.sh NNN for_real_please`. Answer yes at the prompts. It wants to log 
-     into a `../logs/payday/` directory.
-  1. `Ctrl-C` if you want to stop tailing the logfile (the `payday.sh` script uses `disown` to 
-     detach itself from the controlling terminal).
+  1. Take a backup using `bin/snapper.py`. Load the backup locally and make
+     sure the homepage matches the production homepage.
+  1. Check Gratipay Bot's ticket to get the payday number, `NNN`, from the
+     title.
+  1. On latest master: `./payday.sh NNN for_real_please`. Answer yes at the
+     prompts. It wants to log into a `../logs/payday/` directory.
+  1. `Ctrl-C` if you want to stop tailing the logfile (the `payday.sh` script
+     uses `disown` to detach itself from the controlling terminal&mdash;if you
+want to kill the script you have to
+[scramble](https://github.com/gratipay/inside.gratipay.com/issues/1149#issuecomment-326527847)
+to `ps` and then `kill` it &#x1F615; ).
   1. Wait a minute or two.
-  1. If `payday.sh` fails, fix it, documenting everything on Gratipay Bot's ticket.
+  1. If `payday.sh` fails, fix it, documenting everything on Gratipay Bot's
+     ticket.
   1. [Run MassPay](run-masspay).
   1. [Shuffle escrow](shuffle-escrow).
-  1. Commit the logs from payday and masspay to git and push them up to the `logs` repo.
-  1. Review the card decline rate in the Braintree [dashboard](https://www.braintreegateway.com/).
-     If it's 15% or greater, find a reason and report it to riskteam at getbraintree com.
+  1. Commit the logs from payday and masspay to git and push them up to the
+     `logs` repo.
+  1. Review the card decline rate in the Braintree
+     [dashboard](https://www.braintreegateway.com/).  If it's 15% or greater,
+find a reason and report it to riskteam at getbraintree com.
   1. Review and edit these documents.
   1. Close Gratipay Bot's ticket.
-  1. If it's the last payday of the month, update the rotation in the ticket description:
-     copy/paste the current airplane row to the bottom of the table, then move the airplane
-     back up!
+  1. If it's the last payday of the month, update the rotation in the ticket
+     description: copy/paste the current airplane row to the bottom of the
+table, then move the airplane back up!
 
 ## Notes
 
   - When a supporter's credit card fails, the tips from that user are
-    *excluded* from the total receiving amounts of those they gift, so
-    as not to mislead the receiver about likely future earning.
-  - When a supporter's card fails, we notify them once and they have 
-    to fix it before we start charging them again. Gifts accumulate for
-    one week, so if a card fails and they fix it inside of the week, we
-    double-charge the next week. But if they go four months before fixing 
-    then we still only double-charge. [Details](https://github.com/gratipay/inside.gratipay.com/issues/888#issuecomment-259783617).
+    *excluded* from the total receiving amounts of those they gift, so as not
+to mislead the receiver about likely future earning.
+  - When a supporter's card fails, we notify them once and they have to fix it
+    before we start charging them again. Gifts accumulate for one week, so if a
+card fails and they fix it inside of the week, we double-charge the next week.
+But if they go four months before fixing then we still only double-charge.
+[Details](https://github.com/gratipay/inside.gratipay.com/issues/888#issuecomment-259783617).
