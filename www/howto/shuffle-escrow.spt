@@ -14,9 +14,9 @@ immediately after payins on Thursdays.
 
 After [running MassPay](run-masspay), &ldquo;Add money&rdquo; to PayPal from
 New Alliance, whatever is needed to bring our PayPal balance up to 5x this week's
-MassPay. The 5x number is based on historical spikes in new withdrawals, though
-we're going to have to significantly revise our escrow shuffling system as we
-[minimize our escrow](https://github.com/gratipay/gratipay.com/issues/1383).
+MassPay. The 5x number is based on historical spikes in new withdrawals. We'll
+have to revise if/when we start growing again.
+
 Here's a markdown template to use on the payday ticket:
 
 ```
@@ -24,8 +24,8 @@ Here's a markdown template to use on the payday ticket:
 
 |         | $        |
 |:--------|---------:|
-| MassPay |     0.00 |
-| 5x      |     0.00 |
-| Balance |     0.00 |
-| Added   |     0.00 |
+| MassPay | 0.00 |
+| 5x      | 0.00 |
+| Balance | 0.00 |
+| Added   | 0.00 |
 ```
