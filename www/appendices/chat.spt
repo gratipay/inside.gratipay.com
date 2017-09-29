@@ -1,6 +1,6 @@
 nav_title = 'Slack Chat'
 # Docs are at http://inside.gratipay.com/howto/refresh-the-slack-invite-link.
-src = "https://join.slack.com/t/gratipay/shared_invite/MjMzNTExODUwMzA0LTE1MDQxMzE3OTQtZWUxYjRhY2U2OA"
+src = "https://join.slack.com/t/gratipay/shared_invite/enQtMjQ5Mjc2NDE0NjI4LTYxNGM2OTZhMjdmMDhmMjdmOWI5ZTUxZGQzNmQzMTk5ZTQyMDBjN2RjYjVlNjBhNTZlYzA2ZTg0ZGUxYTNiZjY"
 [---]
 website.redirect(src)  # afaict the page doesn't work in a frame
 [---] text/html via jinja2
