@@ -37,6 +37,22 @@ Just use &ldquo;New&rdquo; (unclear risk) and &ldquo;Triaged&rdquo; (in one of
 the four risk classifications).
 
 
+## Incident Response
+
+Some reports may require immediate action. In these cases incident response is 
+triggered and the security team investigates the impact of the issue in the 
+private #incident-response channel on [Slack](https://gratipay.slack.com/).
+
+The following steps are taken during incident response:
+
+- Notify all team members that you are triggering incident response.
+- Identify what the issue is and all assets that are affected by the issue.
+- Contain the problem. 
+- Submit a patch.
+- Verify that the issue has been patched.
+- List all precautionary steps that could be taken in order to prevent a similar incident in future.
+
+
 ## Code Changes
 
 For Low- and Medium-severity issues, you may use our normal public GitHub
