@@ -56,7 +56,7 @@ def grouped(all_reports):
              , ('Severity: High',            10, [])
              , ('Severity: Medium',           1, [])
              , ('Severity: Low',              0, [])
-             , ('Severity: None', float('-inf'), [])
+             , ('Severity: None',            -1, [])
               ]
     for report in all_reports:
         for _, lo, reports in groups:
