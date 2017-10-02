@@ -13,7 +13,4 @@ WORKDIR /inside.gratipay.com
 #Set up the environment
 RUN make env
 
-#Expose the port
-EXPOSE 8563
-
 CMD ["make", "run"]
