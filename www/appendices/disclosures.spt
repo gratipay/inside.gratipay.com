@@ -49,12 +49,12 @@ def group(reports):
 
 
 def grouped(all_reports):
-    groups = [ ('Severity: Critical',        'critical', [])
-             , ('Severity: High',            'high', [])
-             , ('Severity: Medium',           'medium', [])
-             , ('Severity: Low',              'low', [])
-             , ('Severity: None', 'none', [])
-              ]
+    groups = [ ('Severity: Critical', 'critical', [])
+             , ('Severity: High',         'high', [])
+             , ('Severity: Medium',     'medium', [])
+             , ('Severity: Low',           'low', [])
+             , ('Severity: None',         'none', [])
+             ]
     for report in all_reports:
         for _, severity, reports in groups:
             if 'severity_rating' in report: #severity_rating won't exist if the severity is set to none or if no severity was set
