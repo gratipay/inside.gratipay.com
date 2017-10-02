@@ -45,7 +45,7 @@ private #incident-response channel on [Slack](https://gratipay.slack.com/).
 
 The following steps are taken during incident response:
 
-- Notify all team members that you are triggering incedent response.
+- Notify all team members that you are triggering incident response.
 - Identify what the issue is and all assets that are affected by the issue.
 - Contain the problem. 
 - Submit a patch.
