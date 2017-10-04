@@ -12,15 +12,12 @@ try:
     raw = open(join(dirname(__file__), 'disclosures.json')).read()
 except IOError:
     def get_raw():
-        url = 'https://hackerone.com/gratipay/reports/public'
-        return urllib.urlopen(url).read()
+        data = urllib.urlopen('https://hackerone.com/hacktivity.json?sort_type=latest_disclosable_activity_at&filter=type%3Apublic%20to%3Agratipay&range=forever&limit=1000').read() #this endpoint should return the last 1000 disclosed reports
+        data = json.loads(data)
+        return data['reports']
 else:
     def get_raw():
         return raw
-
-# Manually override some risk assessments
-overrides = { 76303: '1'  # no bounty awarded because the reporter is part of the Gratipay team
-             }
 
 [---]
 
@@ -29,7 +26,7 @@ def group(reports):
     for report in reports:
 
         ts = []
-        year, month, day = report['disclosed_at'][:10].split('-')
+        year, month, day = report['latest_disclosable_activity_at'][:10].split('-')
         new = [year, month, day]
         if year != cur[0]:
             ts.append(year)
@@ -52,27 +49,30 @@ def group(reports):
 
 
 def grouped(all_reports):
-    groups = [ ('Severity: Critical',        40, [])
-             , ('Severity: High',            10, [])
-             , ('Severity: Medium',           1, [])
-             , ('Severity: Low',              0, [])
-             , ('Severity: None', float('-inf'), [])
-              ]
+    groups = [ ('Severity: Critical', 'critical', [])
+             , ('Severity: High',         'high', [])
+             , ('Severity: Medium',     'medium', [])
+             , ('Severity: Low',           'low', [])
+             , ('Severity: None',         'none', [])
+             ]
     for report in all_reports:
-        for _, lo, reports in groups:
-            if report['bounty'] > lo:
-                reports.append(report)
+        for _, severity, reports in groups:
+            if 'severity_rating' in report: #severity_rating won't exist if the severity is set to none or if no severity was set
+                if report['severity_rating'] == severity:
+                    reports.append(report)
+                    break
+            else:
+                groups[4][2].append(report) #if severity is none or a severity was never set, append this report to the "Severity: None" group
                 break
+                
     for header, _, reports in groups:
         reports = list(group(reports))
         yield header, len(reports), reports
 
 
-raw = get_raw()
-reports = json.loads(raw)
+reports = get_raw()
 for report in reports:  # standardize bounty values
     bounty = report.get('bounty', 0)
-    bounty = overrides.get(report['id'], bounty)
     report['bounty'] = D(bounty)
 reports.sort(key=lambda r: r['bounty'])
 groups = grouped(reports)
