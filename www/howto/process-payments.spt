@@ -1,0 +1,43 @@
+nav_title="Process Payments"
+[---]
+[---] text/html
+
+We have two payment processing processes. The old one is weekly recurring and
+is described in [Run Payday](./run-payday). The new one is one-time (manual
+renewal), and kicks off when someone submits the form on our
+[homepage](https://gratipay.com/). With the old process people can pay for any
+project on Gratipay, but with the new process people can only pay for npm
+packages.
+
+Regularly check the [payments
+dashboard](https://gratipay.com/dashboard/payments) for new payments.
+&ldquo;Reject&rdquo; those that [appear](review-accounts) fraudulent, and
+&ldquo;Approve&rdquo; payments that appear legitimate. When you click
+&ldquo;Reject&rdquo;, we cancel the hold that we had on the person's credit
+card, and we send them an email notifying them of the rejection. When you click
+&ldquo;Approve&rdquo;, we capture the hold that we had on the person's credit
+card, and we email them a receipt.
+
+
+## Distributing Funds
+
+We distribute funds twice a month, on the 1st and 15th. Funds from payments
+approved before the 1st are distributed on the 15th, and vice versa.
+
+This is where it starts to get unscalable. Until we prove out company demand
+for this way of paying for open source, we are manually contacting all of the
+package maintainers. [Looks like](https://support.google.com/a/answer/166852)
+we can email a couple thousand people per day. If we reach that limit with any
+haste, we will have amply justified further automation. &#x1F601;
+
+We have between 15 and 31 days to distribute funds, depending on when they are
+received. If a payment is approved on the 1st of January, the funds from that
+payment won't go out until the 1st of February: 31 days later. If a payment is
+approved on the 14th of February, the funds will go out on the 1st of March: 15
+days later (16 in a leap year). (Should we ship this feature on the 1st in order
+to give ourselves the most time to recruit maintainers?).
+
+We need to collect tax information and issue a 1099-MISC to anyone to whom we
+distribute
+[$600](https://www.irs.gov/businesses/small-businesses-self-employed/reporting-payments-to-independent-contractors)
+or more in a given year.
