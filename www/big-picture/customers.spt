@@ -2,14 +2,62 @@ nav_title = 'Customers'
 [---]
 [---] text/html via markdown
 
-Our [strategy](../strategy) is to flood the market with open organizations.
-Therefore, we understand our customers as follows:
+Our [strategy](./strategy) for fulfilling our [mission](./mission) is to
+evolve open organizations by persuading companies to pay open source software
+projects.
 
-<a href="http://interactive.blockdiag.com/?compression=deflate&src=eJxLyslPzk7JTExXqOZSUEjMyUxOVYjOSUxKzbFVqgNzlWKBEq5wwZCMVAXXvJLUooKizGKIZHJRaXFGahFCH1QALAkxUtcOaASQgMpYcwFl0ovySwsUSlITc8F2A83Jz8kvslVSNja2tDQzU7IGC7qCyYLM5MSiFIQNED7YglquWgAxeDvp"><img src="customers.png"></a>
+<a href="http://interactive.blockdiag.com/?compression=deflate&src=eJx1jrEKwjAYhPc-xU9c1aVQKKVCKBkc3NzEIUlDG41N-NsOIvXZjWloQTDDwX2X5E4YK--15g28EgAKF8OFMiWh1Ylt4djJPbn6gBst1RK-gw2BsGLF3gTIFnRuFbBuUOhQ9_MLCruDv-FF4ti3CovE0wbt6EDah-PdM2wB74zFkmzSNM-zjBQB0qB_9_xZNK0dDu1NyeGnowondrCgTkuO9frX7GNL3L6mEXzjKZk-xnBktA"><img src="customers.png"></a>
 
-Our primary customer is `~picard`: the manager of an open organization.
 
-Our secondary customer is The Enterprise's customer: `~alice`.
+## Demand-Side
 
-Our tertiary customer is The Enterprise's employee (contractor, agent, etc.):
-`~crusher`.
+`~alice` and `~bob` are employees of a company representing the demand side of
+the marketplace for open source software. Their company consumes open source
+software and we want to help them pay for it.
+
+`~alice` is an open source program director (or manager, or advocate, or chief
+open source officer, etc.) at a company. She has budget authority and is
+explicitly responsible for the relationship between the company and the open
+source community, both as producer and consumer. This is the primary role we
+sell to.
+
+`~bob` is a developer who wants his company to pay for open source, but does
+not have budget authority. He takes it upon himself to advocate for open source
+within his company, but does not have it as an explicit responsibility. This is
+a secondary role that we sell through and with by helping him make the case
+within his company.
+
+`~alice` and `~bob` are convinced that supporting open source is the Right
+Thing&trade; &hellip; but we're not selling altruism. Paying for open source is
+actually in each company's enlightened self-interest. How can we help `~alice`
+and `~bob` make the case?
+
+- **Risk management**. Open source is an upstream supplier, and insolvent
+  vendors are risky (see:
+[Heartbleed](https://en.wikipedia.org/wiki/Heartbleed#Root_causes.2C_possible_lessons.2C_and_reactions)).
+
+- **Marketing**. Companies with a good reputation in open source communities
+  find it easier to sell to and hire from those communities.
+
+- **Metrics**. Understanding open source consumption patterns can be difficult
+  in large organizations.
+
+- **Social validation**. Companies need to feel that they're not the only one
+  paying, but rather that they're part of an industry trend.
+
+
+## Supply-Side
+
+`~picard` is the manager (owner?) of an open organization, and  `~crusher` is a
+contributor to the organization (co-owner, employee, contractor, agent). These
+are the supply-side customers in our markeplace.
+
+We saw this side of the market grow at 3% month-over-month even while we were
+growing 0% on the demand side, so we're not as focused on selling to this side.
+The open source community is so desperate for money that if we can unlock the
+demand side, the supply side should basically take care of itself, at least at
+first.
+
+Eventually we will get back to our second market, [between projects and
+contributors](https://opensource.com/open-organization/16/7/compensating-employees-letting-them-take-what-they-want).
+Some day!
